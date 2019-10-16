@@ -1,0 +1,27 @@
+[build]
+  publish = "dist/"
+  command = "npm run generate"
+
+[context.production]
+  command = "BASE_URL=$URL npm run generate"
+
+[context.deploy-preview]
+  command = "BASE_URL=$DEPLOY_PRIME_URL npm run generate"
+
+[context.branch-deploy]
+  command = "BASE_URL=$DEPLOY_URL npm run generate"
+
+[[headers]]
+  for = "*.js" # js files should be set this way
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "*.css" # css files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "*.jpg" # css files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
