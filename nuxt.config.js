@@ -63,6 +63,7 @@ module.exports = {
         },
       },
     }],
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/markdownit',
     '@nuxtjs/sitemap',
     'nuxt-polyfill'
@@ -122,8 +123,8 @@ module.exports = {
   */
   loading: { color: "#FFBB43" },
   css: [
-    '~/assets/styles.css',
-    '~/assets/custom.css'
+    '~/assets/css/styles.css',
+    '~/assets/css/custom.css'
   ],
   /*
   ** Build configuration

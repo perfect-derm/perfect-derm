@@ -1,0 +1,143 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "pages"
+    label: "Strony"
+    files:
+      - label: "Strona główna"
+        name: "homepage"
+        file: "content/pages/homepage.md"
+        fields:
+          - {label: "Tytuł", name: title, widget: string, required: true}
+          - {label: "Opis", name: description, widget: text, required: true}
+          - {label: "Baner - tytuł", name: baner_title, widget: string}
+          - {label: "Baner - subtytuł", name: baner_subtitle, widget: string}
+          - {label: "Baner - grafika", name: baner_image, widget: image}
+          - label: "Sekcje z informacjami"
+            name: "sections"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Tytuł", name: section_title, widget: string}
+              - {label: "Opis", name: section_description, widget: text}
+              - {label: "Obrazek", name: section_image, widget: image}
+              - {label: "Przycisk - tytuł", name: section_button_title, widget: string}
+              - {label: "Przycisk - link", name: section_button_link, widget: string}
+              - label: "Wygląd bloku"
+                name: "section_layout_block"
+                widget: "select"
+                options:
+                  - { label: "1 kolumna", value: "single" }
+                  - { label: "2 kolumny", value: "duo" }
+              - label: "Umiejscowienie przycisku"
+                name: "section_layout_button"
+                widget: "select"
+                options:
+                  - { label: "Pod tekstem", value: "section_layout_button_text" }
+                  - { label: "Pod grafiką", value: "section_layout_button_image" }
+                  - { label: "Pod całością", value: "section_layout_button_end" }
+      - label: "Oferta"
+        name: "offer"
+        file: "content/pages/offer.md"
+        fields:
+          - {label: "Tytuł", name: title, widget: string, required: true}
+          - {label: "Opis", name: description, widget: text, required: true}
+          - label: "Produkty"
+            name: "products"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Nazwa", name: name, widget: string, default: "Orzech"}
+              - {label: "Obrazek", name: image, widget: image}
+              - {label: "Granulacja", name: granulation, widget: string, default: "40-80mm"}
+              - {label: "Kaloryczność", name: calorific, widget: string, default: "24MJ"}
+              - {label: "Popiół", name: ash, widget: string, default: "7-10%"}
+          - {label: "Treść pod cennikiem", name: body_after, required: false, widget: text}
+      - label: "Cennik"
+        name: "prices"
+        file: "content/pages/prices.md"
+        fields:
+          - {label: "Tytuł", name: title, widget: string, required: true}
+          - {label: "Opis", name: description, widget: text, required: true}
+          - label: "Cennik"
+            name: "prices"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Nazwa", name: name, widget: string, default: "Orzech"}
+              - {label: "Granulacja", name: granulation, widget: string, default: "40-80mm"}
+              - {label: "Kaloryczność", name: calorific, widget: string, default: "24MJ"}
+              - {label: "Luzem", name: non_packed, widget: string, default: "750zł"}
+              - {label: "Worek", name: packed, widget: string, default: "820zł"}
+              - {label: "Popiół", name: ash, widget: string, default: "7-10%"}
+              - {label: "Obrazek", name: image, widget: image}
+      - label: "Transport"
+        name: "transport"
+        file: "content/pages/transport.md"
+        fields:
+          - {label: "Tytuł", name: title, widget: string, required: true}
+          - {label: "Opis", name: description, widget: text, required: true}
+          - {label: "Treść", name: body, widget: markdown}
+      - label: "Mati Trans"
+        name: "mati-trans"
+        file: "content/pages/mati-trans.md"
+        fields:
+          - {label: "Tytuł", name: title, widget: string, required: true}
+          - {label: "Opis", name: description, widget: text, required: true}
+          - label: "Sekcje z informacjami"
+            name: "sections"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Tytuł", name: section_title, widget: string}
+              - {label: "Opis", name: section_description, widget: text}
+              - {label: "Obrazek", name: section_image, widget: image}
+              - {label: "Przycisk - tytuł", name: section_button_title, widget: string}
+              - {label: "Przycisk - link", name: section_button_link, widget: string}
+              - label: "Wygląd bloku"
+                name: "section_layout_block"
+                widget: "select"
+                options:
+                  - { label: "1 kolumna", value: "single" }
+                  - { label: "2 kolumny", value: "duo" }
+              - label: "Umiejscowienie przycisku"
+                name: "section_layout_button"
+                widget: "select"
+                options:
+                  - { label: "Pod tekstem", value: "section_layout_button_text" }
+                  - { label: "Pod grafiką", value: "section_layout_button_image" }
+                  - { label: "Pod całością", value: "section_layout_button_end" }
+      - label: "Kontakt"
+        name: "contact"
+        file: "content/pages/contact.md"
+        fields:
+          - {label: "Tytuł", name: title, widget: string, required: true}
+          - {label: "Opis", name: description, widget: text, required: true}
+          - {label: "Treść", name: body, widget: markdown}
+          - {label: "Treść nad formularzem", name: body_before, widget: markdown, required: false}
+          - {label: "Treść pod formularzem", name: body_after, widget: markdown, required: false}
+  - name: "settings"
+    label: "Ustawienia"
+    files:
+      - label: "Dane kontaktowe"
+        name: "contact"
+        file: "content/settings/contact.md"
+        fields:
+          - {label: "Telefon", name: telephone, widget: string, required: true}
+          - {label: "Email", name: email, widget: string, required: false}
+          - {label: "Facebook", name: facebook, widget: string, required: false}
+      - label: "Adres"
+        name: "homepage"
+        file: "content/settings/adress.md"
+        fields:
+          - {label: "Nazwa firmy", name: company_name, widget: string, required: true}
+          - {label: "Ulica", name: company_street, widget: text}
+          - {label: "Kod pocztowy", name: company_zip_code, widget: string}
+          - {label: "Miasto", name: company_city, widget: string}
+          - {label: "Godziny pracy", name: company_hours, widget: text}
+          - {label: "Copyright - tekst w stopce", name: copyright, widget: text}
