@@ -25,3 +25,9 @@
   for = "*.jpg" # css files too
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+  force = false
