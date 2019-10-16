@@ -1,0 +1,39 @@
+{
+  "name": "perfect-derm.com",
+  "description": "Nuxt.js + Netlify CMS project",
+  "author": "webo <support@webo.agency>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "serve": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generate:manual": "cross-env BASE_URL=https://www.perfect-derm.com nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/google-tag-manager": "^2.2.0",
+    "@nuxtjs/markdownit": "^1.2.4",
+    "@nuxtjs/pwa": "^3.0.0-beta.14",
+    "@nuxtjs/robots": "^2.1.0",
+    "@nuxtjs/sitemap": "^1.0.0",
+    "@reallifedigital/nuxt-image-loader-module": "^1.4.0",
+    "core-js": "^2.6.5",
+    "nuxt": "~2.2.0",
+    "nuxt-netlify-http2-server-push": "^0.1.2",
+    "nuxt-polyfill": "^1.0.3",
+    "nuxtdown": "^2.0.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^4.5.2",
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "glob": "^7.1.2"
+  }
+}
