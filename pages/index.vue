@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import pageData from '~/content/index.json';
+  import pageDataJSON from '~/content/index.json';
 
   export default {
     props: {
@@ -17,7 +17,7 @@
     },
     data () {
         return { 
-          pageData: JSON.parse(pageData)
+          pageData: pageDataJSON
         }
     }
   };
