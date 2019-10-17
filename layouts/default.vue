@@ -45,37 +45,13 @@
 
           <div class="mb3">
             <h3 class="f4 b lh-title mb1 primary">Adres</h3>
-              <address>
-                <span class="db" v-html="address.company_street.split(/\n/).join('<br/>')"></span>
-                {{ address.company_zip_code }} {{ address.company_city }}
-              </address>
-              <br/>
-              {{ address.company_hours_array[0] }}<br/>
-              {{ address.company_hours_array[1] }}
+
           </div>
 
-          <div>
-            <h3 class="f4 b lh-title mb2 primary">Kontakt</h3>
-            <ul class="mhn2 flex flex-column items-start">
-              <li class="dib ph2 raise">
-                <a v-if="contact.facebook" :href="contact.facebook" class="link bg-white black db relative br-100 pa2 mb3">
-                  <svg width="16px" height="16px" class="db">
-                    <use xlink:href="#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="dib ph2">
-                <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link tel db relative b pa1 mb3">
-                  {{ contact.telephone }}
-                </a>
-              </li>
-            </ul>
-          </div>
+      
 
         </div>
       </div>
-
-      <p class="tc grey-2 center f6 mt4 mb0">{{ new Date().getFullYear() }} © {{ address.company_name }}</p>
 
     </footer>
   </div>
@@ -101,12 +77,12 @@
       company_street_line_2: ''
     }),
     mounted(){
-      var street = this.address.company_street.split(/\n/);
-      this.address.company_street_line_1 = street[0];
+      // var street = this.address.company_street.split(/\n/);
+      // this.address.company_street_line_1 = street[0];
 
-      if(street.length > 1){
-        this.address.company_street_line_2 = street[1];
-      }
+      // if(street.length > 1){
+        // this.address.company_street_line_2 = street[1];
+      // }
     }
   }
 </script>

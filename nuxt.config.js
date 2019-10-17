@@ -1,6 +1,5 @@
 module.exports = {
   modules: [
-    "nuxtdown",
     [
       'nuxt-netlify-http2-server-push',
       {
@@ -64,7 +63,6 @@ module.exports = {
       },
     }],
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/markdownit',
     '@nuxtjs/sitemap',
     'nuxt-polyfill'
   ],
@@ -72,16 +70,8 @@ module.exports = {
     lang: 'pl',
     display: "browser",
   },
-  markdownit: {
-    preset: 'default',
-    html: true,
-    typographer: true,
-    linkify: true,
-    breaks: true,
-    injected: true
-  },
   env: {
-    BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   sitemap: {
     hostname: process.env.BASE_URL || 'http://localhost:3000'
@@ -126,6 +116,11 @@ module.exports = {
     '~/assets/css/styles.css',
     '~/assets/css/custom.css'
   ],
+  axios: {
+    baseURL: 'http://localhost:3000',
+    host: "localhost",
+    debug: true
+  },
   /*
   ** Build configuration
   */
