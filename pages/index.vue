@@ -1,6 +1,6 @@
 <template>
   <div>
-      {{ pageData }}
+      {{ pageData.title }}
   </div>
 </template>
 
@@ -17,7 +17,7 @@
     },
     data () {
         return { 
-          pageData: pageData
+          pageData: JSON.parse(pageData)
         }
     }
   };

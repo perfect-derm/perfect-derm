@@ -11,7 +11,7 @@
 
       <ul class="menu flex flex-wrap b grey-3 justify-center">
         <li>
-          <nuxt-link :to="'/contact'" class="pa2 pa3-ns no-underline db">Kontakt</nuxt-link>
+          <nuxt-link :to="'/'" class="pa2 pa3-ns no-underline db">Strona główna</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -21,37 +21,6 @@
     </main>
 
     <footer class="bg-black ph3 pt4 pb1 white">
-
-      <div class="mw7 center pt3">
-
-        <div class="measure-narrow center mb4">
-
-          <a href="/" class="no-underline db">
-            <cLogo
-              theme="dark"
-              classes="db w4 center mb4 br0 h-auto"
-            />
-          </a>
-        </div>
-
-        <div class="flex-ns justify-between">
-
-          <div>
-            <h3 class="f4 b lh-title mb1 primary">Menu</h3>
-            <ul class="mb3">
-              <li><nuxt-link :to="'/contact'" class="link db">Kontakt</nuxt-link></li>
-            </ul>
-          </div>
-
-          <div class="mb3">
-            <h3 class="f4 b lh-title mb1 primary">Adres</h3>
-
-          </div>
-
-      
-
-        </div>
-      </div>
 
     </footer>
   </div>
@@ -64,18 +33,6 @@
     components: {
       cLogo
     },
-    computed: {
-      address() {
-        return this.$store.getters.address
-      },
-      contact() {
-        return this.$store.getters.contact
-      }
-    },
-    data: () => ({
-      company_street_line_1: '',
-      company_street_line_2: ''
-    }),
     mounted(){
       // var street = this.address.company_street.split(/\n/);
       // this.address.company_street_line_1 = street[0];
@@ -88,31 +45,5 @@
 </script>
 
 <style type="text/css">
-  .menu a{
-    font-size: 16px;
-  }
-
-  @media(min-width: 768px){
-    .menu a{
-      font-size: 22px;
-    }
-  }
-
-  .menu .nuxt-link-exact-active{
-    box-shadow: inset 0 -4px 0 #F1C007;
-  }
-
-  @media (max-width: 768px) {
-    .divider-grey ul a:focus,.divider-grey ul a:hover {
-      box-shadow: none;
-    }
-  }
-
-  .special a{
-    color: #2C57E8;
-  }
-
-  .tel{
-    color: #da2222;
-  }
+  
 </style>
