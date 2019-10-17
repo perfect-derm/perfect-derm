@@ -64,6 +64,7 @@ module.exports = {
     }],
     '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
+    '@nuxtjs/axios',
     'nuxt-polyfill'
   ],
   manifest: {

@@ -1,10 +1,12 @@
 <template>
-  <div class="hidden">
-
+  <div>
+      {{ pageData }}
   </div>
 </template>
 
 <script>
+  import pageData from '~/content/index.json';
+
   export default {
     props: {
       'mainClass': {
@@ -13,12 +15,10 @@
         required: false
       }
     },
-    mounted() {
-    },
-    // asyncData: async ({ app, route, payload }) => {
-    //   return {
-    //     page: (await app.$content("/pages").get(route.path)) || payload
-    //   };
-    // }
+    data () {
+        return { 
+          pageData: pageData
+        }
+    }
   };
 </script>
