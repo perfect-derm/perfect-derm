@@ -1,9 +1,11 @@
 module.exports = {
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   modules: [
     [
       'nuxt-netlify-http2-server-push',
       {
-        // Specify relative path to the dist directory and its content type
         resources: [
           { path: '**/*.css', as: 'style' },
           { path: '/_nuxt/content/pages/*.json', as: 'application/json' },
@@ -30,52 +32,176 @@ module.exports = {
         Sitemap: (process.env.BASE_URL || 'http://localhost:3000') + '/sitemap.xml'
       }
     ],
-    ['@reallifedigital/nuxt-image-loader-module', {
-      imagesBaseDir: 'dist',
-      imageStyles: {
-        small: {
-          macros: ['scaleAndCrop|160|90'],
-          actions: ['quality|80']
+    [
+      '@reallifedigital/nuxt-image-loader-module', 
+      {
+        imagesBaseDir: 'dist',
+        imageStyles: {
+          small: {
+            macros: ['scaleAndCrop|160|90'],
+            actions: ['quality|80']
+          },
+          medium: {
+            macros: ['scaleAndCrop|320|180'],
+            actions: ['quality|80']
+          },
+          large: {
+            macros: ['scaleAndCrop|640|360'],
+            actions: ['quality|80']
+          },
+          banner: {
+            macros: ['scaleAndCrop|1920|1080'],
+            actions: ['quality|90']
+          },
         },
-        medium: {
-          macros: ['scaleAndCrop|320|180'],
-          actions: ['quality|80']
+        // Optional responsive style profiles:
+        responsiveStyles: 
+        {
+          large: {
+            srcset: 'small 160w, medium 320w, large 640w, banner 1200w',
+            sizes: '(min-width: 1280px) 100vw, 50vw',
+          },
+          thumb: {
+            srcset: 'small 160w, medium 320w, large 640w',
+            sizes: '(min-width: 1280px) 100vw, 50vw',
+          },
         },
-        large: {
-          macros: ['scaleAndCrop|640|360'],
-          actions: ['quality|80']
-        },
-        banner: {
-          macros: ['scaleAndCrop|1920|1080'],
-          actions: ['quality|90']
-        },
-      },
-      // Optional responsive style profiles:
-      responsiveStyles: {
-        large: {
-          srcset: 'small 160w, medium 320w, large 640w, banner 1200w',
-          sizes: '(min-width: 1280px) 100vw, 50vw',
-        },
-        thumb: {
-          srcset: 'small 160w, medium 320w, large 640w',
-          sizes: '(min-width: 1280px) 100vw, 50vw',
-        },
-      },
-    }],
+      }
+    ],
+    [
+      'nuxt-i18n',
+       {
+        locales: [
+          {
+            code: 'de',
+            iso: 'de-DE'
+          },
+          {
+            code: 'en',
+            iso: 'en-GB'
+          },
+          {
+            code: 'pl',
+            iso: 'pl-PL'
+          }
+        ],
+        strategy: 'prefix_except_default',
+        defaultLocale: 'pl',
+        vueI18n: {
+          fallbackLocale: 'en',
+          detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_language',
+            alwaysRedirect: true
+          },
+          seo: true,
+          messages: {
+            en: {
+              welcome: 'Welcome'
+            },
+            pl: {
+              welcome: 'Witaj'
+            },
+            de: {
+              welcome: 'X'
+            }
+          }
+        } 
+      }
+    ],
+    [
+      "nuxt-netlify-cms", 
+      { 
+        adminPath: "admin",
+        adminTitle: "CMS Netlify",
+        cmsConfig: { 
+          backend: { 
+            name: 'git-gateway', 
+            branch: 'master' 
+          },
+          media_folder: 'static/images/uploads',
+          public_folder: '/images/uploads',
+          collections: [ 
+            { 
+              name: 'pages',
+              label: 'Strony',
+              files: [ 
+                { 
+                  label: '[PL] Strona główna',
+                  name: 'homepage',
+                  file: 'content/index/pl.json',
+                  fields: [ 
+                    { 
+                      label: 'Tytuł',
+                      name: 'title',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: 'Opis',
+                      name: 'description',
+                      widget: 'text',
+                      required: true 
+                    } 
+                  ] 
+                },
+                { 
+                  label: '[EN] Strona główna',
+                  name: 'homepage',
+                  file: 'content/index/en.json',
+                  fields: [ 
+                    { 
+                      label: 'Tytuł',
+                      name: 'title',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: 'Opis',
+                      name: 'description',
+                      widget: 'text',
+                      required: true 
+                    } 
+                  ] 
+                },
+                { 
+                  label: '[DE] Strona główna',
+                  name: 'homepage',
+                  file: 'content/index/de.json',
+                  fields: [ 
+                      { 
+                        label: 'Tytuł',
+                        name: 'title',
+                        widget: 'string',
+                        required: true 
+                      },
+                      { 
+                        label: 'Opis',
+                        name: 'description',
+                        widget: 'text',
+                        required: true 
+                      } 
+                    ] 
+                } 
+              ] 
+            } 
+          ] 
+        }
+      }
+    ],
+    [
+      "@nuxtjs/sitemap", 
+      { 
+        hostname: process.env.BASE_URL || 'http://localhost:3000'
+      }
+    ],
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/sitemap',
     '@nuxtjs/axios',
     'nuxt-polyfill'
   ],
   manifest: {
     lang: 'pl',
     display: "browser",
-  },
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
-  },
-  sitemap: {
-    hostname: process.env.BASE_URL || 'http://localhost:3000'
   },
   polyfill: {
     features: [
