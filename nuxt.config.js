@@ -123,12 +123,12 @@ module.exports = {
           public_folder: '/images/uploads',
           collections: [ 
             { 
-              name: 'pages',
-              label: 'Strony',
+              name: 'homepage',
+              label: 'Strona główna',
               files: [ 
                 { 
-                  label: '[PL] Strona główna',
-                  name: 'homepage',
+                  name: 'homepage_pl',
+                  label: '[PL] Wersja polska',
                   file: 'content/index/pl.json',
                   fields: [ 
                     { 
@@ -146,8 +146,8 @@ module.exports = {
                   ] 
                 },
                 { 
-                  label: '[EN] Strona główna',
-                  name: 'homepage',
+                  name: 'homepage_en',
+                  label: '[EN] Wersja angielska',
                   file: 'content/index/en.json',
                   fields: [ 
                     { 
@@ -165,8 +165,8 @@ module.exports = {
                   ] 
                 },
                 { 
-                  label: '[DE] Strona główna',
-                  name: 'homepage',
+                  name: 'homepage_de',
+                  label: '[DE] Wersja niemiecka',
                   file: 'content/index/de.json',
                   fields: [ 
                       { 
