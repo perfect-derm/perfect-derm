@@ -74,19 +74,24 @@ module.exports = {
         locales: [
           {
             code: 'de',
-            iso: 'de-DE'
+            iso: 'de-DE',
+            file: 'de-DE.js'
           },
           {
             code: 'en',
-            iso: 'en-GB'
+            iso: 'en-GB',
+            file: 'en-GB.js'
           },
           {
             code: 'pl',
-            iso: 'pl-PL'
+            iso: 'pl-PL',
+            file: 'pl-PL.js'
           }
         ],
         strategy: 'prefix_except_default',
         defaultLocale: 'pl',
+        lazy: true,
+        langDir: 'lang/',
         vueI18n: {
           fallbackLocale: 'en',
           detectBrowserLanguage: {
@@ -94,18 +99,7 @@ module.exports = {
             cookieKey: 'i18n_language',
             alwaysRedirect: true
           },
-          seo: true,
-          messages: {
-            en: {
-              welcome: 'Welcome'
-            },
-            pl: {
-              welcome: 'Witaj'
-            },
-            de: {
-              welcome: 'X'
-            }
-          }
+          seo: true
         } 
       }
     ],

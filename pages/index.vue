@@ -1,7 +1,6 @@
 <template>
-  <div>
-      {{ pageData.title }}
-  </div>
+  <!-- <div v-t="'pageData.title'"></div> -->
+  <div>HOMEPAGE</div>
 </template>
 
 <script>
