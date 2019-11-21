@@ -117,6 +117,25 @@ module.exports = {
           public_folder: '/images/uploads',
           collections: [ 
             { 
+              name: 'test_',
+              label: 'Strona testowa',
+              file: 'content/index/pl.json',
+              fields: [ 
+                { 
+                  label: 'Tytuł',
+                  name: 'title',
+                  widget: 'string',
+                  required: true 
+                },
+                { 
+                  label: 'Opis',
+                  name: 'description',
+                  widget: 'text',
+                  required: true 
+                } 
+              ] 
+            },
+            { 
               name: 'homepage',
               label: 'Strona główna',
               files: [ 
