@@ -1,13 +1,13 @@
-let indexPageNoPrefix = require('../content/index/de.json');
+// let indexPageNoPrefix = require('../content/index/de.json');
 
 export default (context) => {
     return new Promise(function (resolve) {
     
-      let indexPage = {};
+      // let indexPage = {};
 
-      Object.keys(indexPageNoPrefix).forEach(key => {
-          indexPage = { ...indexPage, ['index_' + key]: indexPageNoPrefix[key] }
-      });
+      // Object.keys(indexPageNoPrefix).forEach(key => {
+      //     indexPage = { ...indexPage, ['index_' + key]: indexPageNoPrefix[key] }
+      // });
 
       const header = {
         homepage: 'Strona główna',
@@ -21,7 +21,7 @@ export default (context) => {
 
       resolve({
         ...header, 
-        ...indexPage
+        // ...indexPage
       })
     });
 }
