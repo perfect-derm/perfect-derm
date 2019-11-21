@@ -191,8 +191,14 @@ module.exports = {
     ],
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
+    'nuxt-webfontloader',
     'nuxt-polyfill'
   ],
+  webfontloader: {
+    google: {
+      families: ['Roboto:400,500,700'] //Loads Lato font with weights 400 and 700
+    }
+  },
   manifest: {
     lang: 'pl',
     display: "browser",

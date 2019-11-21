@@ -78,19 +78,6 @@
       MAPA
     </section>
 
-    <section class="relative bg-gray-100 container py-4 text-center">
-      Nasi partnerzy
-    </section>
-
-    <section class="relative container py-4 flex flex-row">
-      <a class="button mx-auto">
-        Mapa dojazdu
-      </a>
-
-      <a class="button mx-auto">
-        Umów wizytę
-      </a>
-    </section>
   </div>
 </template>
 
