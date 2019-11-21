@@ -1,6 +1,6 @@
 <template>
   <div :class="mainClass">
-    TESTOWY TEKST NA TŁUMACZENIA : <div v-t="'index_title'"></div>
+    TESTOWY TEKST NA TŁUMACZENIA : <div v-t="'homepage__text__description'"></div>
 
 
     <p class="text-center mb-4">

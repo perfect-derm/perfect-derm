@@ -75,17 +75,17 @@ module.exports = {
           {
             code: 'de',
             iso: 'de-DE',
-            file: 'de-DE.js'
+            file: 'de.js'
           },
           {
             code: 'en',
             iso: 'en-GB',
-            file: 'en-GB.js'
+            file: 'en.js'
           },
           {
             code: 'pl',
             iso: 'pl-PL',
-            file: 'pl-PL.js'
+            file: 'pl.js'
           }
         ],
         strategy: 'prefix_except_default',
@@ -209,7 +209,7 @@ module.exports = {
                       required: true 
                     }
                   ] 
-                }
+                },
               ] 
             },
             { 
@@ -1151,7 +1151,177 @@ module.exports = {
                   ] 
                 },
               ] 
-            } 
+            },
+            {
+              name: 'about',
+              label: 'O mnie',
+              files: [ 
+                { 
+                  name: 'menu',
+                  label: 'Menu',
+                  file: 'content/about/menu.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__about__menu__title',
+                      locale: 'pl',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__about__menu__title',
+                      locale: 'en',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__about__menu__title',
+                      locale: 'de',
+                      widget: 'strong',
+                      required: true,
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: 'services',
+              label: 'Oferta',
+              files: [ 
+                { 
+                  name: 'menu',
+                  label: 'Menu',
+                  file: 'content/services/menu.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__services__menu__title',
+                      locale: 'pl',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__services__menu__title',
+                      locale: 'en',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__services__menu__title',
+                      locale: 'de',
+                      widget: 'strong',
+                      required: true,
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: 'issue',
+              label: 'Twój problem',
+              files: [ 
+                { 
+                  name: 'menu',
+                  label: 'Menu',
+                  file: 'content/issue/menu.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__issue__menu__title',
+                      locale: 'pl',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__issue__menu__title',
+                      locale: 'en',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__issue__menu__title',
+                      locale: 'de',
+                      widget: 'strong',
+                      required: true,
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: 'media',
+              label: 'Media',
+              files: [ 
+                { 
+                  name: 'menu',
+                  label: 'Menu',
+                  file: 'content/media/menu.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__media__menu__title',
+                      locale: 'pl',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__media__menu__title',
+                      locale: 'en',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__media__menu__title',
+                      locale: 'de',
+                      widget: 'strong',
+                      required: true,
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              name: 'contact',
+              label: 'Kontakt',
+              files: [ 
+                { 
+                  name: 'menu',
+                  label: 'Menu',
+                  file: 'content/contact/menu.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__contact__menu__title',
+                      locale: 'pl',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__contact__menu__title',
+                      locale: 'en',
+                      widget: 'strong',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__contact__menu__title',
+                      locale: 'de',
+                      widget: 'strong',
+                      required: true,
+                    }
+                  ]
+                }
+              ]
+            }  
           ] 
         }
       }

@@ -15,37 +15,37 @@
             :to="localePath('about')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('about_us') }}
+            {{ $t('about__menu__title') }}
           </nuxt-link>
           <nuxt-link 
-            :to="localePath('services')"
+            :to="localePath('offer')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('services') }}
+            {{ $t('offer__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('issue')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('issue') }}
+            {{ $t('issue__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('media')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('media') }}
+            {{ $t('media__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('tariff')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('tariff') }}
+            {{ $t('tariff__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('contact')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('contact') }}
+            {{ $t('contact__menu__title') }}
           </nuxt-link>
         </div>
         <div class="flex items-center mx-4 lg:hidden">
