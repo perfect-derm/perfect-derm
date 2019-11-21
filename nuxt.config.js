@@ -115,7 +115,103 @@ module.exports = {
           },
           media_folder: 'static/images/uploads',
           public_folder: '/images/uploads',
+          locale: 'pl',
           collections: [ 
+            { 
+              name: 'header',
+              label: 'Nagłówek',
+              files: [ 
+                { 
+                  name: 'logo',
+                  label: 'Logo',
+                  file: 'content/header/logo.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Logo - grafika',
+                      name: 'pl__logo_img',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Logo - grafika',
+                      name: 'en__logo_img',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[DE] Logo - grafika',
+                      name: 'de__logo_img',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[PL] Logo - atrybut ALT',
+                      name: 'pl__logo_alt',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Logo - atrybut ALT',
+                      name: 'en__logo_alt',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Logo - atrybut ALT',
+                      name: 'de__logo_alt',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true 
+                    }
+                  ] 
+                },
+                { 
+                  name: 'telephone',
+                  label: 'Telefon',
+                  file: 'content/header/telephone.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Telefon w nagłówku',
+                      name: 'pl__telephone',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Telefon w nagłówku',
+                      name: 'en__telephone',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Telefon w nagłówku',
+                      name: 'de__telephone',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true 
+                    }
+                  ] 
+                }
+              ] 
+            },
             { 
               name: 'homepage',
               label: 'Strona główna',
