@@ -1165,21 +1165,21 @@ module.exports = {
                       label: '[PL] Tytuł',
                       name: 'pl__about__menu__title',
                       locale: 'pl',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__about__menu__title',
                       locale: 'en',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__about__menu__title',
                       locale: 'de',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     }
                   ]
@@ -1199,21 +1199,21 @@ module.exports = {
                       label: '[PL] Tytuł',
                       name: 'pl__services__menu__title',
                       locale: 'pl',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__services__menu__title',
                       locale: 'en',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__services__menu__title',
                       locale: 'de',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     }
                   ]
@@ -1233,21 +1233,21 @@ module.exports = {
                       label: '[PL] Tytuł',
                       name: 'pl__issue__menu__title',
                       locale: 'pl',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__issue__menu__title',
                       locale: 'en',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__issue__menu__title',
                       locale: 'de',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     }
                   ]
@@ -1267,21 +1267,21 @@ module.exports = {
                       label: '[PL] Tytuł',
                       name: 'pl__media__menu__title',
                       locale: 'pl',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__media__menu__title',
                       locale: 'en',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__media__menu__title',
                       locale: 'de',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     }
                   ]
@@ -1301,21 +1301,21 @@ module.exports = {
                       label: '[PL] Tytuł',
                       name: 'pl__contact__menu__title',
                       locale: 'pl',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__contact__menu__title',
                       locale: 'en',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__contact__menu__title',
                       locale: 'de',
-                      widget: 'strong',
+                      widget: 'string',
                       required: true,
                     }
                   ]
