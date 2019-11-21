@@ -128,7 +128,7 @@ module.exports = {
                   fields: [ 
                     { 
                       label: '[PL] Logo - grafika',
-                      name: 'pl__logo_img',
+                      name: 'pl__header__logo__img',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -139,7 +139,7 @@ module.exports = {
                     },
                     { 
                       label: '[EN] Logo - grafika',
-                      name: 'en__logo_img',
+                      name: 'en__header__logo__img',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -150,7 +150,7 @@ module.exports = {
                     },
                     { 
                       label: '[DE] Logo - grafika',
-                      name: 'de__logo_img',
+                      name: 'de__header__logo__img',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -161,21 +161,21 @@ module.exports = {
                     },
                     { 
                       label: '[PL] Logo - atrybut ALT',
-                      name: 'pl__logo_alt',
+                      name: 'pl__header__logo__alt',
                       locale: 'pl',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[EN] Logo - atrybut ALT',
-                      name: 'en__logo_alt',
+                      name: 'en__header__logo__alt',
                       locale: 'en',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[DE] Logo - atrybut ALT',
-                      name: 'de__logo_alt',
+                      name: 'de__header__logo__alt',
                       locale: 'de',
                       widget: 'string',
                       required: true 
@@ -189,21 +189,21 @@ module.exports = {
                   fields: [ 
                     { 
                       label: '[PL] Telefon w nagłówku',
-                      name: 'pl__telephone',
+                      name: 'pl__header__telephone',
                       locale: 'pl',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[EN] Telefon w nagłówku',
-                      name: 'en__telephone',
+                      name: 'en__header__telephone',
                       locale: 'en',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[DE] Telefon w nagłówku',
-                      name: 'de__telephone',
+                      name: 'de__header__telephone',
                       locale: 'de',
                       widget: 'string',
                       required: true 
@@ -217,62 +217,939 @@ module.exports = {
               label: 'Strona główna',
               files: [ 
                 { 
-                  name: 'homepage_pl',
-                  label: '[PL] Wersja polska',
-                  file: 'content/index/pl.json',
+                  name: 'banner',
+                  label: 'Baner [nr. 1]',
+                  file: 'content/homepage/banner_1.json',
                   fields: [ 
                     { 
-                      label: 'Tytuł',
-                      name: 'title',
-                      widget: 'string',
-                      required: true 
-                    },
-                    { 
-                      label: 'Opis',
-                      name: 'description',
-                      widget: 'text',
-                      required: true 
-                    } 
-                  ] 
-                },
-                { 
-                  name: 'homepage_en',
-                  label: '[EN] Wersja angielska',
-                  file: 'content/index/en.json',
-                  fields: [ 
-                    { 
-                      label: 'Tytuł',
-                      name: 'title',
-                      widget: 'string',
-                      required: true 
-                    },
-                    { 
-                      label: 'Opis',
-                      name: 'description',
-                      widget: 'text',
-                      required: true 
-                    } 
-                  ] 
-                },
-                { 
-                  name: 'homepage_de',
-                  label: '[DE] Wersja niemiecka',
-                  file: 'content/index/de.json',
-                  fields: [ 
-                      { 
-                        label: 'Tytuł',
-                        name: 'title',
-                        widget: 'string',
-                        required: true 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__banner_1__image',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
                       },
-                      { 
-                        label: 'Opis',
-                        name: 'description',
-                        widget: 'text',
-                        required: true 
-                      } 
-                    ] 
-                } 
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__banner_1__image',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__banner_1__image',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__homepage__banner_1__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__homepage__banner_1__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__homepage__banner_1__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true 
+                    }
+                  ] 
+                },
+                { 
+                  name: 'banner',
+                  label: 'Baner [nr. 2]',
+                  file: 'content/homepage/banner_2.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__banner_2__image',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__banner_2__image',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__banner_2__image',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__homepage__banner_2__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__homepage__banner_2__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__homepage__banner_2__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true 
+                    }
+                  ] 
+                },
+                { 
+                  name: 'banner',
+                  label: 'Baner [nr. 3]',
+                  file: 'content/homepage/banner_3.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__banner_3__image',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__banner_3__image',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__banner_3__image',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      }, 
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__homepage__banner_3__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__homepage__banner_3__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__homepage__banner_3__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true 
+                    }
+                  ] 
+                },
+                { 
+                  name: 'text',
+                  label: 'Tekst pod banerem',
+                  file: 'content/homepage/text.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__homepage__text__description',
+                      locale: 'pl',
+                      widget: 'text',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__homepage__text__description',
+                      locale: 'en',
+                      widget: 'text',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__homepage__text__description',
+                      locale: 'de',
+                      widget: 'text',
+                      required: true,
+                    }
+                  ] 
+                },
+                { 
+                  name: 'button_first',
+                  label: 'Przycisk do akcji [pod banerem i tekstem]',
+                  file: 'content/homepage/button_first.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__button_first__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__button_first__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__button_first__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__button_first__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__button_first__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__button_first__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ] 
+                },
+                {
+                  name: 'left_top_offer',
+                  label: '[Lewo] Wyróżniona oferta [nad blokiem z opisem]',
+                  file: 'content/homepage/left_top_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__left_top_offer__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__left_top_offer__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__left_top_offer__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__left_top_offer__background',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__left_top_offer__background',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__left_top_offer__background',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__left_top_offer__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__left_top_offer__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__left_top_offer__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'middle_top_offer',
+                  label: '[Środek] Wyróżniona oferta [nad blokiem z opisem]',
+                  file: 'content/homepage/middle_top_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__middle_top_offer__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__middle_top_offer__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__middle_top_offer__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__middle_top_offer__background',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__middle_top_offer__background',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__middle_top_offer__background',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__middle_top_offer__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__middle_top_offer__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__middle_top_offer__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'right_top_offer',
+                  label: '[Prawo] Wyróżniona oferta [nad blokiem z opisem]',
+                  file: 'content/homepage/right_top_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__right_top_offer__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__right_top_offer__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__right_top_offer__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__right_top_offer__background',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__right_top_offer__background',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__right_top_offer__background',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__right_top_offer__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__right_top_offer__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__right_top_offer__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'about_description',
+                  label: 'Blok z opisem',
+                  file: 'content/homepage/about_description.json',
+                  fields: [
+                    {
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__about_description__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__about_description__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__about_description__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[PL] Opis',
+                      name: 'pl__homepage__about_description__description',
+                      locale: 'pl',
+                      widget: 'text',
+                      required: true,
+                    },
+                    {
+                      label: '[EN] Opis',
+                      name: 'en__homepage__about_description__description',
+                      locale: 'en',
+                      widget: 'text',
+                      required: true,
+                    },
+                    {
+                      label: '[DE] Opis',
+                      name: 'de__homepage__about_description__description',
+                      locale: 'de',
+                      widget: 'text',
+                      required: true,
+                    },
+                    {
+                      label: '[PL] Link',
+                      name: 'pl__homepage__about_description__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[EN] Link',
+                      name: 'en__homepage__about_description__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[DE] Link',
+                      name: 'de__homepage__about_description__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[PL] Zdjęcie',
+                      name: 'pl__homepage__about_description__photo',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    {
+                      label: '[EN] Zdjęcie',
+                      name: 'en__homepage__about_description__photo',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    {
+                      label: '[DE] Zdjęcie',
+                      name: 'de__homepage__about_description__photo',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    }
+                  ]
+                },
+                {
+                  name: 'left_bottom_offer',
+                  label: '[Lewo] Wyróżniona oferta [nad blokiem z opisem]',
+                  file: 'content/homepage/left_bottom_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__left_bottom_offer__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__left_bottom_offer__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__left_bottom_offer__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__left_bottom_offer__background',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__left_bottom_offer__background',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__left_bottom_offer__background',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__left_bottom_offer__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__left_bottom_offer__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__left_bottom_offer__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'middle_bottom_offer',
+                  label: '[Środek] Wyróżniona oferta [nad blokiem z opisem]',
+                  file: 'content/homepage/middle_bottom_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__middle_top_offer__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__middle_bottom_offer__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__middle_bottom_offer__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__middle_bottom_offer__background',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__middle_bottom_offer__background',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__middle_bottom_offer__background',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__middle_bottom_offer__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__middle_bottom_offer__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__middle_bottom_offer__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'right_bottom_offer',
+                  label: '[Prawo] Wyróżniona oferta [nad blokiem z opisem]',
+                  file: 'content/homepage/right_bottom_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__right_bottom_offer__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__right_bottom_offer__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__right_bottom_offer__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tło',
+                      name: 'pl__homepage__right_bottom_offer__background',
+                      locale: 'pl',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[EN] Tło',
+                      name: 'en__homepage__right_bottom_offer__background',
+                      locale: 'en',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[DE] Tło',
+                      name: 'de__homepage__right_bottom_offer__background',
+                      locale: 'de',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__right_bottom_offer__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__right_bottom_offer__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__right_bottom_offer__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                { 
+                  name: 'button_second',
+                  label: 'Przycisk do akcji [pod blokiem z opisem]',
+                  file: 'content/homepage/button_second.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__button_second__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__button_second__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__button_second__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__homepage__button_second__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__homepage__button_second__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__homepage__button_second__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ] 
+                },
               ] 
             } 
           ] 
