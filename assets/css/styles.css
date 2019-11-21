@@ -3,3 +3,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.button {
+    @apply inline-block;
+    @apply py-2;
+    @apply px-4;
+    @apply border;
+    @apply border-black;
+    @apply uppercase;
+}

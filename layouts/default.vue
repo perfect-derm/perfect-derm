@@ -12,37 +12,37 @@
           :class="{ 'hidden' : menuSwitchPosition }"
         >
           <nuxt-link 
-            :to="localePath('index')"
+            :to="localePath('about')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('about_us') }}
           </nuxt-link>
           <nuxt-link 
-            :to="localePath('index')"
+            :to="localePath('services')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('services') }}
           </nuxt-link>
           <nuxt-link 
-            :to="localePath('index')"
+            :to="localePath('issue')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('your_problem') }}
+            {{ $t('issue') }}
           </nuxt-link>
           <nuxt-link 
-            :to="localePath('index')"
+            :to="localePath('media')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('media') }}
           </nuxt-link>
           <nuxt-link 
-            :to="localePath('index')"
+            :to="localePath('tariff')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
-            {{ $t('price_list') }}
+            {{ $t('tariff') }}
           </nuxt-link>
           <nuxt-link 
-            :to="localePath('index')"
+            :to="localePath('contact')"
             class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('contact') }}
@@ -112,7 +112,7 @@
 
     <footer class="relative bg-gray-900 text-white py-4 px-4">
       <div class="container flex flex-col md:flex-row flex-wrap">
-        <div class="w-full lg:w-1/4 lg:px-4 lg:pr-8">
+        <div class="w-full md:w-1/2 lg:w-1/4 lg:px-4 lg:pr-8">
           <h3 class="font-bold text-2xl">DentalPro</h3>
           <p class="text-gray-400">
               ul. Wandy Rutkiewicz 30<br/>
@@ -120,7 +120,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
+        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
           <h5 class="uppercase tracking-wider font-semibold">Godziny otwarcia</h5>
           <ul class="mt-4">
             <li class="mt-4">
@@ -135,7 +135,7 @@
           </ul>
         </div>
 
-        <div class="w-full lg:w-1/4 mt-8 lg:mt-0 lg:px-4 lg:pr-8">
+        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4 lg:pr-8 md:order-2 lg:order-none">
           <h5 class="uppercase tracking-wider font-semibold">Kontakt</h5>
           <ul class="mt-4">
             <li class="mt-4">
@@ -165,7 +165,7 @@
           </ul>
         </div>
 
-        <div class="w-full lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
+        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
           <h5 class="uppercase tracking-wider font-semibold">Płatność</h5>
           <p class="text-gray-400">Gotówka lub kartą</p>
           <ul class="mt-4 flex">

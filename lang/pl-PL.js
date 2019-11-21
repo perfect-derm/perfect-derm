@@ -1,13 +1,27 @@
+let indexPageNoPrefix = require('../content/index/pl.json');
+
 export default (context) => {
     return new Promise(function (resolve) {
-      resolve({
+    
+      let indexPage = {};
+
+      Object.keys(indexPageNoPrefix).forEach(key => {
+          indexPage = { ...indexPage, ['index_' + key]: indexPageNoPrefix[key] }
+      });
+
+      const header = {
         homepage: 'Strona główna',
         about_us: 'O nas',
         services: 'Oferta',
-        your_problem: 'Twój problem',
+        issue: 'Twój problem',
         media: 'Media',
-        price_list: 'Cennik',
+        tariff: 'Cennik',
         contact: 'Kontakt'
+      };
+
+      resolve({
+        ...header, 
+        ...indexPage
       })
     });
-  }
+}
