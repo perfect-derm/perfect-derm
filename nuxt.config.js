@@ -1187,31 +1187,31 @@ module.exports = {
               ]
             },
             {
-              name: 'services',
+              name: 'offer',
               label: 'Oferta',
               files: [ 
                 { 
                   name: 'menu',
                   label: 'Menu',
-                  file: 'content/services/menu.json',
+                  file: 'content/offer/menu.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
-                      name: 'pl__services__menu__title',
+                      name: 'pl__offer__menu__title',
                       locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
-                      name: 'en__services__menu__title',
+                      name: 'en__offer__menu__title',
                       locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
-                      name: 'de__services__menu__title',
+                      name: 'de__offer__menu__title',
                       locale: 'de',
                       widget: 'string',
                       required: true,
