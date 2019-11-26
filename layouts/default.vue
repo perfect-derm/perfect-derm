@@ -8,7 +8,7 @@
           />
         </a>
         <div 
-          class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm flex-grow justify-end order-last"
+          class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm flex-grow justify-end order-last"
           :class="{ 'hidden' : menuSwitchPosition }"
         >
           <nuxt-link 
