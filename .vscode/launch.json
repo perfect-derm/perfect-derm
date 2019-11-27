@@ -5,25 +5,86 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "type": "chrome",
             "request": "launch",
-            "name": "server: nuxt",
-            "args": ["dev"],
-            "osx": {
-                "program": "${workspaceFolder}/node_modules/.bin/nuxt"
-            },
-            "linux": {
-                "program": "${workspaceFolder}/node_modules/.bin/nuxt"
-            },
-            "windows": {
-                "program": "${workspaceFolder}/node_modules/nuxt/bin/nuxt.js"
-            }
+            "name": "Chrome (Nuxt)",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "Node (Nuxt) - Dev",
+          "outputCapture": "std",
+          "restart": true,
+          "osx": {
+            "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+          },
+          "linux": {
+            "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+          },
+          "windows": {
+            "program": "${workspaceFolder}/node_modules/bin/npm.nuxt",
+          },
+          "cwd": "${workspaceRoot}",
+          "sourceMaps": true,
+          "env": {
+              "NODE_ENV": "development"
+          }
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/start"
+            "name": "Node (Nuxt) - Generate",
+            "outputCapture": "std",
+            "restart": true,
+            "osx": {
+              "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+              "args": ["generate"]
+            },
+            "linux": {
+              "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+              "args": ["generate"]
+            },
+            "windows": {
+              "program": "${workspaceFolder}/node_modules/bin/npm.nuxt",
+              "args": ["generate"]
+            },
+            "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "env": {
+                "NODE_ENV": "development"
+            }
+          },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Chrome & Node (Nuxt)",
+            "outputCapture": "std",
+            "restart": true,
+            "osx": {
+              "program": "${workspaceFolder}/node_modules/.bin/npm",
+              "args": ["run-script", "dev"]
+            },
+            "linux": {
+              "program": "${workspaceFolder}/node_modules/.bin/npm",
+              "args": ["run-script", "dev"]
+            },
+            "windows": {
+              "program": "${workspaceFolder}/node_modules/bin/npm.cmd",
+              "args": ["run-script", "dev"]
+            },
+            "serverReadyAction": {
+              "pattern": "Listening on: http://localhost:([0-9]+)/",
+              "uriFormat": "http://localhost:%s",
+              "action": "debugWithChrome",
+              "webRoot": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "env": {
+                "NODE_ENV": "development"
+            }
         }
     ]
-}
+  }

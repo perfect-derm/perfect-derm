@@ -1,5 +1,6 @@
 var path = require('path');
-var fileName = module.id.slice(module.id.lastIndexOf(path.sep)+1, module.id.length -3);
+// var fileName = module.id().slice(module.id().lastIndexOf(path.sep)+1, module.id().length -3);
+var fileName = 'en';
 var allDataFiles = require.context("../content", true, /^(.*\.(json$))[^.]*$/im);
 let regex = new RegExp('(' + fileName + '__)(.*)');
 

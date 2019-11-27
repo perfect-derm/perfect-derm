@@ -1425,4 +1425,14 @@ module.exports = {
       }
     }
   },
+  // generate: {
+  //   routes: [
+  //     '/content/homepage/left_top_offer.json',
+  //     '/content/homepage/left_bottom_offer.json',
+  //     '/content/homepage/middle_top_offer.json',
+  //     '/content/homepage/middle_bottom_offer.json',
+  //     '/content/homepage/right_bottom_offer.json',
+  //     '/content/homepage/right_top_offer.json',
+  //   ]
+  // }
 };
