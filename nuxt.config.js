@@ -1424,6 +1424,15 @@ module.exports = {
                   widget: 'string',
                   required: false,
                 }, 
+                { 
+                  label: 'Pozycja',
+                  name: 'xx__tariff__entry__price',
+                  widget: 'number',
+                  valueType: "int",
+                  min: 1,
+                  hint: "Wpisana liczba powoduje ustawienie elementu za pozycją o danym numerze.  Nie ustawione - uznaje kolejność dodania",
+                  required: false,
+                }, 
               ]
             },
             {
