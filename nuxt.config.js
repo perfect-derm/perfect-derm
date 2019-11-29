@@ -290,21 +290,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__banner_1__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__banner_1__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__banner_1__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     }
                   ] 
@@ -354,21 +354,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__banner_2__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__banner_2__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__banner_2__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     }
                   ] 
@@ -418,21 +418,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__banner_3__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__banner_3__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__banner_3__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true 
                     }
                   ] 
@@ -1072,24 +1072,24 @@ module.exports = {
                   file: 'content/about/description.json',
                   fields: [ 
                     { 
-                      label: '[PL] Tytuł',
+                      label: '[PL] Opis',
                       name: 'pl__about__description__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
-                      label: '[EN] Tytuł',
+                      label: '[EN] Opis',
                       name: 'en__about__description__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
-                      label: '[DE] Tytuł',
+                      label: '[DE] Opis',
                       name: 'de__about__description__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     }
                   ]
@@ -1142,21 +1142,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__person_1__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__person_1__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__person_1__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     }
                   ]
@@ -1181,21 +1181,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__person_2__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__person_2__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__person_2__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     }
                   ]
@@ -1220,21 +1220,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__person_3__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__person_3__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__person_3__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     }
                   ]
@@ -1571,42 +1571,42 @@ module.exports = {
                       label: '[PL] Adres',
                       name: 'pl__footer__company__adress',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Adres',
                       name: 'en__footer__company__adress',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Adres',
                       name: 'de__footer__company__adress',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[PL] Opis',
                       name: 'pl__footer__company__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__footer__company__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__footer__company__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                   ]
@@ -1641,21 +1641,21 @@ module.exports = {
                       label: '[PL] Godziny otwarcia',
                       name: 'pl__footer__opening__hours',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Godziny otwarcia',
                       name: 'en__footer__opening__hours',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Godziny otwarcia',
                       name: 'de__footer__opening__hours',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     }
                   ]
@@ -1760,26 +1760,26 @@ module.exports = {
                       label: '[PL] Tytuł',
                       name: 'pl__footer__payment__description',
                       locale: 'pl',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__footer__payment__description',
                       locale: 'en',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__footer__payment__description',
                       locale: 'de',
-                      widget: 'string',
+                      widget: 'text',
                       required: true,
                     },
                     { 
                       label: 'Loga',
-                      name: 'footer__payment__images',
+                      name: 'xx__footer__payment__images',
                       widget: 'image',
                       required: true,
                       media_library: {
