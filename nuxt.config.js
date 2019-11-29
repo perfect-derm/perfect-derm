@@ -1757,31 +1757,31 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tytuł',
+                      label: '[PL] Opis',
                       name: 'pl__footer__payment__description',
                       locale: 'pl',
                       widget: 'text',
                       required: true,
                     },
                     { 
-                      label: '[EN] Tytuł',
+                      label: '[EN] Opis',
                       name: 'en__footer__payment__description',
                       locale: 'en',
                       widget: 'text',
                       required: true,
                     },
                     { 
-                      label: '[DE] Tytuł',
+                      label: '[DE] Opis',
                       name: 'de__footer__payment__description',
                       locale: 'de',
                       widget: 'text',
                       required: true,
                     },
                     { 
-                      label: 'Loga',
+                      label: 'Loga śroków płatniczych',
                       name: 'xx__footer__payment__images',
                       widget: 'image',
-                      required: true,
+                      required: false,
                       media_library: {
                         config: {
                           multiple: true
