@@ -1358,7 +1358,9 @@ module.exports = {
             {
               name: 'prices',
               label: 'Cennik [Tabela cen]', 
-              folder: '_tariff/entry',
+              folder: 'content/_tariff',
+              format: 'json',
+              extension: 'json',
               create: true,
               identifier_field: 'pl__tariff__entry__title',
               fields: [
