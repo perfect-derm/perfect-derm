@@ -1,6 +1,6 @@
 export default (context, language) => {
     var allDataFiles = require.context('../content', true, /^(.*\.(json$))[^.]*$/im);
-    let regex = new RegExp('(' + language + '|xx__)(.*)');
+    let regex = new RegExp('(' + language + '__|xx__)(.*)');
 
     return new Promise(function (resolve) {    
         let data = {};
