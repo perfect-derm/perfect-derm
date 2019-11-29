@@ -512,33 +512,8 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tło',
-                      name: 'pl__homepage__left_top_offer__background',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[EN] Tło',
-                      name: 'en__homepage__left_top_offer__background',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[DE] Tło',
-                      name: 'de__homepage__left_top_offer__background',
-                      locale: 'de',
+                      label: 'Tło',
+                      name: 'xx__homepage__left_top_offer__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -597,33 +572,8 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tło',
-                      name: 'pl__homepage__middle_top_offer__background',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[EN] Tło',
-                      name: 'en__homepage__middle_top_offer__background',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[DE] Tło',
-                      name: 'de__homepage__middle_top_offer__background',
-                      locale: 'de',
+                      label: 'Tło',
+                      name: 'xx__homepage__middle_top_offer__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -682,33 +632,8 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tło',
-                      name: 'pl__homepage__right_top_offer__background',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[EN] Tło',
-                      name: 'en__homepage__right_top_offer__background',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[DE] Tło',
-                      name: 'de__homepage__right_top_offer__background',
-                      locale: 'de',
+                      label: 'Tło',
+                      name: 'xx__homepage__right_top_offer__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -809,33 +734,8 @@ module.exports = {
                       required: true,
                     },
                     {
-                      label: '[PL] Zdjęcie',
-                      name: 'pl__homepage__about_description__photo',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    {
-                      label: '[EN] Zdjęcie',
-                      name: 'en__homepage__about_description__photo',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    {
-                      label: '[DE] Zdjęcie',
-                      name: 'de__homepage__about_description__photo',
-                      locale: 'de',
+                      label: 'Zdjęcie',
+                      name: 'xx__homepage__about_description__photo',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -873,33 +773,8 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tło',
-                      name: 'pl__homepage__left_bottom_offer__background',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[EN] Tło',
-                      name: 'en__homepage__left_bottom_offer__background',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[DE] Tło',
-                      name: 'de__homepage__left_bottom_offer__background',
-                      locale: 'de',
+                      label: 'Tło',
+                      name: 'xx__homepage__left_bottom_offer__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -958,33 +833,8 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tło',
-                      name: 'pl__homepage__middle_bottom_offer__background',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[EN] Tło',
-                      name: 'en__homepage__middle_bottom_offer__background',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[DE] Tło',
-                      name: 'de__homepage__middle_bottom_offer__background',
-                      locale: 'de',
+                      label: 'Tło',
+                      name: 'xx__homepage__middle_bottom_offer__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -1043,33 +893,8 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Tło',
-                      name: 'pl__homepage__right_bottom_offer__background',
-                      locale: 'pl',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[EN] Tło',
-                      name: 'en__homepage__right_bottom_offer__background',
-                      locale: 'en',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: '[DE] Tło',
-                      name: 'de__homepage__right_bottom_offer__background',
-                      locale: 'de',
+                      label: 'Tło',
+                      name: 'xx__homepage__right_bottom_offer__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -1150,6 +975,34 @@ module.exports = {
                     }
                   ] 
                 },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/homepage/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__breadcrumb__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__breadcrumb__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__breadcrumb__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                }
               ] 
             },
             {
@@ -1178,6 +1031,179 @@ module.exports = {
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__about__menu__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'description',
+                  label: 'Opis',
+                  file: 'content/about/description.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__about__description__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__about__description__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__about__description__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'section_title',
+                  label: 'tytuł sekcji z osobami',
+                  file: 'content/about/section_title.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__about__section_title__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__about__section_title__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__about__section_title__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'person_1',
+                  label: 'Osoba nr. 1',
+                  file: 'content/about/person_1.json',
+                  fields: [ 
+                    { 
+                      label: 'Zdjęcie',
+                      name: 'xx__about__person_1__photo',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__about__person_1__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__about__person_1__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__about__person_1__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'person_2',
+                  label: 'Osoba nr. 2',
+                  file: 'content/about/person_2.json',
+                  fields: [ 
+                    { 
+                      label: 'Zdjęcie',
+                      name: 'xx__about__person_2__photo',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__about__person_2__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__about__person_2__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__about__person_2__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'person_3',
+                  label: 'Osoba nr. 3',
+                  file: 'content/about/person_3.json',
+                  fields: [ 
+                    { 
+                      label: 'Zdjęcie',
+                      name: 'xx__about__person_3__photo',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__about__person_3__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__about__person_3__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__about__person_3__description',
                       locale: 'de',
                       widget: 'string',
                       required: true,
@@ -1218,6 +1244,154 @@ module.exports = {
                     }
                   ]
                 }
+              ]
+            },
+            {
+              name: 'tariff',
+              label: 'Cennik',
+              files: [
+                { 
+                  name: 'menu',
+                  label: 'Menu',
+                  file: 'content/tariff/menu.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__tariff__menu__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__tariff__menu__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__tariff__menu__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'header',
+                  label: 'Nagłówek',
+                  file: 'content/tariff/header.json',
+                  fields: [ 
+                    { 
+                      label: 'Grafika',
+                      name: 'xx__tariff__header__image',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    }
+                  ]
+                },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/tariff/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__tariff__breadcrumb__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__tariff__breadcrumb__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__tariff__breadcrumb__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                }
+              ]
+            },
+            {
+              name: 'prices',
+              label: 'Cennik [Tabela cen]', 
+              folder: '_tariff/entry',
+              create: true,
+              identifier_field: 'title',
+              fields: [
+                { 
+                  label: 'Poziom nagłówka',
+                  name: 'xx__tariff__entry__header_lvl',
+                  widget: 'select',
+                  options: [
+                    {
+                      label: "Główny", 
+                      value: 1
+                    }, 
+                    {
+                      label: "Podrzędny", 
+                      value: 2
+                    }, 
+                    {
+                      label: "Wpis", 
+                      value: 0
+                    }, 
+                  ],
+                  required: true,
+                },
+                { 
+                  label: '[PL] Tytuł',
+                  name: 'pl__tariff__entry__title',
+                  locale: 'pl',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[EN] Tytuł',
+                  name: 'en__tariff__entry__title',
+                  locale: 'en',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[DE] Tytuł',
+                  name: 'de__tariff__entry__title',
+                  locale: 'de',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[PL] Cena',
+                  name: 'pl__tariff__entry__price',
+                  locale: 'pl',
+                  widget: 'string'
+                },
+                { 
+                  label: '[EN] Cena',
+                  name: 'en__tariff__entry__price',
+                  locale: 'en',
+                  widget: 'string'
+                },
+                { 
+                  label: '[DE] Cena',
+                  name: 'de__tariff__entry__price',
+                  locale: 'de',
+                  widget: 'string'
+                }, 
               ]
             },
             {
@@ -1321,7 +1495,262 @@ module.exports = {
                   ]
                 }
               ]
-            }  
+            },
+            {
+              name: 'footer',
+              label: 'Stopka',
+              files: [ 
+                { 
+                  name: 'company',
+                  label: 'O firmie',
+                  file: 'content/footer/company.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__footer__company__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__footer__company__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__cfooter__company__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Adres',
+                      name: 'pl__footer__company__adress',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Adres',
+                      name: 'en__footer__company__adress',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Adres',
+                      name: 'de__footer__company__adress',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__footer__company__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__footer__company__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__footer__company__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                { 
+                  name: 'opening',
+                  label: 'Godziny otwarcia',
+                  file: 'content/footer/opening.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__footer__opening__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__footer__opening__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__footer__opening__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Godziny otwarcia',
+                      name: 'pl__footer__opening__hours',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Godziny otwarcia',
+                      name: 'en__footer__opening__hours',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Godziny otwarcia',
+                      name: 'de__footer__opening__hours',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'contact',
+                  label: 'Dane kontaktowe',
+                  file: 'content/footer/contact.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__footer__contact__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__footer__contact__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__footer__contact__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Telefon',
+                      name: 'pl__footer__contact__telephone',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Telefon',
+                      name: 'en__footer__contact__telephone',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Telefon',
+                      name: 'de__footer__contact__telephone',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Email',
+                      name: 'pl__footer__contact__email',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Email',
+                      name: 'en__footer__contact__email',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Email',
+                      name: 'de__footer__contact__email',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'payment',
+                  label: 'Płatność',
+                  file: 'content/footer/payment.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__footer__payment__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__footer__payment__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__footer__payment__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__footer__payment__description',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__footer__payment__description',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__footer__payment__description',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Loga',
+                      name: 'footer__payment__images',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: true
+                        }
+                      },
+                    }
+                  ]
+                }
+              ]
+            },
           ] 
         }
       }

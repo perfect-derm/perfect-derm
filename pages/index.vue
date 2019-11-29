@@ -1,6 +1,8 @@
 <template>
   <div :class="mainClass">
-
+    <div>
+      
+    </div>
     <p class="text-center mb-4" v-t="'homepage__text__description'">
       Od 12 lat zapewniamy naszym Pacjentom najwyższą jakość i profesjonalizm. <br/> 
       W ofercie naszego centrum posiadamy najnowsze skuteczne zabiegi zapewniające długotrwałe efekty.
