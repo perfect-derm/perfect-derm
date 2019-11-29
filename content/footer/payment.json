@@ -1,9 +1,9 @@
 {
-    "pl__footer__payment__title": "",
-    "en__footer__payment__title": "",
-    "de__footer__payment__title": "",
-    "pl__footer__payment__description": "",
-    "en__footer__payment__description": "",
-    "de__footer__payment__description": "",
-    "footer__payment__images": ""
+  "pl__footer__payment__title": "Płatność",
+  "en__footer__payment__title": "Płatność",
+  "de__footer__payment__title": "Płatność",
+  "pl__footer__payment__description": "Gotówka lub kartą",
+  "en__footer__payment__description": "Gotówka lub kartą",
+  "de__footer__payment__description": "Gotówka lub kartą",
+  "xx__footer__payment__images": "/images/uploads/logo.png"
 }
