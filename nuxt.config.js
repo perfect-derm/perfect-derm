@@ -766,7 +766,7 @@ module.exports = {
                       label: 'Zdjęcie',
                       name: 'xx__homepage__about_description__photo',
                       widget: 'image',
-                      required: true,
+                      required: false,
                       media_library: {
                         config: {
                           multiple: false
