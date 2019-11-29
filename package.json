@@ -45,6 +45,7 @@
     "eslint-loader": "^3.0.2",
     "eslint-plugin-vue": "^5.2.3",
     "glob": "^7.1.6",
+    "jimp": "^0.9.3",
     "netlify-cms": "^2.9.7",
     "nuxt-netlify-cms": "^4.0.0",
     "sharp": "^0.23.3"

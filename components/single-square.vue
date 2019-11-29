@@ -8,12 +8,13 @@
          <picture
           v-if="image !== ''"
          >
-          <source :srcSet="image + '?webp'" type="image/webp" />
-          <source :srcSet="image" type="image/jpeg" />
+          <source :srcSet="require(`~/static${image}?webp&resize&size=448`)" type="image/webp" />
+          <source :srcSet="require(`~/static${image}?resize&size=448`)" type="image/jpeg" />
           <img 
-            class="center tc"
+            v-if="image !== ''"
+            class="object-cover w-full h-auto max-h-310 center tc"
             alt=""
-            :src="image" 
+            :src="require(`~/static${image}?resize&size=448`)" 
           />
         </picture>
         <figcaption>
