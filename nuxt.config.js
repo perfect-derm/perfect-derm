@@ -1360,7 +1360,7 @@ module.exports = {
               label: 'Cennik [Tabela cen]', 
               folder: '_tariff/entry',
               create: true,
-              identifier_field: 'title',
+              identifier_field: 'pl__tariff__entry__title',
               fields: [
                 { 
                   label: 'Poziom nagłówka',
@@ -1407,19 +1407,22 @@ module.exports = {
                   label: '[PL] Cena',
                   name: 'pl__tariff__entry__price',
                   locale: 'pl',
-                  widget: 'string'
+                  widget: 'string',
+                  required: false,
                 },
                 { 
                   label: '[EN] Cena',
                   name: 'en__tariff__entry__price',
                   locale: 'en',
-                  widget: 'string'
+                  widget: 'string',
+                  required: false,
                 },
                 { 
                   label: '[DE] Cena',
                   name: 'de__tariff__entry__price',
                   locale: 'de',
-                  widget: 'string'
+                  widget: 'string',
+                  required: false,
                 }, 
               ]
             },
