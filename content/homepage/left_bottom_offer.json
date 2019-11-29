@@ -1,11 +1,9 @@
 {
-    "pl__homepage__left_bottom_offer__title": "Migrena",
-    "en__homepage__left_bottom_offer__title": "",
-    "de__homepage__left_bottom_offer__title": "",
-    "pl__homepage__left_bottom_offer__background": "",
-    "en__homepage__left_bottom_offer__background": "",
-    "de__homepage__left_bottom_offer__background": "",
-    "pl__homepage__left_bottom_offer__link": "",
-    "en__homepage__left_bottom_offer__link": "",
-    "de__homepage__left_bottom_offer__link": ""
+  "pl__homepage__left_bottom_offer__title": "Migrena",
+  "en__homepage__left_bottom_offer__title": "Migrena",
+  "de__homepage__left_bottom_offer__title": "Migrena",
+  "xx__homepage__left_bottom_offer__background": "/images/uploads/adobestock_132974156.jpeg",
+  "pl__homepage__left_bottom_offer__link": "offer",
+  "en__homepage__left_bottom_offer__link": "offer",
+  "de__homepage__left_bottom_offer__link": "offer"
 }
