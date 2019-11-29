@@ -1,11 +1,11 @@
 {
-    "pl__footer__contact__title": "",
-    "en__footer__contact__title": "",
-    "de__footer__contact__title": "",
-    "pl__footer__contact__telephone": "",
-    "en__footer__contact__telephone": "",
-    "de__footer__contact__telephone": "",
-    "pl__footer__contact__email": "",
-    "en__footer__contact__email": "",
-    "de__footer__contact__email": ""
+  "en__footer__contact__email": "perfect_derm@perfect_derm.com",
+  "de__footer__contact__telephone": "+48737162771 ",
+  "en__footer__contact__telephone": "+48737162771 ",
+  "pl__footer__contact__title": "Kontakt",
+  "pl__footer__contact__email": "perfect_derm@perfect_derm.com",
+  "de__footer__contact__title": "Kontakt",
+  "de__footer__contact__email": "perfect_derm@perfect_derm.com",
+  "pl__footer__contact__telephone": "+48737162771 ",
+  "en__footer__contact__title": "Kontakt"
 }
