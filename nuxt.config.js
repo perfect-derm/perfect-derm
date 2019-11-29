@@ -210,6 +210,35 @@ module.exports = {
                     }
                   ] 
                 },
+                {
+                  name: 'languages',
+                  label: 'Języki',
+                  fields: [ 
+                    { 
+                      label: 'Dostępne języki do wyboru',
+                      name: 'xx__header__languages__enabled',
+                      widget: 'select',
+                      multiple: true,
+                      options: [
+                        { 
+                          label: "Polski", 
+                          value: "PL" 
+                        },
+                        { 
+                          label: "Angielski", 
+                          value: "EN" 
+                        },
+                        { 
+                          label: "Niemiecki", 
+                          value: "DE" 
+                        }
+                      ],
+                      default: [
+                        "PL"
+                      ]
+                    },
+                  ] 
+                }
               ] 
             },
             { 
