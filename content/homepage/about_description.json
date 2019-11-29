@@ -1,12 +1,12 @@
 {
-    "pl__homepage__about_description__title": "",
-    "en__homepage__about_description__title": "",
-    "de__homepage__about_description__title": "",
-    "pl__homepage__about_description__description": "",
-    "en__homepage__about_description__description": "",
-    "de__homepage__about_description__description": "",
-    "pl__homepage__about_description__link": "",
-    "en__homepage__about_description__link": "",
-    "de__homepage__about_description__link": "",
-    "xx__homepage__about_description__photo": ""
+  "de__homepage__about_description__description": "PerfectDerm to centrum medycyny estetycznej z długoletnią tradycją.",
+  "en__homepage__about_description__title": "Dlaczego warto wybrać nasze centrum",
+  "en__homepage__about_description__description": "PerfectDerm to centrum medycyny estetycznej z długoletnią tradycją.",
+  "en__homepage__about_description__link": "about",
+  "de__homepage__about_description__link": "about",
+  "xx__homepage__about_description__photo": "/images/uploads/adobestock_190524805.jpeg",
+  "pl__homepage__about_description__title": "Dlaczego warto wybrać nasze centrum",
+  "pl__homepage__about_description__link": "about",
+  "pl__homepage__about_description__description": "PerfectDerm to centrum medycyny estetycznej z długoletnią tradycją.",
+  "de__homepage__about_description__title": "Dlaczego warto wybrać nasze centrum"
 }
