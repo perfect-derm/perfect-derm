@@ -246,7 +246,7 @@ module.exports = {
               label: 'Strona główna',
               files: [ 
                 { 
-                  name: 'banner',
+                  name: 'banner_1',
                   label: 'Baner [nr. 1]',
                   file: 'content/homepage/banner_1.json',
                   fields: [ 
@@ -310,7 +310,7 @@ module.exports = {
                   ] 
                 },
                 { 
-                  name: 'banner',
+                  name: 'banner_2',
                   label: 'Baner [nr. 2]',
                   file: 'content/homepage/banner_2.json',
                   fields: [ 
@@ -374,7 +374,7 @@ module.exports = {
                   ] 
                 },
                 { 
-                  name: 'banner',
+                  name: 'banner_3',
                   label: 'Baner [nr. 3]',
                   file: 'content/homepage/banner_3.json',
                   fields: [ 
