@@ -5,12 +5,17 @@
         class="btn raise center tc"
       >
       <figure>
-        <img
+         <picture
           v-if="image !== ''"
-          :src="image"
-          class="center tc"
-          alt=""
-        />
+         >
+          <source :srcSet="require('.' + image + '?webp')" type="image/webp" />
+          <source :srcSet="require('.' + image)" type="image/jpeg" />
+          <img 
+            class="center tc"
+            alt=""
+            :src="require('.' + image)" 
+          />
+        </picture>
         <figcaption>
           {{ title }}
         </figcaption>

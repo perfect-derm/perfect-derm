@@ -1805,6 +1805,7 @@ module.exports = {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
+    // '@bazzite/nuxt-optimized-images',
     'nuxt-polyfill'
   ],
   webfontloader: {
@@ -1860,6 +1861,10 @@ module.exports = {
     baseURL: 'http://localhost:3000',
     host: "localhost",
     debug: true
+  },
+  optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true,
   },
   /*
   ** Build configuration
