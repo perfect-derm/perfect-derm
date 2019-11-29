@@ -8,12 +8,12 @@
          <picture
           v-if="image !== ''"
          >
-          <source :srcSet="require('.' + image + '?webp')" type="image/webp" />
-          <source :srcSet="require('.' + image)" type="image/jpeg" />
+          <source :srcSet="image + '?webp'" type="image/webp" />
+          <source :srcSet="image" type="image/jpeg" />
           <img 
             class="center tc"
             alt=""
-            :src="require('.' + image)" 
+            :src="image" 
           />
         </picture>
         <figcaption>

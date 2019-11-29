@@ -1807,7 +1807,7 @@ module.exports = {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
-    // '@bazzite/nuxt-optimized-images',
+    '@bazzite/nuxt-optimized-images',
     'nuxt-polyfill'
   ],
   webfontloader: {
