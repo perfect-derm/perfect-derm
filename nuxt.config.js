@@ -1005,7 +1005,7 @@ module.exports = {
                   ] 
                 },
                 {
-                  name: 'button_second',
+                  name: 'partners',
                   label: 'Przycisk do akcji [pod blokiem z opisem]',
                   file: 'content/homepage/button_second.json',
                   fields: [ 
