@@ -1035,6 +1035,7 @@ module.exports = {
                       name: 'xx__homepage__partners__images',
                       widget: 'image',
                       required: false,
+                      allow_multiple: true,
                       media_library: {
                         config: {
                           multiple: true
@@ -1823,6 +1824,7 @@ module.exports = {
                       name: 'xx__footer__payment__images',
                       widget: 'image',
                       required: false,
+                      allow_multiple: true,
                       media_library: {
                         config: {
                           multiple: true
