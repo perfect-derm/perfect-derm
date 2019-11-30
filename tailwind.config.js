@@ -27,6 +27,12 @@ module.exports = {
       '90': '.9',
       '100': '1',
     },
+    inset: {
+      '0': 0,
+      auto: 'auto',
+      '50px':'50px',
+      '200px': '200px'
+    },
     maxHeight: {
       '0': '0',
       '310' : '310px',

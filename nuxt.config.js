@@ -1934,11 +1934,15 @@ module.exports = {
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
       ],
   },
+  plugins: [
+    { src: '~/plugins/swiper.js', mode: 'client', ssr: false },
+  ],
   /*
   ** Customize the progress bar color
   */
   loading: { color: "#FFBB43" },
   css: [
+    'swiper/dist/css/swiper.css',
     '~/assets/css/styles.css',
     '~/assets/css/custom.css'
   ],

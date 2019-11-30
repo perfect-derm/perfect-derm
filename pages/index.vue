@@ -1,12 +1,13 @@
 <template>
   <div :class="mainClass">
     <div class="w-full mb-4">
-      <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full max-h-1/2-screen object-cover"/>
+      <client-only placeholder="Loading...">
+        <cBanner />
+      </client-only>
     </div>
 
-    <p class="text-center mb-4" v-t="'homepage__text__description'">
-      Od 12 lat zapewniamy naszym Pacjentom najwyższą jakość i profesjonalizm. <br/> 
-      W ofercie naszego centrum posiadamy najnowsze skuteczne zabiegi zapewniające długotrwałe efekty.
+    <p class="text-center mb-4">
+      {{ $t('homepage__text__description') }}
     </p>
 
     <div class="text-center mb-4">
@@ -95,21 +96,26 @@
     </section>
 
     <section class="relative bg-gray-100 container py-4">
-      MAPA
+      <client-only placeholder="Loading...">
+        <cMap />
+      </client-only>
     </section>
 
   </div>
 </template>
 
 <script>
+  import cBanner from "~/components/banner.vue";
   import cSingleSquare from "~/components/single-square.vue";
   import cSingleFullRectangle from "~/components/single-full-rectangle.vue";
-  // let urlBanerPart = $t('homepage__banner_1__image');
+  import cMap from "~/components/map.vue";
 
   export default {
     components: {
+      cBanner,
       cSingleSquare,
-      cSingleFullRectangle
+      cSingleFullRectangle,
+      cMap
     },
     props: {
       'mainClass': {
