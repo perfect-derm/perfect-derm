@@ -1005,6 +1005,24 @@ module.exports = {
                   ] 
                 },
                 {
+                  name: 'button_second',
+                  label: 'Przycisk do akcji [pod blokiem z opisem]',
+                  file: 'content/homepage/button_second.json',
+                  fields: [ 
+                    { 
+                      label: 'Loga partnerów',
+                      name: 'xx__homepage__partners__images',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: true
+                        }
+                      },
+                    },
+                  ]
+                },
+                {
                   name: 'breadcrumb',
                   label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
                   file: 'content/homepage/breadcrumb.json',
@@ -1036,7 +1054,7 @@ module.exports = {
             },
             {
               name: 'about',
-              label: 'O mnie',
+              label: 'O nas',
               files: [ 
                 { 
                   name: 'menu',
@@ -1096,7 +1114,7 @@ module.exports = {
                 },
                 { 
                   name: 'section_title',
-                  label: 'tytuł sekcji z osobami',
+                  label: 'Tytuł dla sekcji z osobami',
                   file: 'content/about/section_title.json',
                   fields: [ 
                     { 
