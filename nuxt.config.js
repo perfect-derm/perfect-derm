@@ -1006,9 +1006,30 @@ module.exports = {
                 },
                 {
                   name: 'partners',
-                  label: 'Przycisk do akcji [pod blokiem z opisem]',
-                  file: 'content/homepage/button_second.json',
+                  label: 'Partnerzy',
+                  file: 'content/homepage/partners.json',
                   fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__homepage__partners__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__homepage__partners__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__homepage__partners__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
                     { 
                       label: 'Loga partnerów',
                       name: 'xx__homepage__partners__images',
