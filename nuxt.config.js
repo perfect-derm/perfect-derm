@@ -1982,6 +1982,19 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
+
+      config.module.rules.push(
+        { 
+          test: /\.(.*)$/, 
+          include: [
+            /static/
+          ],
+          exclude: [
+            /static\/images/
+          ],
+          loader: 'raw-loader' 
+        }
+      )
     }
   },
   // generate: {
