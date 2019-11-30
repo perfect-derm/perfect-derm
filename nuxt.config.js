@@ -1031,14 +1031,62 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: 'Loga partnerów',
-                      name: 'xx__homepage__partners__images',
+                      label: 'Logo partnera [1]',
+                      name: 'xx__homepage__partners__logo_1',
                       widget: 'image',
                       required: false,
-                      allow_multiple: true,
+                      allow_multiple: false,
                       media_library: {
                         config: {
-                          multiple: true
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [2]',
+                      name: 'xx__homepage__partners__logo_2',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [3]',
+                      name: 'xx__homepage__partners__logo_3',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [4]',
+                      name: 'xx__homepage__partners__logo_4',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [5]',
+                      name: 'xx__homepage__partners__logo_5',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      media_library: {
+                        config: {
+                          multiple: false
                         }
                       },
                     },
