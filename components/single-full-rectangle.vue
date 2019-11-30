@@ -2,19 +2,26 @@
   <div :class="mainClass" class="block">
     <a
         :href="link"
-        class="btn raise center tc"
+        class="flex flex-row btn raise center text-left"
       >
-      <figure>
+      <div class="flex flex-col">
+        <h2>
+          {{ title }}
+        </h2>
+        <p>
+          {{ description }}
+        </p>
+      </div>
+      <div class="">
         <img
-          v-if="image !== ''"
-          :src="image"
+          v-if="photo !== ''"
+          :src="photo"
           class="center tc"
           alt=""
+          width="200px"
+          height="auto"
         />
-        <figcaption>
-          {{ title }}
-        </figcaption>
-      </figure>
+      </div>
     </a>
   </div>
 </template>
@@ -33,12 +40,17 @@
         default: '',
         required: false
       },
+      'description': {
+        type: String,
+        default: '',
+        required: false
+      },
       'link': {
         type: String,
         default: '',
         required: false
       },
-      'image': {
+      'photo': {
         type: String,
         default: '',
         required: false

@@ -1,8 +1,9 @@
 <template>
   <div :class="mainClass">
-    <div>
-      
+    <div class="w-full mb-4">
+      <img :src="$t('homepage__banner_1__image')" alt="" class="w-full max-h-1/2-screen object-cover"/>
     </div>
+
     <p class="text-center mb-4" v-t="'homepage__text__description'">
       Od 12 lat zapewniamy naszym Pacjentom najwyższą jakość i profesjonalizm. <br/> 
       W ofercie naszego centrum posiadamy najnowsze skuteczne zabiegi zapewniające długotrwałe efekty.
@@ -48,9 +49,10 @@
         <div class="w-full mb-4 lg:mb-0 px-4">
           <cSingleFullRectangle
             main-class="w-full bg-white p-8"
-            title="Dlaczego warto wybrać nasze centrum?"
-            description=""
-            link="about"
+            :title="$t('homepage__about_description__title')"
+            :description="$t('homepage__about_description__description')"
+            :link="$t('homepage__about_description__link')"
+            :photo="$t('homepage__about_description__photo')"
             link-title="Więcej >"
           />
         </div>
