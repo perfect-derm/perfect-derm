@@ -1,10 +1,10 @@
 {
-    "pl__homepage__partners__title": "",
-    "en__homepage__partners__title": "",
-    "de__homepage__partners__title": "",
-    "xx__homepage__partners__logo_1": "",
-    "xx__homepage__partners__logo_2": "",
-    "xx__homepage__partners__logo_3": "",
-    "xx__homepage__partners__logo_4": "",
-    "xx__homepage__partners__logo_5": ""
+  "pl__homepage__partners__title": "Partnerzy",
+  "en__homepage__partners__title": "Partners",
+  "de__homepage__partners__title": "Partners",
+  "xx__homepage__partners__logo_1": "/images/uploads/allergan_logo_tm.png",
+  "xx__homepage__partners__logo_2": "/images/uploads/antyaging.png",
+  "xx__homepage__partners__logo_3": "/images/uploads/fillmed.png",
+  "xx__homepage__partners__logo_4": "/images/uploads/galderma.png",
+  "xx__homepage__partners__logo_5": "/images/uploads/la_roche-posay.png"
 }
