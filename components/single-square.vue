@@ -13,8 +13,8 @@
           <img 
             v-if="image !== ''"
             class="object-cover w-full h-auto max-h-310 center tc"
-            alt=""
-            :src="require(`~/static${image}?resize&size=448`)" 
+            :alt="title"
+            :src="require(`~/static${image}?resize&size=448`)"
           />
         </picture>
         <figcaption>
@@ -49,10 +49,7 @@
         default: '',
         required: false
       },
-      mounted() {
-        // this.data.section_description = this.data.section_description.split(/\n/).join('<br/>');
-      },
-    }
+    },
   }
 </script>
 

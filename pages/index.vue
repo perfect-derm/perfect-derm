@@ -1,7 +1,7 @@
 <template>
   <div :class="mainClass">
     <div class="w-full mb-4">
-      <img :src="$t('homepage__banner_1__image')" alt="" class="w-full max-h-1/2-screen object-cover"/>
+      <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full max-h-1/2-screen object-cover"/>
     </div>
 
     <p class="text-center mb-4" v-t="'homepage__text__description'">
@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section class="relative bg-gray-100 container py-4">
+    <section class="relative bg-gray-100 container mb-4">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
         <div class="w-full mb-4 lg:mb-0 px-4">
           <cSingleFullRectangle
@@ -104,6 +104,7 @@
 <script>
   import cSingleSquare from "~/components/single-square.vue";
   import cSingleFullRectangle from "~/components/single-full-rectangle.vue";
+  // let urlBanerPart = $t('homepage__banner_1__image');
 
   export default {
     components: {
