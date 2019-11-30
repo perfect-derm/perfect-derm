@@ -1035,7 +1035,6 @@ module.exports = {
                       name: 'xx__homepage__partners__logo_1',
                       widget: 'image',
                       required: false,
-                      allow_multiple: false,
                       media_library: {
                         config: {
                           multiple: false
@@ -1047,7 +1046,6 @@ module.exports = {
                       name: 'xx__homepage__partners__logo_2',
                       widget: 'image',
                       required: false,
-                      allow_multiple: false,
                       media_library: {
                         config: {
                           multiple: false
@@ -1059,7 +1057,6 @@ module.exports = {
                       name: 'xx__homepage__partners__logo_3',
                       widget: 'image',
                       required: false,
-                      allow_multiple: false,
                       media_library: {
                         config: {
                           multiple: false
@@ -1071,7 +1068,6 @@ module.exports = {
                       name: 'xx__homepage__partners__logo_4',
                       widget: 'image',
                       required: false,
-                      allow_multiple: false,
                       media_library: {
                         config: {
                           multiple: false
@@ -1083,7 +1079,6 @@ module.exports = {
                       name: 'xx__homepage__partners__logo_5',
                       widget: 'image',
                       required: false,
-                      allow_multiple: false,
                       media_library: {
                         config: {
                           multiple: false
@@ -1872,7 +1867,6 @@ module.exports = {
                       name: 'xx__footer__payment__images',
                       widget: 'image',
                       required: false,
-                      allow_multiple: true,
                       media_library: {
                         config: {
                           multiple: true
