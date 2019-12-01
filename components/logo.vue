@@ -1,6 +1,6 @@
 <template>
   <div class="logo" :class="logoClass">
-    <img src="~/assets/logo.png?resize&size=300" width="300px" height="118px" :alt="imgAlt" :class="imgClass">
+    <img src="~/assets/logo.png?resize&size=300&inline" width="300px" height="118px" :alt="imgAlt" :class="imgClass">
   </div>
 </template>
 
