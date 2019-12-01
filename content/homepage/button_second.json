@@ -1,8 +1,8 @@
 {
-    "pl__title": "Oferta",
-    "en__title": "",
-    "de__title": "",
-    "pl__link": "offer",
-    "en__link": "",
-    "de__link": ""
+  "pl__title": "Zobacz wszystkie dolegliwości",
+  "en__title": "Zobacz wszystkie dolegliwości",
+  "de__title": "Zobacz wszystkie dolegliwości",
+  "pl__link": "issue",
+  "en__link": "issue",
+  "de__link": "issue"
 }
