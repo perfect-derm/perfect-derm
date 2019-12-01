@@ -106,7 +106,7 @@
         </div>
     </nav>
 
-    <main class="flex flex-col flex-auto bg-gray-300">
+    <main class="flex flex-col flex-auto">
       <nuxt class="text-center my-auto"/>
     </main>
 
