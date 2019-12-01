@@ -4,13 +4,11 @@
         :href="link"
         class="flex flex-row btn raise center text-left"
       >
-      <div class="flex-auto">
-        <h2>
+      <div class="flex-auto p-8">
+        <h2 class="text-xl mb-4">
           {{ title }}
         </h2>
-        <p>
-          {{ description }}
-        </p>
+        <p v-html="$md.render(description)"></p>
       </div>
       <div class="flex-none">
         <img

@@ -141,9 +141,7 @@
             </h5>
             <ul class="mt-4">
               <li class="mt-4">
-                <div class="block flex items-center opacity-75 hover:opacity-100">
-                   {{ $md.render(this.$t('footer__opening__hours')) }}
-                </div>
+                <div class="block flex items-center opacity-75 hover:opacity-100" v-html="$md.render(this.$t('footer__opening__hours'))"></div>
               </li>
             </ul>
           </div>

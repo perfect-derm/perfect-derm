@@ -2011,16 +2011,21 @@ module.exports = {
         hostname: process.env.BASE_URL || 'http://localhost:3000'
       }
     ],
-    '@nuxtjs/markdownit',
+    [
+      '@nuxtjs/markdownit',
+      {
+        preset: 'default',
+        linkify: true,
+        breaks: true,
+        injected: true 
+      }
+    ],
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
     '@bazzite/nuxt-optimized-images',
     'nuxt-polyfill'
   ],
-  markdownit: {
-    injected: true
-  },
   webfontloader: {
     google: {
       families: ['Roboto:400,500,700'] //Loads Lato font with weights 400 and 700

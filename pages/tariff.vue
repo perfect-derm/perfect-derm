@@ -15,9 +15,9 @@
           <h4 class="text-base flex-auto text-left">
             {{ $t(`_tariff__${ index }__title`) }}
           </h4>
-          <p class="px-4 flex-auto text-right">
+          <div class="px-4 flex-auto text-right">
             {{ $t(`_tariff__${ index }__price`) }}
-          </p>
+          </div>
         </div>
       </li>
     </ul>
