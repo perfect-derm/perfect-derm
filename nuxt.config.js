@@ -15,7 +15,12 @@ module.exports = {
     [
       '@nuxtjs/pwa',
       {
-        icon: false
+        icon: true,
+        manifest: {
+          start_url: '/',
+          display: 'minimal-ui',
+          orientation: "portrait-primary"
+        }
       }
     ],
     [
