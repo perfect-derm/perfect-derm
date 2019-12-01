@@ -1,6 +1,6 @@
 <template>
   <!-- You can find this swiper instance object in current component by the "mySwiper"  -->
-  <div class="banner h-200px w-full" v-swiper:partners="swiperOption">
+  <div class="h-200px w-full overflow-hidden" v-swiper:partners="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_1') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_1') + '?resize&size=220')" width="220" alt="" class="w-full h-full object-cover"/>
