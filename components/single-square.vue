@@ -4,9 +4,10 @@
         :href="link"
         class="btn raise center tc"
       >
-      <figure class="relative h-full min-h-full">
+      <figure class="relative h-full min-h-full flex">
          <picture
           v-if="image !== ''"
+          class="flex flex-1"
          >
           <source :srcSet="require(`~/static${image}?webp&resize&size=448`)" type="image/webp" />
           <source :srcSet="require(`~/static${image}?resize&size=448`)" type="image/jpeg" />
@@ -55,6 +56,6 @@
 
 <style scoped>
   .text-shadow{
-    text-shadow: -3px -3px 3px #fff, 3px 3px 3px #fff;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #fff;
   }
 </style>
