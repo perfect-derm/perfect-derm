@@ -1,8 +1,11 @@
 {
-  "pl__homepage__banner_2__image": "",
-  "en__homepage__banner_2__image": "",
-  "de__homepage__banner_2__image": "",
-  "pl__homepage__banner_2__description": "",
-  "en__homepage__banner_2__description": "",
-  "de__homepage__banner_2__description": ""
+  "pl__title": "Tytuł",
+  "en__title": "Tytuł",
+  "de__title": "Tytuł",
+  "pl__image": "",
+  "en__image": "",
+  "de__image": "",
+  "pl__description": "",
+  "en__description": "",
+  "de__description": ""
 }

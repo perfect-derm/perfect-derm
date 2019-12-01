@@ -4,7 +4,7 @@
         :href="link"
         class="btn raise center tc"
       >
-      <figure class="relative h-full">
+      <figure class="relative h-full min-h-full">
          <picture
           v-if="image !== ''"
          >

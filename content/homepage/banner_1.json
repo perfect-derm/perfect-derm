@@ -1,8 +1,11 @@
 {
-  "pl__homepage__banner_1__image": "/images/uploads/przywracanie-objętości-ust.jpeg",
-  "en__homepage__banner_1__image": "/images/uploads/przywracanie-objętości-ust.jpeg",
-  "de__homepage__banner_1__image": "/images/uploads/przywracanie-objętości-ust.jpeg",
-  "pl__homepage__banner_1__description": "Przywracanie objętości i nawilżenia ust:\n-Pełne\n-Jędrne\n-Naturalne",
-  "en__homepage__banner_1__description": "Przywracanie objętości i nawilżenia ust:\n-Pełne\n-Jędrne\n-Naturalne",
-  "de__homepage__banner_1__description": "Przywracanie objętości i nawilżenia ust:\n-Pełne\n-Jędrne\n-Naturalne"
+  "pl__title": "Tytuł",
+  "en__title": "Tytuł",
+  "de__title": "Tytuł",
+  "pl__image": "/images/uploads/przywracanie-objętości-ust.jpeg",
+  "en__image": "/images/uploads/przywracanie-objętości-ust.jpeg",
+  "de__image": "/images/uploads/przywracanie-objętości-ust.jpeg",
+  "pl__description": "Przywracanie objętości i nawilżenia ust:\n-Pełne\n-Jędrne\n-Naturalne",
+  "en__description": "Przywracanie objętości i nawilżenia ust:\n-Pełne\n-Jędrne\n-Naturalne",
+  "de__description": "Przywracanie objętości i nawilżenia ust:\n-Pełne\n-Jędrne\n-Naturalne"
 }
