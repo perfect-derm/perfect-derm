@@ -1607,6 +1607,55 @@ module.exports = {
               label: 'Stopka',
               files: [ 
                 {
+                  name: 'links',
+                  label: 'Linki',
+                  file: 'content/footer/links.json',
+                  fields: [
+                    { 
+                      label: '[PL] Link lewy',
+                      name: 'pl__link_1',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link lewy',
+                      name: 'en_link_1',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link lewy',
+                      name: 'de__link_1',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Link prawy',
+                      name: 'pl__link_2',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link prawy',
+                      name: 'en_link_2',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link prawy',
+                      name: 'de__link_2',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                }
+                {
                   name: 'partners',
                   label: 'Partnerzy',
                   file: 'content/footer/partners.json',

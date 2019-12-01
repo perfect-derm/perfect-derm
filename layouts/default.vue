@@ -116,11 +116,11 @@
 
       <div class="container py-4 flex flex-row">
         <a class="button mx-auto">
-          Mapa dojazdu
+          {{ $t('link_1') }}
         </a>
 
         <a class="button mx-auto">
-          Umów wizytę
+          {{ $t('link_2') }}
         </a>
       </div>
 
