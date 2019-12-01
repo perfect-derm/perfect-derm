@@ -1,8 +1,8 @@
 {
-    "pl__title": "Twój problem",
-    "en__title": "",
-    "de__title": "",
-    "pl__link": "issue",
-    "en__link": "issue",
-    "de__link": "issue"
+  "pl__title": "Zobacz wszystkie dolegliwości",
+  "en__title": "Zobacz wszystkie dolegliwości",
+  "de__title": "Zobacz wszystkie dolegliwości",
+  "pl__link": "issue",
+  "en__link": "issue",
+  "de__link": "issue"
 }
