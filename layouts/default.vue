@@ -130,7 +130,7 @@
             <h3 class="font-bold text-2xl">
               {{ $t('footer__company__title') }}
             </h3>
-            <adress class="text-gray-400" v-html="$options.filters.break($t('footer__company__adress'))"></adress>
+            <address class="text-gray-400" v-html="$options.filters.break($t('footer__company__adress'))"></address>
 
             {{ $md.render(this.$t('footer__company__description')) }}
           </div>
