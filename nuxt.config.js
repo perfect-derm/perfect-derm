@@ -1425,8 +1425,14 @@ module.exports = {
               format: 'json',
               extension: 'json',
               create: true,
-              identifier_field: 'xx__position',
+              identifier_field: 'xx__identifier',
               fields: [
+                { 
+                  label: 'Identyfikator',
+                  name: 'xx__identifier',
+                  widget: 'string',
+                  required: true,
+                },
                 { 
                   label: 'Poziom nagłówka',
                   name: 'xx__header_lvl',
@@ -1654,7 +1660,7 @@ module.exports = {
                       required: true,
                     },
                   ]
-                }
+                },
                 {
                   name: 'partners',
                   label: 'Partnerzy',
@@ -1984,17 +1990,6 @@ module.exports = {
                       locale: 'de',
                       widget: 'text',
                       required: true,
-                    },
-                    { 
-                      label: 'Loga śroków płatniczych',
-                      name: 'xx__images',
-                      widget: 'image',
-                      required: false,
-                      media_library: {
-                        config: {
-                          multiple: true
-                        }
-                      },
                     }
                   ]
                 }

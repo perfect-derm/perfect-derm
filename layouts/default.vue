@@ -116,65 +116,64 @@
 
       <div class="container py-4 flex flex-row">
         <a class="button mx-auto">
-          {{ $t('link_1') }}
+          {{ $t('footer__links__link_1') }}
         </a>
 
         <a class="button mx-auto">
-          {{ $t('link_2') }}
+          {{ $t('footer__links__link_2') }}
         </a>
       </div>
 
       <div class="bg-gray-600 text-white py-4 px-4">
         <div class="container flex flex-col md:flex-row flex-wrap">
           <div class="w-full md:w-1/2 lg:w-1/4 lg:px-4 lg:pr-8">
-            <h3 class="font-bold text-2xl">DentalPro</h3>
-            <p class="text-gray-400">
-                ul. Wandy Rutkiewicz 30<br/>
-                50-571 Wrocław
-            </p>
+            <h3 class="font-bold text-2xl">
+              {{ $t('footer__company__title') }}
+            </h3>
+            <adress class="text-gray-400" v-html="$options.filters.break($t('footer__company__adress'))"></adress>
 
             {{ $md.render(this.$t('footer__company__description')) }}
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
-            <h5 class="uppercase tracking-wider font-semibold">Godziny otwarcia</h5>
+            <h5 class="uppercase tracking-wider font-semibold">
+              {{ $t('footer__opening__title') }}
+            </h5>
             <ul class="mt-4">
               <li class="mt-4">
-                <a href="#" title="" class="block flex items-center opacity-75 hover:opacity-100">
-                  Poniedziałek: 9:00 - 16:00<br/>
-                  Wtorek: 15:00 - 21:00<br/>
-                  Środa: 9:00 - 16:00<br/>
-                  Czwartek: 15:00 - 21:00<br/>
-                  Piątek: 9:00 - 16:00
-                </a>
+                <div class="block flex items-center opacity-75 hover:opacity-100">
+                   {{ $md.render(this.$t('footer__opening__hours')) }}
+                </div>
               </li>
             </ul>
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4 lg:pr-8 md:order-2 lg:order-none">
-            <h5 class="uppercase tracking-wider font-semibold">Kontakt</h5>
+            <h5 class="uppercase tracking-wider font-semibold">
+                {{ $t('footer__contact__title') }}
+            </h5>
             <ul class="mt-4">
               <li class="mt-4">
-                <a href="#" title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <a :href="$t('footer__contact__telephone')" title="" class="block flex items-center opacity-75 hover:opacity-100">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
                       <path d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z"></path>
                     </svg>
                   </span>
                   <span class="ml-3">
-                    +48 737 162 771
+                    {{ $t('footer__contact__telephone') }}
                   </span>
                 </a>
               </li>
               <li class="mt-4">
-                <a href="#" title="" class="block flex items-center opacity-75 hover:opacity-100">
+                <a :href="$t('footer__contact__email')" title="" class="block flex items-center opacity-75 hover:opacity-100">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
                       <path d="M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z"></path>
                     </svg>
                   </span>
                   <span class="ml-3 text-overflow">
-                    perfect_derm@perfect_derm.com
+                    {{ $t('footer__contact__email') }}
                   </span>
                 </a>
               </li>
@@ -182,8 +181,12 @@
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
-            <h5 class="uppercase tracking-wider font-semibold">Płatność</h5>
-            <p class="text-gray-400">Gotówka lub kartą</p>
+            <h5 class="uppercase tracking-wider font-semibold">
+                {{ $t('footer__payment__title') }}
+            </h5>
+            <p class="text-gray-400">
+              {{ $t('footer__payment__description') }}
+            </p>
             <ul class="mt-4 flex">
               <li class="mr-3">
                 <svg height="31.56px" version="1.1" viewBox="0 0 160 100" width="50px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -362,7 +365,9 @@
           </div>
 
           <div class="w-full lg:mx-4">
-            <p class="text-sm text-gray-400 mt-8">PerfectDerm © 2019 All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-8">
+              PerfectDerm © {{ new Date().getFullYear() }} All Rights Reserved.
+              </p>
           </div>
         </div>
       </div>
