@@ -1,6 +1,6 @@
 <template>
   <!-- You can find this swiper instance object in current component by the "mySwiper"  -->
-  <div class="banner h-600px w-full" v-swiper:mySwiper="swiperOption">
+  <div class="banner h-600px w-full" v-swiper:banner="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
         <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
@@ -29,18 +29,13 @@
           slidesPerView: 'auto',
           centeredSlides: true,
           spaceBetween: 30,
+          autoplay: {
+            delay: 3000,
+          },
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
             clickable: true
-          },
-          on: {
-            slideChange() {
-              console.log('onSlideChangeEnd', this);
-            },
-            tap() {
-              console.log('onTap', this);
-            }
           }
         }
       }
