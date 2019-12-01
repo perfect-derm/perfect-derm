@@ -7,7 +7,7 @@
     </div>
 
     <p class="text-center mb-4 font-light text-xl">
-      {{ $md.render(this.$t('footer__company__description')) }}
+      {{ $md.render(this.$t('homepage__text__description')) }}
     </p>
 
     <div class="text-center mb-4">
