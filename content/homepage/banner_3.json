@@ -1,11 +1,11 @@
 {
-  "pl__title": "Tytuł",
-  "en__title": "Tytuł",
-  "de__title": "Tytuł",
-  "pl__image": "/images/uploads/natural-lift.jpeg",
+  "pl__description": ".",
+  "en__title": "Return natural beauty",
   "en__image": "/images/uploads/natural-lift.jpeg",
+  "en__description": ".",
+  "de__title": "Natürliche Schönheit zurückgeben",
   "de__image": "/images/uploads/natural-lift.jpeg",
-  "pl__description": "Przywracamy naturalne piękno",
-  "en__description": "Return natural beauty",
-  "de__description": "Natürliche Schönheit zurückgeben"
+  "de__description": ".",
+  "pl__title": "Przywracamy naturalne piękno",
+  "pl__image": "/images/uploads/natural-lift.jpeg"
 }
