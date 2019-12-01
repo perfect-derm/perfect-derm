@@ -251,6 +251,27 @@ module.exports = {
                   file: 'content/homepage/banner_1.json',
                   fields: [ 
                     { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
                       label: '[PL] Tło',
                       name: 'pl__image',
                       locale: 'pl',
@@ -315,6 +336,27 @@ module.exports = {
                   file: 'content/homepage/banner_2.json',
                   fields: [ 
                     { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
                       label: '[PL] Tło',
                       name: 'pl__image',
                       locale: 'pl',
@@ -378,6 +420,27 @@ module.exports = {
                   label: 'Baner [nr. 3]',
                   file: 'content/homepage/banner_3.json',
                   fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
                     { 
                       label: '[PL] Tło',
                       name: 'pl__image',
