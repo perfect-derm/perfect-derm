@@ -32,7 +32,7 @@
         swiperOption: {
           loop: true,
           loopedSlides: 6,
-          slidesPerGroup: 6,
+          slidesPerGroup: 1,
           slidesPerView: 6,
           spaceBetween: 0,
           autoplay: {
