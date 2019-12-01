@@ -6,9 +6,9 @@
       </client-only>
     </div>
 
-    <p class="text-center mb-4 font-light text-xl">
+    <div class="text-center mb-4 font-light text-xl">
       {{ $md.render(this.$t('homepage__text__description')) }}
-    </p>
+    </div>
 
     <div class="text-center mb-4">
       <a :href="$t('homepage__button_first__link')" class="button mx-auto">
