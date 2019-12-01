@@ -1,8 +1,8 @@
 {
-  "pl__header__logo__img": "/images/uploads/logo.png",
-  "en__header__logo__img": "/images/uploads/logo.png",
-  "de__header__logo__img": "/images/uploads/logo.png",
-  "pl__header__logo__alt": "PerfectDerm - medycyna estetyczna",
-  "en__header__logo__alt": "PerfectDerm - medycyna estetyczna",
-  "de__header__logo__alt": "PerfectDerm - medycyna estetyczna"
+  "pl__img": "/images/uploads/logo.png",
+  "en__img": "/images/uploads/logo.png",
+  "de__img": "/images/uploads/logo.png",
+  "pl__alt": "PerfectDerm - medycyna estetyczna",
+  "en__alt": "PerfectDerm - medycyna estetyczna",
+  "de__alt": "PerfectDerm - medycyna estetyczna"
 }

@@ -1,11 +1,11 @@
 {
-  "en__footer__company__description": "",
-  "en__footer__company__adress": "ul. Wandy Rutkiewicz 30\n50-571 Wrocław",
-  "pl__footer__company__title": "PefectDerm",
-  "pl__footer__company__description": "",
-  "de__footer__company__adress": "ul. Wandy Rutkiewicz 30\n50-571 Wrocław",
-  "de__cfooter__company__title": "PefectDerm",
-  "de__footer__company__description": "",
-  "pl__footer__company__adress": "ul. Wandy Rutkiewicz 30\n50-571 Wrocław",
-  "en__footer__company__title": "PefectDerm"
+  "en__description": "",
+  "en__adress": "ul. Wandy Rutkiewicz 30\n50-571 Wrocław",
+  "pl__title": "PefectDerm",
+  "pl__description": "",
+  "de__adress": "ul. Wandy Rutkiewicz 30\n50-571 Wrocław",
+  "de__title": "PefectDerm",
+  "de__description": "",
+  "pl__adress": "ul. Wandy Rutkiewicz 30\n50-571 Wrocław",
+  "en__title": "PefectDerm"
 }

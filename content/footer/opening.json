@@ -1,8 +1,8 @@
 {
-  "pl__footer__opening__title": "Godziny otwarcia",
-  "en__footer__opening__title": "Godziny otwarcia",
-  "de__footer__opening__title": "Godziny otwarcia",
-  "pl__footer__opening__hours": "Poniedziałek: 9:00 - 16:00\nWtorek: 15:00 - 21:00\nŚroda: 9:00 - 16:00\nCzwartek: 15:00 - 21:00\nPiątek: 9:00 - 16:00",
-  "en__footer__opening__hours": "Poniedziałek: 9:00 - 16:00\nWtorek: 15:00 - 21:00\nŚroda: 9:00 - 16:00\nCzwartek: 15:00 - 21:00\nPiątek: 9:00 - 16:00",
-  "de__footer__opening__hours": "Poniedziałek: 9:00 - 16:00\nWtorek: 15:00 - 21:00\nŚroda: 9:00 - 16:00\nCzwartek: 15:00 - 21:00\nPiątek: 9:00 - 16:00"
+  "pl__title": "Godziny otwarcia",
+  "en__title": "Godziny otwarcia",
+  "de__title": "Godziny otwarcia",
+  "pl__hours": "Poniedziałek: 9:00 - 16:00\nWtorek: 15:00 - 21:00\nŚroda: 9:00 - 16:00\nCzwartek: 15:00 - 21:00\nPiątek: 9:00 - 16:00",
+  "en__hours": "Poniedziałek: 9:00 - 16:00\nWtorek: 15:00 - 21:00\nŚroda: 9:00 - 16:00\nCzwartek: 15:00 - 21:00\nPiątek: 9:00 - 16:00",
+  "de__hours": "Poniedziałek: 9:00 - 16:00\nWtorek: 15:00 - 21:00\nŚroda: 9:00 - 16:00\nCzwartek: 15:00 - 21:00\nPiątek: 9:00 - 16:00"
 }

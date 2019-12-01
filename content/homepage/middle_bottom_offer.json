@@ -1,9 +1,9 @@
 {
-  "pl__homepage__middle_bottom_offer__title": "Nadpotliwość",
-  "en__homepage__middle_bottom_offer__title": "Nadpotliwość",
-  "de__homepage__middle_bottom_offer__title": "Nadpotliwość",
-  "xx__homepage__middle_bottom_offer__background": "/images/uploads/adobestock_251778171.jpeg",
-  "pl__homepage__middle_bottom_offer__link": "offer",
-  "en__homepage__middle_bottom_offer__link": "offer",
-  "de__homepage__middle_bottom_offer__link": "offer"
+  "pl__title": "Nadpotliwość",
+  "en__title": "Nadpotliwość",
+  "de__title": "Nadpotliwość",
+  "xx__background": "/images/uploads/adobestock_251778171.jpeg",
+  "pl__link": "offer",
+  "en__link": "offer",
+  "de__link": "offer"
 }

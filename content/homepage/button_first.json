@@ -1,8 +1,8 @@
 {
-    "pl__homepage__button_first__title": "Twój problem",
-    "en__homepage__button_first__title": "",
-    "de__homepage__button_first__title": "",
-    "pl__homepage__button_first__link": "issue",
-    "en__homepage__button_first__link": "issue",
-    "de__homepage__button_first__link": "issue"
+    "pl__title": "Twój problem",
+    "en__title": "",
+    "de__title": "",
+    "pl__link": "issue",
+    "en__link": "issue",
+    "de__link": "issue"
 }

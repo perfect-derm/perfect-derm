@@ -1,9 +1,9 @@
 {
-  "pl__homepage__right_top_offer__title": "Trychologia",
-  "en__homepage__right_top_offer__title": "Trychologia",
-  "de__homepage__right_top_offer__title": "Trychologia",
-  "xx__homepage__right_top_offer__background": "/images/uploads/adobestock_94298584.jpeg",
-  "pl__homepage__right_top_offer__link": "offer",
-  "en__homepage__right_top_offer__link": "offer",
-  "de__homepage__right_top_offer__link": "offer"
+  "pl__title": "Trychologia",
+  "en__title": "Trychologia",
+  "de__title": "Trychologia",
+  "xx__background": "/images/uploads/adobestock_94298584.jpeg",
+  "pl__link": "offer",
+  "en__link": "offer",
+  "de__link": "offer"
 }
