@@ -6,21 +6,27 @@
         <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-200px left-50px right-auto">
           <h2 class="text-left max-w-700px text-3xl text-grey-700" v-html="$options.filters.break($t('homepage__banner_1__title'))"></h2>            
-          <p class="text-left max-w-700px text-2xl text-grey-600" v-html="$options.filters.break($t('homepage__banner_1__description'))"></p>
+          <p class="text-left max-w-700px text-2xl text-grey-600">
+            {{ $md.render(this.$t('homepage__banner_1__description')) }}
+          </p>
         </div>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
         <img :src="require('~/static' + $t('homepage__banner_2__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-200px left-auto right-50px">
           <h2 class="text-left max-w-700px text-3xl text-grey-700" v-html="$options.filters.break($t('homepage__banner_2__title'))"></h2>            
-          <p class="text-left max-w-700px text-2xl text-grey-600" v-html="$options.filters.break($t('homepage__banner_2__description'))"></p>
+          <p class="text-left max-w-700px text-2xl text-grey-600">
+            {{ $md.render(this.$t('homepage__banner_2__description')) }}
+          </p>
         </div>    
       </li>  
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
         <img :src="require('~/static' + $t('homepage__banner_3__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-200px left-auto right-50px">
           <h2 class="text-left max-w-700px text-3xl text-grey-700" v-html="$options.filters.break($t('homepage__banner_3__title'))"></h2>            
-          <p class="text-left max-w-700px text-2xl text-grey-600" v-html="$options.filters.break($t('homepage__banner_3__description'))"></p>
+          <p class="text-left max-w-700px text-2xl text-grey-600">
+            {{ $md.render(this.$t('homepage__banner_3__description')) }}
+          </p>
         </div>          
       </li>
     </ul>

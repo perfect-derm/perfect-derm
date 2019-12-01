@@ -132,6 +132,8 @@
                 ul. Wandy Rutkiewicz 30<br/>
                 50-571 Wrocław
             </p>
+
+                 {{ $md.render(this.$t('about__description__description')) }}
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">

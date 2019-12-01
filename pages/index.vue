@@ -7,7 +7,7 @@
     </div>
 
     <p class="text-center mb-4 font-light text-xl">
-      {{ $t('homepage__text__description') | break }}
+      {{ $md.render(this.$t('footer__company__description')) }}
     </p>
 
     <div class="text-center mb-4">
@@ -134,6 +134,11 @@
         default: '',
         required: false
       }
-    }
+    },
+    // computed: {
+    //   descriptionMarkdownToHTML: function () {
+    //     return md.toHTML(this.$t('homepage__text__description'));
+    //   }
+    // }
   };
 </script>

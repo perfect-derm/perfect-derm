@@ -290,21 +290,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__banner_1__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__banner_1__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__banner_1__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     }
                   ] 
@@ -354,21 +354,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__banner_2__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__banner_2__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__banner_2__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     }
                   ] 
@@ -418,21 +418,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__banner_3__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__banner_3__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__banner_3__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true 
                     }
                   ] 
@@ -446,21 +446,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__homepage__text__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__homepage__text__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__homepage__text__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     }
                   ] 
@@ -1075,21 +1075,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__description__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__description__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__description__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     }
                   ]
@@ -1142,21 +1142,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__person_1__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__person_1__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__person_1__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     }
                   ]
@@ -1181,21 +1181,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__person_2__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__person_2__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__person_2__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     }
                   ]
@@ -1220,21 +1220,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__about__person_3__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__about__person_3__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__about__person_3__description',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     }
                   ]
@@ -1688,21 +1688,21 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__footer__company__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: false,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__footer__company__description',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: false,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__footer__company__description',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: false,
                     },
                   ]
@@ -1737,21 +1737,21 @@ module.exports = {
                       label: '[PL] Godziny otwarcia',
                       name: 'pl__footer__opening__hours',
                       locale: 'pl',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Godziny otwarcia',
                       name: 'en__footer__opening__hours',
                       locale: 'en',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Godziny otwarcia',
                       name: 'de__footer__opening__hours',
                       locale: 'de',
-                      widget: 'text',
+                      widget: 'markdown',
                       required: true,
                     }
                   ]
@@ -1898,12 +1898,16 @@ module.exports = {
         hostname: process.env.BASE_URL || 'http://localhost:3000'
       }
     ],
+    '@nuxtjs/markdownit',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
     '@bazzite/nuxt-optimized-images',
     'nuxt-polyfill'
   ],
+  markdownit: {
+    injected: true
+  },
   webfontloader: {
     google: {
       families: ['Roboto:400,500,700'] //Loads Lato font with weights 400 and 700
