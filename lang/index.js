@@ -1,5 +1,6 @@
 const path = require('path');
-const delimeter = "__"
+const delimeter = "__";
+const keyPrefix = '$uniqueKeyIndex';
 let collectionMatrix = [];
 
 export default (context, language) => {
@@ -39,7 +40,7 @@ export default (context, language) => {
 
             languagePrefixByPathAndFilename = filePathProcessed.join(delimeter);
 
-            properPrefixEntry['$uniqueKeyIndex' + delimeter + filePathProcessed[0]] = entryInCollectionAndLanguage.length.toString();
+            properPrefixEntry[keyPrefix + delimeter + filePathProcessed[0]] = entryInCollectionAndLanguage.length.toString();
           } else {
             languagePrefixByPathAndFilename = languagePrefixByPathAndFilename + delimeter + fileName.toString();
           }
