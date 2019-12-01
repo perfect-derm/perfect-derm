@@ -30,7 +30,7 @@
           centeredSlides: true,
           spaceBetween: 30,
           autoplay: {
-            delay: 3000,
+            delay: 4000,
           },
           pagination: {
             el: '.swiper-pagination',

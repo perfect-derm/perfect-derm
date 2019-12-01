@@ -36,7 +36,7 @@
           slidesPerView: 6,
           spaceBetween: 0,
           autoplay: {
-            delay: 2000,
+            delay: 5000,
           }
         }
       }
