@@ -2,6 +2,7 @@
     <div
         v-on:click="scrollOn" 
         v-on:mouseleave="scrollOff" 
+        class="w-full"
         :class="{ 'scrolloff' : !isActiveScroll}"
     >
         <iframe 

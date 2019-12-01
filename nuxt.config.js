@@ -1005,89 +1005,6 @@ module.exports = {
                   ] 
                 },
                 {
-                  name: 'partners',
-                  label: 'Partnerzy',
-                  file: 'content/homepage/partners.json',
-                  fields: [ 
-                    { 
-                      label: '[PL] Tytuł',
-                      name: 'pl__homepage__partners__title',
-                      locale: 'pl',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Tytuł',
-                      name: 'en__homepage__partners__title',
-                      locale: 'en',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Tytuł',
-                      name: 'de__homepage__partners__title',
-                      locale: 'de',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: 'Logo partnera [1]',
-                      name: 'xx__homepage__partners__logo_1',
-                      widget: 'image',
-                      required: false,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: 'Logo partnera [2]',
-                      name: 'xx__homepage__partners__logo_2',
-                      widget: 'image',
-                      required: false,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: 'Logo partnera [3]',
-                      name: 'xx__homepage__partners__logo_3',
-                      widget: 'image',
-                      required: false,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: 'Logo partnera [4]',
-                      name: 'xx__homepage__partners__logo_4',
-                      widget: 'image',
-                      required: false,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                    { 
-                      label: 'Logo partnera [5]',
-                      name: 'xx__homepage__partners__logo_5',
-                      widget: 'image',
-                      required: false,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    },
-                  ]
-                },
-                {
                   name: 'breadcrumb',
                   label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
                   file: 'content/homepage/breadcrumb.json',
@@ -1626,6 +1543,100 @@ module.exports = {
               name: 'footer',
               label: 'Stopka',
               files: [ 
+                {
+                  name: 'partners',
+                  label: 'Partnerzy',
+                  file: 'content/footer/partners.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Logo partnera [1]',
+                      name: 'xx__logo_1',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [2]',
+                      name: 'xx__logo_2',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [3]',
+                      name: 'xx__logo_3',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [4]',
+                      name: 'xx__logo_4',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [5]',
+                      name: 'xx__logo_5',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: 'Logo partnera [6]',
+                      name: 'xx__logo_6',
+                      widget: 'image',
+                      required: false,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                  ]
+                },
                 { 
                   name: 'company',
                   label: 'O firmie',
@@ -1936,6 +1947,7 @@ module.exports = {
   },
   plugins: [
     { src: '~/plugins/swiper.js', mode: 'client', ssr: false },
+    { src: '~/plugins/break.js'}
   ],
   /*
   ** Customize the progress bar color

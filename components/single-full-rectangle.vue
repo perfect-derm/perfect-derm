@@ -4,7 +4,7 @@
         :href="link"
         class="flex flex-row btn raise center text-left"
       >
-      <div class="flex flex-col">
+      <div class="flex-auto">
         <h2>
           {{ title }}
         </h2>
@@ -12,7 +12,7 @@
           {{ description }}
         </p>
       </div>
-      <div class="">
+      <div class="flex-none">
         <img
           v-if="photo !== ''"
           :src="photo"

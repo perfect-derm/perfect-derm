@@ -33,6 +33,33 @@ module.exports = {
       '50px':'50px',
       '200px': '200px'
     },
+    height: {
+      '200px':  '200px',
+      '450px':  '450px',
+      '600px': '600px',
+      'h-0':  '0',
+      'h-1':  '0.25rem',
+      'h-2':  '0.5rem',
+      'h-3':  '0.75rem',
+      'h-4':  '1rem',
+      'h-5':  '1.25rem',
+      'h-6':  '1.5rem',
+      'h-8':  '2rem',
+      'h-10':	'2.5rem',
+      'h-12':	'3rem',
+      'h-16':	'4rem',
+      'h-20':	'5rem',
+      'h-24':	'6rem',
+      'h-32':	'8rem',
+      'h-40':	'10rem',
+      'h-48':	'12rem',
+      'h-56':	'14rem',
+      'h-64':	'16rem',
+      'h-auto':	'auto',
+      'h-px':	'1px',
+      'h-full':	'100%',
+      'h-screen':	'100vh',
+    },
     maxHeight: {
       '0': '0',
       '310' : '310px',
@@ -41,6 +68,9 @@ module.exports = {
       '1/2-screen': '50vw',
       '3/4': '75%',
       'full': '100%',
+    },
+    maxWidth: {
+      '700px' : '700px'
     },
     extend: {
       screens: {

@@ -112,13 +112,7 @@
 
     <footer class="relative">
 
-      <div class="container py-4 text-center">
-        <ul class="flex flex-row fleex-wrap">
-          <li>
-            <img />
-          </li>
-        </ul>
-      </div>
+      <hr class="mt-4">
 
       <div class="container py-4 flex flex-row">
         <a class="button mx-auto">

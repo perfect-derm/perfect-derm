@@ -17,7 +17,7 @@
             :src="require(`~/static${image}?resize&size=448`)"
           />
         </picture>
-        <figcaption>
+        <figcaption class="uppercase">
           {{ title }}
         </figcaption>
       </figure>
