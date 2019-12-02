@@ -1442,12 +1442,7 @@ module.exports = {
                   label: 'Poziom nagłówka',
                   name: 'xx__header_lvl',
                   widget: 'select',
-                  default: [
-                    { 
-                      label: "Wpis", 
-                      value: "3"
-                    }
-                  ],
+                  default: ["3"],
                   options: [
                     {
                       label: "Główny", 
