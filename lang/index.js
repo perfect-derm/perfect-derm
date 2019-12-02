@@ -41,6 +41,7 @@ export default (context, language) => {
             languagePrefixByPathAndFilename = filePathProcessed.join(delimeter);
 
             properPrefixEntry[keyPrefix + delimeter + filePathProcessed[0]] = entryInCollectionAndLanguage.length.toString();
+
           } else {
             languagePrefixByPathAndFilename = languagePrefixByPathAndFilename + delimeter + fileName.toString();
           }
@@ -48,14 +49,14 @@ export default (context, language) => {
           Object.keys(fileData).forEach(function(key) {
             let newKey;
             if(newKey = key.match(regex)){
-
               if(!newKey[2].includes(languagePrefixByPathAndFilename)) {
-                properPrefixEntry[(languagePrefixByPathAndFilename.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key].toString();
+                properPrefixEntry[(languagePrefixByPathAndFilename.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key];
               } else {
                 properPrefixEntry[newKey[2]] = fileData[key];
               }
 
               properPrefixEntry[newKey[2]] = fileData[key];
+
             }
           });
   

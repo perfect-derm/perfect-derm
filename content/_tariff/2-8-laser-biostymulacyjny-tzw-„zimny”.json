@@ -1,11 +1,11 @@
 {
   "en__price": "from 200 zł",
   "de__price": "ab 200 zł",
-  "xx__position": 11,
+  "xx__position": "13",
   "xx__identifier": "2.7 Laser biostymulacyjny tzw. „zimny”",
   "pl__price": "od 200 zł",
   "en__title": " Biostimulation laser \"cold\"",
-  "xx__header_lvl": 2,
+  "xx__header_lvl": "3",
   "de__title": " Biostimulationslaser \"Cold\"",
   "pl__title": "Laser biostymulacyjny tzw. „zimny”"
 }

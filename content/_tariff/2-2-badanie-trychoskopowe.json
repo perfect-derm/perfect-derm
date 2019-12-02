@@ -1,11 +1,11 @@
 {
   "en__price": "300 zł",
   "de__price": "300 zł",
-  "xx__position": 7,
+  "xx__position": "7",
   "xx__identifier": "2.2 Badanie trychoskopowe",
   "pl__price": "300 zł",
   "en__title": " Trichoscopic examination",
-  "xx__header_lvl": 2,
+  "xx__header_lvl": "3",
   "de__title": "Trichoskopische Untersuchung",
   "pl__title": "Badanie trychoskopowe"
 }

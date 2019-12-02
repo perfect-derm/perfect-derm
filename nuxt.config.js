@@ -1445,21 +1445,21 @@ module.exports = {
                   default: [
                     { 
                       label: "Wpis", 
-                      value: 0 
+                      value: "3"
                     }
                   ],
                   options: [
                     {
                       label: "Główny", 
-                      value: 1
+                      value: "1"
                     }, 
                     {
                       label: "Podrzędny", 
-                      value: 2
+                      value: "2"
                     }, 
                     {
                       label: "Wpis", 
-                      value: 0
+                      value: "3"
                     }, 
                   ],
                   required: true,
@@ -1490,27 +1490,30 @@ module.exports = {
                   name: 'pl__price',
                   locale: 'pl',
                   widget: 'string',
-                  required: false,
+                  required: true,
+                  default: "-"
                 },
                 { 
                   label: '[EN] Cena',
                   name: 'en__price',
                   locale: 'en',
                   widget: 'string',
-                  required: false,
+                  required: true,
+                  default: "-"
                 },
                 { 
                   label: '[DE] Cena',
                   name: 'de__price',
                   locale: 'de',
                   widget: 'string',
-                  required: false,
+                  required: true,
+                  default: "-"
                 }, 
                 { 
                   label: 'Pozycja',
                   name: 'xx__position',
                   widget: 'number',
-                  valueType: "int",
+                  valueType: "string",
                   min: 1,
                   hint: "Wpisana liczba powoduje ustawienie elementu za pozycją o danym numerze.  Nie ustawione - uznaje kolejność dodania. Proponujemy dodawać 10 bo ta sama liczba nadpisze istniejący wpis a zmiana łatwiejsza będzie gdy jest możliwość wyboru między dziesiątkami",
                   required: false,

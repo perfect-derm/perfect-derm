@@ -1,11 +1,11 @@
 {
   "en__price": "250 zł",
   "de__price": "250 zł",
-  "xx__position": 15,
+  "xx__position": "22",
   "xx__identifier": "4.1 Badanie Usg Doppler z konsultacją specjalistyczną",
   "pl__price": "250 zł",
   "en__title": " Doppler ultrasound examination with specialist consultation",
-  "xx__header_lvl": 2,
+  "xx__header_lvl": "3",
   "de__title": " Doppler-Ultraschalluntersuchung mit Fachberatung",
   "pl__title": "Badanie Usg Doppler z konsultacją specjalistyczną"
 }
