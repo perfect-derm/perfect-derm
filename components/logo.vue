@@ -31,6 +31,11 @@
   .logo{
     max-height: 70px;
     width: auto;
-    margin-top: -20px;
+  }
+
+  @media(min-width: 1024px){
+    .logo{
+      margin-top: -20px;
+    }
   }
 </style>
