@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-vh-100 w-full">
     <nav class="container flex flex-col" aria-label="Menu">
-      <div class="flex justify-between flex-wrap pb-6">
+      <div class="flex justify-between flex-wrap">
         <a :href="localePath('index')" class="flex items-center flex-shrink-0 text-white mx-auto lg:mr-6">
           <cLogo
             classes="br0 db mb0 w-100 h-auto"

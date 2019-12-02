@@ -1,6 +1,6 @@
 <template>
   <div class="logo" :class="logoClass">
-    <img src="~/assets/logo.png?resize&size=300&inline" width="300px" height="118px" :alt="imgAlt" :class="imgClass">
+    <img src="~/assets/logo.png?resize&size=300&inline" width="300px" height="118px" :alt="imgAlt" :class="imgClass" class="logo">
   </div>
 </template>
 
@@ -27,6 +27,10 @@
   }
 </script>
 
-<style>
-
+<style scoped>
+  .logo{
+    max-height: 70px;
+    width: auto;
+    margin-top: -20px;
+  }
 </style>
