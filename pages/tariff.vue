@@ -1,26 +1,28 @@
 <template>
   <div>
-    <ul class="flex flex-col">
+    <div class="container my-4">
+      <ul class="flex flex-col">
 
-      <li v-for="(n, index) in tableTariff" :key="index" class="flex flex-row">
-        <h2 v-if="tableTariff[index].headerLvl == 1" class="px-4 uppercase text-2xl bg-gray-400 w-full text-center">
-          {{ tableTariff[index].title }}
-        </h2>
-
-        <h3 v-if="tableTariff[index].headerLvl == 2" class="px-4 text-lg bg-gray-300 w-full text-center">
-         {{ tableTariff[index].title }}
-        </h3>
-
-        <div v-if="tableTariff[index].headerLvl == 3" class="flex flex-row bg-gray-200 w-full">
-          <h4 class="text-base flex-auto text-left">
+        <li v-for="(n, index) in tableTariff" :key="index" class="flex flex-row">
+          <h2 v-if="tableTariff[index].headerLvl == 1" class="px-4 uppercase text-2xl bg-gray-400 w-full text-center px-2">
             {{ tableTariff[index].title }}
-          </h4>
-          <div v-if="tableTariff[index].headerLvl == 3" class="px-4 flex-auto text-right">
-            {{ tableTariff[index].price }}
+          </h2>
+
+          <h3 v-if="tableTariff[index].headerLvl == 2" class="px-4 text-lg bg-gray-300 w-full text-center px-2">
+          {{ tableTariff[index].title }}
+          </h3>
+
+          <div v-if="tableTariff[index].headerLvl == 3" class="flex flex-row bg-gray-200 w-full py-2 px-2">
+            <h4 class="text-base flex-auto text-left">
+              {{ tableTariff[index].title }}
+            </h4>
+            <div v-if="tableTariff[index].headerLvl == 3" class="px-4 flex-auto text-right">
+              {{ tableTariff[index].price }}
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
