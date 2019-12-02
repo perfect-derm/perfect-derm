@@ -2077,7 +2077,8 @@ module.exports = {
   },
   plugins: [
     { src: '~/plugins/swiper.js', mode: 'client', ssr: false },
-    { src: '~/plugins/break.js'}
+    { src: '~/plugins/break.js'},
+    { src: '~/plugins/resize.js'}
   ],
   /*
   ** Customize the progress bar color

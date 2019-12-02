@@ -8,7 +8,7 @@
           />
         </a>
         <div 
-          class="w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm flex-grow justify-end order-last"
+          class="relative w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm flex-grow justify-end order-last"
           :class="{ 'hidden' : menuSwitchPosition }"
         >
           <nuxt-link 
@@ -47,6 +47,7 @@
           >
             {{ $t('contact__menu__title') }}
           </nuxt-link>
+          <resize-observer @notify="handleResize" />
         </div>
         <div class="flex items-center mx-4 lg:hidden">
           <button @click="menuSwitch" class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-500 hover:border-gray-500">
@@ -382,21 +383,37 @@
     },
     data () {
         return { 
-          menuSwitchPosition: false
+          menuSwitchPositionByUser: false,
+          timeoutMenu: 0,
+          menuSwitchPosition: true
         }
     },
     methods: {
+      handleResize: function () {
+        if(!this.menuSwitchPositionByUser){
+          this.menuVisible(true);
+        }
+      },
       menuSwitch: function (e) {
-        this.menuSwitchPosition = !this.menuSwitchPosition;
-      }
+        this.menuSwitchPositionByUser = true;
+        
+        this.menuVisible(!this.menuSwitchPosition);
+
+        clearTimeout(this.timeoutMenu);
+        this.timeoutMenu = setTimeout(function(){
+          this.menuSwitchPositionByUser = false
+        }.bind(this), 100);
+      },
+      menuVisible: function(visible){
+          if(visible){
+            this.menuSwitchPosition = true;
+          } else {
+            this.menuSwitchPosition = false;
+          }
+      },
     },
     mounted(){
-      // var street = this.address.company_street.split(/\n/);
-      // this.address.company_street_line_1 = street[0];
-
-      // if(street.length > 1){
-        // this.address.company_street_line_2 = street[1];
-      // }
+      this.menuVisible(true);
     }
   }
 </script>
