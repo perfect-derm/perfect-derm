@@ -1512,9 +1512,7 @@ module.exports = {
                 { 
                   label: 'Pozycja',
                   name: 'xx__position',
-                  widget: 'number',
-                  valueType: "string",
-                  min: 1,
+                  widget: 'string',
                   hint: "Wpisana liczba powoduje ustawienie elementu za pozycją o danym numerze.  Nie ustawione - uznaje kolejność dodania. Proponujemy dodawać 10 bo ta sama liczba nadpisze istniejący wpis a zmiana łatwiejsza będzie gdy jest możliwość wyboru między dziesiątkami",
                   required: false,
                 }, 

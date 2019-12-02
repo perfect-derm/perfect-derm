@@ -49,7 +49,7 @@
             headerLvl: parseInt(this.$t(`_tariff__${ i }__header_lvl`)),
             title: this.$t(`_tariff__${ i }__title`),
             price: (parseInt(this.$t(`_tariff__${ i }__header_lvl`)) == 3) ? this.$t(`_tariff__${ i }__price`)  : '',
-            position: this.$t(`_tariff__${ i }__position`)
+            position: parseInt(this.$t(`_tariff__${ i }__position`))
           });
         } 
 
