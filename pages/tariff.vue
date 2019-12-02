@@ -43,7 +43,7 @@
     computed: {
       tableTariff: function () {
         let tableTariff = [];
-        for(let i = 0; i < this.$t('$uniqueKeyIndex___tariff'); i++) {
+        for(let i = 0; i <= parseInt(this.$t('$uniqueKeyIndex___tariff')); i++) {
 
           tableTariff.push({
             headerLvl: parseInt(this.$t(`_tariff__${ i }__header_lvl`)),
