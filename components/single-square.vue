@@ -18,7 +18,13 @@
             :src="require(`~/static${image}?resize&size=448`)"
           />
         </picture>
-        <figcaption class="absolute bottom-0 left-0 right-0 uppercase font-semibold text-shadow">
+        <figcaption
+            :class="{ 
+              'top-0' : textPlacementUp,
+              'bottom-0' : textPlacementDown
+            }"
+            class="absolute left-0 right-0 uppercase font-semibold text-shadow"
+          >
           {{ title }}
         </figcaption>
       </figure>
@@ -50,7 +56,20 @@
         default: '',
         required: false
       },
+      'titlePlacement': {
+        type: Number,
+        default: 2,
+        required: false
+      },
     },
+    computed: {
+      textPlacementUp : function (){
+        return (this.textPlacement === 1) ? true : false;
+      },
+      textPlacementDown : function (){
+        return (this.textPlacement === 2) ? true : false;
+      }
+    }
   }
 </script>
 
