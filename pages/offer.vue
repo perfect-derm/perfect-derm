@@ -103,7 +103,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>        
-        <img :src="$t('offer__promotion_line_2__background') + '?resize&height=500'" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
+        <img :src="$t('offer__promotion_line_2__background') + '?resize&height=500'" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto right-0 w-1/2 h-full object-cover"/>
       </div>
 
       <div class="relative flex flec-col h-450px">
