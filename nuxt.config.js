@@ -2798,9 +2798,19 @@ module.exports = {
   },
   generate: {
     routes: [
-      '/',
+      {
+        name: 'index',
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        name: 'index',
+        path: '/:slug',
+        component: 'pages/_index.vue'
+      },
       '/en',
       '/de',
+      '/pl',
       '/test',
       '/en/test',
       '/de/test',
