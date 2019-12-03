@@ -2798,7 +2798,12 @@ module.exports = {
   },
   generate: {
     routes: [
+      '/',
+      '/en',
+      '/de',
       '/test',
+      '/en/test',
+      '/de/test',
     ]
   }
 };
