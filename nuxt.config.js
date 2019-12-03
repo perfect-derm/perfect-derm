@@ -1757,7 +1757,7 @@ module.exports = {
                     },
                     { 
                       label: 'Zdjęcie',
-                      name: 'xx__photo',
+                      name: 'xx__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -1786,7 +1786,28 @@ module.exports = {
                       locale: 'de',
                       widget: 'markdown',
                       required: true,
-                    }
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
                   ]
                 },
                 { 
@@ -1817,7 +1838,7 @@ module.exports = {
                     },
                     { 
                       label: 'Zdjęcie',
-                      name: 'xx__photo',
+                      name: 'xx__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -1846,7 +1867,28 @@ module.exports = {
                       locale: 'de',
                       widget: 'markdown',
                       required: true,
-                    }
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
                   ]
                 },
                 { 
@@ -1877,7 +1919,7 @@ module.exports = {
                     },
                     { 
                       label: 'Zdjęcie',
-                      name: 'xx__photo',
+                      name: 'xx__background',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -1906,7 +1948,28 @@ module.exports = {
                       locale: 'de',
                       widget: 'markdown',
                       required: true,
-                    }
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
                   ]
                 },
                 {
