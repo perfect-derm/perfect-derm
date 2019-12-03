@@ -3,22 +3,22 @@
   <div class="h-200px w-full overflow-hidden" v-swiper:partners="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_1') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_1') + '?resize&size=220')" width="220" alt="" class="h-full object-cover px-8"/>
+        <img :src="require('~/static' + $t('footer__partners__logo_1') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_2') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_2') + '?resize&size=220')" width="220" alt="" class="h-full object-cover px-8"/>
+        <img :src="require('~/static' + $t('footer__partners__logo_2') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>  
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_3') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_3') + '?resize&size=220')" width="220" alt="" class="h-full object-cover px-8"/>
+        <img :src="require('~/static' + $t('footer__partners__logo_3') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_4') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_4') + '?resize&size=220')" width="220" alt="" class="h-full object-cover px-8"/>
+        <img :src="require('~/static' + $t('footer__partners__logo_4') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_5') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_5') + '?resize&size=220')" width="220" alt="" class="h-full object-cover px-8"/>
+        <img :src="require('~/static' + $t('footer__partners__logo_5') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_6') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_6') + '?resize&size=220')" width="220" alt="" class="h-full object-cover px-8"/>
+        <img :src="require('~/static' + $t('footer__partners__logo_6') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
     </ul>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div :class="mainClass" class="block">
-    <a
-        :href="link"
+    <nuxt-link
+        :to="link"
         class="flex flex-row btn raise center text-left"
       >
       <div class="flex-auto p-8">
@@ -20,7 +20,7 @@
           height="auto"
         />
       </div>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 

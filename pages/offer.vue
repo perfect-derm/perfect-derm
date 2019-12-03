@@ -73,28 +73,51 @@
     </section>
 
 
-    <section>
-      <h2>
+    <section class="container">
+      <h2 class="mb-4 text-2xl">
         {{ $t('offer__section_title__title') }}
       </h2>
 
-      <div>
-        {{ $t('offer__promotion_line_1__title') }}
-        {{ $t('offer__promotion_line_1__link') }} 
-        <img :src="$t('offer__promotion_line_1__background') + '?resize&width=1920'" :alt="$t('offer__promotion_line_1__title')"/>
-        <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>        
+      <div class="relative flex flec-col h-450px">
+        <h3 class="z-10">
+          {{ $t('offer__promotion_line_1__title') }}
+        </h3>
+        <nuxt-link 
+          :to="$t('offer__promotion_line_1__link')"
+          class="z-10"
+        >
+          >
+        </nuxt-link>
+        <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>        
+        <img :src="$t('offer__promotion_line_1__background') + '?resize&height=500'" :alt="$t('offer__promotion_line_1__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
-      <div>
-        {{ $t('offer__promotion_line_2__title') }}
-        {{ $t('offer__promotion_line_2__link') }} 
-        <img :src="$t('offer__promotion_line_2__background') + '?resize&width=1920'" :alt="$t('offer__promotion_line_2__title')"/>
-        <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>
+
+      <div class="relative flex flec-col h-450px">
+        <h3 class="z-10">
+          {{ $t('offer__promotion_line_2__title') }}
+        </h3>
+        <nuxt-link 
+          :to="$t('offer__promotion_line_2__link')"
+          class="z-10"
+        >
+          >
+        </nuxt-link>
+        <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>        
+        <img :src="$t('offer__promotion_line_2__background') + '?resize&height=500'" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
-      <div>
-        {{ $t('offer__promotion_line_3__title') }}
-        {{ $t('offer__promotion_line_3__link') }} 
-        <img :src="$t('offer__promotion_line_3__background') + '?resize&width=1920'" :alt="$t('offer__promotion_line_3__title')"/>
-        <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>
+
+      <div class="relative flex flec-col h-450px">
+        <h3 class="z-10">
+          {{ $t('offer__promotion_line_3__title') }}
+        </h3>
+        <nuxt-link 
+          :to="$t('offer__promotion_line_3__link')"
+          class="z-10"
+        >
+          >
+        </nuxt-link>
+        <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>        
+        <img :src="$t('offer__promotion_line_3__background') + '?resize&height=500'" :alt="$t('offer__promotion_line_3__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
     </section>
   </div>

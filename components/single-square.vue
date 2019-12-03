@@ -1,7 +1,7 @@
 <template>
   <div :class="mainClass" class="block">
-    <a
-        :href="link"
+    <nuxt-link
+        :to="link"
         class="btn raise center tc"
       >
       <figure class="relative h-full min-h-full flex flex-col">
@@ -29,7 +29,7 @@
           {{ title }}
         </figcaption>
       </figure>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 
