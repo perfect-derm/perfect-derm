@@ -1,12 +1,9 @@
 {
-  "pl__title": "Medycyna estetyczna",
-  "en__title": "Aesthetic Medicine",
-  "de__title": "Ästhetische Medizin",
-  "xx__background": "/images/uploads/adobestock_105348205.jpeg",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": "",
-  "pl__link": "offer",
-  "en__link": "offer",
-  "de__link": "offer"
+  "pl__title": "LIPOLIZA ULTRADŹWIĘKOWA",
+  "en__title": " ULTRASONIC LIPOLYSIS",
+  "de__title": "ULTRASCHALL-LIPOLYSE",
+  "xx__photo": "/images/uploads/lipolizacja.jpeg",
+  "pl__description": "Efektywnie i bezpiecznie usuwa z organizmu nadmiar tkanki tłuszczowej",
+  "en__description": "\rIt effectively and safely removes excess fat from the body",
+  "de__description": "Es entfernt effektiv und sicher überschüssiges Fett aus dem Körper"
 }
