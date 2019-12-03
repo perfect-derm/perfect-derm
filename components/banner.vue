@@ -79,8 +79,4 @@
     border-radius: 0;
     padding: 10px;
   }
-
-  .h-full{
-    height: 100%;
-  }
 </style>

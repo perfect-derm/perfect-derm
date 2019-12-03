@@ -1340,6 +1340,602 @@ module.exports = {
                       required: true,
                     }
                   ]
+                },
+                {
+                  name: 'left_line_1_offer',
+                  label: '[Lewo] Wyróżniona oferta [pierwsza linia]',
+                  file: 'content/offer/left_line_1_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Tło',
+                      name: 'xx__background',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'middle_line_1_offer',
+                  label: '[Środek] Wyróżniona oferta [pierwsza linia]',
+                  file: 'content/offer/middle_line_1_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Tło',
+                      name: 'xx__background',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'right_line_1_offer',
+                  label: '[Prawo] Wyróżniona oferta [pierwsza linia]',
+                  file: 'content/offer/right_line_1_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Tło',
+                      name: 'xx__background',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'left_line_2_offer',
+                  label: '[Lewo] Wyróżniona oferta [druga linia]',
+                  file: 'content/offer/left_line_2_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Tło',
+                      name: 'xx__background',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'middle_line_2_offer',
+                  label: '[Środek] Wyróżniona oferta [druga linia]',
+                  file: 'content/offer/middle_line_2_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Tło',
+                      name: 'xx__background',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'right_line_2_offer',
+                  label: '[Prawo] Wyróżniona oferta [druga linia]',
+                  file: 'content/offer/right_line_2_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Tło',
+                      name: 'xx__background',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                { 
+                  name: 'section_title',
+                  label: 'Tytuł dla sekcji z osobami',
+                  file: 'content/offer/section_title.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'promotion_line_1',
+                  label: 'Promowana oferta [pozycja nr.1]',
+                  file: 'content/offer/promotion_line_1.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Zdjęcie',
+                      name: 'xx__photo',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      locale: 'pl',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      locale: 'en',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      locale: 'de',
+                      widget: 'markdown',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'promotion_line_2',
+                  label: 'Promowana oferta [pozycja nr.2]',
+                  file: 'content/offer/promotion_line_2.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Zdjęcie',
+                      name: 'xx__photo',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      locale: 'pl',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      locale: 'en',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      locale: 'de',
+                      widget: 'markdown',
+                      required: true,
+                    }
+                  ]
+                },
+                { 
+                  name: 'promotion_line_3',
+                  label: 'Promowana oferta [pozycja nr.3]',
+                  file: 'content/offer/promotion_line_3.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: 'Zdjęcie',
+                      name: 'xx__photo',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      locale: 'pl',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      locale: 'en',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      locale: 'de',
+                      widget: 'markdown',
+                      required: true,
+                    }
+                  ]
+                },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/offer/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      locale: 'pl',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      locale: 'en',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      locale: 'de',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
                 }
               ]
             },

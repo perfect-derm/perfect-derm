@@ -4,7 +4,7 @@
         :href="link"
         class="btn raise center tc"
       >
-      <figure class="relative h-full min-h-full flex">
+      <figure class="relative h-full min-h-full flex flex-col">
          <picture
           v-if="image !== ''"
           class="flex flex-1"
@@ -20,10 +20,11 @@
         </picture>
         <figcaption
             :class="{ 
-              'top-0' : textPlacementUp,
-              'bottom-0' : textPlacementDown
+              'absolute top-0 uppercase text-shadow' : textPlacementUpAbsolute,
+              'absolute bottom-0 uppercase text-shadow' : textPlacementDownAbsolute,
+              'relative text-gray-600 order-first' : textUpRelative,
             }"
-            class="absolute left-0 right-0 uppercase font-semibold text-shadow"
+            class="left-0 right-0 font-semibold "
           >
           {{ title }}
         </figcaption>
@@ -56,18 +57,21 @@
         default: '',
         required: false
       },
-      'titlePlacement': {
+      'theme': {
         type: Number,
         default: 2,
         required: false
       },
     },
     computed: {
-      textPlacementUp : function (){
-        return (this.textPlacement === 1) ? true : false;
+      textPlacementUpAbsolute : function (){
+        return (this.theme === 1) ? true : false;
       },
-      textPlacementDown : function (){
-        return (this.textPlacement === 2) ? true : false;
+      textPlacementDownAbsolute : function (){
+        return (this.theme === 2) ? true : false;
+      },
+      textUpRelative : function (){
+        return (this.theme === 3) ? true : false;
       }
     }
   }

@@ -1,63 +1,100 @@
 <template>
   <div>
-    
-    <section class="relative container py-4">
-      <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
+    <div class="relative mb-20">
+      <div class="h-600px">
+        <img src="/images/uploads/natural-lift.jpeg?resize&size=1920" alt="X" class="h-full w-full object-cover"/>
+      </div>
 
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">  
+      <div class="container absolute bottom-10 left-0 right-0 flex flex-row flex-wrap mb-4 text-gray-300 text-gray-300">
+        <a class="text-gray-300 mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
+        <span class="block mr-2">></span>
+        <a class="text-gray-300 mr-2">{{ $t('offer__breadcrumb__title') }}</a>
+      </div>
+    </div>
+
+    <section class="relative container py-4">
+      <div class="flex flex-col flex-wrap md:flex-row justify-between text-center md:-mx-4 text-2xl">
+
+        <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col">  
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
-            :titlePlacement="1"
-            :title="$t('homepage__left_top_offer__title')"
-            :link="$t('homepage__left_top_offer__link')"
-            :image="$t('homepage__left_top_offer__background')"
+            :theme="3"
+            :title="$t('offer__left_line_1_offer__title')"
+            :link="$t('offer__left_line_1_offer__link')"
+            :image="$t('offer__left_line_1_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
-            :titlePlacement="1"
-            :title="$t('homepage__middle_top_offer__title')"
-            :link="$t('homepage__middle_top_offer__link')"
-            :image="$t('homepage__middle_top_offer__background')"
+            :theme="3"
+            :title="$t('offer__middle_line_1_offer__title')"
+            :link="$t('offer__middle_line_1_offer__link')"
+            :image="$t('offer__middle_line_1_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
-            :titlePlacement="1"
-            :title="$t('homepage__right_top_offer__title')"
-            :link="$t('homepage__right_top_offer__link')"
-            :image="$t('homepage__right_top_offer__background')"
+            :theme="3"
+            :title="$t('offer__right_line_1_offer__title')"
+            :link="$t('offer__right_line_1_offer__link')"
+            :image="$t('offer__right_line_1_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">  
+        <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">  
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
-            :titlePlacement="1"
-            :title="$t('homepage__left_top_offer__title')"
-            :link="$t('homepage__left_top_offer__link')"
-            :image="$t('homepage__left_top_offer__background')"
+            :theme="3"
+            :title="$t('offer__left_line_2_offer__title')"
+            :link="$t('offer__left_line_2_offer__link')"
+            :image="$t('offer__left_line_2_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
-            :titlePlacement="1"
-            :title="$t('homepage__middle_top_offer__title')"
-            :link="$t('homepage__middle_top_offer__link')"
-            :image="$t('homepage__middle_top_offer__background')"
+            :theme="3"
+            :title="$t('offer__middle_line_2_offer__title')"
+            :link="$t('offer__middle_line_2_offer__link')"
+            :image="$t('offer__middle_line_2_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
-            :titlePlacement="1"
-            :title="$t('homepage__right_top_offer__title')"
-            :link="$t('homepage__right_top_offer__link')"
-            :image="$t('homepage__right_top_offer__background')"
+            :theme="3"
+            :title="$t('offer__right_line_2_offer__title')"
+            :link="$t('offer__right_line_2_offer__link')"
+            :image="$t('offer__right_line_2_offer__background')"
           />
         </div>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>
+        {{ $t('offer__section_title__title') }}
+      </h2>
+
+      <div>
+        {{ $t('offer__promotion_line_1__title') }}
+        {{ $t('offer__promotion_line_1__link') }} 
+        <img :src="$t('offer__promotion_line_1__background') + '?resize&width=1920'" :alt="$t('offer__promotion_line_1__title')"/>
+        <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>        
+      </div>
+      <div>
+        {{ $t('offer__promotion_line_2__title') }}
+        {{ $t('offer__promotion_line_2__link') }} 
+        <img :src="$t('offer__promotion_line_2__background') + '?resize&width=1920'" :alt="$t('offer__promotion_line_2__title')"/>
+        <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>
+      </div>
+      <div>
+        {{ $t('offer__promotion_line_3__title') }}
+        {{ $t('offer__promotion_line_3__link') }} 
+        <img :src="$t('offer__promotion_line_3__background') + '?resize&width=1920'" :alt="$t('offer__promotion_line_3__title')"/>
+        <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>
       </div>
     </section>
   </div>

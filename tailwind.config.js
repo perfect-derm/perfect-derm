@@ -28,10 +28,11 @@ module.exports = {
       '100': '1',
     },
     inset: {
-      '0': 0,
-      auto: 'auto',
+      '0': '0',
+      'auto': 'auto',
       '50px':'50px',
-      '200px': '200px'
+      '200px': '200px',
+      '10': '10px'
     },
     height: {
       '200px':  '200px',
