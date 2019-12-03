@@ -1,12 +1,9 @@
 {
-  "pl__title": "Medycyna estetyczna",
-  "en__title": "Aesthetic Medicine",
-  "de__title": "Ästhetische Medizin",
-  "xx__background": "/images/uploads/adobestock_105348205.jpeg",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": "",
-  "pl__link": "offer",
-  "en__link": "offer",
-  "de__link": "offer"
+  "pl__title": "Dermapen",
+  "en__title": " Dermapen",
+  "de__title": " Dermapen",
+  "xx__photo": "/images/uploads/dermapen.jpeg",
+  "pl__description": "Skuteczna stymulacja produkcji kolagenu, ujędrnianie skóry w każdym miejscu",
+  "en__description": "Effective stimulation of collagen production, skin firming in every place",
+  "de__description": "Wirksame Stimulation der Kollagenproduktion, Hautstraffung an jedem ort"
 }
