@@ -1,17 +1,20 @@
 const path = require('path');
 const delimeter = "__";
 const keyPrefix = '$uniqueKeyIndex';
+const keySlugPrefix = 'slug';
+
 let collectionMatrix = [];
 
 export default (context, language) => {
     var allDataFiles = require.context('../content', true, /^(.*\.(json$))[^.]*$/im);
-    let regex = new RegExp('(' + language + delimeter + '|xx' + delimeter + ')(.*)');
+    let regex = new RegExp('^(' + language + delimeter + '|xx' + delimeter + ')(.*)$');
+    let regexSlug = new RegExp('^(' + language + delimeter + keySlugPrefix + '|xx' + delimeter + keySlugPrefix + ')$');
 
     return new Promise(function (resolve) {    
         let data = {};
-        
+
         allDataFiles.keys().forEach(function(filePath){
-          let properPrefixEntry = {};
+          let noPrefix = {};
           let fileData = allDataFiles(filePath);
           let filePathProcessed = filePath.split(path.sep);
 
@@ -40,7 +43,7 @@ export default (context, language) => {
 
             languagePrefixByPathAndFilename = filePathProcessed.join(delimeter);
 
-            properPrefixEntry[keyPrefix + delimeter + filePathProcessed[0]] = entryInCollectionAndLanguage.length.toString();
+            noPrefix[keyPrefix + delimeter + filePathProcessed[0]] = entryInCollectionAndLanguage.length.toString();
 
           } else {
             languagePrefixByPathAndFilename = languagePrefixByPathAndFilename + delimeter + fileName.toString();
@@ -50,17 +53,32 @@ export default (context, language) => {
             let newKey;
             if(newKey = key.match(regex)){
               if(!newKey[2].includes(languagePrefixByPathAndFilename)) {
-                properPrefixEntry[(languagePrefixByPathAndFilename.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key];
+
+                noPrefix[(languagePrefixByPathAndFilename.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key];
               } else {
-                properPrefixEntry[newKey[2]] = fileData[key];
+                noPrefix[newKey[2]] = fileData[key];
               }
 
-              properPrefixEntry[newKey[2]] = fileData[key];
-
+              noPrefix[newKey[2]] = fileData[key];
             }
+
+            //For virtual patch additionall entry - check for one, use it to fill other
+            
+            let languageDetected;
+            if(languageDetected = key.match(regexSlug)){
+              Object.keys(fileData).forEach(function(keySecond) {
+                // _collection __ idetifier __ dataOfEveryFieldInSameFile
+                noPrefix[filePathProcessed[0].concat(delimeter,fileData[key],delimeter,'$linkOutOfSync',delimeter,language)] = 'ok';
+                //Load one lang per one slu
+                if(keySecond.split(delimeter)[0] === language || keySecond.split(delimeter)[0] === 'xx'){
+                  noPrefix[filePathProcessed[0].concat(delimeter,fileData[key],delimeter,keySecond.split(delimeter)[1])] = fileData[keySecond];
+                }
+              });   
+            }
+
           });
   
-          data = {...data, ...properPrefixEntry};
+          data = {...data, ...noPrefix};
         });
 
         resolve(data);

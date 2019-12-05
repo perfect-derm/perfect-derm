@@ -1,0 +1,18 @@
+{
+    "xx__identifier": "lalala",
+    "pl__slug": "bla_pl",
+    "en__slug": "bla_en",
+    "de__slug": "bla_de",
+    "pl__title": "Konsultacje PL",
+    "en__title": "Konsultacje EN",
+    "de__title": "Konsultacje DE",
+    "pl__description_top": "Konsultacje PL",
+    "en__description_top": "Konsultacje EN",
+    "de__description_top": "Konsultacje DE",
+    "pl__description_promo": "Konsultacje PL",
+    "en__description_promo": "Konsultacje EN",
+    "de__description_promo": "Konsultacje DE",
+    "pl__description_bottom": "Konsultacje PL",
+    "en__description_bottom": "Konsultacje EN",
+    "de__description_bottom": "Konsultacje DE"
+}

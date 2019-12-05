@@ -1,3 +1,7 @@
+const requireContext = require('require-context');
+const path = require('path');
+const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im);
+
 module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
@@ -97,6 +101,19 @@ module.exports = {
         defaultLocale: 'pl',
         lazy: true,
         langDir: 'lang/',
+        vuex: {
+          // Module namespace
+          moduleName: 'i18n',
+      
+          // If enabled, current app's locale is synced with nuxt-i18n store module
+          syncLocale: true,
+      
+          // If enabled, current translation messages are synced with nuxt-i18n store module
+          syncMessages: true,
+      
+          // Mutation to commit to set route parameters translations
+          syncRouteParams: true
+        },
         vueI18n: {
           fallbackLocale: 'en',
           detectBrowserLanguage: {
@@ -105,7 +122,7 @@ module.exports = {
             alwaysRedirect: true
           },
           seo: true
-        } 
+        }, 
       }
     ],
     [
@@ -167,21 +184,18 @@ module.exports = {
                     { 
                       label: '[PL] Logo - atrybut ALT',
                       name: 'pl__alt',
-                      locale: 'pl',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[EN] Logo - atrybut ALT',
                       name: 'en__alt',
-                      locale: 'en',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[DE] Logo - atrybut ALT',
                       name: 'de__alt',
-                      locale: 'de',
                       widget: 'string',
                       required: true 
                     }
@@ -195,21 +209,18 @@ module.exports = {
                     { 
                       label: '[PL] Telefon w nagłówku',
                       name: 'pl__telephone',
-                      locale: 'pl',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[EN] Telefon w nagłówku',
                       name: 'en__telephone',
-                      locale: 'en',
                       widget: 'string',
                       required: true 
                     },
                     { 
                       label: '[DE] Telefon w nagłówku',
                       name: 'de__telephone',
-                      locale: 'de',
                       widget: 'string',
                       required: true 
                     }
@@ -258,28 +269,24 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Tło',
                       name: 'pl__image',
-                      locale: 'pl',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -291,7 +298,6 @@ module.exports = {
                     { 
                       label: '[EN] Tło',
                       name: 'en__image',
-                      locale: 'en',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -303,7 +309,6 @@ module.exports = {
                     { 
                       label: '[DE] Tło',
                       name: 'de__image',
-                      locale: 'de',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -315,21 +320,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true 
                     }
@@ -343,28 +345,24 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Tło',
                       name: 'pl__image',
-                      locale: 'pl',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -376,7 +374,6 @@ module.exports = {
                     { 
                       label: '[EN] Tło',
                       name: 'en__image',
-                      locale: 'en',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -388,7 +385,6 @@ module.exports = {
                     { 
                       label: '[DE] Tło',
                       name: 'de__image',
-                      locale: 'de',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -400,21 +396,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true 
                     }
@@ -428,28 +421,24 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Tło',
                       name: 'pl__image',
-                      locale: 'pl',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -461,7 +450,6 @@ module.exports = {
                     { 
                       label: '[EN] Tło',
                       name: 'en__image',
-                      locale: 'en',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -473,7 +461,6 @@ module.exports = {
                     { 
                       label: '[DE] Tło',
                       name: 'de__image',
-                      locale: 'de',
                       widget: 'image',
                       required: true,
                       media_library: {
@@ -485,21 +472,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true 
                     }
@@ -513,21 +497,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     }
@@ -541,42 +522,36 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -590,21 +565,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -622,21 +594,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -650,21 +619,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -682,21 +648,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -710,21 +673,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -742,21 +702,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -770,63 +727,54 @@ module.exports = {
                     {
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     {
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     {
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     {
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'text',
                       required: true,
                     },
                     {
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'text',
                       required: true,
                     },
                     {
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'text',
                       required: true,
                     },
                     {
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     {
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     {
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -851,21 +799,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -883,21 +828,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -911,21 +853,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -943,21 +882,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -971,21 +907,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1003,21 +936,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1031,42 +961,36 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -1080,21 +1004,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1114,21 +1035,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -1142,21 +1060,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     }
@@ -1170,21 +1085,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -1209,21 +1121,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     }
@@ -1248,21 +1157,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     }
@@ -1287,21 +1193,18 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     }
@@ -1321,21 +1224,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -1349,21 +1249,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1381,21 +1278,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1409,21 +1303,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1441,21 +1332,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1469,21 +1357,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1501,21 +1386,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1529,21 +1411,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1561,21 +1440,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1589,21 +1465,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1621,21 +1494,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1649,21 +1519,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1681,21 +1548,18 @@ module.exports = {
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1709,21 +1573,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -1737,21 +1598,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1769,42 +1627,36 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1818,21 +1670,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1850,42 +1699,36 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1899,21 +1742,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1931,42 +1771,36 @@ module.exports = {
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[PL] Link',
                       name: 'pl__link',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link',
                       name: 'en__link',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link',
                       name: 'de__link',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -1980,26 +1814,130 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                   ]
                 }
+              ]
+            },
+            {
+              name: 'prices',
+              label: 'Cennik [Tabela cen]', 
+              folder: 'content/_tariff',
+              format: 'json',
+              extension: 'json',
+              create: true,
+              identifier_field: 'xx__identifier',
+              fields: [
+                { 
+                  label: 'Identyfikator',
+                  name: 'xx__identifier',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: 'Adres URL [PL]',
+                  name: 'pl__slug',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: 'Adres URL [EN]',
+                  name: 'en__slug',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: 'Adres URL [DE]',
+                  name: 'de__slug',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[PL] Tytuł',
+                  name: 'pl__title',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[EN] Tytuł',
+                  name: 'en__title',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[DE] Tytuł',
+                  name: 'de__title',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[PL] Opis nad informacją wyróżnioną',
+                  name: 'pl__description_top',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Opis nad informacją wyróżnioną',
+                  name: 'en__description_top',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Opis nad informacją wyróżnioną',
+                  name: 'de__description_top',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[PL] Informacja wyróżniona',
+                  name: 'pl__description_promo',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Informacja wyróżniona',
+                  name: 'en__description_promo',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Informacja wyróżniona',
+                  name: 'de__description_promo',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[PL] Opis pod informacją wyróżnioną',
+                  name: 'pl__description_bottom',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Opis pod informacją wyróżnioną',
+                  name: 'en__description_bottom',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Opis pod informacją wyróżnioną',
+                  name: 'de__description_bottom',
+                  widget: 'markdown',
+                  required: false,
+                },
               ]
             },
             {
@@ -2014,21 +1952,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -2060,21 +1995,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -2121,28 +2053,24 @@ module.exports = {
                 { 
                   label: '[PL] Tytuł',
                   name: 'pl__title',
-                  locale: 'pl',
                   widget: 'string',
                   required: true,
                 },
                 { 
                   label: '[EN] Tytuł',
                   name: 'en__title',
-                  locale: 'en',
                   widget: 'string',
                   required: true,
                 },
                 { 
                   label: '[DE] Tytuł',
                   name: 'de__title',
-                  locale: 'de',
                   widget: 'string',
                   required: true,
                 },
                 { 
                   label: '[PL] Cena',
                   name: 'pl__price',
-                  locale: 'pl',
                   widget: 'string',
                   required: true,
                   default: "-"
@@ -2150,7 +2078,6 @@ module.exports = {
                 { 
                   label: '[EN] Cena',
                   name: 'en__price',
-                  locale: 'en',
                   widget: 'string',
                   required: true,
                   default: "-"
@@ -2158,7 +2085,6 @@ module.exports = {
                 { 
                   label: '[DE] Cena',
                   name: 'de__price',
-                  locale: 'de',
                   widget: 'string',
                   required: true,
                   default: "-"
@@ -2184,21 +2110,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -2218,21 +2141,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -2252,21 +2172,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -2286,42 +2203,36 @@ module.exports = {
                     { 
                       label: '[PL] Link lewy',
                       name: 'pl__link_1',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link lewy',
                       name: 'en_link_1',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link lewy',
                       name: 'de__link_1',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Link prawy',
                       name: 'pl__link_2',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Link prawy',
                       name: 'en_link_2',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Link prawy',
                       name: 'de__link_2',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
@@ -2335,21 +2246,18 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
@@ -2429,63 +2337,54 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__ctitle',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Adres',
                       name: 'pl__adress',
-                      locale: 'pl',
                       widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Adres',
                       name: 'en__adress',
-                      locale: 'en',
                       widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Adres',
                       name: 'de__adress',
-                      locale: 'pl',
                       widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: false,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'markdown',
                       required: false,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: false,
                     },
@@ -2499,42 +2398,36 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Godziny otwarcia',
                       name: 'pl__hours',
-                      locale: 'pl',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[EN] Godziny otwarcia',
                       name: 'en__hours',
-                      locale: 'en',
                       widget: 'markdown',
                       required: true,
                     },
                     { 
                       label: '[DE] Godziny otwarcia',
                       name: 'de__hours',
-                      locale: 'de',
                       widget: 'markdown',
                       required: true,
                     }
@@ -2548,63 +2441,54 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Telefon',
                       name: 'pl__telephone',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Telefon',
                       name: 'en__telephone',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Telefon',
                       name: 'de__telephone',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Email',
                       name: 'pl__email',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Email',
                       name: 'en__email',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Email',
                       name: 'de__email',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     }
@@ -2618,42 +2502,36 @@ module.exports = {
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
-                      locale: 'pl',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[EN] Tytuł',
                       name: 'en__title',
-                      locale: 'en',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[DE] Tytuł',
                       name: 'de__title',
-                      locale: 'de',
                       widget: 'string',
                       required: true,
                     },
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
-                      locale: 'pl',
                       widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
-                      locale: 'en',
                       widget: 'text',
                       required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
-                      locale: 'de',
                       widget: 'text',
                       required: true,
                     }
@@ -2797,14 +2675,69 @@ module.exports = {
     }
   },
   generate: {
-    routes: [
-      '/',
-      '/en',
-      '/de',
-      '/pl',
-      '/test',
-      '/en/test',
-      '/de/test',
-    ]
+    routes (callback) {
+      
+      const key = 'slug';
+      const delimeter = "__";
+      const langArray = [
+        {
+          code: 'de',
+          default: false,
+          iso: 'de-DE',
+          file: 'de.js'
+        },
+        {
+          code: 'en',
+          default: false,
+          iso: 'en-GB',
+          file: 'en.js'
+        },
+        {
+          code: 'pl',
+          default: true,
+          iso: 'pl-PL',
+          file: 'pl.js'
+        }
+      ];
+      let routes = [];
+
+  
+      filesWithData.keys().forEach(filePath => {
+      
+
+        let filePathProcessed = filePath.split(path.sep);
+
+        if(filePathProcessed[0] === '.'){
+          filePathProcessed.shift();
+        }
+
+        if(filePathProcessed[0][0] === '_'){
+          // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
+          langArray.forEach(lang => {
+            if(typeof filesWithData(filePath)[lang.code.concat(delimeter,key)] !== 'undefined'){
+
+              if(lang.default){
+                routes.push(path.sep.concat(filesWithData(filePath)[key]));  
+              } else {
+                routes.push(path.sep.concat(filesWithData(filePath)[lang.code.concat(delimeter,key)]));
+              }
+              
+            }  
+          }) 
+          
+        }
+      });
+
+      callback(null, routes);
+    },
+    // routes: [
+    //   '/',
+    //   '/en',
+    //   '/de',
+    //   '/pl',
+    //   '/test',
+    //   '/en/test',
+    //   '/de/test',
+    // ]
   }
 };
