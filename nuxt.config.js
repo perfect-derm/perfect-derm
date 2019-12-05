@@ -2701,7 +2701,7 @@ module.exports = {
               routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
             } 
             
-            routes.push(path.sep.concat(path.sep,lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+            routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
 
           }) 
           
