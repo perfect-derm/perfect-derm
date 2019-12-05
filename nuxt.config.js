@@ -2717,9 +2717,9 @@ module.exports = {
             if(typeof filesWithData(filePath)[lang.code.concat(delimeter,key)] !== 'undefined'){
 
               if(lang.default){
-                routes.push(path.sep.concat(filesWithData(filePath)[lang.code]));  
+                routes.push(path.sep.concat(filesWithData(filePath)[lang.code.concat(delimeter,key)]));  
               } else {
-                routes.push(path.sep.concat(filesWithData(filePath)[lang.code.concat(delimeter,key)]));
+                routes.push(path.sep.concat(delimeter,lang,filesWithData(filePath)[lang.code.concat(delimeter,key)]));
               }
               
             }  
