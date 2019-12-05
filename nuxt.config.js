@@ -2717,7 +2717,7 @@ module.exports = {
             if(typeof filesWithData(filePath)[lang.code.concat(delimeter,key)] !== 'undefined'){
 
               if(lang.default){
-                routes.push(path.sep.concat(filesWithData(filePath)[key]));  
+                routes.push(path.sep.concat(filesWithData(filePath)[lang.code]));  
               } else {
                 routes.push(path.sep.concat(filesWithData(filePath)[lang.code.concat(delimeter,key)]));
               }
@@ -2729,15 +2729,6 @@ module.exports = {
       });
 
       callback(null, routes);
-    },
-    // routes: [
-    //   '/',
-    //   '/en',
-    //   '/de',
-    //   '/pl',
-    //   '/test',
-    //   '/en/test',
-    //   '/de/test',
-    // ]
+    }
   }
 };

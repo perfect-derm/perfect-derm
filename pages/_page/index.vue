@@ -12,11 +12,6 @@
       <p>
           DEBUG:      
           {{ $route.params.page }}<br/>
-
-          <br/>TEST:<br/>
-          {{ $t('_page__' + $route.params.page.toString() + '__$linkOutOfSync__pl') }}<br/>
-          {{ $t('_page__' + $route.params.page.toString() + '__$linkOutOfSync__en') }}<br/>
-          {{ $t('_page__' + $route.params.page.toString() + '__$linkOutOfSync__de') }}
       </p>
   </div>
 </template>
