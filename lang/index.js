@@ -64,11 +64,13 @@ export default (context, language) => {
 
             //For virtual patch additionall entry - check for one, use it to fill other
             
-            let languageDetected;
-            if(languageDetected = key.match(regexSlug)){
+            if(key.match(regexSlug)){
+              // console.log(language);
+              // console.log(key);
+              // console.log(fileData);
               Object.keys(fileData).forEach(function(keySecond) {
                 // _collection __ idetifier __ dataOfEveryFieldInSameFile
-                noPrefix[filePathProcessed[0].concat(delimeter,fileData[key],delimeter,'$linkOutOfSync',delimeter,language)] = 'ok';
+                // noPrefix[filePathProcessed[0].concat(delimeter,fileData[key],delimeter,'$linkOutOfSync',delimeter,language)] = 'ok';
                 //Load one lang per one slu
                 if(keySecond.split(delimeter)[0] === language || keySecond.split(delimeter)[0] === 'xx'){
                   noPrefix[filePathProcessed[0].concat(delimeter,fileData[key],delimeter,keySecond.split(delimeter)[1])] = fileData[keySecond];

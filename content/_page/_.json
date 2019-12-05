@@ -1,8 +1,5 @@
 {
-    "xx__identifier": "lalala",
-    "pl__slug": "bla_pl",
-    "en__slug": "bla_en",
-    "de__slug": "bla_de",
+    "xx__slug": "lalala",
     "pl__title": "Konsultacje PL",
     "en__title": "Konsultacje EN",
     "de__title": "Konsultacje DE",

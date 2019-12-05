@@ -1835,34 +1835,16 @@ module.exports = {
             },
             {
               name: 'prices',
-              label: 'Cennik [Tabela cen]', 
-              folder: 'content/_tariff',
+              label: 'Strony statyczne', 
+              folder: 'content/_page',
               format: 'json',
               extension: 'json',
               create: true,
-              identifier_field: 'xx__identifier',
+              identifier_field: 'xx__slug',
               fields: [
                 { 
-                  label: 'Identyfikator',
-                  name: 'xx__identifier',
-                  widget: 'string',
-                  required: true,
-                },
-                { 
-                  label: 'Adres URL [PL]',
-                  name: 'pl__slug',
-                  widget: 'string',
-                  required: true,
-                },
-                { 
-                  label: 'Adres URL [EN]',
-                  name: 'en__slug',
-                  widget: 'string',
-                  required: true,
-                },
-                { 
-                  label: 'Adres URL [DE]',
-                  name: 'de__slug',
+                  label: 'Adres URL',
+                  name: 'xx__slug',
                   widget: 'string',
                   required: true,
                 },
@@ -2711,18 +2693,16 @@ module.exports = {
           filePathProcessed.shift();
         }
 
-        if(filePathProcessed[0][0] === '_'){
+        if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
           // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
           langArray.forEach(lang => {
-            if(typeof filesWithData(filePath)[lang.code.concat(delimeter,key)] !== 'undefined'){
+            
+            if(lang.default){
+              routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
+            } 
+            
+            routes.push(path.sep.concat(path.sep,lang.code,path.sep,filesWithData(filePath)['xx__slug']));
 
-              if(lang.default){
-                routes.push(path.sep.concat(filesWithData(filePath)[lang.code.concat(delimeter,key)]));  
-              } else {
-                routes.push(path.sep.concat(delimeter,lang,filesWithData(filePath)[lang.code.concat(delimeter,key)]));
-              }
-              
-            }  
           }) 
           
         }
