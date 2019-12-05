@@ -2699,9 +2699,9 @@ module.exports = {
             
             if(lang.default){
               routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
-            } 
-            
-            routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+            } else {
+              routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+            }
 
           }) 
           
