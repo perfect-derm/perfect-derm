@@ -1,4 +1,4 @@
-image: node:8.9.0
+image: node:12.13.1
 
 cache:
   untracked: true
@@ -21,4 +21,4 @@ deploy:
   script:
     - npm install netlify-cli -g
     - npm run generate
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    - netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN --prod --silent
