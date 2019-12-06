@@ -2607,7 +2607,7 @@ module.exports = {
     debug: true
   },
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: false
   },
   /*
   ** Build configuration

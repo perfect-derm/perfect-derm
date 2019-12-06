@@ -8,7 +8,7 @@
     "serve": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate --fail-on-page-error",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev-debug": "node --inspect node_modules/nuxt/bin/nuxt generate",
     "precommit": "npm run lint"
