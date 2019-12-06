@@ -1,6 +1,7 @@
 image: node:8.9.0
 
 cache:
+  untracked: true
   paths:
     - node_modules/
 
