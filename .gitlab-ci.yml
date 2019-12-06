@@ -11,8 +11,7 @@ deploy:
   only:
     - master
   script:
-    - npm install
-    - npm install netlify-cli -g
-    - npm install core-js
+    - npm install -g
+    - npm install core-js netlify-cli -g
     - npm run generate
-    - npm netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
