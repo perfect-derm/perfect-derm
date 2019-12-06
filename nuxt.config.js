@@ -1834,7 +1834,7 @@ module.exports = {
               ]
             },
             {
-              name: 'prices',
+              name: 'pages',
               label: 'Strony statyczne', 
               folder: 'content/_page',
               format: 'json',
