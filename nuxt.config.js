@@ -1835,7 +1835,7 @@ module.exports = {
             },
             {
               name: 'pages',
-              label: 'Strony statyczne', 
+              label: 'Strona [Strony statyczne]', 
               folder: 'content/_page',
               format: 'json',
               extension: 'json',
@@ -1998,7 +1998,7 @@ module.exports = {
             },
             {
               name: 'prices',
-              label: 'Cennik [Tabela cen]', 
+              label: 'Cena [Cennik]', 
               folder: 'content/_tariff',
               format: 'json',
               extension: 'json',
