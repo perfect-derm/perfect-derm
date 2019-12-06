@@ -12,6 +12,7 @@ deploy:
     - master
   script:
     - npm install
-    - npm i netlify-cli
+    - npm install netlify-cli
+    - npm install npx
     - npm run generate
     - npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
