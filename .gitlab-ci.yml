@@ -6,8 +6,8 @@ cache:
     - node_modules/
 
 before_script:
-  - apt-get update
-  - apt-get install libglu1
+  - apt-get update -yq
+  - apt-get install libglu1 -yq
   - npm install --silent --no-audit
 
 stages:
