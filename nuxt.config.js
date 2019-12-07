@@ -2656,59 +2656,59 @@ module.exports = {
       )
     }
   },
-  generate: {
-    routes (callback) {
+  // generate: {
+    // routes (callback) {
       
-      const key = 'slug';
-      const delimeter = "__";
-      const langArray = [
-        {
-          code: 'de',
-          default: false,
-          iso: 'de-DE',
-          file: 'de.js'
-        },
-        {
-          code: 'en',
-          default: false,
-          iso: 'en-GB',
-          file: 'en.js'
-        },
-        {
-          code: 'pl',
-          default: true,
-          iso: 'pl-PL',
-          file: 'pl.js'
-        }
-      ];
-      let routes = [];
+    //   const key = 'slug';
+    //   const delimeter = "__";
+    //   const langArray = [
+    //     {
+    //       code: 'de',
+    //       default: false,
+    //       iso: 'de-DE',
+    //       file: 'de.js'
+    //     },
+    //     {
+    //       code: 'en',
+    //       default: false,
+    //       iso: 'en-GB',
+    //       file: 'en.js'
+    //     },
+    //     {
+    //       code: 'pl',
+    //       default: true,
+    //       iso: 'pl-PL',
+    //       file: 'pl.js'
+    //     }
+    //   ];
+    //   let routes = [];
 
   
-      filesWithData.keys().forEach(filePath => {
+    //   filesWithData.keys().forEach(filePath => {
       
 
-        let filePathProcessed = filePath.split(path.sep);
+    //     let filePathProcessed = filePath.split(path.sep);
 
-        if(filePathProcessed[0] === '.'){
-          filePathProcessed.shift();
-        }
+    //     if(filePathProcessed[0] === '.'){
+    //       filePathProcessed.shift();
+    //     }
 
-        if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
-          // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
-          langArray.forEach(lang => {
+    //     if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
+    //       // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
+    //       langArray.forEach(lang => {
             
-            if(lang.default){
-              routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
-            } else {
-              routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
-            }
+    //         if(lang.default){
+    //           routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
+    //         } else {
+    //           routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+    //         }
 
-          }) 
+    //       }) 
           
-        }
-      });
+    //     }
+    //   });
 
-      callback(null, routes);
-    }
-  }
+    //   callback(null, routes);
+    // }
+  // }
 };
