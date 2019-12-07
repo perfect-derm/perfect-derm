@@ -6,6 +6,7 @@ cache:
     - node_modules/
 
 before_script:
+  - npm install --global cwebp-bin
   - npm install --silent --no-audit
 
 stages:
