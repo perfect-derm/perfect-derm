@@ -19,6 +19,6 @@ deploy:
   only:
     - master
   script:
-    - npm install netlify-cli -g --silent --no-audit
     - npm run generate
-    - netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN --prod --silent
+    # - npm install netlify-cli -g --silent --no-audit
+    # - netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN --prod --silent
