@@ -6,7 +6,7 @@ cache:
     - node_modules/
 
 before_script:
-  - npm install --global cwebp-bin
+  - sudo apt-get install libglu1
   - npm install --silent --no-audit
 
 stages:
