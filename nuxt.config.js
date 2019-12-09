@@ -1358,7 +1358,7 @@ module.exports = {
                       required: true,
                     },
                   ]
-                }
+                },
                 {
                   name: 'left_line_1_offer',
                   label: '[Lewo] Wyróżniona oferta [pierwsza linia]',
