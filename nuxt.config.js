@@ -1310,6 +1310,56 @@ module.exports = {
                   ]
                 },
                 {
+                  name: 'title',
+                  label: 'Tytuł',
+                  file: 'content/offer/title.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/offer/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                }
+                {
                   name: 'left_line_1_offer',
                   label: '[Lewo] Wyróżniona oferta [pierwsza linia]',
                   file: 'content/offer/left_line_1_offer.json',
@@ -1874,31 +1924,6 @@ module.exports = {
                     },
                   ]
                 },
-                {
-                  name: 'breadcrumb',
-                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
-                  file: 'content/offer/breadcrumb.json',
-                  fields: [
-                    { 
-                      label: '[PL] Tytuł',
-                      name: 'pl__title',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Tytuł',
-                      name: 'en__title',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Tytuł',
-                      name: 'de__title',
-                      widget: 'string',
-                      required: true,
-                    },
-                  ]
-                }
               ]
             },
             {
@@ -2035,6 +2060,31 @@ module.exports = {
                         }
                       },
                     }
+                  ]
+                },
+                {
+                  name: 'title',
+                  label: 'Tytuł',
+                  file: 'content/tariff/title.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
                   ]
                 },
                 {
