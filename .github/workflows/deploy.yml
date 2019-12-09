@@ -13,21 +13,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm - install
+
+    - name: NPM - install dependencies
       run: |
         npm ci
         npm install --silent --no-audit
-    - name: npm - generate
+
+    - name: Nuxt - Generate SSR
       run: |
         npm run generate
+
     - name: netlify 
       run: |
+        npm install netlify-cli -g --silent --no-audit
         netlify deploy --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --silent
-        
         
       env:
         CI: true
