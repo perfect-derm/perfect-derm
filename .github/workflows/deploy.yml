@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [ 10.x ]
 
     steps:
     - uses: actions/checkout@v1
@@ -19,19 +19,30 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Cache NPM
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: NPM - install dependencies
+      env:
+        CI: true
       run: |
         npm ci
         npm install --silent --no-audit
 
     - name: Nuxt - Generate SSR
+      env:
+        CI: true
       run: |
         npm run generate
 
-    - name: netlify 
+    - name: Netlify - Deploy to production
+      env:
+        CI: true
       run: |
         npm install netlify-cli -g --silent --no-audit
         netlify deploy --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --silent
-        
-      env:
-        CI: true
