@@ -32,7 +32,7 @@
     "imagemin-svgo": "^7.0.0",
     "lqip-loader": "^2.2.0",
     "netlify-cms": "^2.9.7",
-    "nuxt": "2.10.2",
+    "nuxt": "2.9.2",
     "nuxt-i18n": "^6.4.1",
     "nuxt-netlify-cms": "^4.0.0",
     "nuxt-netlify-http2-server-push": "^0.1.3",
