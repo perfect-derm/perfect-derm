@@ -13,7 +13,7 @@
       <div class="flex-none">
         <img
           v-if="photo !== ''"
-          :src="require(`~/static/${photo}`)"
+          :src="require(`~/static${photo}`)"
           class="center tc"
           alt=""
           width="200px"
