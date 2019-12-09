@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: [ self-hosted, ubuntu-18.04 ]
+    runs-on: [ self-hosted ]
 
     strategy:
       matrix:
