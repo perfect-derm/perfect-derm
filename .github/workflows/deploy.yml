@@ -1,4 +1,4 @@
-name: Node CI
+name: Deploy on Netlify
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
 
     strategy:
       matrix:
