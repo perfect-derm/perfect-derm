@@ -2329,23 +2329,31 @@ module.exports = {
                   ]
                 },
                 { 
-                  label: '[PL] Opis',
-                  name: 'pl__description',
-                  widget: 'markdown',
-                  required: false,
-                },
-                { 
-                  label: '[EN] Opis',
-                  name: 'en__description',
-                  widget: 'markdown',
-                  required: false,
-                },
-                { 
-                  label: '[DE] Opis',
-                  name: 'de__description',
-                  widget: 'markdown',
-                  required: false,
-                },
+                  name: 'description',
+                  label: 'Opis',
+                  file: 'content/contact/description.json',
+                  fields: [
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: false,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: false,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: false,
+                    },
+                  ]
+                }
+
               ]
             },
             {
