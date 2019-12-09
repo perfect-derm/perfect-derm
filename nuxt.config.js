@@ -2940,14 +2940,7 @@ module.exports = {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
-    //    "@bazzite/nuxt-optimized-images": "^0.2.2",
-    // '@bazzite/nuxt-optimized-images',
-    // "imagemin-gifsicle": "^6.0.1",
-    // "imagemin-mozjpeg": "^8.0.0",
-    // "imagemin-pngquant": "^8.0.0",
-    // "imagemin-svgo": "^7.0.0",
-    // "lqip-loader": "^2.2.0",
-    //     "sharp": "^0.23.4",
+    '@bazzite/nuxt-optimized-images',
     'nuxt-polyfill'
   ],
   webfontloader: {

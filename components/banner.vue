@@ -3,21 +3,21 @@
   <div class="banner h-600px w-full flex items-end justify-center overflow-hidden" v-swiper:banner="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
-        <img :src="'~/static' + $t('homepage__banner_1__image') + '?resize&size=1920'" alt="" class="w-full h-full object-cover"/>
+        <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-200px left-50px right-auto">
           <h2 class="text-left max-w-700px text-3xl text-grey-700" v-html="$options.filters.break($t('homepage__banner_1__title'))"></h2>            
           <div class="text-left max-w-700px text-2xl text-grey-600" v-html="$md.render(this.$t('homepage__banner_1__description'))"></div>
         </div>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
-        <img :src="'~/static' + $t('homepage__banner_2__image') + '?resize&size=1920'" alt="" class="w-full h-full object-cover"/>
+        <img :src="require('~/static' + $t('homepage__banner_2__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-200px left-auto right-50px">
           <h2 class="text-left max-w-700px text-3xl text-grey-700" v-html="$options.filters.break($t('homepage__banner_2__title'))"></h2>            
           <div class="text-left max-w-700px text-2xl text-grey-600" v-html="$md.render(this.$t('homepage__banner_2__description'))"></div>
         </div>    
       </li>  
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
-        <img :src="'~/static' + $t('homepage__banner_3__image') + '?resize&size=1920'" alt="" class="w-full h-full object-cover"/>
+        <img :src="require('~/static' + $t('homepage__banner_3__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-200px left-auto right-50px">
           <h2 class="text-left max-w-700px text-3xl text-grey-700" v-html="$options.filters.break($t('homepage__banner_3__title'))"></h2>            
           <div class="text-left max-w-700px text-2xl text-grey-600" v-html="$md.render(this.$t('homepage__banner_3__description'))"></div>

@@ -9,8 +9,8 @@
           v-if="image !== ''"
           class="flex flex-1"
          >
-          <source :srcSet="`~/static${image}?webp&resize&size=448`" type="image/webp" />
-          <source :srcSet="`~/static${image}?resize&size=448`" type="image/jpeg" />
+          <source :srcSet="require(`~/static${image}?webp&resize&size=448`)" type="image/webp" />
+          <source :srcSet="require(`~/static${image}?resize&size=448`)" type="image/jpeg" />
           <img 
             v-if="image !== ''"
             class="object-cover w-full h-auto max-h-310 center tc h-full"
