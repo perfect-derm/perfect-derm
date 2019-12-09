@@ -1,11 +1,11 @@
 {
-  "pl__title": "Tytuł",
-  "en__title": "Tytuł",
-  "de__title": "Tytuł",
-  "pl__image": "",
-  "en__image": "",
-  "de__image": "",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "pl__description": ".",
+  "en__title": "b2",
+  "en__image": "/images/uploads/natural-lift.jpeg",
+  "en__description": ".",
+  "de__title": "b2",
+  "de__image": "/images/uploads/natural-lift.jpeg",
+  "de__description": ".",
+  "pl__title": "Przywracamy naturalne piękno",
+  "pl__image": "/images/uploads/natural-lift.jpeg"
 }
