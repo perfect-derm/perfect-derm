@@ -2296,7 +2296,97 @@ module.exports = {
                       required: true,
                     }
                   ]
+                },
+                { 
+                  name: 'description',
+                  label: 'Opis',
+                  file: 'content/media/description.json',
+                  fields: [
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: false,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: false,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: false,
+                    },
+                  ]
+                },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/media/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
                 }
+              ]
+            },
+            { 
+              name: 'media_collection',
+              label: 'Media [Pozycja]',
+              folder: 'content/_media.json',
+              format: 'json',
+              extension: 'json',
+              create: true,
+              identifier_field: 'en__caption',
+              fields: [ 
+                { 
+                  label: 'Zdjęcie',
+                  name: 'xx__image',
+                  widget: 'image',
+                  required: true,
+                  media_library: {
+                    config: {
+                      multiple: false
+                    }
+                  },
+                },
+                { 
+                  label: '[PL] Tytuł',
+                  name: 'pl__caption',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[EN] Tytuł',
+                  name: 'en__caption',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[DE] Tytuł',
+                  name: 'de__caption',
+                  widget: 'string',
+                  required: true,
+                },
               ]
             },
             {
@@ -2328,6 +2418,31 @@ module.exports = {
                     }
                   ]
                 },
+                {
+                  name: 'title',
+                  label: 'Tytuł',
+                  file: 'content/contact/title.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
                 { 
                   name: 'description',
                   label: 'Opis',
@@ -2352,8 +2467,32 @@ module.exports = {
                       required: false,
                     },
                   ]
+                },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/contact/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
                 }
-
               ]
             },
             {
