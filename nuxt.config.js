@@ -2347,6 +2347,31 @@ module.exports = {
                     }
                   ]
                 },
+                {
+                  name: 'title',
+                  label: 'Tytuł',
+                  file: 'content/media/title.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
                 { 
                   name: 'description',
                   label: 'Opis',
