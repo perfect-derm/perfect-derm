@@ -23,7 +23,7 @@ jobs:
         npm install --silent --no-audit
     - name: npm - generate
       run: |
-        npm generate
+        npm run generate
     - name: netlify 
       run: |
         netlify deploy --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --silent
