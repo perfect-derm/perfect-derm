@@ -1834,9 +1834,9 @@ module.exports = {
               ]
             },
             {
-              name: 'pages',
-              label: 'Strona [Strony statyczne]', 
-              folder: 'content/_page',
+              name: 'offer_collection',
+              label: 'Oferta [Pozycja]', 
+              folder: 'content/_offer',
               format: 'json',
               extension: 'json',
               create: true,
@@ -1998,7 +1998,7 @@ module.exports = {
             },
             {
               name: 'prices',
-              label: 'Cena [Cennik]', 
+              label: 'Cennik [Pozycja]', 
               folder: 'content/_tariff',
               format: 'json',
               extension: 'json',
@@ -2112,6 +2112,95 @@ module.exports = {
               ]
             },
             {
+              name: 'issue_collection',
+              label: 'Twój problem [Pozycja]', 
+              folder: 'content/_issue',
+              format: 'json',
+              extension: 'json',
+              create: true,
+              identifier_field: 'xx__slug',
+              fields: [
+                { 
+                  label: 'Adres URL',
+                  name: 'xx__slug',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[PL] Tytuł',
+                  name: 'pl__title',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[EN] Tytuł',
+                  name: 'en__title',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[DE] Tytuł',
+                  name: 'de__title',
+                  widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: '[PL] Opis nad informacją wyróżnioną',
+                  name: 'pl__description_top',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Opis nad informacją wyróżnioną',
+                  name: 'en__description_top',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Opis nad informacją wyróżnioną',
+                  name: 'de__description_top',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[PL] Informacja wyróżniona',
+                  name: 'pl__description_promo',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Informacja wyróżniona',
+                  name: 'en__description_promo',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Informacja wyróżniona',
+                  name: 'de__description_promo',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[PL] Opis pod informacją wyróżnioną',
+                  name: 'pl__description_bottom',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Opis pod informacją wyróżnioną',
+                  name: 'en__description_bottom',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Opis pod informacją wyróżnioną',
+                  name: 'de__description_bottom',
+                  widget: 'markdown',
+                  required: false,
+                },
+              ]
+            },
+            {
               name: 'media',
               label: 'Media',
               files: [ 
@@ -2170,7 +2259,25 @@ module.exports = {
                       required: true,
                     }
                   ]
-                }
+                },
+                { 
+                  label: '[PL] Opis',
+                  name: 'pl__description',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[EN] Opis',
+                  name: 'en__description',
+                  widget: 'markdown',
+                  required: false,
+                },
+                { 
+                  label: '[DE] Opis',
+                  name: 'de__description',
+                  widget: 'markdown',
+                  required: false,
+                },
               ]
             },
             {
@@ -2650,59 +2757,58 @@ module.exports = {
       }
     }
   },
-  // generate: {
-    // routes (callback) {
-      
-    //   const key = 'slug';
-    //   const delimeter = "__";
-    //   const langArray = [
-    //     {
-    //       code: 'de',
-    //       default: false,
-    //       iso: 'de-DE',
-    //       file: 'de.js'
-    //     },
-    //     {
-    //       code: 'en',
-    //       default: false,
-    //       iso: 'en-GB',
-    //       file: 'en.js'
-    //     },
-    //     {
-    //       code: 'pl',
-    //       default: true,
-    //       iso: 'pl-PL',
-    //       file: 'pl.js'
-    //     }
-    //   ];
-    //   let routes = [];
+  generate: {
+    routes (callback) {
+      const key = 'slug';
+      const delimeter = "__";
+      const langArray = [
+        {
+          code: 'de',
+          default: false,
+          iso: 'de-DE',
+          file: 'de.js'
+        },
+        {
+          code: 'en',
+          default: false,
+          iso: 'en-GB',
+          file: 'en.js'
+        },
+        {
+          code: 'pl',
+          default: true,
+          iso: 'pl-PL',
+          file: 'pl.js'
+        }
+      ];
+      let routes = [];
 
   
-    //   filesWithData.keys().forEach(filePath => {
+      filesWithData.keys().forEach(filePath => {
       
 
-    //     let filePathProcessed = filePath.split(path.sep);
+        let filePathProcessed = filePath.split(path.sep);
 
-    //     if(filePathProcessed[0] === '.'){
-    //       filePathProcessed.shift();
-    //     }
+        if(filePathProcessed[0] === '.'){
+          filePathProcessed.shift();
+        }
 
-    //     if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
-    //       // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
-    //       langArray.forEach(lang => {
+        if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
+          // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
+          langArray.forEach(lang => {
             
-    //         if(lang.default){
-    //           routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
-    //         } else {
-    //           routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
-    //         }
+            if(lang.default){
+              routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
+            } else {
+              routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+            }
 
-    //       }) 
+          }) 
           
-    //     }
-    //   });
+        }
+      });
 
-    //   callback(null, routes);
-    // }
-  // }
+      callback(null, routes);
+    }
+  }
 };
