@@ -1053,6 +1053,24 @@ module.exports = {
                   ]
                 },
                 { 
+                  name: 'banner',
+                  file: 'content/about/banner.json',
+                  label: 'Baner',
+                  fields: [ 
+                    { 
+                      label: 'Baner',
+                      name: 'xx__image',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                  ]
+                },
+                { 
                   name: 'description',
                   label: 'Opis',
                   file: 'content/about/description.json',
@@ -1208,6 +1226,31 @@ module.exports = {
                       widget: 'markdown',
                       required: true,
                     }
+                  ]
+                },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/about/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
                   ]
                 }
               ]
