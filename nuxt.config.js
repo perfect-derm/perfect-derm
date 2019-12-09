@@ -1068,6 +1068,13 @@ module.exports = {
                         }
                       },
                     },
+                  ]
+                },
+                { 
+                  name: 'title',
+                  file: 'content/about/title.json',
+                  label: 'Tytuł',
+                  fields: [ 
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
