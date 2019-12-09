@@ -50,7 +50,7 @@
       },
       'photo': {
         type: String,
-        default: '',
+        default: '/images/uploads/logo.png',
         required: false
       },
       mounted() {

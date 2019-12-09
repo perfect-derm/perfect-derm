@@ -10,7 +10,7 @@
       <div v-html="$md.render(this.$t('about__person_1__description'))"></div>
        <img 
         v-if="$t('about__person_3__photo') !== ''"
-        :src="require('~/static' + $t('about__person_1__photo') + '?resize&size=200')" 
+        :src="'~/static' + $t('about__person_1__photo') + '?resize&size=200'" 
         alt="" 
         class="object-cover"
         width="200px"
@@ -21,7 +21,7 @@
       <div v-html="$md.render(this.$t('about__person_2__description'))"></div>
        <img 
         v-if="$t('about__person_3__photo') !== ''"
-        :src="require('~/static' + $t('about__person_2__photo') + '?resize&size=200')" 
+        :src="'~/static' + $t('about__person_2__photo') + '?resize&size=200'" 
         alt="" 
         class="object-cover"
         width="200px"
@@ -32,7 +32,7 @@
       <div v-html="$md.render(this.$t('about__person_3__description'))"></div>
        <img 
         v-if="$t('about__person_3__photo') !== ''"
-        :src="require('~/static' + $t('about__person_3__photo') + '?resize&size=200')" 
+        :src="'~/static' + $t('about__person_3__photo') + '?resize&size=200'" 
         alt="" 
         class="object-cover"
         width="200px"
