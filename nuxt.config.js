@@ -1053,9 +1053,9 @@ module.exports = {
                   ]
                 },
                 { 
-                  name: 'banner',
+                  name: 'header',
                   file: 'content/about/banner.json',
-                  label: 'Baner',
+                  label: 'Nagłówek',
                   fields: [ 
                     { 
                       label: 'Baner',
@@ -1068,6 +1068,24 @@ module.exports = {
                         }
                       },
                     },
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    }
                   ]
                 },
                 { 
