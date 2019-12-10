@@ -4,5 +4,8 @@
   "de__title": "Zobacz wszystkie dolegliwości",
   "pl__link": "issue",
   "en__link": "issue",
-  "de__link": "issue"
+  "de__link": "issue",
+  "pl__description": "",
+  "en__description": "",
+  "de__description": ""
 }

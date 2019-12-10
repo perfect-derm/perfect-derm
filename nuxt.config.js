@@ -515,9 +515,9 @@ module.exports = {
                   ] 
                 },
                 { 
-                  name: 'button_first',
-                  label: 'Przycisk do akcji [pod banerem i tekstem]',
-                  file: 'content/homepage/button_first.json',
+                  name: 'header_offer',
+                  label: 'Nagłowek - oferta',
+                  file: 'content/homepage/header_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -554,7 +554,25 @@ module.exports = {
                       name: 'de__link',
                       widget: 'string',
                       required: true,
-                    }
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
                   ] 
                 },
                 {
@@ -954,9 +972,9 @@ module.exports = {
                   ]
                 },
                 { 
-                  name: 'button_second',
-                  label: 'Przycisk do akcji [pod blokiem z opisem]',
-                  file: 'content/homepage/button_second.json',
+                  name: 'header_issue',
+                  label: 'Nagłowek - oferta',
+                  file: 'content/homepage/header_issue.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -993,7 +1011,25 @@ module.exports = {
                       name: 'de__link',
                       widget: 'string',
                       required: true,
-                    }
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
                   ] 
                 },
                 {

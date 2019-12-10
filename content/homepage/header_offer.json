@@ -4,5 +4,8 @@
   "de__title": " Ganzes Angebot",
   "pl__link": "offer",
   "en__link": "offer",
-  "de__link": "offer"
+  "de__link": "offer",
+  "pl__description": "",
+  "en__description": "",
+  "de__description": ""
 }
