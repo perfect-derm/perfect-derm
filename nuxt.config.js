@@ -538,24 +538,6 @@ module.exports = {
                       required: true,
                     },
                     { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
                       label: '[PL] Opis',
                       name: 'pl__description',
                       widget: 'markdown',
@@ -737,6 +719,49 @@ module.exports = {
                     },
                   ]
                 },
+                { 
+                  name: 'button_offer',
+                  label: 'Przycisk - Oferta',
+                  file: 'content/homepage/button_offer.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ] 
+                },
                 {
                   name: 'about_description',
                   label: 'Blok z opisem',
@@ -808,6 +833,49 @@ module.exports = {
                       },
                     }
                   ]
+                },
+                { 
+                  name: 'header_issue',
+                  label: 'Nagłowek sekcji - Twój problem',
+                  file: 'content/homepage/header_issue.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                  ] 
                 },
                 {
                   name: 'left_bottom_offer',
@@ -972,9 +1040,9 @@ module.exports = {
                   ]
                 },
                 { 
-                  name: 'header_issue',
-                  label: 'Nagłowek sekcji - Twój problem',
-                  file: 'content/homepage/header_issue.json',
+                  name: 'button_offer',
+                  label: 'Przycisk - Twój problem',
+                  file: 'content/homepage/button_issue.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1011,25 +1079,7 @@ module.exports = {
                       name: 'de__link',
                       widget: 'string',
                       required: true,
-                    },
-                    { 
-                      label: '[PL] Opis',
-                      name: 'pl__description',
-                      widget: 'markdown',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Opis',
-                      name: 'en__description',
-                      widget: 'markdown',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Opis',
-                      name: 'de__description',
-                      widget: 'markdown',
-                      required: true,
-                    },
+                    }
                   ] 
                 },
                 {
