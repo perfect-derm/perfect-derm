@@ -9,8 +9,8 @@
     <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('homepage__text__description'))"></div>
 
     <div class="text-center mb-4 mt-4">
-      <a :href="$t('homepage__button_first__link')" class="button mx-auto">
-        {{ $t('homepage__button_first__title') }}
+      <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
+        {{ $t('homepage__button_offer__title') }}
       </a>
     </div>
 
@@ -59,8 +59,8 @@
     </section>
 
     <div class="text-center mb-4 mt-4">
-      <a :href="$t('homepage__button_second__link')" class="button mx-auto">
-        {{ $t('homepage__button_second__title') }}
+      <a :href="$t('homepage__button_issue__link')" class="button mx-auto">
+        {{ $t('homepage__button_issue__title') }}
       </a>
     </div>
 
