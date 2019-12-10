@@ -1405,6 +1405,17 @@ module.exports = {
                   file: 'content/offer/header.json',
                   fields: [
                     { 
+                      label: 'Baner',
+                      name: 'xx__image',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
                       widget: 'string',
