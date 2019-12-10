@@ -15,6 +15,11 @@
         class="object-cover"
         width="200px"
        />
+      <a 
+        :href="$t('about__person_1__link')"
+      >
+        Zobacz nasze certyfikaty 
+       </a>
     </div>
 
     <div class="mb-4">
@@ -26,6 +31,11 @@
         class="object-cover"
         width="200px"
        />
+      <a 
+        :href="$t('about__person_2__link')"
+       >
+        Zobacz nasze certyfikaty 
+       </a>
     </div>
 
     <div class="mb-4">
@@ -37,6 +47,11 @@
         class="object-cover"
         width="200px"
        />
+       <a 
+        :href="$t('about__person_3__link')"
+       >
+        Zobacz nasze certyfikaty 
+       </a>
     </div>
   </div>
 </template>

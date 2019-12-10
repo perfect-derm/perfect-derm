@@ -1090,7 +1090,7 @@ module.exports = {
                 },
                 { 
                   name: 'header',
-                  file: 'content/about/banner.json',
+                  file: 'content/about/header.json',
                   label: 'Nagłówek',
                   fields: [ 
                     { 
@@ -1104,13 +1104,6 @@ module.exports = {
                         }
                       },
                     },
-                  ]
-                },
-                { 
-                  name: 'title',
-                  file: 'content/about/title.json',
-                  label: 'Tytuł',
-                  fields: [ 
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
@@ -1128,14 +1121,7 @@ module.exports = {
                       name: 'de__title',
                       widget: 'string',
                       required: true,
-                    }
-                  ]
-                },
-                { 
-                  name: 'description',
-                  label: 'Opis',
-                  file: 'content/about/description.json',
-                  fields: [ 
+                    },
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
@@ -1346,9 +1332,9 @@ module.exports = {
                   ]
                 },
                 {
-                  name: 'title',
-                  label: 'Tytuł',
-                  file: 'content/offer/title.json',
+                  name: 'header',
+                  label: 'Nagłówek',
+                  file: 'content/offer/header.json',
                   fields: [
                     { 
                       label: '[PL] Tytuł',
@@ -2262,7 +2248,61 @@ module.exports = {
                       required: true,
                     }
                   ]
-                }
+                },
+                { 
+                  name: 'header',
+                  file: 'content/about/header.json',
+                  label: 'Nagłówek',
+                  fields: [ 
+                    { 
+                      label: 'Baner',
+                      name: 'xx__image',
+                      widget: 'image',
+                      required: true,
+                      media_library: {
+                        config: {
+                          multiple: false
+                        }
+                      },
+                    },
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true,
+                    }
+                  ]
+                },
               ]
             },
             {
