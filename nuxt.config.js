@@ -516,7 +516,7 @@ module.exports = {
                 },
                 { 
                   name: 'header_offer',
-                  label: 'Nagłowek - oferta',
+                  label: 'Nagłowek sekcji - Oferta',
                   file: 'content/homepage/header_offer.json',
                   fields: [ 
                     { 
@@ -973,7 +973,7 @@ module.exports = {
                 },
                 { 
                   name: 'header_issue',
-                  label: 'Nagłowek - oferta',
+                  label: 'Nagłowek sekcji - Twój problem',
                   file: 'content/homepage/header_issue.json',
                   fields: [ 
                     { 
