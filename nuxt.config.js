@@ -1422,6 +1422,24 @@ module.exports = {
                       widget: 'string',
                       required: true,
                     },
+                    { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true,
+                    }
                   ]
                 },
                 {
