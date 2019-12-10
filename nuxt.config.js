@@ -2269,7 +2269,7 @@ module.exports = {
                 },
                 { 
                   name: 'header',
-                  file: 'content/about/header.json',
+                  file: 'content/issue/header.json',
                   label: 'Nagłówek',
                   fields: [ 
                     { 
@@ -2441,11 +2441,11 @@ module.exports = {
                     }
                   ]
                 },
-                {
-                  name: 'title',
-                  label: 'Tytuł',
-                  file: 'content/media/title.json',
-                  fields: [
+                { 
+                  name: 'header',
+                  file: 'content/media/header.json',
+                  label: 'Nagłówek',
+                  fields: [ 
                     { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
@@ -2464,31 +2464,24 @@ module.exports = {
                       widget: 'string',
                       required: true,
                     },
-                  ]
-                },
-                { 
-                  name: 'description',
-                  label: 'Opis',
-                  file: 'content/media/description.json',
-                  fields: [
                     { 
                       label: '[PL] Opis',
                       name: 'pl__description',
                       widget: 'markdown',
-                      required: false,
+                      required: true,
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
                       widget: 'markdown',
-                      required: false,
+                      required: true,
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
                       widget: 'markdown',
-                      required: false,
-                    },
+                      required: true,
+                    }
                   ]
                 },
                 {
