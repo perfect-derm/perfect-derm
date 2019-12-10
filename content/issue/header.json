@@ -1,8 +1,9 @@
 {
-  "pl__title": "Oferta",
-  "en__title": "Offer",
-  "de__title": "Angebot",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "xx__image": "/images/uploads/leczenie-zylakow-i-pajaczkow.png",
+  "pl__title": "Twój prolem",
+  "en__title": "Your issue",
+  "de__title": "Dein problem",
+  "pl__description": "bla bla",
+  "en__description": "bla bla",
+  "de__description": "bla bla"
 }
