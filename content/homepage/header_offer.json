@@ -1,11 +1,11 @@
 {
-  "pl__title": "Sprawdź całą ofertę",
-  "en__title": "Check whole offer",
-  "de__title": " Ganzes Angebot",
-  "pl__link": "offer",
+  "pl__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "en__link": "offer",
+  "en__title": "Check whole offer",
+  "en__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "pl__link": "offer",
+  "de__title": " Ganzes Angebot",
+  "de__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "de__link": "offer",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "pl__title": "Sprawdź całą ofertę"
 }
