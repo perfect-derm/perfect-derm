@@ -1,9 +1,9 @@
 {
   "xx__image": "/images/uploads/perfect-derm.jpg",
-  "pl__title": "O nas",
-  "en__title": "About us",
-  "de__title": "Über uns",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "pl__title": "Twój problem",
+  "en__title": "Your issue",
+  "de__title": "Dein Problem",
+  "pl__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "en__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "de__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
