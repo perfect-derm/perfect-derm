@@ -1200,6 +1200,12 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true,
+                    },
+                    { 
+                      label: 'Link',
+                      name: 'xx__link',
+                      widget: 'string',
+                      required: false,
                     }
                   ]
                 },
@@ -1236,6 +1242,12 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true,
+                    },
+                    { 
+                      label: 'Link',
+                      name: 'xx__link',
+                      widget: 'string',
+                      required: false,
                     }
                   ]
                 },
@@ -1272,6 +1284,12 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true,
+                    },
+                    { 
+                      label: 'Link',
+                      name: 'xx__link',
+                      widget: 'string',
+                      required: false,
                     }
                   ]
                 },
