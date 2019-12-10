@@ -1,11 +1,8 @@
 {
-  "pl__title": "",
-  "en__title": "",
-  "de__title": "",
-  "pl__link": "",
-  "en__link": "",
-  "de__link": "",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "pl__title": "Sprawdź całą ofertę",
+  "en__title": "Whole offer",
+  "de__title": " Ganzes Angebot",
+  "pl__link": "oferta",
+  "en__link": "en/offer",
+  "de__link": "de/offer"
 }
