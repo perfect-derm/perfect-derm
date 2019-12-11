@@ -24,3 +24,11 @@ pipeline:
     image: node:12.8.0
     commands:
       - yarn run generate
+
+  deploy:
+    image: lucap/drone-netlify
+    site_id: 
+      from_secret: netlify_site_id
+    token:
+      from_secret: netlify_token
+    environment: production
