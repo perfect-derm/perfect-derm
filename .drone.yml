@@ -12,7 +12,7 @@ pipeline:
       - /tmp/cache:/cache
 
   install:
-    image: node:8.6.0
+    image: node:12.8.0
     commands:
       - node -v
       - npm -v
@@ -21,6 +21,6 @@ pipeline:
       - yarn install --pure-lockfile
 
   generate:
-    image: node:8.6.0
+    image: node:12.8.0
     commands:
-      - npm run generate
+      - yarn run generate
