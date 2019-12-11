@@ -1,22 +1,29 @@
 name: default
+type: docker
 kind: pipeline
 
+volumes:
+  - name: cache
+    host: 
+      path: /tmp/cache
+      
 pipeline:
   restore-cache:
     image: drillster/drone-volume-cache
     cache_key: [ DRONE_REPO_OWNER, DRONE_REPO_NAME, DRONE_BRANCH ]
     ttl: 1
     restore: true
+    volumes:
+      - name: cache
+        path: /.cache
     mount:
       - ./node_modules
-    volumes:
-      - /tmp/cache:/.npm-cache
 
   install:
     image: node:12.8.0
     commands:
       - npm install ci
-      - npm config set cache .npm-cache
+      - npm config set cache /.cache -g
       - npm ci
 
   generate:
@@ -36,7 +43,8 @@ pipeline:
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
+    volumes:
+      - name: cache
+        path: /.cache
     mount:
       - ./node_modules
-    volumes:
-      - /tmp/cache:/.npm-cache
