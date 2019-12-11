@@ -1,6 +1,6 @@
 const requireContext = require('require-context');
 const path = require('path');
-const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im);
+// const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im);
 
 module.exports = {
   env: {
@@ -19,7 +19,7 @@ module.exports = {
     [
       '@nuxtjs/pwa',
       {
-        icon: true,
+        icon: false,
         manifest: {
           start_url: '/',
           display: 'minimal-ui',
@@ -33,14 +33,14 @@ module.exports = {
         id: 'GTM-N59H54M'
       }
     ],
-    [
-      '@nuxtjs/robots',
-      {
-        UserAgent: '*',
-        Disallow: '/admin',
-        Sitemap: (process.env.BASE_URL || 'http://localhost:3000') + '/sitemap.xml'
-      }
-    ],
+    // [
+    //   '@nuxtjs/robots',
+    //   {
+    //     UserAgent: '*',
+    //     Disallow: '/admin',
+    //     Sitemap: (process.env.BASE_URL || 'http://localhost:3000') + '/sitemap.xml'
+    //   }
+    // ],
     [
       '@reallifedigital/nuxt-image-loader-module', 
       {
@@ -3164,11 +3164,11 @@ module.exports = {
     '~/assets/css/styles.css',
     '~/assets/css/custom.css'
   ],
-  axios: {
-    baseURL: 'http://localhost:3000',
-    host: "localhost",
-    debug: true
-  },
+  // axios: {
+  //   baseURL: 'http://localhost:3000',
+  //   host: "localhost",
+  //   debug: true
+  // },
   optimizedImages: {
     optimizeImages: false
   },
@@ -3206,58 +3206,58 @@ module.exports = {
       }
     }
   },
-  generate: {
-    routes (callback) {
-      const key = 'slug';
-      const delimeter = "__";
-      const langArray = [
-        {
-          code: 'de',
-          default: false,
-          iso: 'de-DE',
-          file: 'de.js'
-        },
-        {
-          code: 'en',
-          default: false,
-          iso: 'en-GB',
-          file: 'en.js'
-        },
-        {
-          code: 'pl',
-          default: true,
-          iso: 'pl-PL',
-          file: 'pl.js'
-        }
-      ];
-      let routes = [];
+  // generate: {
+  //   routes (callback) {
+  //     const key = 'slug';
+  //     const delimeter = "__";
+  //     const langArray = [
+  //       {
+  //         code: 'de',
+  //         default: false,
+  //         iso: 'de-DE',
+  //         file: 'de.js'
+  //       },
+  //       {
+  //         code: 'en',
+  //         default: false,
+  //         iso: 'en-GB',
+  //         file: 'en.js'
+  //       },
+  //       {
+  //         code: 'pl',
+  //         default: true,
+  //         iso: 'pl-PL',
+  //         file: 'pl.js'
+  //       }
+  //     ];
+  //     let routes = [];
 
   
-      filesWithData.keys().forEach(filePath => {
+  //     filesWithData.keys().forEach(filePath => {
       
 
-        let filePathProcessed = filePath.split(path.sep);
+  //       let filePathProcessed = filePath.split(path.sep);
 
-        if(filePathProcessed[0] === '.'){
-          filePathProcessed.shift();
-        }
+  //       if(filePathProcessed[0] === '.'){
+  //         filePathProcessed.shift();
+  //       }
 
-        if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
-          // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
-          langArray.forEach(lang => {
+  //       if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
+  //         // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
+  //         langArray.forEach(lang => {
             
-            if(lang.default){
-              routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
-            } else {
-              routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
-            }
+  //           if(lang.default){
+  //             routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
+  //           } else {
+  //             routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+  //           }
 
-          }) 
+  //         }) 
           
-        }
-      });
+  //       }
+  //     });
 
-      callback(null, routes);
-    }
-  }
+  //     callback(null, routes);
+  //   }
+  // }
 };

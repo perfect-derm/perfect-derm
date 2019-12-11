@@ -6,13 +6,13 @@ const keySlugPrefix = 'slug';
 let collectionMatrix = [];
 
 export default (context, language) => {
-    var allDataFiles = require.context('../content', true, /^(.*\.(json$))[^.]*$/im);
+    // var allDataFiles = require.context('../content', true, /^(.*\.(json$))[^.]*$/im);
     let regex = new RegExp('^(' + language + delimeter + '|xx' + delimeter + ')(.*)$');
     let regexSlug = new RegExp('^(' + language + delimeter + keySlugPrefix + '|xx' + delimeter + keySlugPrefix + ')$');
 
     return new Promise(function (resolve) {    
         let data = {};
-
+        resolve(data);
         allDataFiles.keys().forEach(function(filePath){
           let noPrefix = {};
           let fileData = allDataFiles(filePath);
