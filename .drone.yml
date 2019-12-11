@@ -10,7 +10,6 @@ pipeline:
       - ./node_modules
     volumes:
       - /tmp/cache:/.npm-cache
-    ttl: 1
 
   install:
     image: node:12.8.0
