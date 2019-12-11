@@ -30,7 +30,7 @@ pipeline:
       from_secret: netlify_site_id
     token:
       from_secret: netlify_token
-    path: 
+    path: ./dist
     environment: [production]
 
   rebuild-cache:
