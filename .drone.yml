@@ -31,4 +31,4 @@ pipeline:
       from_secret: netlify_site_id
     token:
       from_secret: netlify_token
-    environment: production
+    environment: [production]
