@@ -6,24 +6,22 @@ pipeline:
     image: drillster/drone-volume-cache
     restore: true
     mount:
-      - ./.yarn-cache
       - ./node_modules
     volumes:
-      - /tmp/cache:/cache
+      - /tmp/cache:/.npm-cache
+    ttl: 7
 
   install:
     image: node:12.8.0
     commands:
-      - node -v
-      - npm -v
-      - yarn --version
-      - yarn config set cache-folder .yarn-cache
-      - yarn install --pure-lockfile
+      - npm install ci
+      - npm config set cache .npm-cache
+      - npm ci
 
   generate:
     image: node:12.8.0
     commands:
-      - yarn run generate
+      - npm run generate
 
   deploy:
     image: lucap/drone-netlify
@@ -32,3 +30,11 @@ pipeline:
     token:
       from_secret: netlify_token
     environment: [production]
+
+  rebuild-cache:
+    image: drillster/drone-volume-cache
+    rebuild: true
+    mount:
+      - ./node_modules
+    volumes:
+      - /tmp/cache:/.npm-cache
