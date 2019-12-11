@@ -25,6 +25,7 @@
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/tailwindcss": "^1.2.0",
     "@reallifedigital/nuxt-image-loader-module": "^1.4.1",
+    "core-js": "^2.6.11",
     "glob": "^7.1.6",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-mozjpeg": "^8.0.0",
