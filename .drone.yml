@@ -24,12 +24,18 @@ pipeline:
     commands:
       - npm run generate
 
+  prepare:
+    image: node:12.8.0
+    commands:
+      - rm -r node_modules
+
   deploy:
     image: lucap/drone-netlify
     site_id: 
       from_secret: netlify_site_id
     token:
       from_secret: netlify_token
+    path: ./dist
     environment: [production]
 
   rebuild-cache:
