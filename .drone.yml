@@ -4,6 +4,8 @@ kind: pipeline
 pipeline:
   restore-cache:
     image: drillster/drone-volume-cache
+    cache_key: [ DRONE_REPO_OWNER, DRONE_REPO_NAME, DRONE_BRANCH ]
+    ttl: 1
     restore: true
     mount:
       - ./node_modules
