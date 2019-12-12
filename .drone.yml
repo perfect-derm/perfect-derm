@@ -14,8 +14,7 @@ steps:
     ttl: 1
     restore: true
     volumes:
-      - name: cache
-        path: /.cache
+      - cache:/.cache
     mount:
       - ./node_modules
 
@@ -44,7 +43,6 @@ steps:
     image: drillster/drone-volume-cache
     rebuild: true
     volumes:
-      - name: cache
-        path: /.cache
+      - cache:/.cache
     mount:
       - ./node_modules
