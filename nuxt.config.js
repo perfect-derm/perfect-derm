@@ -1479,9 +1479,9 @@ module.exports = {
                   ]
                 },
                 {
-                  name: 'left_line_1_offer',
-                  label: '[Lewo] Wyróżniona oferta [pierwsza linia]',
-                  file: 'content/offer/left_line_1_offer.json',
+                  name: 'cat_1_offer',
+                  label: '[Lewo - Góra] Kategoria nr.1',
+                  file: 'content/offer/cat_1_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1502,6 +1502,24 @@ module.exports = {
                       required: true,
                     },
                     { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true 
+                    }
+                    { 
                       label: 'Tło',
                       name: 'xx__background',
                       widget: 'image',
@@ -1511,31 +1529,13 @@ module.exports = {
                           multiple: false
                         }
                       },
-                    },
-                    { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
                     },
                   ]
                 },
                 {
-                  name: 'middle_line_1_offer',
-                  label: '[Środek] Wyróżniona oferta [pierwsza linia]',
-                  file: 'content/offer/middle_line_1_offer.json',
+                  name: 'cat_2_offer',
+                  label: '[Środek - Góra] Kategoria nr.2',
+                  file: 'content/offer/cat_2_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1556,6 +1556,24 @@ module.exports = {
                       required: true,
                     },
                     { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true 
+                    }
+                    { 
                       label: 'Tło',
                       name: 'xx__background',
                       widget: 'image',
@@ -1565,31 +1583,13 @@ module.exports = {
                           multiple: false
                         }
                       },
-                    },
-                    { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
                     },
                   ]
                 },
                 {
-                  name: 'right_line_1_offer',
-                  label: '[Prawo] Wyróżniona oferta [pierwsza linia]',
-                  file: 'content/offer/right_line_1_offer.json',
+                  name: 'cat_3_offer',
+                  label: '[Prawo - Góra] Kategoria nr.3',
+                  file: 'content/offer/cat_3_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1610,6 +1610,24 @@ module.exports = {
                       required: true,
                     },
                     { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true 
+                    }
+                    { 
                       label: 'Tło',
                       name: 'xx__background',
                       widget: 'image',
@@ -1619,31 +1637,13 @@ module.exports = {
                           multiple: false
                         }
                       },
-                    },
-                    { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
                     },
                   ]
                 },
                 {
-                  name: 'left_line_2_offer',
-                  label: '[Lewo] Wyróżniona oferta [druga linia]',
-                  file: 'content/offer/left_line_2_offer.json',
+                  name: 'cat_4_offer',
+                  label: '[Lewo - Dół] Kategoria nr. 4',
+                  file: 'content/offer/cat_4_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1664,6 +1664,24 @@ module.exports = {
                       required: true,
                     },
                     { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true 
+                    }
+                    { 
                       label: 'Tło',
                       name: 'xx__background',
                       widget: 'image',
@@ -1673,31 +1691,13 @@ module.exports = {
                           multiple: false
                         }
                       },
-                    },
-                    { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
                     },
                   ]
                 },
                 {
-                  name: 'middle_line_2_offer',
-                  label: '[Środek] Wyróżniona oferta [druga linia]',
-                  file: 'content/offer/middle_line_2_offer.json',
+                  name: 'cat_5_offer',
+                  label: '[Środek - Dół] Kategoria nr. 5',
+                  file: 'content/offer/cat_5_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1718,6 +1718,24 @@ module.exports = {
                       required: true,
                     },
                     { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true 
+                    }
+                    { 
                       label: 'Tło',
                       name: 'xx__background',
                       widget: 'image',
@@ -1727,31 +1745,13 @@ module.exports = {
                           multiple: false
                         }
                       },
-                    },
-                    { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
                     },
                   ]
                 },
                 {
-                  name: 'right_line_2_offer',
-                  label: '[Prawo] Wyróżniona oferta [druga linia]',
-                  file: 'content/offer/right_line_2_offer.json',
+                  name: 'cat_6_offer',
+                  label: '[Prawo - Dół] Kategoria nr. 6',
+                  file: 'content/offer/cat_6_offer.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1772,6 +1772,24 @@ module.exports = {
                       required: true,
                     },
                     { 
+                      label: '[PL] Opis',
+                      name: 'pl__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[EN] Opis',
+                      name: 'en__description',
+                      widget: 'markdown',
+                      required: true 
+                    },
+                    { 
+                      label: '[DE] Opis',
+                      name: 'de__description',
+                      widget: 'markdown',
+                      required: true 
+                    }
+                    { 
                       label: 'Tło',
                       name: 'xx__background',
                       widget: 'image',
@@ -1781,24 +1799,6 @@ module.exports = {
                           multiple: false
                         }
                       },
-                    },
-                    { 
-                      label: '[PL] Link',
-                      name: 'pl__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[EN] Link',
-                      name: 'en__link',
-                      widget: 'string',
-                      required: true,
-                    },
-                    { 
-                      label: '[DE] Link',
-                      name: 'de__link',
-                      widget: 'string',
-                      required: true,
                     },
                   ]
                 },
@@ -2058,6 +2058,39 @@ module.exports = {
                   label: 'Adres URL',
                   name: 'xx__slug',
                   widget: 'string',
+                  required: true,
+                },
+                { 
+                  label: 'Przyporządkowana kategoria',
+                  name: 'xx__category',
+                  widget: 'select',
+                  default: ["1"],
+                  options: [
+                    {
+                      label: "Kategoria nr. 1", 
+                      value: "1"
+                    }, 
+                    {
+                      label: "Kategoria nr. 2", 
+                      value: "2"
+                    }, 
+                    {
+                      label: "Kategoria nr. 3", 
+                      value: "3"
+                    }, 
+                    {
+                      label: "Kategoria nr. 4", 
+                      value: "4"
+                    },
+                    {
+                      label: "Kategoria nr. 5", 
+                      value: "5"
+                    },
+                    {
+                      label: "Kategoria nr. 6", 
+                      value: "6"
+                    }, 
+                  ],
                   required: true,
                 },
                 { 
