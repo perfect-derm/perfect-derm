@@ -19,54 +19,54 @@
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
             :theme="3"
-            :title="$t('offer__left_line_1_offer__title')"
-            :link="$t('offer__left_line_1_offer__link')"
-            :image="$t('offer__left_line_1_offer__background')"
+            :title="$t('offer__category_1__title')"
+            :link="$t('offer__category_1__link')"
+            :image="$t('offer__category_1__background')"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
             :theme="3"
-            :title="$t('offer__middle_line_1_offer__title')"
-            :link="$t('offer__middle_line_1_offer__link')"
-            :image="$t('offer__middle_line_1_offer__background')"
+            :title="$t('offer__category_2__title')"
+            :link="$t('offer__category_2__link')"
+            :image="$t('offer__category_2__background')"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
             :theme="3"
-            :title="$t('offer__right_line_1_offer__title')"
-            :link="$t('offer__right_line_1_offer__link')"
-            :image="$t('offer__right_line_1_offer__background')"
+            :title="$t('offer__category_3__title')"
+            :link="$t('offer__category_3__link')"
+            :image="$t('offer__category_3__background')"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">  
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
             :theme="3"
-            :title="$t('offer__left_line_2_offer__title')"
-            :link="$t('offer__left_line_2_offer__link')"
-            :image="$t('offer__left_line_2_offer__background')"
+            :title="$t('offer__category_4__title')"
+            :link="$t('offer__category_4__link')"
+            :image="$t('offer__category_4__background')"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
             :theme="3"
-            :title="$t('offer__middle_line_2_offer__title')"
-            :link="$t('offer__middle_line_2_offer__link')"
-            :image="$t('offer__middle_line_2_offer__background')"
+            :title="$t('offer__category_5__title')"
+            :link="$t('offer__category_5__link')"
+            :image="$t('offer__category_5__background')"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 pb-20 px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full mb-4 flex-1"
             :theme="3"
-            :title="$t('offer__right_line_2_offer__title')"
-            :link="$t('offer__right_line_2_offer__link')"
-            :image="$t('offer__right_line_2_offer__background')"
+            :title="$t('offer__category_6__title')"
+            :link="$t('offer__category_6__link')"
+            :image="$t('offer__category_6__background')"
           />
         </div>
       </div>
@@ -89,7 +89,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>        
-        <img :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_1__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
+        <!-- <img :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_1__title')" class="absolute left-auto w-1/2 h-full object-cover"/> -->
       </div>
 
       <div class="relative flex flec-col h-450px">
@@ -103,7 +103,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>        
-        <img :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto right-0 w-1/2 h-full object-cover"/>
+        <!-- <img :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto right-0 w-1/2 h-full object-cover"/> -->
       </div>
 
       <div class="relative flex flec-col h-450px">
@@ -117,7 +117,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>        
-        <img :src="require(`~/static${$t('offer__promotion_line_3__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_3__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
+        <!-- <img :src="require(`~/static${$t('offer__promotion_line_3__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_3__title')" class="absolute left-auto w-1/2 h-full object-cover"/> -->
       </div>
     </section>
   </div>

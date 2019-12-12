@@ -1481,7 +1481,7 @@ module.exports = {
                 {
                   name: 'cat_1_offer',
                   label: '[Lewo - Góra] Kategoria nr.1',
-                  file: 'content/offer/cat_1_offer.json',
+                  file: 'content/offer/category_1.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1535,7 +1535,7 @@ module.exports = {
                 {
                   name: 'cat_2_offer',
                   label: '[Środek - Góra] Kategoria nr.2',
-                  file: 'content/offer/cat_2_offer.json',
+                  file: 'content/offer/category_2.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1589,7 +1589,7 @@ module.exports = {
                 {
                   name: 'cat_3_offer',
                   label: '[Prawo - Góra] Kategoria nr.3',
-                  file: 'content/offer/cat_3_offer.json',
+                  file: 'content/offer/category_3.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1643,7 +1643,7 @@ module.exports = {
                 {
                   name: 'cat_4_offer',
                   label: '[Lewo - Dół] Kategoria nr. 4',
-                  file: 'content/offer/cat_4_offer.json',
+                  file: 'content/offer/category_4.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1697,7 +1697,7 @@ module.exports = {
                 {
                   name: 'cat_5_offer',
                   label: '[Środek - Dół] Kategoria nr. 5',
-                  file: 'content/offer/cat_5_offer.json',
+                  file: 'content/offer/category_5.json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -1751,7 +1751,7 @@ module.exports = {
                 {
                   name: 'cat_6_offer',
                   label: '[Prawo - Dół] Kategoria nr. 6',
-                  file: 'content/offer/cat_6_offer.json',
+                  file: 'content/offer/cat_egory6_json',
                   fields: [ 
                     { 
                       label: '[PL] Tytuł',
@@ -3241,6 +3241,9 @@ module.exports = {
   },
   generate: {
     routes (callback) {
+      // console.log(filesWithData);
+      // const filesWithData2 = requireContext('content', true, /^(.*\.(json$))[^.]*$/im);
+      // console.log(filesWithData2);
       // const key = 'slug';
       // const delimeter = "__";
       const langArray = [

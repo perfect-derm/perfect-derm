@@ -1,11 +1,11 @@
 <template>
   <div :class="mainClass">
     <cCategory
-        :title="$t('offer__category_1__title')"
-        link="category_1"
-        :image="$t('offer__category_1__background')"
-        :description="$t('offer__category_1__description')"
-        option="1"
+        :title="$t('offer__category_3__title')"
+        link="category_3"
+        :image="$t('offer__category_3__background')"
+        :description="$t('offer__category_3__description')"
+        option="3"
     />
   </div>
 </template>
