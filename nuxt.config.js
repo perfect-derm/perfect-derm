@@ -1518,7 +1518,7 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true 
-                    }
+                    },
                     { 
                       label: 'Tło',
                       name: 'xx__background',
@@ -1572,7 +1572,7 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true 
-                    }
+                    },
                     { 
                       label: 'Tło',
                       name: 'xx__background',
@@ -1626,7 +1626,7 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true 
-                    }
+                    },
                     { 
                       label: 'Tło',
                       name: 'xx__background',
@@ -1680,7 +1680,7 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true 
-                    }
+                    },
                     { 
                       label: 'Tło',
                       name: 'xx__background',
@@ -1734,7 +1734,7 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true 
-                    }
+                    },
                     { 
                       label: 'Tło',
                       name: 'xx__background',
@@ -1788,7 +1788,7 @@ module.exports = {
                       name: 'de__description',
                       widget: 'markdown',
                       required: true 
-                    }
+                    },
                     { 
                       label: 'Tło',
                       name: 'xx__background',
@@ -3241,8 +3241,8 @@ module.exports = {
   },
   generate: {
     routes (callback) {
-      const key = 'slug';
-      const delimeter = "__";
+      // const key = 'slug';
+      // const delimeter = "__";
       const langArray = [
         {
           code: 'de',
