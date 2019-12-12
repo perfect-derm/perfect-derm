@@ -2,7 +2,24 @@ name: default
 type: docker
 kind: pipeline
 
-steps:
+volumes:
+  - name: cache
+    host: 
+      path: /tmp/cache
+      
+pipeline:
+  restore-cache:
+    image: drillster/drone-volume-cache
+    cache_key: [ DRONE_REPO_OWNER, DRONE_REPO_NAME, DRONE_BRANCH ]
+    ttl: 1
+    restore: true
+    volumes:
+      - cache:/.cache
+      - name: cache
+        path: /.cache
+    mount:
+      - ./node_modules
+
   install:
     image: node:12.8.0
     commands:
@@ -23,3 +40,12 @@ steps:
       from_secret: netlify_token
     path: ./dist
     environment: [production]
+
+  rebuild-cache:
+    image: drillster/drone-volume-cache
+    rebuild: true
+    volumes:
+      - name: cache
+        path: /.cache
+    mount:
+      - ./node_modules
