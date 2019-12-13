@@ -1,6 +1,4 @@
-const requireContext = require('require-context');
-const path = require('path');
-const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im);
+require('require-context/register');
 
 module.exports = {
   env: {
@@ -1040,7 +1038,7 @@ module.exports = {
                   ]
                 },
                 { 
-                  name: 'button_offer',
+                  name: 'button_issue',
                   label: 'Przycisk - Twój problem',
                   file: 'content/homepage/button_issue.json',
                   fields: [ 
@@ -3241,11 +3239,10 @@ module.exports = {
   },
   generate: {
     routes (callback) {
-      // console.log(filesWithData);
-      // const filesWithData2 = requireContext('content', true, /^(.*\.(json$))[^.]*$/im);
-      // console.log(filesWithData2);
-      // const key = 'slug';
-      // const delimeter = "__";
+      const requireContext = require('require-context');
+      const path = require('path');
+      const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im, 'lazy');
+
       const langArray = [
         {
           code: 'de',
@@ -3278,18 +3275,16 @@ module.exports = {
           filePathProcessed.shift();
         }
 
-        if(filePathProcessed[0][0] === '_' && typeof filesWithData(filePath)['xx__slug'] !== 'undefined'){
-          // let entryCollection = filesWithData(filePath); @TODO: czytać język z treści niż z tablicy
+        if(filePathProcessed[0][0] === '_'){ 
+          let url = filePathProcessed[1].substr(0, filePathProcessed[1].lastIndexOf('.')) || filePathProcessed[1];
+          // let entryCollection = filesWithData(filePath); @TODO: read language from file, not from
           langArray.forEach(lang => {
-            
             if(lang.default){
-              routes.push(path.sep.concat(filesWithData(filePath)['xx__slug']));
+              routes.push(path.sep.concat(url));
             } else {
-              routes.push(path.sep.concat(lang.code,path.sep,filesWithData(filePath)['xx__slug']));
+              routes.push(path.sep.concat(lang.code,path.sep,url));
             }
-
-          }) 
-          
+          });
         }
       });
 
