@@ -1,9 +1,9 @@
 {
-    "xx__image": "",
-    "pl__title": "Oferta",
-    "en__title": "Offer",
-    "de__title": "Angebot",
-    "pl__description": "",
-    "en__description": "",
-    "de__description": ""
+  "xx__image": "/images/uploads/leczenie-zylakow-i-pajaczkow.png",
+  "pl__title": "Oferta",
+  "en__title": "Offer",
+  "de__title": "Angebot",
+  "pl__description": "Lorem ipsum dolor sit",
+  "en__description": "Lorem ipsum dolor sit",
+  "de__description": "Lorem ipsum dolor sit"
 }
