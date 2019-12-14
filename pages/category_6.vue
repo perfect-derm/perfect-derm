@@ -2,10 +2,9 @@
   <div :class="mainClass">
     <cCategory
         :title="$t('offer__category_6__title')"
-        link="category_6"
-        :image="$t('offer__category_6__background')"
         :description="$t('offer__category_6__description')"
-        option="6"
+        link="category_6"
+        category=6
     />
   </div>
 </template>

@@ -56,11 +56,12 @@ function languageMap(allDataFiles, language, regex) {
         if(!newKey[2].includes(languagePrefixByPathAndFilename)) {
 
           noPrefix[(languagePrefixByPathAndFilename.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key];
-        } else {
-          noPrefix[newKey[2]] = fileData[key];
-        }
+        } 
+        // else {
+          // noPrefix[newKey[2]] = fileData[key];
+        // }
 
-        noPrefix[newKey[2]] = fileData[key];        
+        // noPrefix[newKey[2]] = fileData[key];        
 
       }
     });

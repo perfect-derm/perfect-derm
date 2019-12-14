@@ -1,14 +1,18 @@
 <template>
   <div class="">
-      {{ title }}
-      <br/>
-      {{ link }}
-      <br/>
-      {{ image }}
-      <br/>
-      {{ description }}
-      <br/>
-      {{ option }}
+      <h1>
+        {{ title }}
+      </h1>
+
+      <div class="text-center mb-4 font-light text-xl" v-html="$md.render(description)"></div>
+      <div>
+        <ul>
+          <li v-for="(entry, idx) in offerInCategory" :key="idx">
+            {{ entry.title }}
+            {{ entry.link }}
+          </li>
+        </ul>
+      </div>
   </div>
 </template>
 
@@ -21,25 +25,34 @@
         default: '',
         required: false
       },
-      'link': {
+      'description': {
         type: String,
         default: '',
         required: false
       },
-      'image': {
+      'category': {
         type: String,
-        default: '/images/uploads/logo.png',
+        default: '0',
         required: false
-      },
-      'description': {
-        type: String,
-        required: false
-      },
-      'option': {
-        type: String,
-        required: false
-      },
+      }
     },
+    computed: {
+      offerInCategory: function () {
+        let data = [];
+        const indexOfCollection = parseInt(this.$i18n.t('$uniqueKeyIndex___offer'));
+
+        for(let index = 0; index <= parseInt(indexOfCollection); index++){      
+          if(this.$i18n.t(`_offer__${index}__category`) == this.category){
+            data.push({
+              title: this.$i18n.t(`_offer__${index}__title`),
+              link: this.$i18n.t(`_offer__${index}__slug`)
+            })
+          }
+        }
+
+        return data
+      }
+    }
   }
 </script>
 
