@@ -27,7 +27,7 @@ function languageMap(allDataFiles, language, regex) {
     fileName = fileName.slice(0, -5);
 
     let languagePrefixByPathAndFilename = filePathProcessed.join(delimeter);
-    
+    let languagePrefixByPathAndFilenameAdditional = '';
     // Unique ID by dir with _ - use number INT from 0, not key or random stuff to easy loop
     if(filePathProcessed[0][0] === '_'){
       var entryInCollectionAndLanguage =  collectionMatrix.filter(function(entry) {
@@ -42,17 +42,20 @@ function languageMap(allDataFiles, language, regex) {
       
       filePathProcessed.splice(1, 0, entryInCollectionAndLanguage.length.toString());
 
-      languagePrefixByPathAndFilename = filePathProcessed.join(delimeter);
+      languagePrefixByPathAndFilenameAdditional = filePathProcessed.join(delimeter);
 
       noPrefix[keyPrefix + delimeter + filePathProcessed[0]] = entryInCollectionAndLanguage.length.toString();
-
-    } else {
-      languagePrefixByPathAndFilename = languagePrefixByPathAndFilename + delimeter + fileName.toString();
     }
+
+    languagePrefixByPathAndFilename = languagePrefixByPathAndFilename + delimeter + fileName.toString();
 
     Object.keys(fileData).forEach(function(key) {
       let newKey;
       if(newKey = key.match(regex)){
+        if(languagePrefixByPathAndFilenameAdditional !== ''){
+          noPrefix[(languagePrefixByPathAndFilenameAdditional.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key];
+        }
+
         if(!newKey[2].includes(languagePrefixByPathAndFilename)) {
 
           noPrefix[(languagePrefixByPathAndFilename.toString() + delimeter + newKey[2].toString()).toString()] = fileData[key];

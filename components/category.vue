@@ -9,7 +9,9 @@
         <ul>
           <li v-for="(entry, idx) in dataInCategory" :key="idx">
             {{ entry.title }}
-            {{ entry.link }}
+            <nuxt-link :to="entry.link">
+                More
+            </nuxt-link>
           </li>
         </ul>
       </div>
@@ -45,12 +47,23 @@
       dataInCategory: function () {
         let data = [];
         const indexOfCollection = parseInt(this.$i18n.t(`$uniqueKeyIndex___${this.type}`));
+        let pageLink = '';
 
         for(let index = 0; index <= parseInt(indexOfCollection); index++){      
-          if(this.type != 'offer' || this.$i18n.t(`_${this.type}__${index}__category`) == this.category){
+          if(this.type === 'offer' && this.$i18n.t(`_${this.type}__${index}__category`) == this.category){
+            pageLink= ('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/')).concat('offer/').concat(this.$i18n.t(`_${this.type}__${index}__slug`));
+
             data.push({
               title: this.$i18n.t(`_${this.type}__${index}__title`),
-              link: this.$i18n.t(`_${this.type}__${index}__slug`)
+              link: pageLink
+            })
+          }
+          
+          if(this.type === 'issue') {
+            pageLink = ('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/')).concat('issue/').concat(this.$i18n.t(`_${this.type}__${index}__slug`));
+            data.push({
+              title: this.$i18n.t(`_${this.type}__${index}__title`),
+              link: pageLink
             })
           }
         }

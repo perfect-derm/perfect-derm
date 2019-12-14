@@ -8,11 +8,6 @@
       <div class="text-left mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('_page__' + $route.params.page.toString() + '__description_top'))"></div>  
       <div class="text-left mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('_page__' + $route.params.page.toString() + '__description_promo'))"></div>   
       <div class="text-left mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('_page__' + $route.params.page.toString() + '__description_bottom'))"></div>   
-
-      <p>
-          DEBUG:      
-          {{ $route.params.page }}<br/>
-      </p>
   </div>
 </template>
 

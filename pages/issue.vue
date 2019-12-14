@@ -1,9 +1,9 @@
 <template>
   <div :class="mainClass">
     <cCategory
-        :title="$t('issue__header__title')"
-        :description="$t('issue__header__description')"
-        type="issue"
+      :title="$t('issue__header__title')"
+      :description="$t('issue__header__description')"
+      type="issue"
     />
   </div>
 </template>
