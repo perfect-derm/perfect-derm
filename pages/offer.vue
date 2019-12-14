@@ -20,7 +20,7 @@
             main-class="w-full mb-4 flex-1"
             :theme="3"
             :title="$t('offer__category_1__title')"
-            :link="$t('offer__category_1__link')"
+            link="/category_1"
             :image="$t('offer__category_1__background')"
           />
         </div>
@@ -29,7 +29,7 @@
             main-class="w-full mb-4 flex-1"
             :theme="3"
             :title="$t('offer__category_2__title')"
-            :link="$t('offer__category_2__link')"
+            link="/category_2"
             :image="$t('offer__category_2__background')"
           />
         </div>
@@ -38,7 +38,7 @@
             main-class="w-full mb-4 flex-1"
             :theme="3"
             :title="$t('offer__category_3__title')"
-            :link="$t('offer__category_3__link')"
+            link="/category_3"
             :image="$t('offer__category_3__background')"
           />
         </div>
@@ -47,7 +47,7 @@
             main-class="w-full mb-4 flex-1"
             :theme="3"
             :title="$t('offer__category_4__title')"
-            :link="$t('offer__category_4__link')"
+            link="/category_4"
             :image="$t('offer__category_4__background')"
           />
         </div>
@@ -56,7 +56,7 @@
             main-class="w-full mb-4 flex-1"
             :theme="3"
             :title="$t('offer__category_5__title')"
-            :link="$t('offer__category_5__link')"
+            link="/category_5"
             :image="$t('offer__category_5__background')"
           />
         </div>
@@ -65,7 +65,7 @@
             main-class="w-full mb-4 flex-1"
             :theme="3"
             :title="$t('offer__category_6__title')"
-            :link="$t('offer__category_6__link')"
+            link="/category_6"
             :image="$t('offer__category_6__background')"
           />
         </div>
@@ -89,7 +89,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>        
-        <!-- <img :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_1__title')" class="absolute left-auto w-1/2 h-full object-cover"/> -->
+        <img :src="`~/static${$t('offer__promotion_line_1__background')}?resize&height=500`" :alt="$t('offer__promotion_line_1__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
 
       <div class="relative flex flec-col h-450px">
@@ -103,7 +103,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>        
-        <!-- <img :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto right-0 w-1/2 h-full object-cover"/> -->
+        <img :src="`~/static${$t('offer__promotion_line_2__background')}?resize&height=500`" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto right-0 w-1/2 h-full object-cover"/>
       </div>
 
       <div class="relative flex flec-col h-450px">
@@ -117,7 +117,7 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>        
-        <!-- <img :src="require(`~/static${$t('offer__promotion_line_3__background')}?resize&height=500`)" :alt="$t('offer__promotion_line_3__title')" class="absolute left-auto w-1/2 h-full object-cover"/> -->
+        <img :src="`~/static${$t('offer__promotion_line_3__background')}?resize&height=500`" :alt="$t('offer__promotion_line_3__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
     </section>
   </div>
