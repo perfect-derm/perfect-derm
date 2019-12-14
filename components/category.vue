@@ -47,7 +47,7 @@
         const indexOfCollection = parseInt(this.$i18n.t(`$uniqueKeyIndex___${this.type}`));
 
         for(let index = 0; index <= parseInt(indexOfCollection); index++){      
-          if(this.$i18n.t(`_${this.type}__${index}__category`) == this.category || this.type != 'offer'){
+          if(this.type != 'offer' || this.$i18n.t(`_${this.type}__${index}__category`) == this.category){
             data.push({
               title: this.$i18n.t(`_${this.type}__${index}__title`),
               link: this.$i18n.t(`_${this.type}__${index}__slug`)
