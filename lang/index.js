@@ -5,18 +5,18 @@ const keySlugPrefix = 'slug';
 
 let collectionMatrix = [];
     
-const allDataFiles = require.context('../content', true, /^(.*\.(json$))[^.]*$/im, 'lazy');
+const DATA = require.context('../content', true, /^(.*\.(json$))[^.]*$/im);
 
 // let regexSlug = new RegExp('^(' + language + delimeter + keySlugPrefix + '|xx' + delimeter + keySlugPrefix + ')$');
 
-function languageMap(language, regex) {
+function languageMap(allDataFiles, language, regex) {
   //@TODO: Need optimisation
   let data = {};
   let noPrefix = {};
 
   allDataFiles.keys().forEach(function(filePath){
     noPrefix = {};
-    let fileData = allDataFiles(filePath);
+    const fileData = allDataFiles(filePath);
     let filePathProcessed = filePath.split(path.sep);
 
     if(filePathProcessed[0] === '.'){
@@ -60,7 +60,8 @@ function languageMap(language, regex) {
           noPrefix[newKey[2]] = fileData[key];
         }
 
-        noPrefix[newKey[2]] = fileData[key];
+        noPrefix[newKey[2]] = fileData[key];        
+
       }
     });
 
@@ -74,6 +75,6 @@ export default (context, language) => {
     let regex = new RegExp('^(' + language + delimeter + '|xx' + delimeter + ')(.*)$');
     
     return new Promise(function (resolve) {    
-      resolve(languageMap(language, regex));
+      resolve(languageMap(DATA, language, regex));
     });
 };

@@ -3241,7 +3241,7 @@ module.exports = {
     routes (callback) {
       const requireContext = require('require-context');
       const path = require('path');
-      const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im, 'lazy');
+      const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im);
 
       const langArray = [
         {
