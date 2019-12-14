@@ -11,8 +11,6 @@
       {{ $t('about__section_title__title') }}
     </h2>  
 
-    <div v-html="$md.render(this.$t('about__description__description'))"></div>
-
     <div class="mb-4">
       <div v-html="$md.render(this.$t('about__person_1__description'))"></div>
        <img 
