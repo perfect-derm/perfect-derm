@@ -8,7 +8,7 @@
     />
     
     <h2>
-      {{ $t('about__section_title__title') }}
+      {{ $t('about__header__title') }}
     </h2>  
 
     <div class="mb-4">
