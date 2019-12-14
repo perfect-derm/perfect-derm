@@ -2,8 +2,8 @@
   "pl__title": "Peelingi medyczne",
   "en__title": "Medical peels",
   "de__title": "Medizinische Peelings",
-  "xx__background": "/images/uploads/adobestock_251778171.jpeg",
-  "pl__desciption": "",
-  "en__desciption": "",
-  "de__desciption": ""
+  "pl__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "en__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "de__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "xx__background": "/images/uploads/adobestock_251778171.jpeg"
 }
