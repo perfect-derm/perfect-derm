@@ -7,7 +7,7 @@
       <div class="text-center mb-4 font-light text-xl" v-html="$md.render(description)"></div>
       <div>
         <ul>
-          <li v-for="(entry, idx) in offerInCategory" :key="idx">
+          <li v-for="(entry, idx) in dataInCategory" :key="idx">
             {{ entry.title }}
             {{ entry.link }}
           </li>
@@ -34,18 +34,23 @@
         type: String,
         default: '0',
         required: false
+      },
+      'type': {
+        type: String,
+        default: 'offer',
+        required: false
       }
     },
     computed: {
-      offerInCategory: function () {
+      dataInCategory: function () {
         let data = [];
-        const indexOfCollection = parseInt(this.$i18n.t('$uniqueKeyIndex___offer'));
+        const indexOfCollection = parseInt(this.$i18n.t(`$uniqueKeyIndex___${this.type}`));
 
         for(let index = 0; index <= parseInt(indexOfCollection); index++){      
-          if(this.$i18n.t(`_offer__${index}__category`) == this.category){
+          if(this.$i18n.t(`_${this.type}__${index}__category`) == this.category || this.type != 'offer'){
             data.push({
-              title: this.$i18n.t(`_offer__${index}__title`),
-              link: this.$i18n.t(`_offer__${index}__slug`)
+              title: this.$i18n.t(`_${this.type}__${index}__title`),
+              link: this.$i18n.t(`_${this.type}__${index}__slug`)
             })
           }
         }
