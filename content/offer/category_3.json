@@ -2,8 +2,8 @@
   "pl__title": "Trychologia",
   "en__title": " Trichology",
   "de__title": " Trichology",
-  "xx__background": "/images/uploads/adobestock_94298584.jpeg",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "pl__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "en__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "de__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "xx__background": "/images/uploads/adobestock_94298584.jpeg"
 }
