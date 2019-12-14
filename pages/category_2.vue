@@ -5,6 +5,7 @@
         :description="$t('offer__category_2__description')"
         link="category_2"
         category=2
+        type="offer"
     />
   </div>
 </template>
