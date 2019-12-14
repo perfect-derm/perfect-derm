@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="container my-4">
+      {{ $t('tariff__header__title') }}
+      
       <ul class="flex flex-col">
 
         <li v-for="(n, index) in tableTariff" :key="index" class="flex flex-row">
