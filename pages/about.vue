@@ -58,6 +58,13 @@
         {{ $t('about__person_3__link_title') }}
        </a>
     </div>
+
+    <div class="text-center mb-4 mt-4">
+      <a :href="$t('homepage__button__link')" class="button mx-auto">
+        {{ $t('homepage__button__title') }}
+      </a>
+    </div>
+
   </div>
 </template>
 
