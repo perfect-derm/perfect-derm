@@ -8,11 +8,12 @@
 
     <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('homepage__text__description'))"></div>
 
-    <div class="text-center mb-4 mt-4">
-      <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
-        {{ $t('homepage__button_offer__title') }}
-      </a>
-    </div>
+    <section>
+      <h1>
+         {{ $t('homepage__header_offer__title') }}
+      </h1>
+      <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('homepage__header_offer__description'))"></div>
+    </section>
 
     <section class="relative container py-4">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
@@ -42,6 +43,12 @@
         </div>
       </div>
     </section>
+
+    <div class="text-center mb-4 mt-4">
+      <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
+        {{ $t('homepage__button_offer__title') }}
+      </a>
+    </div>
 
     <section class="relative container mb-4">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
