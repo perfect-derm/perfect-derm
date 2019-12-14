@@ -1,16 +1,11 @@
 <template>
   <div>
-    <div class="relative mb-20">
-      <div class="h-600px">
-        <img :src="require(`~/static/images/uploads/natural-lift.jpeg?resize&size=1920`)" alt="" class="h-full w-full object-cover"/>
-      </div>
-
-      <div class="container absolute bottom-10 left-0 right-0 flex flex-row flex-wrap mb-4 text-gray-300 text-gray-300">
-        <a class="text-gray-300 mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
-        <span class="block mr-2">></span>
-        <a class="text-gray-300 mr-2">{{ $t('offer__breadcrumb__title') }}</a>
-      </div>
-    </div>
+    <cSimpleHeader 
+      :title="$t('offer__header__title')"
+      :image="$t('offer__header__image')"
+      :description="$t('offer__header__description')"
+      :breadcrumb="$t('offer__breadcrumb__title')"
+    />
 
     <section class="relative container py-4">
       <div class="flex flex-col flex-wrap md:flex-row justify-between text-center md:-mx-4 text-2xl">
@@ -89,7 +84,10 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>        
-        <img :src="`~/static${$t('offer__promotion_line_1__background')}?resize&height=500`" :alt="$t('offer__promotion_line_1__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
+        <img 
+          :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&size=448`)" 
+          :alt="$t('offer__promotion_line_1__title')" 
+          class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
 
       <div class="relative flex flec-col h-450px">
@@ -103,7 +101,10 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>        
-        <img :src="`~/static${$t('offer__promotion_line_2__background')}?resize&height=500`" :alt="$t('offer__promotion_line_2__title')" class="absolute left-auto right-0 w-1/2 h-full object-cover"/>
+        <img 
+          :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&size=448`)" 
+          :alt="$t('offer__promotion_line_2__title')" 
+          class="absolute left-auto right-0 w-1/2 h-full object-cover"/>
       </div>
 
       <div class="relative flex flec-col h-450px">
@@ -117,7 +118,10 @@
           >
         </nuxt-link>
         <div class="text-center mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>        
-        <img :src="`~/static${$t('offer__promotion_line_3__background')}?resize&height=500`" :alt="$t('offer__promotion_line_3__title')" class="absolute left-auto w-1/2 h-full object-cover"/>
+        <img 
+          :src="require(`~/static${$t('offer__promotion_line_3__background')}?resize&size=448`)" 
+          :alt="$t('offer__promotion_line_3__title')" 
+          class="absolute left-auto w-1/2 h-full object-cover"/>
       </div>
     </section>
   </div>
@@ -125,10 +129,12 @@
 
 <script>
   import cSingleSquare from "~/components/single-square.vue";
+  import cSimpleHeader from "~/components/simple-header.vue";
 
   export default {    
     components: {
       cSingleSquare,
+      cSimpleHeader
     },
     props: {
       'mainClass': {

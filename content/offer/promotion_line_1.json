@@ -1,12 +1,12 @@
 {
   "pl__description": "Skuteczny w przywracaniu skórze prawidłowego metabolizmu, zmniejszaniu rumienia, łojotoku, regeneracji po zabiegach",
   "en__link": "offer",
+  "pl__link": "offer",
+  "de__link": "offer",
   "xx__background": "/images/uploads/laser.jpeg",
   "en__title": " LED LASER",
   "en__description": "\rEffective in restoring the skin's normal metabolism, reducing erythema, seborrhea, and regeneration after treatments",
-  "pl__link": "offer",
   "de__title": " LED-LASER",
   "de__description": "Wirkt bei der Wiederherstellung des normalen Hautstoffwechsels, reduziert Erytheme, Seborrhoe und Regeneration nach Behandlungen",
-  "de__link": "offer",
   "pl__title": "LASER DIODOWY"
 }

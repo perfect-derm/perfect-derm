@@ -9,6 +9,8 @@
         <span class="block mr-2">></span>
         <a class="text-gray-300 mr-2">{{ breadcrumb }}</a>
       </div>
+
+      {{ description }}
     </div>
 </template>
 
