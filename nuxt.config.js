@@ -1254,6 +1254,24 @@ module.exports = {
                       name: 'xx__link',
                       widget: 'string',
                       required: false,
+                    },
+                    { 
+                      label: '[PL] Tytuł linku',
+                      name: 'pl__link_title',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[EN] Tytuł linku',
+                      name: 'en__link_title',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[DE] Tytuł linku',
+                      name: 'de__link_title',
+                      widget: 'string',
+                      required: false,
                     }
                   ]
                 },
@@ -1296,6 +1314,24 @@ module.exports = {
                       name: 'xx__link',
                       widget: 'string',
                       required: false,
+                    },
+                    { 
+                      label: '[PL] Tytuł linku',
+                      name: 'pl__link_title',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[EN] Tytuł linku',
+                      name: 'en__link_title',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[DE] Tytuł linku',
+                      name: 'de__link_title',
+                      widget: 'string',
+                      required: false,
                     }
                   ]
                 },
@@ -1336,6 +1372,24 @@ module.exports = {
                     { 
                       label: 'Link',
                       name: 'xx__link',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[PL] Tytuł linku',
+                      name: 'pl__link_title',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[EN] Tytuł linku',
+                      name: 'en__link_title',
+                      widget: 'string',
+                      required: false,
+                    },
+                    { 
+                      label: '[DE] Tytuł linku',
+                      name: 'de__link_title',
                       widget: 'string',
                       required: false,
                     }
