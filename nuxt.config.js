@@ -1395,6 +1395,49 @@ module.exports = {
                     }
                   ]
                 },
+                { 
+                  name: 'button',
+                  label: 'Przycisk - Oferta',
+                  file: 'content/about/button.json',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[PL] Link',
+                      name: 'pl__link',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Link',
+                      name: 'en__link',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Link',
+                      name: 'de__link',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ] 
+                },
                 {
                   name: 'breadcrumb',
                   label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
