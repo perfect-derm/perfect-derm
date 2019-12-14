@@ -2297,24 +2297,6 @@ module.exports = {
                   file: 'content/tariff/header.json',
                   fields: [ 
                     { 
-                      label: 'Grafika',
-                      name: 'xx__image',
-                      widget: 'image',
-                      required: true,
-                      media_library: {
-                        config: {
-                          multiple: false
-                        }
-                      },
-                    }
-                  ]
-                },
-                {
-                  name: 'title',
-                  label: 'Tytuł',
-                  file: 'content/tariff/title.json',
-                  fields: [
-                    { 
                       label: '[PL] Tytuł',
                       name: 'pl__title',
                       widget: 'string',
