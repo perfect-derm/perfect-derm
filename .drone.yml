@@ -15,12 +15,12 @@ pipeline:
     commands:
       - npm run generate
   
-  preper:
-    image: node:12.8.0
-    commands:
-      - apt-get update
-      - apt install zip unzip
-      - zip -r dist.zip ./dist
+  # preper:
+  #   image: node:12.8.0
+  #   commands:
+  #     - apt-get update
+  #     - apt install zip unzip
+  #     - zip -r dist.zip ./dist
 
   deploy:
     image: lucap/drone-netlify
@@ -28,5 +28,6 @@ pipeline:
       from_secret: netlify_site_id
     token:
       from_secret: netlify_token
-    path: ./dist.zip
+    # path: ./dist.zip
+    path: ./dist
     environment: [production]
