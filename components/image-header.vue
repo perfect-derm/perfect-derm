@@ -16,7 +16,7 @@
 
 <script>
   export default {
-    name: 'cSimpleHeader',
+    name: 'cImageHeader',
     props: {
       'title': {
         type: String,

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cSimpleHeader 
+    <cImageHeader 
       :title="$t('about__header__title')"
       :image="$t('about__header__image')"
       :description="$t('about__header__description')"
@@ -69,11 +69,11 @@
 </template>
 
 <script>
-  import cSimpleHeader from "~/components/simple-header.vue";
+  import cImageHeader from "~/components/image-header.vue";
 
   export default {
     components: {
-      cSimpleHeader
+      cImageHeader
     },
     props: {
       'mainClass': {

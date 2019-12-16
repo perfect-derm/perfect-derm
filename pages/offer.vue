@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cSimpleHeader 
+    <cImageHeader 
       :title="$t('offer__header__title')"
       :image="$t('offer__header__image')"
       :description="$t('offer__header__description')"
@@ -129,12 +129,12 @@
 
 <script>
   import cSingleSquare from "~/components/single-square.vue";
-  import cSimpleHeader from "~/components/simple-header.vue";
+  import cImageHeader from "~/components/image-header.vue";
 
   export default {    
     components: {
       cSingleSquare,
-      cSimpleHeader
+      cImageHeader
     },
     props: {
       'mainClass': {
