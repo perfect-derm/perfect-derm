@@ -3,15 +3,8 @@ html.wf-roboto-n4-active body{
 }
 
 h1, .h1{
-    @apply text-xl;
     @apply font-normal;
     @apply leading-tight;
-}
-
-@screen md {
-    .h1-big{
-        @apply text-6xl;
-    }
 }
 
 .container{

@@ -5,7 +5,7 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
         <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-auto left-50px right-50px text-left">
-          <h1 class="h1 md:max-w-1/2 uppercase mb-5" v-html="$options.filters.break($t('homepage__banner_1__title'))"></h1>            
+          <h1 class="h1 text-xl lg:text-6xl md:max-w-1/2 uppercase mb-5" v-html="$options.filters.break($t('homepage__banner_1__title'))"></h1>            
           <div 
             class="md:max-w-1/2 text-base md:text-2xl font-normal"
             v-if="$te('homepage__banner_1__description')"
@@ -16,7 +16,7 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
         <img :src="require('~/static' + $t('homepage__banner_2__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-auto left-50px right-50px text-left">
-          <h2 class="h1 md:max-w-1/2 uppercase mb-5 ml-auto" v-html="$options.filters.break($t('homepage__banner_2__title'))"></h2>            
+          <h2 class="h1 text-xl lg:text-6xl md:max-w-1/2 uppercase mb-5 ml-auto" v-html="$options.filters.break($t('homepage__banner_2__title'))"></h2>            
           <div 
             class="md:max-w-1/2 text-base md:text-2xl font-normal ml-auto"
             v-if="$te('homepage__banner_2__description')" 
@@ -27,7 +27,7 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
         <img :src="require('~/static' + $t('homepage__banner_3__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover"/>
         <div class="absolute top-auto left-50px right-50px text-left">
-          <h2 class="h1 md:max-w-1/2 uppercase mb-5" v-html="$options.filters.break($t('homepage__banner_3__title'))"></h2>            
+          <h2 class="h1 text-xl lg:text-6xl md:max-w-1/2 uppercase mb-5" v-html="$options.filters.break($t('homepage__banner_3__title'))"></h2>            
           <div 
             class="md:max-w-1/2 text-base md:text-2xl font-normal"
             v-if="$te('homepage__banner_3__description')"
