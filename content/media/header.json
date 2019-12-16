@@ -2,7 +2,7 @@
   "pl__title": "Oferta",
   "en__title": "Offer",
   "de__title": "Angebot",
-  "pl__description": "",
-  "en__description": "",
-  "de__description": ""
+  "pl__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "en__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "de__description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
