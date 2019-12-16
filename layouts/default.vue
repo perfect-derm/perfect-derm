@@ -1,55 +1,55 @@
 <template>
   <div class="flex flex-col min-vh-100 w-full">
     <nav class="container flex flex-col" aria-label="Menu">
-      <div class="flex justify-between flex-wrap">
-        <a :href="localePath('index')" class="flex items-center flex-shrink-0 text-white mx-auto lg:mr-6">
+      <div class="flex justify-between mb-4 lg:mb-0 flex-wrap">
+        <a :href="localePath('index')" class="flex-1 flex items-center flex-shrink-0 text-white mx-auto lg:mr-6">
           <cLogo
             classes="br0 db mb0 w-100 h-auto"
           />
         </a>
         <div 
-          class="relative w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm flex-grow justify-end order-last"
+          class="relative w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm md:text-base flex-grow justify-end order-last"
           :class="{ 'hidden' : menuSwitchPosition }"
         >
           <nuxt-link 
             :to="localePath('about')"
-            class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('about__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('offer')"
-            class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('offer__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('issue')"
-            class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('issue__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('media')"
-            class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('media__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('tariff')"
-            class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('tariff__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('contact')"
-            class="flex px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('contact__menu__title') }}
           </nuxt-link>
           <resize-observer @notify="handleResize" />
         </div>
-        <div class="flex items-center mx-4 lg:hidden">
+        <div class="flex items-center ml-4 lg:hidden">
           <button @click="menuSwitch" class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-500 hover:border-gray-500">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
@@ -62,12 +62,12 @@
                 href="tel:+48737162771" 
                 class="flex items-center cursor-pointer pt-3 pb-1 bg-gray-300 mr-4"
                 >
-                <svg class="ml-4 mr-2" height="20px" width="20px" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <svg class="ml-2 mr-2" height="20px" width="20px" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                   <path d="M49.087,68.817c1.422,2.252,3.552,2.252,6.629,0c2.134,5.409,11.84,23.443,11.84,23.443s-6.304,2.561-15.302-3.749    c-5.825-4.086-17.437-16.37-24.319-33.606c-3.747-9.384-4.944-19.609-4.944-31.213c0.237-10.144,4.557-13.036,9.054-14.386    l8.049,25.471c0,0-5.622,1.84-3.257,9.054C36.836,43.831,39.002,56.673,49.087,68.817z"></path>
                   <path d="M35.593,8.404c0,0,6.866-2.481,10.417,4.509c3.553,6.987,6.153,17.809-2.368,21.189    C41.275,27.565,35.593,8.404,35.593,8.404z"></path>
                   <path d="M59.497,67.345l12.321,23.111c0,0,7.101-5.186,4.26-10.369c-2.84-5.185-6.148-11.672-6.148-11.672    S66.588,63.333,59.497,67.345z"></path>
                 </svg>
-                <span class="mr-4">+48 737 162 771</span>
+                <span class="max-w-330-hide mr-2">+48 737 162 771</span>
               </a>
             </li>
             <li class="">
@@ -115,12 +115,12 @@
 
       <hr class="mt-4">
 
-      <div class="container py-4 flex flex-row">
-        <a class="button mx-auto">
+      <div class="container mt-4 flex flex-row flex-wrap">
+        <a class="button mx-auto mb-4">
           {{ $t('footer__links__link_1') }}
         </a>
 
-        <a class="button mx-auto">
+        <a class="button mx-auto mb-4">
           {{ $t('footer__links__link_2') }}
         </a>
       </div>
@@ -159,7 +159,7 @@
                       <path d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z"></path>
                     </svg>
                   </span>
-                  <span class="ml-3">
+                  <span class="ml-3 text-overflow">
                     {{ $t('footer__contact__telephone') }}
                   </span>
                 </a>
@@ -186,8 +186,8 @@
             <p class="text-gray-400">
               {{ $t('footer__payment__description') }}
             </p>
-            <ul class="mt-4 flex">
-              <li class="mr-3">
+            <ul class="mt-4 flex flex-wrap">
+              <li class="mr-3 mb-4">
                 <svg height="31.56px" version="1.1" viewBox="0 0 160 100" width="50px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title />
                     <defs />
@@ -205,7 +205,7 @@
                     </g>
                 </svg>
               </li>
-              <li class="mr-3">            
+              <li class="mr-3 mb-4">            
                 <svg width="53px" height="31.55px" viewBox="0 0 809 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;border-radius:2px;background:#265697;">
                     <g transform="matrix(3.56667, 0, 0, 3.56667, 58, 38)">
                         <rect x="0.259" y="0.678" width="192.756" height="192.756" fill="#265697"/>
@@ -245,7 +245,7 @@
                     </g>
                 </svg>
               </li>
-              <li class="mr-3">
+              <li class="mr-3 mb-4">
                 <svg height="31.25px" version="1.1" viewBox="0 0 160 100" width="50px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title />
                     <defs />
@@ -268,7 +268,7 @@
                     </g>
                 </svg>
               </li>
-              <li>
+              <li class="mb-4">
                 <svg
                   xmlns:dc="http://purl.org/dc/elements/1.1/"
                   xmlns:cc="http://creativecommons.org/ns#"
@@ -421,5 +421,11 @@
 <style lang="css" type="text/css">
   .min-vh-100 {
     min-height: 100vh;
+  }
+
+  @media(max-width: 330px){
+    .max-w-330-hide{
+      display: none;
+    }
   }
 </style>

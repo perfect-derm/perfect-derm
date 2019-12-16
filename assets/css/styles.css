@@ -1,3 +1,19 @@
+html.wf-roboto-n4-active body{
+    @apply font-body;
+}
+
+h1, .h1{
+    @apply text-xl;
+    @apply font-normal;
+    @apply leading-tight;
+}
+
+@screen md {
+    .h1-big{
+        @apply text-6xl;
+    }
+}
+
 .container{
     padding-left: 15px;
     padding-right: 15px;

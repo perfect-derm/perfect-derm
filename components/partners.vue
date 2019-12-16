@@ -2,22 +2,22 @@
   <!-- You can find this swiper instance object in current component by the "mySwiper"  -->
   <div class="h-200px w-full overflow-hidden" v-swiper:partners="swiperOption">
     <ul class="swiper-wrapper">
-      <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_1') !== ''">
+      <li class="swiper-c-slide w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_1') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_1') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
-      <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_2') !== ''">
+      <li class="swiper-c-slide w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_2') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_2') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>  
-      <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_3') !== ''">
+      <li class="swiper-c-slide w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_3') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_3') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
-      <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_4') !== ''">
+      <li class="swiper-c-slide w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_4') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_4') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
-      <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_5') !== ''">
+      <li class="swiper-c-slide w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_5') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_5') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
-      <li class="swiper-slide h-auto" v-if="$t('footer__partners__logo_6') !== ''">
+      <li class="swiper-c-slide w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_6') !== ''">
         <img :src="require('~/static' + $t('footer__partners__logo_6') + '?resize&size=220')" width="220" alt="" class="object-cover px-8"/>
       </li>
     </ul>
@@ -31,13 +31,15 @@
       return {
         swiperOption: {
           loop: true,
+          slidesPerView: 'auto',
+          centeredSlides: false,
           loopedSlides: 6,
           slidesPerGroup: 1,
-          slidesPerView: 6,
           spaceBetween: 0,
           autoplay: {
             delay: 5000,
-          }
+          },
+          slideClass: 'swiper-c-slide'
         }
       }
     }
@@ -46,13 +48,25 @@
 
 
 <style scoped>
-  .swiper-slide {
+  .swiper-c-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+ }
 
-  .swiper-slide.h-auto{
+  .swiper-c-slide.h-auto{
     height: auto;
   }
 </style>

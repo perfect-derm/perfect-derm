@@ -10,9 +10,23 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      display: ['Roboto', 'sans-serif'],
-      body: ['Roboto', 'sans-serif'],
       'sans': 'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+      'display': ['Roboto', 'sans-serif'],
+      'body': ['Roboto', 'sans-serif'],
+    },
+    fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
     },
     opacity: {
       '0': '0',
@@ -64,14 +78,15 @@ module.exports = {
     maxHeight: {
       '0': '0',
       '310' : '310px',
+      '600': '600px',
       '1/4': '25%',
       '1/2': '50%',
-      '1/2-screen': '50vw',
       '3/4': '75%',
       'full': '100%',
     },
     maxWidth: {
-      '700px' : '700px'
+      '700px' : '700px',
+      '1/2': '50%',
     },
     extend: {
       screens: {

@@ -1,41 +1,44 @@
 <template>
   <div :class="mainClass">
-    <div class="w-full mb-4 flex flex-col items-center justify-center bg-gray-100 h-600px">
+    <div class="hidden w-full mb-4 sm:flex flex-col items-center justify-center bg-gray-100 max-h-600">
       <client-only placeholder="Ładowanie...">
         <cBanner />
       </client-only>
     </div>
 
-    <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('homepage__text__description'))"></div>
+    <div class="text-center mb-10 font-light mx-4" v-html="$md.render(this.$t('homepage__text__description'))"></div>
 
-    <section>
-      <h1>
+    <section class="mx-4">
+      <h1 class="mb-5">
          {{ $t('homepage__header_offer__title') }}
       </h1>
-      <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('homepage__header_offer__description'))"></div>
+      <div
+        class="text-center mb-4 font-light" 
+        v-html="$md.render(this.$t('homepage__header_offer__description'))"
+      ></div>
     </section>
 
     <section class="relative container py-4">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">  
+        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">  
           <cSingleSquare
-            main-class="w-full mb-4 flex-1"
+            main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__left_top_offer__title')"
             :link="$t('homepage__left_top_offer__link')"
             :image="$t('homepage__left_top_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
-            main-class="w-full mb-4 flex-1"
+            main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__middle_top_offer__title')"
             :link="$t('homepage__middle_top_offer__link')"
             :image="$t('homepage__middle_top_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 sm:mb-4 lg:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
-            main-class="w-full mb-4 flex-1"
+            main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__right_top_offer__title')"
             :link="$t('homepage__right_top_offer__link')"
             :image="$t('homepage__right_top_offer__background')"
@@ -44,7 +47,7 @@
       </div>
     </section>
 
-    <div class="text-center mb-4 mt-4">
+    <div class="text-center mb-4 mt-4 mx-4">
       <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
         {{ $t('homepage__button_offer__title') }}
       </a>
@@ -52,7 +55,7 @@
 
     <section class="relative container mb-4">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
-        <div class="w-full mb-4 lg:mb-0 px-4">
+        <div class="w-full mb-4 lg:mb-0">
           <cSingleFullRectangle
             main-class="w-full bg-gray-300"
             :title="$t('homepage__about_description__title')"
@@ -65,34 +68,34 @@
       </div>
     </section>
 
-    <section>
-      <h1>
+    <section class="mb-4 mx-4">
+      <h1 class="mb-5">
          {{ $t('homepage__header_issue__title') }}
       </h1>
-      <div class="text-center mb-4 font-light text-xl" v-html="$md.render(this.$t('homepage__header_issue__description'))"></div>
+      <div class="text-center mb-4 font-light" v-html="$md.render(this.$t('homepage__header_issue__description'))"></div>
     </section>
 
-    <section class="relative container py-4">
+    <section class="relative container">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
-            main-class="w-full mb-4 flex-1"
+            main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__left_bottom_offer__title')"
             :link="$t('homepage__left_bottom_offer__link')"
             :image="$t('homepage__left_bottom_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
-            main-class="w-full bg-white mb-4 flex-1"
+            main-class="w-full bg-white sm:mb-4 flex-1"
             :title="$t('homepage__middle_bottom_offer__title')"
             :link="$t('homepage__middle_bottom_offer__link')"
             :image="$t('homepage__middle_bottom_offer__background')"
           />
         </div>
-        <div class="md:w-1/3 mb-4 lg:mb-0 px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 sm:mb-4 lg:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
-            main-class="w-full bg-white mb-4 flex-1"
+            main-class="w-full bg-white sm:mb-4 flex-1"
             :title="$t('homepage__right_bottom_offer__title')"
             :link="$t('homepage__right_bottom_offer__link')"
             :image="$t('homepage__right_bottom_offer__background')"
@@ -101,7 +104,7 @@
       </div>
     </section>
 
-    <div class="text-center mb-4 mt-4">
+    <div class="text-center mb-4 mt-4 mx-4">
       <a :href="$t('homepage__button_issue__link')" class="button mx-auto">
         {{ $t('homepage__button_issue__title') }}
       </a>

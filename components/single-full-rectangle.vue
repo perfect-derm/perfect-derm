@@ -2,19 +2,19 @@
   <div :class="mainClass" class="block">
     <nuxt-link
         :to="link"
-        class="flex flex-row btn raise center text-left"
+        class="flex flex-row flex-wrap sm:flex-no-wrap btn raise center text-left"
       >
-      <div class="flex-auto p-8">
+      <div class="flex-auto p-2 md:p-8">
         <h2 class="text-xl mb-4">
           {{ title }}
         </h2>
-        <p v-html="$md.render(description)"></p>
+        <div v-html="$md.render(description)"></div>
       </div>
-      <div class="flex-none">
+      <div class="flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col justify-center pl-2 pr-2 md:pl-0 md:pr-0 mt-2 md:mt-0 mb-2 md:mb-0 flex-none order-first md:order-last">
         <img
           v-if="photo !== ''"
           :src="photo"
-          class="center tc"
+          class="object-cover center tc h-full max-w-full"
           alt=""
           width="200px"
           height="auto"

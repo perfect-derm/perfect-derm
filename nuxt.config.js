@@ -319,19 +319,19 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     }
                   ] 
                 },
@@ -395,19 +395,19 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     }
                   ] 
                 },
@@ -471,19 +471,19 @@ module.exports = {
                       label: '[PL] Opis',
                       name: 'pl__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     },
                     { 
                       label: '[EN] Opis',
                       name: 'en__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     },
                     { 
                       label: '[DE] Opis',
                       name: 'de__description',
                       widget: 'markdown',
-                      required: true 
+                      required: false 
                     }
                   ] 
                 },
@@ -3221,7 +3221,7 @@ module.exports = {
   ],
   webfontloader: {
     google: {
-      families: ['Roboto:400,500,700'] //Loads Lato font with weights 400 and 700
+      families: ['Roboto:400,500,700']
     }
   },
   manifest: {
