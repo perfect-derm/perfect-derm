@@ -2737,7 +2737,7 @@ module.exports = {
                   name: 'de__caption',
                   widget: 'string',
                   required: true,
-                },
+                }
               ]
             },
             {
