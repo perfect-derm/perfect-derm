@@ -10,7 +10,8 @@
         <a class="text-gray-300 mr-2">{{ breadcrumb }}</a>
       </div>
 
-      {{ description }}
+      <h1>{{ title }}</h1>
+      <div class="text-left" v-html="$md.render(description)"></div>
     </div>
 </template>
 
