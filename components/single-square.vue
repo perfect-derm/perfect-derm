@@ -4,7 +4,7 @@
         :to="link"
         class="btn raise center tc"
       >
-      <figure class="relative h-full min-h-full flex flex-col">
+      <figure class="relative h-full min-h-full flex flex-col background-bar">
          <picture
           class="flex flex-1"
          >
@@ -18,11 +18,11 @@
         </picture>
         <figcaption
             :class="{ 
-              'absolute top-0 uppercase text-shadow' : textPlacementUpAbsolute,
-              'absolute bottom-0 uppercase text-shadow' : textPlacementDownAbsolute,
-              'relative text-gray-600 order-first' : textUpRelative,
+              'absolute font-light top-0 uppercase' : textPlacementUpAbsolute,
+              'absolute font-light bottom-0 uppercase' : textPlacementDownAbsolute,
+              'relative font-normal text-gray-600 order-first' : textUpRelative,
             }"
-            class="left-0 right-0 font-semibold "
+            class="left-0 right-0 z-10"
           >
           {{ title }}
         </figcaption>
@@ -76,7 +76,13 @@
 </script>
 
 <style scoped>
-  .text-shadow{
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #fff;
-  }
+  .background-bar:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 27px;
+    background: rgba(255, 255, 255, 0.7);
+}
 </style>

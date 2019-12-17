@@ -4,11 +4,14 @@
         :to="link"
         class="flex flex-row flex-wrap sm:flex-no-wrap btn raise center text-left"
       >
-      <div class="flex-auto p-2 md:p-8">
-        <h2 class="text-xl mb-4">
+      <div class="flex-auto p-2 lg:p-8">
+        <h2 class="text-xl lg:text-4xl mb-4">
           {{ title }}
         </h2>
-        <div v-html="$md.render(description)"></div>
+        <div 
+          class="text-base lg:text-xl" 
+          v-html="$md.render(description)"
+        ></div>
       </div>
       <div class="flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col justify-center pl-2 pr-2 md:pl-0 md:pr-0 mt-2 md:mt-0 mb-2 md:mb-0 flex-none order-first md:order-last">
         <img
@@ -16,7 +19,7 @@
           :src="photo"
           class="object-cover center tc h-full max-w-full"
           alt=""
-          width="200px"
+          width="350px"
           height="auto"
         />
       </div>

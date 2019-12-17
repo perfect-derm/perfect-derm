@@ -9,7 +9,7 @@
     <div class="text-center mb-10 font-light mx-4" v-html="$md.render(this.$t('homepage__text__description'))"></div>
 
     <section class="mx-4">
-      <h1 class="mb-5">
+      <h1 class="font-light text-5xl uppercase mb-2">
          {{ $t('homepage__header_offer__title') }}
       </h1>
       <div
@@ -53,23 +53,21 @@
       </a>
     </div>
 
-    <section class="relative container mb-4">
-      <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
-        <div class="w-full mb-4 lg:mb-0">
-          <cSingleFullRectangle
-            main-class="w-full bg-gray-300"
-            :title="$t('homepage__about_description__title')"
-            :description="$t('homepage__about_description__description')"
-            :link="$t('homepage__about_description__link')"
-            :photo="$t('homepage__about_description__photo')"
-            link-title="Więcej >"
-          />
-        </div>
+    <section class="relative container mb-4 md:mb-10">
+      <div class="flex flex-col flex-wrap md:flex-row text-center">
+        <cSingleFullRectangle
+          main-class="block w-full bg-secondary text-primary"
+          :title="$t('homepage__about_description__title')"
+          :description="$t('homepage__about_description__description')"
+          :link="$t('homepage__about_description__link')"
+          :photo="$t('homepage__about_description__photo')"
+          link-title="Więcej >"
+        />
       </div>
     </section>
 
     <section class="mb-4 mx-4">
-      <h1 class="mb-5">
+      <h1 class="font-light text-5xl uppercase mb-2">
          {{ $t('homepage__header_issue__title') }}
       </h1>
       <div class="text-center mb-4 font-light" v-html="$md.render(this.$t('homepage__header_issue__description'))"></div>
@@ -110,14 +108,14 @@
       </a>
     </div>
 
-    <section class="relative bg-gray-100 h-450px flex flex-col items-center justify-center container py-4 mb-4">
+    <section class="relative h-450px flex flex-col items-center justify-center container py-4 mb-4">
       <client-only placeholder="Ładowanie...">
         <cMap />
       </client-only>
     </section>
 
     <section class="relative h-200px flex flex-col items-center justify-center container py-4 mb-4">
-      <h2>
+      <h2 class="font-light text-5xl uppercase mb-10">
         {{ $t('footer__partners__title') }}
       </h2>
       <client-only placeholder="Ładowanie...">

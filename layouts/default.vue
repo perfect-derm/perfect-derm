@@ -62,7 +62,7 @@
                 href="tel:+48737162771" 
                 class="flex items-center cursor-pointer pt-3 pb-1 bg-gray-300 mr-4"
                 >
-                <svg class="ml-2 mr-2" height="20px" width="20px" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <svg class="ml-2 mr-2" height="20px" width="20px" fill="#718096" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                   <path d="M49.087,68.817c1.422,2.252,3.552,2.252,6.629,0c2.134,5.409,11.84,23.443,11.84,23.443s-6.304,2.561-15.302-3.749    c-5.825-4.086-17.437-16.37-24.319-33.606c-3.747-9.384-4.944-19.609-4.944-31.213c0.237-10.144,4.557-13.036,9.054-14.386    l8.049,25.471c0,0-5.622,1.84-3.257,9.054C36.836,43.831,39.002,56.673,49.087,68.817z"></path>
                   <path d="M35.593,8.404c0,0,6.866-2.481,10.417,4.509c3.553,6.987,6.153,17.809-2.368,21.189    C41.275,27.565,35.593,8.404,35.593,8.404z"></path>
                   <path d="M59.497,67.345l12.321,23.111c0,0,7.101-5.186,4.26-10.369c-2.84-5.185-6.148-11.672-6.148-11.672    S66.588,63.333,59.497,67.345z"></path>
