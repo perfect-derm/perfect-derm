@@ -48,6 +48,20 @@ module.exports = {
           'screen-2xl': theme('screens.2xl'),
         }
       },
+      colors: {
+        // gray: false,
+        primary: '#718096',
+        default: '#E2E8F0',
+        red: false,
+        orange: false,
+        yellow: false,
+        green: false,
+        // teal: false,
+        blue: false,
+        indigo: false,
+        purple: false,
+        pink: false
+      }
     },
   },
   variants: {

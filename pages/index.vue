@@ -1,6 +1,6 @@
 <template>
   <div :class="mainClass">
-    <div class="hidden w-full mb-4 sm:flex flex-col items-center justify-center bg-gray-100 max-h-600">
+    <div class="w-full mb-4 flex flex-col items-center justify-center bg-gray-100 max-h-600">
       <client-only placeholder="Ładowanie...">
         <cBanner />
       </client-only>
@@ -19,7 +19,7 @@
     </section>
 
     <section class="relative container py-4">
-      <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
+      <div class="flex flex-col flex-wrap md:flex-row text-center">
         <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">  
           <cSingleSquare
             main-class="w-full sm:mb-4 flex-1"

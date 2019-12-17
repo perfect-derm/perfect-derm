@@ -125,7 +125,7 @@
         </a>
       </div>
 
-      <div class="bg-gray-600 text-white py-4 px-4">
+      <div class="bg-primary text-white py-4 px-4">
         <div class="container flex flex-col md:flex-row flex-wrap">
           <div class="w-full md:w-1/2 lg:w-1/4 lg:px-4 lg:pr-8">
             <h3 class="font-bold text-2xl">
