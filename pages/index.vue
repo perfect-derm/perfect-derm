@@ -26,6 +26,7 @@
             :title="$t('homepage__left_top_offer__title')"
             :link="$t('homepage__left_top_offer__link')"
             :image="$t('homepage__left_top_offer__background')"
+            :theme="2"
           />
         </div>
         <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
@@ -34,6 +35,7 @@
             :title="$t('homepage__middle_top_offer__title')"
             :link="$t('homepage__middle_top_offer__link')"
             :image="$t('homepage__middle_top_offer__background')"
+            :theme="2"
           />
         </div>
         <div class="w-full md:w-1/3 sm:mb-4 lg:mb-0 sm:px-4 flex flex-col ">
@@ -42,6 +44,7 @@
             :title="$t('homepage__right_top_offer__title')"
             :link="$t('homepage__right_top_offer__link')"
             :image="$t('homepage__right_top_offer__background')"
+            :theme="2"
           />
         </div>
       </div>
@@ -81,6 +84,7 @@
             :title="$t('homepage__left_bottom_offer__title')"
             :link="$t('homepage__left_bottom_offer__link')"
             :image="$t('homepage__left_bottom_offer__background')"
+            :theme="2"
           />
         </div>
         <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
@@ -89,6 +93,7 @@
             :title="$t('homepage__middle_bottom_offer__title')"
             :link="$t('homepage__middle_bottom_offer__link')"
             :image="$t('homepage__middle_bottom_offer__background')"
+            :theme="2"
           />
         </div>
         <div class="w-full md:w-1/3 sm:mb-4 lg:mb-0 sm:px-4 flex flex-col ">
@@ -97,6 +102,7 @@
             :title="$t('homepage__right_bottom_offer__title')"
             :link="$t('homepage__right_bottom_offer__link')"
             :image="$t('homepage__right_bottom_offer__background')"
+            :theme="2"
           />
         </div>
       </div>

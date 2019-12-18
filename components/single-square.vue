@@ -4,7 +4,14 @@
         :to="link"
         class="btn raise center tc"
       >
-      <figure class="relative h-full min-h-full flex flex-col background-bar">
+      <figure 
+        :class="{
+          'background-bar' : textPlacementUpAbsolute || textPlacementDownAbsolute,
+          'background-top-bar' : textPlacementUpAbsolute,
+          'background-bottom-bar' : textPlacementDownAbsolute,
+        }"
+        class="relative h-full min-h-full flex flex-col"
+      >
          <picture
           class="flex flex-1"
          >
@@ -63,13 +70,13 @@
     },
     computed: {
       textPlacementUpAbsolute : function (){
-        return (this.theme === 1) ? true : false;
+        return (parseInt(this.theme) === 1) ? true : false;
       },
       textPlacementDownAbsolute : function (){
-        return (this.theme === 2) ? true : false;
+        return (parseInt(this.theme) === 2) ? true : false;
       },
       textUpRelative : function (){
-        return (this.theme === 3) ? true : false;
+        return (parseInt(this.theme) === 3) ? true : false;
       }
     }
   }
@@ -79,10 +86,19 @@
   .background-bar:after {
     content: '';
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
     height: 27px;
     background: rgba(255, 255, 255, 0.7);
-}
+  }
+  
+  .background-top-bar:after {
+    top: 0;
+    bottom: auto;
+  }
+
+  .background-bottom-bar:after {
+    top: auto;
+    bottom: 0;
+  }
 </style>
