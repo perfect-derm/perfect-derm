@@ -8,7 +8,7 @@
 
     <div class="text-center mb-10 font-light mx-4" v-html="$md.render(this.$t('homepage__text__description'))"></div>
 
-    <section class="mx-4">
+    <div class="mx-4">
       <h1 class="font-light text-5xl uppercase mb-2">
          {{ $t('homepage__header_offer__title') }}
       </h1>
@@ -16,9 +16,9 @@
         class="text-center mb-4 font-light" 
         v-html="$md.render(this.$t('homepage__header_offer__description'))"
       ></div>
-    </section>
+    </div>
 
-    <section class="relative container py-4">
+    <div class="relative container py-4">
       <div class="flex flex-col flex-wrap md:flex-row text-center">
         <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">  
           <cSingleSquare
@@ -48,7 +48,7 @@
           />
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="text-center mb-4 mt-4 mx-4">
       <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
@@ -56,7 +56,7 @@
       </a>
     </div>
 
-    <section class="relative container mb-4 md:mb-10">
+    <div class="relative container mb-4 md:mb-10">
       <div class="flex flex-col flex-wrap md:flex-row text-center">
         <cSingleFullRectangle
           main-class="block w-full bg-secondary text-primary"
@@ -67,14 +67,14 @@
           link-title="Więcej >"
         />
       </div>
-    </section>
+    </div>
 
-    <section class="mb-4 mx-4">
+    <div class="mb-4 mx-4">
       <h1 class="font-light text-5xl uppercase mb-2">
          {{ $t('homepage__header_issue__title') }}
       </h1>
       <div class="text-center mb-4 font-light" v-html="$md.render(this.$t('homepage__header_issue__description'))"></div>
-    </section>
+    </div>
 
     <section class="relative container">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
@@ -114,20 +114,20 @@
       </a>
     </div>
 
-    <section class="relative h-450px flex flex-col items-center justify-center container py-4 mb-4">
+    <div class="relative h-450px flex flex-col items-center justify-center container py-4 mb-4">
       <client-only placeholder="Ładowanie...">
         <cMap />
       </client-only>
-    </section>
+    </div>
 
-    <section class="relative h-200px flex flex-col items-center justify-center container py-4 mb-4">
+    <div class="relative h-200px flex flex-col items-center justify-center container py-4 mb-4">
       <h2 class="font-light text-5xl uppercase mb-10">
         {{ $t('footer__partners__title') }}
       </h2>
       <client-only placeholder="Ładowanie...">
         <cPartners />
       </client-only>
-    </section>
+    </div>
 
   </div>
 </template>
