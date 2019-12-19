@@ -1,25 +1,25 @@
 <template>
-  <div>
+  <div class="container">
       <h1 
         v-if="this.$i18n.te(prefix + 'title')"
-        class="text-left mb-4 font-light text-xl z-10"
+        class="text-left mt-8 mb-16 font-light text-4xl z-10 uppercase font-light"
       >
         {{ $t(prefix + 'title') }}
       </h1>
 
       <div 
         v-if="this.$i18n.te(prefix + 'description_top')"
-        class="text-left mb-4 font-light text-xl z-10" 
+        class="text-left mb-4 font-light text-xl z-10 column-desc" 
         v-html="$md.render(this.$t(prefix + 'description_top'))
       "></div>  
       <div 
         v-if="this.$i18n.te(prefix + 'description_promo')"
-        class="text-left mb-4 font-light text-xl z-10" 
+        class="text-left mb-8 font-light text-xl z-10 bg-secondary text-primary p-8" 
         v-html="$md.render(this.$t(prefix + 'description_promo'))"
       ></div>   
       <div 
         v-if="this.$i18n.te(prefix + 'description_bottom')"
-        class="text-left mb-4 font-light text-xl z-10" 
+        class="text-left mb-4 font-light text-xl z-10 column-desc" 
         v-html="$md.render(this.$t(prefix + 'description_bottom'))"
       ></div>   
   </div>
@@ -48,3 +48,24 @@
     },
   };
 </script>
+
+<style scoped>
+  .column-desc{
+    column-count: 2;
+    column-gap: 80px;
+  }
+
+  .column-desc >>> p{
+    @apply mb-4;
+    @apply font-light;
+  }
+
+  .column-desc >>> img{
+    @apply mb-8;
+  }
+
+  .column-desc >>> h2{
+    @apply font-bold;
+    @apply mb-4;
+  }
+</style>
