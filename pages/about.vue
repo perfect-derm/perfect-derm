@@ -13,64 +13,79 @@
       </h2>
     </div>
 
-    <div class="container mb-4 flex text-left">
-      <div class="w-1/5">
-        <img 
-          v-if="$t('about__person_1__photo') !== ''"
-          :src="require(`~/static${$t('about__person_1__photo')}?resize&size=200`)" 
-          alt="" 
-          class="object-cover"
-          width="200px"
-        />
-      </div>
-      <div class="w-4/5">
-        <div class="person-desc" v-html="$md.render(this.$t('about__person_1__description'))"></div>
-        <a 
-          :href="$t('about__person_1__link')"
-        >
-          {{ $t('about__person_1__link_title') }}
-        </a>
-      </div>
-    </div>
-
-    <hr class="container mb-4" v-if="$te('about__person_2__link')" />
-
-    <div class="container mb-4 flex text-left" v-if="$te('about__person_2__link')">
-      <div class="w-1/5">
-        <img 
-          v-if="$t('about__person_2__photo') !== ''"
-          :src="require(`~/static${$t('about__person_2__photo')}?resize&size=200`)" 
-          alt="" 
-          class="object-cover"
-          width="200px"
-        />
-      </div>
-      <div class="w-4/5">
-        <div class="person-desc" v-html="$md.render(this.$t('about__person_2__description'))"></div>
-        <a 
-          :href="$t('about__person_2__link')"
-        >
-          {{ $t('about__person_2__link_title') }}
-        </a>
+    <div 
+      class="container mb-4" 
+      :class="{'hidden' : $t('about__person_1__photo') === ''}"
+    >
+      <div class="flex flex-col md:flex-row flex-wrap text-left bg-secondary text-primary">
+        <div class="w-1/5 flex flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col pl-2 md:pl-0 lg:pl-8 pr-2 md:pr-0 lg:pr-8 mt-2 md:mt-0 lg:mt-8 mb-2 md:mb-0 flex-none">
+          <img 
+            v-if="$t('about__person_1__photo') !== ''"
+            :src="require(`~/static${$t('about__person_1__photo')}?resize&size=200`)" 
+            alt="" 
+            class="object-cover"
+            width="350px"
+          />
+        </div>
+        <div class="w-4/5 pl-2 md:pl-4 my-2 md:my-4 lg:my-8">
+          <div class="person-desc" v-html="$md.render(this.$t('about__person_1__description'))"></div>
+          <a 
+            :href="$t('about__person_1__link')"
+          >
+            {{ $t('about__person_1__link_title') }}
+          </a>
+        </div>
       </div>
     </div>
 
-    <hr class="container mb-4" v-if="$te('about__person_3__link')"/>
+    <div 
+      class="container mb-4" 
+      :class="{'hidden' : $t('about__person_2__photo') === ''}"
+    >
+      <div class="flex flex-col md:flex-row flex-wrap text-left bg-secondary text-primary">
+        <div class="w-1/5 flex flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col pl-2 md:pl-0 lg:pl-8 pr-2 md:pr-0 lg:pr-8 mt-2 md:mt-0 lg:mt-8 mb-2 md:mb-0 flex-none">
+          <img 
+            v-if="$t('about__person_2__photo') !== ''"
+            :src="require(`~/static${$t('about__person_2__photo')}?resize&size=200`)" 
+            alt="" 
+            class="object-cover"
+            width="350px"
+          />
+        </div>
+        <div class="w-4/5 pl-2 md:pl-4 my-2 md:my-4 lg:my-8">
+          <div class="person-desc" v-html="$md.render(this.$t('about__person_2__description'))"></div>
+          <a 
+            :href="$t('about__person_2__link')"
+          >
+            {{ $t('about__person_2__link_title') }}
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <div class="container mb-4 flex text-left" v-if="$te('about__person_3__link')">
-      <div class="person-desc" v-html="$md.render(this.$t('about__person_3__description'))"></div>
-       <img 
-        v-if="$t('about__person_3__photo') !== ''"
-        :src="require(`~/static${$t('about__person_3__photo')}?resize&size=200`)" 
-        alt="" 
-        class="object-cover"
-        width="200px"
-       />
-       <a 
-        :href="$t('about__person_3__link')"
-       >
-        {{ $t('about__person_3__link_title') }}
-       </a>
+    <div 
+      class="container mb-4" 
+      :class="{'hidden' : $t('about__person_3__photo') === ''}"
+    >
+      <div class="flex flex-col md:flex-row flex-wrap text-left bg-secondary text-primary">
+        <div class="w-1/5 flex flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col pl-2 md:pl-0 lg:pl-8 pr-2 md:pr-0 lg:pr-8 mt-2 md:mt-0 lg:mt-8 mb-2 md:mb-0 flex-none">
+          <img 
+            v-if="$t('about__person_3__photo') !== ''"
+            :src="require(`~/static${$t('about__person_3__photo')}?resize&size=200`)" 
+            alt="" 
+            class="object-cover"
+            width="350px"
+          />
+        </div>
+        <div class="w-4/5 pl-2 md:pl-4 my-2 md:my-4 lg:my-8">
+          <div class="person-desc" v-html="$md.render(this.$t('about__person_3__description'))"></div>
+          <a 
+            :href="$t('about__person_3__link')"
+          >
+            {{ $t('about__person_3__link_title') }}
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="text-center mb-4 mt-4">
@@ -79,7 +94,7 @@
       </a>
     </div>
 
-    <div class="relative h-200px flex flex-col items-center justify-center container py-4 mb-4">
+    <div class="relative h-200px flex flex-col flex-col items-center justify-center container py-4 mb-4">
       <h2 class="font-light text-5xl uppercase mb-10">
         {{ $t('footer__partners__title') }}
       </h2>
