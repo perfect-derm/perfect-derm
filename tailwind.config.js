@@ -18,7 +18,8 @@ module.exports = {
       inset: {
         '50px':'50px',
         '200px': '200px',
-        '10': '10px'
+        '10': '10px',
+        '1/3': '33%',
       },
       height: {
         '200px':  '200px',
