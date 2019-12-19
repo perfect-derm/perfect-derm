@@ -1,16 +1,17 @@
 <template>
   <div class="">
-      <h1>
+      <h1 class="font-light text-5xl uppercase mb-10">
         {{ title }}
       </h1>
 
       <div class="text-center mb-4 font-light text-xl" v-html="$md.render(description)"></div>
-      <div>
+      <div class="container">
         <ul>
-          <li v-for="(entry, idx) in dataInCategory" :key="idx">
-            {{ entry.title }}
-            <nuxt-link :to="entry.link">
-                More
+          <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary" v-for="(entry, idx) in dataInCategory" :key="idx">
+            
+            <nuxt-link class="flex justify-between mb-1 p-2" :to="entry.link">
+              <span>{{ entry.title }}</span>
+              <span>></span>
             </nuxt-link>
           </li>
         </ul>
