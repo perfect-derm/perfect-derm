@@ -4,14 +4,16 @@
         <img :src="require(`~/static${image}?resize&size=1920`)" alt="" class="h-full w-full object-cover"/>
       </div>
 
-      <div class="container absolute bottom-10 left-0 right-0 flex flex-row flex-wrap mb-4 text-gray-300 text-gray-300">
-        <a class="text-gray-300 mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
+      <div class="container flex flex-row flex-wrap mb-4 mt-2">
+        <a class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
         <span class="block mr-2">></span>
-        <a class="text-gray-300 mr-2">{{ breadcrumb }}</a>
+        <a class="mr-2">{{ breadcrumb }}</a>
       </div>
 
-      <h1>{{ title }}</h1>
-      <div class="text-left" v-html="$md.render(description)"></div>
+      <div class="container text-left bg-secondary text-primary p-4">
+        <h1 class="text-2xl mb-4">{{ title }}</h1>
+        <div v-html="$md.render(description)"></div>
+      </div>
     </div>
 </template>
 
