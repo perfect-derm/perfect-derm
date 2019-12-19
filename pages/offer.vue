@@ -69,7 +69,7 @@
 
 
     <section class="container">
-      <h2 class="mb-4 text-2xl">
+      <h2 class="font-light text-5xl uppercase mb-10">
         {{ $t('offer__section_title__title') }}
       </h2>
 

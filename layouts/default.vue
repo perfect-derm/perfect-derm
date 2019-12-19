@@ -108,7 +108,7 @@
     </nav>
 
     <main class="flex flex-col flex-auto">
-      <nuxt class="text-center my-auto"/>
+      <nuxt class="text-center my-auto mt-0 mb-auto"/>
     </main>
 
     <footer class="relative">

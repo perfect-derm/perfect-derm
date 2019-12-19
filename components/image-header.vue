@@ -10,8 +10,8 @@
         <a class="mr-2">{{ breadcrumb }}</a>
       </div>
 
-      <div class="container text-left bg-secondary text-primary p-4">
-        <h1 class="text-2xl mb-4">{{ title }}</h1>
+      <div class="container text-left p-4">
+        <h1 class="font-light text-5xl uppercase mb-2">{{ title }}</h1>
         <div v-html="$md.render(description)"></div>
       </div>
     </div>

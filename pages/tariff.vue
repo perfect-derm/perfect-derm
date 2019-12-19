@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="container my-4">
-      {{ $t('tariff__header__title') }}
+
+      <h2 class="font-light text-5xl uppercase mb-10">
+        {{ $t('tariff__header__title') }}
+      </h2>
       
       <ul class="flex flex-col">
 
