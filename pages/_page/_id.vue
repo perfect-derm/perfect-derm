@@ -1,5 +1,5 @@
 <template>
-  <div class="text-left container">
+  <div class="container">
       <h1 
         v-if="this.$i18n.te(prefix + 'title')"
         class="mt-20 mb-16 font-light text-4xl z-10 uppercase font-light text-left"
@@ -9,17 +9,17 @@
 
       <div 
         v-if="this.$i18n.te(prefix + 'description_top')"
-        class="mb-4 font-light text-xl z-10 column-desc" 
+        class="mb-4 font-light text-xl z-10 column-desc text-left" 
         v-html="$md.render(this.$t(prefix + 'description_top'))
       "></div>  
       <div 
         v-if="this.$i18n.te(prefix + 'description_promo')"
-        class="mb-8 font-light text-xl z-10 bg-secondary text-primary p-8" 
+        class="mb-8 font-light text-xl z-10 bg-secondary text-primary p-8 text-left" 
         v-html="$md.render(this.$t(prefix + 'description_promo'))"
       ></div>   
       <div 
         v-if="this.$i18n.te(prefix + 'description_bottom')"
-        class="mb-4 font-light text-xl z-10 column-desc" 
+        class="mb-4 font-light text-xl z-10 column-desc text-left" 
         v-html="$md.render(this.$t(prefix + 'description_bottom'))"
       ></div>   
   </div>
