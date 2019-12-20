@@ -80,7 +80,7 @@
             :alt="$t('offer__promotion_line_1__title')" 
             class="w-full object-cover"/>
         </div>
-        <div class="w-1/2 flex flex-col justify-center px-8">
+        <div class="w-1/2 flex flex-col justify-center items-start px-8">
           <h3 class="z-10">
             {{ $t('offer__promotion_line_1__title') }}
           </h3>
@@ -101,7 +101,7 @@
             :alt="$t('offer__promotion_line_2__title')" 
             class="w-full object-cover"/>
         </div>
-        <div class="w-1/2 flex flex-col justify-center px-8">
+        <div class="w-1/2 flex flex-col justify-center items-start px-8">
           <h3 class="z-10">
             {{ $t('offer__promotion_line_2__title') }}
           </h3>
@@ -122,7 +122,7 @@
             :alt="$t('offer__promotion_line_3__title')" 
             class="w-full object-cover"/>
         </div>
-        <div class="w-1/2 flex flex-col justify-center px-8">
+        <div class="w-1/2 flex flex-col justify-center items-start px-8">
           <h3 class="z-10">
             {{ $t('offer__promotion_line_3__title') }}
           </h3>
