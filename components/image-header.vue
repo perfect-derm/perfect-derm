@@ -15,7 +15,7 @@
 
       <div class="container text-left p-4">
         <h1 class="font-light text-5xl uppercase mb-4">{{ title }}</h1>
-        <div class="font-light lg:max-w-1/2" v-html="$md.render(description)"></div>
+        <div class="header-desc font-light lg:max-w-1/2" v-html="$md.render(description)"></div>
       </div>
     </div>
 </template>
@@ -53,5 +53,7 @@
 
 
 <style scoped>
-
+  .header-desc >>> p{
+    @apply mb-4;
+  }
 </style>

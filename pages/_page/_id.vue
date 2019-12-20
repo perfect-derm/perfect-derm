@@ -2,7 +2,7 @@
   <div class="text-left container">
       <h1 
         v-if="this.$i18n.te(prefix + 'title')"
-        class="mt-20 mb-16 font-light text-4xl z-10 uppercase font-light"
+        class="mt-20 mb-16 font-light text-4xl z-10 uppercase font-light text-left"
       >
         {{ $t(prefix + 'title') }}
       </h1>
