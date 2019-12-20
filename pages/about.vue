@@ -5,6 +5,7 @@
       :image="$t('about__header__image')"
       :description="$t('about__header__description')"
       :breadcrumb="$t('about__breadcrumb__title')"
+      v-bind:is-small-header="false"
     />
 
     <div class="container mb-4">

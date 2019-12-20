@@ -1,21 +1,21 @@
 <template>
-  <div class="">
-      <h1 class="font-light text-5xl uppercase mb-10">
+  <div class="container text-left">
+      <h1 class="font-light text-5xl uppercase mt-20 mb-4">
         {{ title }}
       </h1>
 
-      <div class="text-center mb-4 font-light text-xl" v-html="$md.render(description)"></div>
-      <div class="container">
-        <ul>
-          <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary" v-for="(entry, idx) in dataInCategory" :key="idx">
-            
-            <nuxt-link class="flex justify-between mb-1 p-2" :to="entry.link">
-              <span>{{ entry.title }}</span>
-              <span>></span>
-            </nuxt-link>
-          </li>
-        </ul>
-      </div>
+      <div class="mb-10 font-light text-xl" v-html="$md.render(description)"></div>
+      
+      <ul>
+        <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary hover:svg-arrow" v-for="(entry, idx) in dataInCategory" :key="idx">
+          
+          <nuxt-link class="flex justify-between mb-1 p-2" :to="entry.link">
+            <span>{{ entry.title }}</span>
+            <div class="flex flex-col items-center justify-center  svg-arrow" v-html="require('~/assets/arrow.svg?include')"></div>
+          </nuxt-link>
+        </li>
+      </ul>
+    
   </div>
 </template>
 
@@ -77,5 +77,11 @@
 
 
 <style scoped>
+  .svg-arrow >>> svg{
+    width: 15px;
+  }
 
+  .hover\:svg-arrow:hover .svg-arrow >>> svg path{
+    fill: white;
+  }
 </style>

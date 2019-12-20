@@ -1,25 +1,25 @@
 <template>
-  <div class="container">
+  <div class="text-left container">
       <h1 
         v-if="this.$i18n.te(prefix + 'title')"
-        class="text-left mt-8 mb-16 font-light text-4xl z-10 uppercase font-light"
+        class="mt-20 mb-16 font-light text-4xl z-10 uppercase font-light"
       >
         {{ $t(prefix + 'title') }}
       </h1>
 
       <div 
         v-if="this.$i18n.te(prefix + 'description_top')"
-        class="text-left mb-4 font-light text-xl z-10 column-desc" 
+        class="mb-4 font-light text-xl z-10 column-desc" 
         v-html="$md.render(this.$t(prefix + 'description_top'))
       "></div>  
       <div 
         v-if="this.$i18n.te(prefix + 'description_promo')"
-        class="text-left mb-8 font-light text-xl z-10 bg-secondary text-primary p-8" 
+        class="mb-8 font-light text-xl z-10 bg-secondary text-primary p-8" 
         v-html="$md.render(this.$t(prefix + 'description_promo'))"
       ></div>   
       <div 
         v-if="this.$i18n.te(prefix + 'description_bottom')"
-        class="text-left mb-4 font-light text-xl z-10 column-desc" 
+        class="mb-4 font-light text-xl z-10 column-desc" 
         v-html="$md.render(this.$t(prefix + 'description_bottom'))"
       ></div>   
   </div>

@@ -1,6 +1,9 @@
 <template>
     <div class="relative mb-20">
-      <div class="h-600px">
+      <div 
+        class="h-600px"
+        :class="{'max-h-310': isSmallHeader}"
+      >
         <img :src="require(`~/static${image}?resize&size=1920`)" alt="" class="h-full w-full object-cover object-top"/>
       </div>
 
@@ -12,7 +15,7 @@
 
       <div class="container text-left p-4">
         <h1 class="font-light text-5xl uppercase mb-4">{{ title }}</h1>
-        <div class="font-light" v-html="$md.render(description)"></div>
+        <div class="font-light lg:max-w-1/2" v-html="$md.render(description)"></div>
       </div>
     </div>
 </template>
@@ -37,6 +40,11 @@
       },
       'breadcrumb': {
         type: String,
+        required: false
+      },
+      'isSmallHeader': {
+        type: Boolean,
+        default: true,
         required: false
       },
     },
