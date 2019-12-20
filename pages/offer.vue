@@ -80,19 +80,17 @@
             :alt="$t('offer__promotion_line_1__title')" 
             class="w-full object-cover"/>
         </div>
-        <div class="w-1/2 flex flex-col justify-center">
-          <div class="absolute left-1/3">
-            <h3 class="z-10">
-              {{ $t('offer__promotion_line_1__title') }}
-            </h3>
-            <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>     
-            <nuxt-link 
-              :to="$t('offer__promotion_line_1__link')"
-              class="z-10"
+        <div class="w-1/2 flex flex-col justify-center px-8">
+          <h3 class="z-10">
+            {{ $t('offer__promotion_line_1__title') }}
+          </h3>
+          <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>     
+          <nuxt-link 
+            :to="$t('offer__promotion_line_1__link')"
+            class="z-10"
+          >
             >
-              >
-            </nuxt-link>   
-          </div>
+          </nuxt-link>
         </div>
       </div>
 
@@ -103,19 +101,17 @@
             :alt="$t('offer__promotion_line_2__title')" 
             class="w-full object-cover"/>
         </div>
-        <div class="w-1/2 flex flex-col justify-center">
-          <div class="absolute left-1/3">
-            <h3 class="z-10">
-              {{ $t('offer__promotion_line_2__title') }}
-            </h3>
-            <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>     
-            <nuxt-link 
-              :to="$t('offer__promotion_line_2__link')"
-              class="z-10"
+        <div class="w-1/2 flex flex-col justify-center px-8">
+          <h3 class="z-10">
+            {{ $t('offer__promotion_line_2__title') }}
+          </h3>
+          <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>     
+          <nuxt-link 
+            :to="$t('offer__promotion_line_2__link')"
+            class="z-10"
+          >
             >
-              >
-            </nuxt-link>   
-          </div>
+          </nuxt-link>   
         </div>
       </div>
 
@@ -126,19 +122,17 @@
             :alt="$t('offer__promotion_line_3__title')" 
             class="w-full object-cover"/>
         </div>
-        <div class="w-1/2 flex flex-col justify-center">
-          <div class="absolute left-1/3">
-            <h3 class="z-10">
-              {{ $t('offer__promotion_line_3__title') }}
-            </h3>
-            <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>     
-            <nuxt-link 
-              :to="$t('offer__promotion_line_3__link')"
-              class="z-10"
+        <div class="w-1/2 flex flex-col justify-center px-8">
+          <h3 class="z-10">
+            {{ $t('offer__promotion_line_3__title') }}
+          </h3>
+          <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>     
+          <nuxt-link 
+            :to="$t('offer__promotion_line_3__link')"
+            class="z-10"
+          >
             >
-              >
-            </nuxt-link>   
-          </div>
+          </nuxt-link>
         </div>
       </div>
     </section>

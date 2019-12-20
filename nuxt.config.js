@@ -820,6 +820,24 @@ module.exports = {
                       required: true,
                     },
                     {
+                      label: '[PL] Tytuł linku',
+                      name: 'pl__link_title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[EN] Tytuł linku',
+                      name: 'en__link_title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
+                      label: '[DE] Tytuł linku',
+                      name: 'de__link_title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    {
                       label: 'Zdjęcie',
                       name: 'xx__photo',
                       widget: 'image',

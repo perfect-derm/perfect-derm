@@ -37,3 +37,7 @@ h1,
     @apply font-light;
     @apply uppercase;
 }
+
+.button.button-alternative{
+    @apply border-primary;
+}

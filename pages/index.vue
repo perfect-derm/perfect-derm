@@ -1,26 +1,26 @@
 <template>
   <div :class="mainClass">
-    <div class="w-full mb-4 flex flex-col items-center justify-center bg-gray-100 max-h-600">
+    <div class="w-full mb-8 flex flex-col items-center justify-center bg-gray-100 max-h-600">
       <client-only placeholder="Ładowanie...">
         <cBanner />
       </client-only>
     </div>
 
-    <div class="text-center mb-10 font-light mx-4" v-html="$md.render(this.$t('homepage__text__description'))"></div>
+    <div class="container text-center mb-20 font-light" v-html="$md.render(this.$t('homepage__text__description'))"></div>
 
-    <div class="mx-4">
-      <h1 class="font-light text-5xl uppercase mb-2">
+    <div class="container">
+      <h1 class="font-light text-5xl uppercase mb-4">
          {{ $t('homepage__header_offer__title') }}
       </h1>
       <div
-        class="text-center mb-4 font-light" 
+        class="text-center mb-8 font-light" 
         v-html="$md.render(this.$t('homepage__header_offer__description'))"
       ></div>
     </div>
 
-    <div class="relative container py-4">
-      <div class="flex flex-col flex-wrap md:flex-row text-center">
-        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">  
+    <div class="relative container">
+      <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4 mb-4">
+        <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col">  
           <cSingleSquare
             main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__left_top_offer__title')"
@@ -29,7 +29,7 @@
             :theme="2"
           />
         </div>
-        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col">
           <cSingleSquare
             main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__middle_top_offer__title')"
@@ -38,7 +38,7 @@
             :theme="2"
           />
         </div>
-        <div class="w-full md:w-1/3 sm:mb-4 lg:mb-0 sm:px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
           <cSingleSquare
             main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__right_top_offer__title')"
@@ -50,13 +50,13 @@
       </div>
     </div>
 
-    <div class="text-center mb-4 mt-4 mx-4">
+    <div class="text-center mb-20 mx-4">
       <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
         {{ $t('homepage__button_offer__title') }}
       </a>
     </div>
 
-    <div class="relative container mb-4 md:mb-10">
+    <div class="relative container mb-20">
       <div class="flex flex-col flex-wrap md:flex-row text-center">
         <cSingleFullRectangle
           main-class="block w-full bg-secondary text-primary"
@@ -64,21 +64,21 @@
           :description="$t('homepage__about_description__description')"
           :link="$t('homepage__about_description__link')"
           :photo="$t('homepage__about_description__photo')"
-          link-title="Więcej >"
+          :link-title="$t('homepage__about_description__link_title')"
         />
       </div>
     </div>
 
-    <div class="mb-4 mx-4">
+    <div class="container mb-8">
       <h1 class="font-light text-5xl uppercase mb-2">
          {{ $t('homepage__header_issue__title') }}
       </h1>
       <div class="text-center mb-4 font-light" v-html="$md.render(this.$t('homepage__header_issue__description'))"></div>
     </div>
 
-    <section class="relative container">
+    <section class="mb-4 relative container">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
-        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full sm:mb-4 flex-1"
             :title="$t('homepage__left_bottom_offer__title')"
@@ -87,7 +87,7 @@
             :theme="2"
           />
         </div>
-        <div class="w-full md:w-1/3 mb-4 lg:mb-0 sm:px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full bg-white sm:mb-4 flex-1"
             :title="$t('homepage__middle_bottom_offer__title')"
@@ -96,7 +96,7 @@
             :theme="2"
           />
         </div>
-        <div class="w-full md:w-1/3 sm:mb-4 lg:mb-0 sm:px-4 flex flex-col ">
+        <div class="w-full md:w-1/3 sm:mb-4 md:mb-0 sm:px-4 flex flex-col ">
           <cSingleSquare
             main-class="w-full bg-white sm:mb-4 flex-1"
             :title="$t('homepage__right_bottom_offer__title')"
@@ -108,13 +108,13 @@
       </div>
     </section>
 
-    <div class="text-center mb-4 mt-4 mx-4">
+    <div class="container text-center mb-20">
       <a :href="$t('homepage__button_issue__link')" class="button mx-auto">
         {{ $t('homepage__button_issue__title') }}
       </a>
     </div>
 
-    <div class="relative h-450px flex flex-col items-center justify-center container py-4 mb-4">
+    <div class="relative h-450px flex flex-col items-center justify-center container py-4 mb-20">
       <client-only placeholder="Ładowanie...">
         <cMap />
       </client-only>
