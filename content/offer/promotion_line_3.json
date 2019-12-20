@@ -8,5 +8,8 @@
   "de__description": "Wirksame Stimulation der Kollagenproduktion, Hautstraffung an jedem ort",
   "en__link": "offer",
   "pl__link": "offer",
-  "de__link": "offer"
+  "de__link": "offer",
+  "en__link_title": "offer",
+  "pl__link_title": "offer",
+  "de__link_title": "offer"
 }

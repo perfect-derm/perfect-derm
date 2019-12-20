@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="text-center mb-4 mt-4">
+    <div class="text-center mb-20">
       <a :href="$t('about__button__link')" class="button mx-auto">
         {{ $t('about__button__title') }}
       </a>

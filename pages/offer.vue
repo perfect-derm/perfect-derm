@@ -87,9 +87,9 @@
           <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_1__description'))"></div>     
           <nuxt-link 
             :to="$t('offer__promotion_line_1__link')"
-            class="z-10"
+            class="button z-10"
           >
-            >
+            {{ $t('offer__promotion_line_2__link_title') }}
           </nuxt-link>
         </div>
       </div>
@@ -108,9 +108,9 @@
           <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_2__description'))"></div>     
           <nuxt-link 
             :to="$t('offer__promotion_line_2__link')"
-            class="z-10"
+            class="button z-10"
           >
-            >
+            {{ $t('offer__promotion_line_2__link_title') }}
           </nuxt-link>   
         </div>
       </div>
@@ -129,9 +129,9 @@
           <div class="mb-4 font-light text-xl z-10" v-html="$md.render(this.$t('offer__promotion_line_3__description'))"></div>     
           <nuxt-link 
             :to="$t('offer__promotion_line_3__link')"
-            class="z-10"
+            class="button z-10"
           >
-            >
+            {{ $t('offer__promotion_line_2__link_title') }}
           </nuxt-link>
         </div>
       </div>
