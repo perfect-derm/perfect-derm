@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div class="container my-4">
+    <cImageHeader 
+      :title="$t('tariff__header__title')"
+      :image="$t('tariff__header__image')"
+      :breadcrumb="$t('tariff__breadcrumb__title')"
+    />
 
-      <h2 class="font-light text-5xl uppercase mb-10">
-        {{ $t('tariff__header__title') }}
-      </h2>
+    <div class="container my-4">
       
       <ul class="flex flex-col">
 
@@ -32,7 +34,12 @@
 </template>
 
 <script>
+  import cImageHeader from "~/components/image-header.vue";
+
   export default {
+    components: {
+      cImageHeader
+    },
     props: {
       'mainClass': {
         type: String,

@@ -1,10 +1,10 @@
 <template>
   <div class="container text-left">
-      <h1 class="font-light text-5xl uppercase mt-20 mb-4">
+      <h1 v-if="title !== ''" class="font-light text-5xl uppercase mt-20 mb-4">
         {{ title }}
       </h1>
 
-      <div class="mb-10 font-light text-xl" v-html="$md.render(description)"></div>
+      <div v-if="description !== ''" class="mb-10 font-light text-xl" v-html="$md.render(description)"></div>
       
       <ul>
         <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary hover:svg-arrow" v-for="(entry, idx) in dataInCategory" :key="idx">
@@ -15,7 +15,6 @@
           </nuxt-link>
         </li>
       </ul>
-    
   </div>
 </template>
 
