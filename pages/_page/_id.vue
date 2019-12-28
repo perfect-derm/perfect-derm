@@ -1,14 +1,20 @@
 <template>
   <div class="container">
       <ul class="flex flex-row flex-wrap mb-4 mt-2">
+        <li class="flex flex-row flex-wrap">
+          <a :href="startPath" class="mr-2">
+            {{ $t('homepage__breadcrumb__title') }}
+          </a>
+          <span class="block mr-2">|</span>
+        </li>
         <li class="flex flex-row flex-wrap" v-for="pathPart in path" v-bind:key="pathPart">
-          <a v-if="$te(`${pathPart}__breadcrumb__title`)" :href="`\\${pathPart}`" class="mr-2">
+          <a v-if="$te(`${pathPart}__breadcrumb__title`)" :href="startPath.concat(pathPart)" class="mr-2">
             {{ $t(`${pathPart}__breadcrumb__title`) }}
           </a>
           <span v-if="$te(`${pathPart}__breadcrumb__title`) && path[path.length-2] !== 'undefined'" class="block mr-2">|</span>
         </li>
         <li v-if="path[path.length-2] !== 'undefined'">
-          <a class="mr-2" :href="$t(`_${path[path.length-2]}__${path[path.length-1]}__slug`)">
+          <a class="mr-2" :href="startPath.concat(path[path.length-2]).concat('/').concat($t(`_${path[path.length-2]}__${path[path.length-1]}__slug`))">
             {{ $t(`_${path[path.length-2]}__${path[path.length-1]}__title`) }}
           </a>
         </li>
@@ -17,7 +23,7 @@
       <h1 
         v-if="this.$i18n.te(prefix + 'title')"
         class="mt-20 mb-16 font-light text-4xl z-10 uppercase font-light text-left"
-      >
+      >a
         {{ $t(prefix + 'title') }}
       </h1>
 
@@ -42,6 +48,9 @@
 <script>
   export default {
     computed: {
+      startPath: function(){
+        return ('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/'));
+      },
       path: function(){
         let pathArray = this.$route.path.split('/');
 
