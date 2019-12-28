@@ -14,8 +14,8 @@
       </div>
 
       <div class="container text-left p-4">
-        <h1 class="font-light text-5xl uppercase" :class="{'mb-4': typeof description === 'String'}">{{ title }}</h1>
-        <div v-if="typeof description === 'String'" class="header-desc font-light lg:max-w-1/2" v-html="$md.render(description)"></div>
+        <h1 class="font-light text-5xl uppercase" :class="{'mb-4': typeof description === 'string'}">{{ title }}</h1>
+        <div v-if="typeof description === 'string'" class="header-desc font-light lg:max-w-1/2" v-html="$md.render(description)"></div>
       </div>
     </div>
 </template>
