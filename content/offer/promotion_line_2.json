@@ -1,15 +1,15 @@
 {
-  "pl__title": "LIPOLIZA ULTRADŹWIĘKOWA",
-  "en__title": " ULTRASONIC LIPOLYSIS",
-  "de__title": "ULTRASCHALL-LIPOLYSE",
-  "xx__background": "/images/uploads/lipolizacja.jpeg",
   "pl__description": "Efektywnie i bezpiecznie usuwa z organizmu nadmiar tkanki tłuszczowej",
-  "en__description": "\rIt effectively and safely removes excess fat from the body",
-  "de__description": "Es entfernt effektiv und sicher überschüssiges Fett aus dem Körper",
   "en__link": "offer",
+  "xx__background": "/images/uploads/lipolizacja.jpeg",
+  "en__title": " ULTRASONIC LIPOLYSIS",
+  "pl__link_title": "Dowiedz się więcej",
+  "en__description": "\rIt effectively and safely removes excess fat from the body",
+  "de__link_title": "offer",
   "pl__link": "offer",
+  "de__title": "ULTRASCHALL-LIPOLYSE",
+  "de__description": "Es entfernt effektiv und sicher überschüssiges Fett aus dem Körper",
   "de__link": "offer",
-  "en__link_title": "offer",
-  "pl__link_title": "offer",
-  "de__link_title": "offer"
+  "en__link_title": "Read more",
+  "pl__title": "LIPOLIZA ULTRADŹWIĘKOWA"
 }
