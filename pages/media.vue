@@ -6,17 +6,13 @@
       :breadcrumb="$t('media__breadcrumb__title')"
     />
 
-    <ul class="flex flex-col">
+    <h2>{{ $t('media__subheader__title') }}</h2>
 
-        <li v-for="(n, index) in tableMedia" :key="index" class="flex flex-row">
-            <h2 class="text-base flex-auto text-left">
-              {{ tableMedia[index].title }}
-            </h2>
-            <div class="px-4 flex-auto text-right">
-              {{ tableMedia[index].image }}
-            </div>
-        </li>
-      </ul>
+    <ul class="container flex flex-row flex-wrap items-center">
+      <li v-for="(n, index) in tableMedia" :key="index" class="w-full sm:w-1/2">
+        <img :src="tableMedia[index].image" :alt="tableMedia[index].caption" class="m-auto"/>  
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -40,8 +36,8 @@
         for(let i = 0; i <= parseInt(this.$t('$uniqueKeyIndex___media')); i++) {
 
           tableMedia.push({
-            title: this.$t(`_media__${ i }__title`),
-            image: parseInt(this.$t(`_media__${ i }__image`))
+            title: this.$t(`_media__${ i }__caption`),
+            image: this.$t(`_media__${ i }__image`)
           });
         } 
 

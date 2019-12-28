@@ -2782,6 +2782,31 @@ module.exports = {
                     }
                   ]
                 },
+                { 
+                  name: 'subheader',
+                  file: 'content/media/subheader.json',
+                  label: 'Tytuł podrzędny',
+                  fields: [ 
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    }
+                  ]
+                },
                 {
                   name: 'breadcrumb',
                   label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
@@ -2812,7 +2837,7 @@ module.exports = {
             { 
               name: 'media_collection',
               label: 'Media [Pozycja]',
-              folder: 'content/_media.json',
+              folder: 'content/_media',
               format: 'json',
               extension: 'json',
               create: true,
