@@ -1,5 +1,19 @@
 <template>
   <div class="container">
+      <ul class="flex flex-row flex-wrap mb-4 mt-2">
+        <li class="flex flex-row flex-wrap" v-for="pathPart in path" v-bind:key="pathPart">
+          <a v-if="$te(`${pathPart}__breadcrumb__title`)" :href="`\\${pathPart}`" class="mr-2">
+            {{ $t(`${pathPart}__breadcrumb__title`) }}
+          </a>
+          <span v-if="$te(`${pathPart}__breadcrumb__title`) && path[path.length-2] !== 'undefined'" class="block mr-2">|</span>
+        </li>
+        <li v-if="path[path.length-2] !== 'undefined'">
+          <a class="mr-2" :href="$t(`_${path[path.length-2]}__${path[path.length-1]}__slug`)">
+            {{ $t(`_${path[path.length-2]}__${path[path.length-1]}__title`) }}
+          </a>
+        </li>
+      </ul>
+    
       <h1 
         v-if="this.$i18n.te(prefix + 'title')"
         class="mt-20 mb-16 font-light text-4xl z-10 uppercase font-light text-left"
@@ -28,10 +42,19 @@
 <script>
   export default {
     computed: {
+      path: function(){
+        let pathArray = this.$route.path.split('/');
+
+        if(pathArray[0] === ''){
+          pathArray.shift();
+        }
+
+        return pathArray;
+      },
       prefix: function () {
         let prefixTranslation = [];
 
-        prefixTranslation = this.$route.path.split('/'); 
+        prefixTranslation = this.$route.path.split('/');
         prefixTranslation.shift();
         prefixTranslation = prefixTranslation.join('__');
         prefixTranslation = '_' + prefixTranslation + '__';
