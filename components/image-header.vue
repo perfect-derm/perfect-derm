@@ -1,5 +1,5 @@
 <template>
-    <div class="relative mb-20">
+    <div class="relative mb-8">
       <div 
         class="h-600px"
         :class="{'max-h-310': isSmallHeader}"
