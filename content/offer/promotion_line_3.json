@@ -1,15 +1,15 @@
 {
-  "pl__title": "Dermapen",
-  "en__title": " Dermapen",
-  "de__title": " Dermapen",
-  "xx__background": "/images/uploads/dermapen.jpeg",
   "pl__description": "Skuteczna stymulacja produkcji kolagenu, ujędrnianie skóry w każdym miejscu",
-  "en__description": "Effective stimulation of collagen production, skin firming in every place",
-  "de__description": "Wirksame Stimulation der Kollagenproduktion, Hautstraffung an jedem ort",
   "en__link": "offer",
+  "xx__background": "/images/uploads/dermapen.jpeg",
+  "en__title": " Dermapen",
+  "pl__link_title": "Dowiedz się więcej",
+  "en__description": "Effective stimulation of collagen production, skin firming in every place",
+  "de__link_title": "offer",
   "pl__link": "offer",
+  "de__title": " Dermapen",
+  "de__description": "Wirksame Stimulation der Kollagenproduktion, Hautstraffung an jedem ort",
   "de__link": "offer",
-  "en__link_title": "offer",
-  "pl__link_title": "offer",
-  "de__link_title": "offer"
+  "en__link_title": "Read more",
+  "pl__title": "Dermapen"
 }
