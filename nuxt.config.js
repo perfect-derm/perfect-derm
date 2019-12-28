@@ -227,6 +227,7 @@ module.exports = {
                 {
                   name: 'languages',
                   label: 'Języki',
+                  file: 'content/header/langs.json',
                   fields: [ 
                     { 
                       label: 'Dostępne języki do wyboru',
@@ -236,19 +237,19 @@ module.exports = {
                       options: [
                         { 
                           label: "Polski", 
-                          value: "PL" 
+                          value: "pl" 
                         },
                         { 
                           label: "Angielski", 
-                          value: "EN" 
+                          value: "en" 
                         },
                         { 
                           label: "Niemiecki", 
-                          value: "DE" 
+                          value: "de" 
                         }
                       ],
                       default: [
-                        "PL"
+                        "pl"
                       ]
                     },
                   ] 
@@ -3335,7 +3336,8 @@ module.exports = {
   plugins: [
     { src: '~/plugins/swiper.js', mode: 'client', ssr: false },
     { src: '~/plugins/break.js'},
-    { src: '~/plugins/resize.js'}
+    { src: '~/plugins/resize.js'},
+    { src: '~plugins/filters/uppercase.js'}
   ],
   /*
   ** Customize the progress bar color

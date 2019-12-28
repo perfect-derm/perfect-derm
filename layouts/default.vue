@@ -70,37 +70,13 @@
                 <span class="max-w-330-hide mr-2">+48 737 162 771</span>
               </a>
             </li>
-            <li class="">
+            <li class="" v-for="lang in $t('header__langs__enabled').split(',')" v-bind:key="lang">
               <a 
-                @click="$nuxt.$i18n.setLocale('en')"
-                :class="{ 'lang-active bg-gray-300': $i18n.locale === 'en' }"
+                @click="$nuxt.$i18n.setLocale(lang)"
+                :class="{ 'lang-active bg-gray-300': $i18n.locale === lang }"
                 class="block cursor-pointer px-2 pt-3 pb-1"
               >
-                EN
-              </a>
-            </li>
-            <li class="pt-3 pb-1">
-              |
-            </li>
-            <li class="">
-              <a 
-                @click="$nuxt.$i18n.setLocale('pl')"
-                :class="{ 'lang-active bg-gray-300': $i18n.locale === 'pl' }"
-                class="block cursor-pointer px-2 pt-3 pb-1"
-              >
-                PL
-              </a>
-            </li>
-            <li class="pt-3 pb-1">
-              |
-            </li>
-            <li class="">
-              <a 
-                @click="$nuxt.$i18n.setLocale('de')"
-                :class="{ 'lang-active bg-gray-300': $i18n.locale === 'de' }"
-                class="block cursor-pointer px-2 pt-3 pb-1"
-              >
-                DE
+                {{ lang | uppercase }}
               </a>
             </li>
           </ul>
