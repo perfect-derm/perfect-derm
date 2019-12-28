@@ -2583,6 +2583,31 @@ module.exports = {
                     }
                   ]
                 },
+                {
+                  name: 'breadcrumb',
+                  label: "Tytuł linku na podstronach w nagłówku (breadcrumb)",
+                  file: 'content/issue/breadcrumb.json',
+                  fields: [
+                    { 
+                      label: '[PL] Tytuł',
+                      name: 'pl__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[EN] Tytuł',
+                      name: 'en__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                    { 
+                      label: '[DE] Tytuł',
+                      name: 'de__title',
+                      widget: 'string',
+                      required: true,
+                    },
+                  ]
+                },
               ]
             },
             {
