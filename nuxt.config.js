@@ -3373,7 +3373,8 @@ module.exports = {
     { src: '~/plugins/swiper.js', mode: 'client', ssr: false },
     { src: '~/plugins/break.js'},
     { src: '~/plugins/resize.js'},
-    { src: '~plugins/filters/uppercase.js'}
+    { src: '~plugins/filters/uppercase.js'},
+    { src: '~plugins/filters/italicAsAddress.js'}
   ],
   /*
   ** Customize the progress bar color

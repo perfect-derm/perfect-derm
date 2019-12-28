@@ -1,7 +1,7 @@
 <template>
   <div class="container flex flex-wrap mt-10">
     <div class="w-full lg:w-1/2 lg:pr-4 flex flex-wrap mb-6">
-      <div class="text-left" v-html="$md.render(this.$t('contact__description__description'))"></div>
+      <div class="text-left contact-desc" v-html="$options.filters.italicAsAddress(desc)"></div>
     </div>
     <div class="w-full lg:w-1/2 flex flex-wrap mb-6">
       <form class="w-full max-w-lg text-left" 
@@ -50,8 +50,35 @@
   </div>
 </template>
 
+<style scoped>
+  .contact-desc >>> h1{
+    @apply font-light;
+    @apply text-5xl;
+    @apply uppercase;
+    @apply mb-4;
+  }
+
+  .contact-desc >>> h2{
+    @apply font-light;
+    @apply text-xl;
+    @apply uppercase;
+    @apply mb-4;
+  }
+
+  .contact-desc >>> address,
+  .contact-desc >>> p{
+    @apply font-light;
+    @apply mb-4;
+  }
+</style>
+
 <script>
   export default {
+    computed: {
+      desc: function(){
+        return this.$md.render(this.$t('contact__description__description'));
+      },
+    },
     props: {
       'mainClass': {
         type: String,
