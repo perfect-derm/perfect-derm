@@ -41,3 +41,8 @@ h1,
 .button.button-alternative{
     @apply border-primary;
 }
+
+[data-aos-easing][data-aos-easing] [data-aos][data-aos]:not(.aos-animate){
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}

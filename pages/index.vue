@@ -30,9 +30,6 @@
             :link="$t('homepage__left_top_offer__link')"
             :image="$t('homepage__left_top_offer__background')"
             :theme="2"
-            data-aos="fade-up"
-            data-aos-offset="150"
-            data-aos-duration="600"
           />
         </div>
         <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col">
@@ -42,9 +39,6 @@
             :link="$t('homepage__middle_top_offer__link')"
             :image="$t('homepage__middle_top_offer__background')"
             :theme="2"
-            data-aos="fade-up"
-            data-aos-offset="150"
-            data-aos-duration="600"
           />
         </div>
         <div class="w-full md:w-1/3 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
@@ -54,9 +48,6 @@
             :link="$t('homepage__right_top_offer__link')"
             :image="$t('homepage__right_top_offer__background')"
             :theme="2"
-            data-aos="fade-up"
-            data-aos-offset="150"
-            data-aos-duration="600"
           />
         </div>
       </div>
@@ -71,15 +62,12 @@
     <div class="relative container mb-20">
       <div class="flex flex-col flex-wrap md:flex-row text-center">
         <cSingleFullRectangle
-          main-class="block w-full bg-secondary text-primary"
+          main-class="block w-full bg-secondary text-primary opacity-0"
           :title="$t('homepage__about_description__title')"
           :description="$t('homepage__about_description__description')"
           :link="$t('homepage__about_description__link')"
           :photo="$t('homepage__about_description__photo')"
           :link-title="$t('homepage__about_description__link_title')"
-          data-aos="fade-up"
-          data-aos-offset="150"
-          data-aos-duration="600"
         />
       </div>
     </div>
@@ -100,9 +88,6 @@
             :link="$t('homepage__left_bottom_offer__link')"
             :image="$t('homepage__left_bottom_offer__background')"
             :theme="2"
-            data-aos="fade-up"
-            data-aos-offset="150"
-            data-aos-duration="600"
           />
         </div>
         <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col ">
@@ -112,9 +97,6 @@
             :link="$t('homepage__middle_bottom_offer__link')"
             :image="$t('homepage__middle_bottom_offer__background')"
             :theme="2"
-            data-aos="fade-up"
-            data-aos-offset="150"
-            data-aos-duration="600"
           />
         </div>
         <div class="w-full md:w-1/3 sm:mb-4 md:mb-0 sm:px-4 flex flex-col ">
@@ -124,9 +106,6 @@
             :link="$t('homepage__right_bottom_offer__link')"
             :image="$t('homepage__right_bottom_offer__background')"
             :theme="2"
-            data-aos="fade-up"
-            data-aos-offset="150"
-            data-aos-duration="600"
           />
         </div>
       </div>

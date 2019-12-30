@@ -1,5 +1,11 @@
 <template>
-  <div :class="mainClass" class="block">
+  <div 
+    :class="mainClass"
+    class="block"
+    data-aos="fade-up"
+    data-aos-offset="150"
+    data-aos-duration="600"
+  >
     <nuxt-link
         :to="link"
         class="flex flex-row flex-wrap sm:flex-no-wrap btn raise center text-left"

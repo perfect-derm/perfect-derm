@@ -17,6 +17,7 @@
             :title="$t('offer__category_1__title')"
             link="/category_1"
             :image="$t('offer__category_1__background')"
+            data-aos-offset="250"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 lg:pb-20 md:px-4 flex flex-col ">
@@ -26,6 +27,7 @@
             :title="$t('offer__category_2__title')"
             link="/category_2"
             :image="$t('offer__category_2__background')"
+            data-aos-offset="250"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 lg:pb-20 md:px-4 flex flex-col ">
@@ -35,6 +37,7 @@
             :title="$t('offer__category_3__title')"
             link="/category_3"
             :image="$t('offer__category_3__background')"
+            data-aos-offset="250"
           />
         </div>
         <div class="md:w-1/3 mb-8 lg:mb-0 lg:pb-20 md:px-4 flex flex-col ">  
@@ -73,11 +76,18 @@
         {{ $t('offer__section_title__title') }}
       </h2>
 
-      <div class="relative flex flex-row text-left h-450px bg-black md:bg-white text-white md:text-primary">
+      <div 
+        class="relative flex flex-row text-left h-450px bg-black md:bg-white text-white md:text-primary"
+        data-aos="fade-up"
+        data-aos-offset="150"
+        data-aos-duration="600"
+      >
         <div class="absolute md:relative opacity-25 md:opacity-100 w-full md:w-1/2 h-full md:h-auto overflow-hidden">
           <img 
-            :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&size=448`)" 
-            :alt="$t('offer__promotion_line_1__title')" 
+            :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&size=785`)" 
+            :alt="$t('offer__promotion_line_1__title')"
+            width="785"
+            height="523"
             class="h-full w-full object-cover"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-12 md:px-8 lg:px-20">
@@ -94,11 +104,18 @@
         </div>
       </div>
 
-      <div class="relative flex flex-row text-left h-450px bg-black md:bg-white text-white md:text-primary">
+      <div 
+        class="relative flex flex-row text-left h-450px bg-black md:bg-white text-white md:text-primary"
+        data-aos="fade-up"
+        data-aos-offset="150"
+        data-aos-duration="600"
+      >
         <div class="absolute md:relative opacity-25 md:opacity-100 w-full md:w-1/2 h-full md:h-auto overflow-hidden order-last">
           <img 
-            :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&size=448`)" 
+            :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&size=785`)" 
             :alt="$t('offer__promotion_line_2__title')" 
+            width="785"
+            height="523"
             class="h-full w-full object-cover"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-12 md:px-8 lg:px-20">
@@ -115,11 +132,18 @@
         </div>
       </div>
 
-      <div class="relative flex flex-row text-left h-450px bg-black md:bg-white text-white md:text-primary">
+      <div 
+        class="relative flex flex-row text-left h-450px bg-black md:bg-white text-white md:text-primary"
+        data-aos="fade-up"
+        data-aos-offset="150"
+        data-aos-duration="600"
+      >
         <div class="absolute md:relative opacity-25 md:opacity-100 w-full md:w-1/2 h-full md:h-auto overflow-hidden">
           <img 
-            :src="require(`~/static${$t('offer__promotion_line_3__background')}?resize&size=448`)" 
-            :alt="$t('offer__promotion_line_3__title')" 
+            :src="require(`~/static${$t('offer__promotion_line_3__background')}?resize&size=785`)" 
+            :alt="$t('offer__promotion_line_3__title')"
+            width="785"
+            height="523" 
             class="h-full w-full object-cover"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-12 md:px-8 lg:px-20">

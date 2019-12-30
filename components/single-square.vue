@@ -1,5 +1,11 @@
 <template>
-  <div :class="mainClass" class="block">
+  <div 
+    :class="mainClass" 
+    class="block"
+    data-aos="fade-up"
+    data-aos-offset="150"
+    data-aos-duration="600"
+  >
     <nuxt-link
         :to="link"
         class="btn raise center tc"
@@ -21,6 +27,8 @@
             class="object-cover w-full h-auto max-h-310 center tc h-full"
             :alt="title"
             :src="require(`~/static${image}?resize&size=448`)"
+            height="298"
+            width="448"
           />
         </picture>
         <figcaption
