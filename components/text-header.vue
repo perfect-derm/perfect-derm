@@ -8,7 +8,7 @@
 
     <div class="container text-left p-4">
       <h1 class="font-light text-5xl uppercase mb-2">{{ title }}</h1>
-      <div v-if="typeof description === 'String'" v-html="$md.render(description)"></div>
+      <div v-if="typeof description === 'string'" v-html="$md.render(description)"></div>
     </div>
   </div>
 </template>
