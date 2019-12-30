@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <hr class="mb-2">
+    <hr class="mb-2" v-if="type !== 'issue'">
     
     <div class="container text-left">
         <div class="flex flex-row flex-wrap mb-4 mt-2" v-if="type !== 'issue'">
