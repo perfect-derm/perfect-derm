@@ -1,10 +1,11 @@
 <template>
     <div class="relative mb-8">
       <div 
-        class="h-600px"
+        class="h-600px bg-fixed bg-bottom"
         :class="{'max-h-310': isSmallHeader}"
+        :style="{ backgroundImage: `url(${imageBanner})` }"
       >
-        <img :src="require(`~/static${image}?resize&size=1920`)" alt="" class="h-full w-full object-cover object-top"/>
+        <img :src="imageBanner" alt="" class="h-full w-full object-cover object-top invisible"/>
       </div>
 
       <div class="container flex flex-row flex-wrap mb-4 mt-2">
@@ -48,6 +49,11 @@
         required: false
       },
     },
+    computed: {
+      imageBanner: function(){
+        return require(`~/static${this.image}?resize&size=1920`);
+      }
+    }
   }
 </script>
 
