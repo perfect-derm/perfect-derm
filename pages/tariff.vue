@@ -10,7 +10,7 @@
       
       <ul class="flex flex-col">
 
-        <li v-for="(n, index) in tableTariff" :key="index" class="flex flex-row">
+        <li v-for="(n, index) in tableTariff" :key="index" class="flex flex-row" :class="{'sticky top-0': tableTariff[index].headerLvl !== 3, 'top-0': tableTariff[index].headerLvl === 1, 'top-35': tableTariff[index].headerLvl === 2}">
           <h2 v-if="tableTariff[index].headerLvl == 1" class="px-4 uppercase text-2xl bg-gray-400 w-full text-center px-2">
             {{ tableTariff[index].title }}
           </h2>
