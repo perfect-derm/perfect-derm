@@ -36,6 +36,12 @@ h1,
     @apply border-secondary;
     @apply font-light;
     @apply uppercase;
+    transition: 0.3s;
+}
+
+.button:hover{
+    @apply text-gray-800;
+    @apply border-gray-800;
 }
 
 .button.button-alternative{
@@ -43,6 +49,13 @@ h1,
 }
 
 [data-aos-easing][data-aos-easing] [data-aos][data-aos]:not(.aos-animate){
-    -webkit-transition-duration: 0s;
     transition-duration: 0s;
+}
+
+.img-animation {
+    transition: all 0.3s;
+}
+
+.img-animation:hover {
+    transform: scale(1.1);
 }

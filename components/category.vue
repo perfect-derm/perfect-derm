@@ -16,7 +16,14 @@
         <div v-if="description !== ''" class="mb-10 font-light text-xl" v-html="$md.render(description)"></div>
         
         <ul>
-          <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary hover:svg-arrow" v-for="(entry, idx) in dataInCategory" :key="idx">
+          <li 
+            class="bg-secondary text-primary hover:bg-primary hover:text-secondary hover:svg-arrow" 
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-duration="600"
+            v-for="(entry, idx) in dataInCategory" 
+            :key="idx"
+          >
             
             <nuxt-link class="flex justify-between mb-1 p-2" :to="entry.link">
               <span>{{ entry.title }}</span>
