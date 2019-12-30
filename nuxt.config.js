@@ -3395,11 +3395,12 @@ module.exports = {
       ],
   },
   plugins: [
-    { src: '~/plugins/swiper.js', mode: 'client', ssr: false },
-    { src: '~/plugins/break.js'},
-    { src: '~/plugins/resize.js'},
+    { src: '~plugins/swiper.js', mode: 'client', ssr: false },
+    { src: '~plugins/break.js'},
+    { src: '~plugins/resize.js'},
     { src: '~plugins/filters/uppercase.js'},
-    { src: '~plugins/filters/italicAsAddress.js'}
+    { src: '~plugins/filters/italicAsAddress.js'},
+    { src: '~plugins/lightGallery.js', mode: 'client', ssr: false }
   ],
   /*
   ** Customize the progress bar color

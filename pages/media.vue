@@ -8,11 +8,23 @@
 
     <h2>{{ $t('media__subheader__title') }}</h2>
 
-    <ul class="container flex flex-row flex-wrap items-center">
-      <li v-for="(n, index) in tableMedia" :key="index" class="w-full sm:w-1/2">
-        <img :src="tableMedia[index].image" :alt="tableMedia[index].caption" class="m-auto"/>  
-      </li>
-    </ul>
+    <div class="container">
+      <ul class="flex flex-row flex-wrap -mx-2">
+        <li v-for="(n, indexImage) in tableMedia" :key="indexImage" class="w-full sm:w-1/5 max-h-310 px-2" @click="index = indexImage">
+          <img :src="tableMedia[indexImage].url" :alt="tableMedia[indexImage].caption" class="object-cover w-full h-auto center tc h-full m-auto"/>  
+        </li>
+      </ul>
+    </div>
+    
+    <no-ssr>
+      <LightGallery
+        :images="tableMedia"
+        :index="index"
+        :disable-scroll="true"
+        @close="index = null"
+      />
+    </no-ssr>
+
   </div>
 </template>
 
@@ -37,7 +49,7 @@
 
           tableMedia.push({
             title: this.$t(`_media__${ i }__caption`),
-            image: this.$t(`_media__${ i }__image`)
+            url: this.$t(`_media__${ i }__image`)
           });
         } 
 
@@ -52,6 +64,11 @@
 
         return tableMedia;
       }
-    }
+    },
+    data() {
+      return {
+        index: null,
+      };
+    },
   };
 </script>
