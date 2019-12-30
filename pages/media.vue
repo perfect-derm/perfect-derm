@@ -16,14 +16,14 @@
       </ul>
     </div>
     
-    <no-ssr>
+    <client-only>
       <LightGallery
         :images="tableMedia"
         :index="index"
         :disable-scroll="true"
         @close="index = null"
       />
-    </no-ssr>
+    </client-only>
 
   </div>
 </template>

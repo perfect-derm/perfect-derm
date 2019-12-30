@@ -3400,7 +3400,8 @@ module.exports = {
     { src: '~plugins/resize.js'},
     { src: '~plugins/filters/uppercase.js'},
     { src: '~plugins/filters/italicAsAddress.js'},
-    { src: '~plugins/lightGallery.js', mode: 'client', ssr: false }
+    { src: '~plugins/lightGallery.js', mode: 'client', ssr: false },
+    { src: '~plugins/aos.js', mode: 'client', ssr: false }
   ],
   /*
   ** Customize the progress bar color
