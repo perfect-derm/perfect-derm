@@ -3,7 +3,7 @@
     <div class="w-full mb-8 flex flex-col items-center justify-center bg-gray-100 max-h-600 h-full">
       <client-only>
         <cBanner />
-        <div class="flex flex-col items-center justify-center h-600" slot="placeholder">
+        <div class="flex flex-col items-center justify-center h-600px" slot="placeholder">
           Ładowanie...
         </div>
       </client-only>
