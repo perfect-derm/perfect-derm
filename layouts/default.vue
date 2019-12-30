@@ -13,37 +13,37 @@
         >
           <nuxt-link 
             :to="localePath('about')"
-            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
-          >
+            class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
+          >    
             {{ $t('about__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('offer')"
-            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('offer__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('issue')"
-            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('issue__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('media')"
-            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('media__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('tariff')"
-            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('tariff__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath('contact')"
-            class="flex lg:px-4 py-4 hover:text-black lg:ml-4 h-auto items-center no-underline hover:underline"
+            class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('contact__menu__title') }}
           </nuxt-link>
@@ -96,9 +96,12 @@
           {{ $t('footer__links__link_1') }}
         </a>
 
-        <a class="button mx-auto mb-4">
+        <nuxt-link 
+          :to="localePath('contact')"
+          class="button mx-auto mb-4"
+        >
           {{ $t('footer__links__link_2') }}
-        </a>
+        </nuxt-link>
       </div>
 
       <div class="bg-primary text-white py-4 px-4">
@@ -394,7 +397,7 @@
   }
 </script>
 
-<style lang="css" type="text/css">
+<style lang="css">
   .min-vh-100 {
     min-height: 100vh;
   }
@@ -403,5 +406,9 @@
     .max-w-330-hide{
       display: none;
     }
+  }
+
+  .menu-link{
+    transition: 0.3s;
   }
 </style>

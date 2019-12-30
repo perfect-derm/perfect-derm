@@ -11,11 +11,6 @@
         class="btn raise center tc"
       >
       <figure 
-        :class="{
-          'background-bar' : textPlacementUpAbsolute || textPlacementDownAbsolute,
-          'background-top-bar' : textPlacementUpAbsolute,
-          'background-bottom-bar' : textPlacementDownAbsolute,
-        }"
         class="relative h-full min-h-full flex flex-col"
       >
          <picture
@@ -37,7 +32,7 @@
               'absolute font-light bottom-0 uppercase' : textPlacementDownAbsolute,
               'relative font-normal text-gray-600 order-first' : textUpRelative,
             }"
-            class="left-0 right-0 z-10"
+            class="text-2xl bg-backgroundSemiTransparent left-0 right-0 z-10"
           >
           {{ title }}
         </figcaption>

@@ -10,8 +10,8 @@
 
     <div class="container">
       <ul class="flex flex-row flex-wrap -mx-2">
-        <li v-for="(n, indexImage) in tableMedia" :key="indexImage" class="w-full sm:w-1/5 max-h-310 px-2" @click="index = indexImage">
-          <img :src="tableMedia[indexImage].url" :alt="tableMedia[indexImage].caption" class="object-cover w-full h-auto center tc h-full m-auto"/>  
+        <li v-for="(n, indexImage) in tableMedia" :key="indexImage" class="w-full sm:w-1/5 max-h-310 px-2 image-hover" @click="index = indexImage">
+          <img :src="tableMedia[indexImage].url" :alt="tableMedia[indexImage].caption" class="object-cover w-full h-auto center tc h-full m-auto cursor-pointer"/>  
         </li>
       </ul>
     </div>
@@ -72,3 +72,28 @@
     },
   };
 </script>
+
+<style scoped>
+  .image-hover{
+    position: relative;
+  }
+
+  .image-hover:after{
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    z-index: -1;
+  }
+
+  .image-hover img{
+    transition: 0.3s;
+  }
+
+  .image-hover img:hover{
+    opacity: 0.5;
+  }
+</style>

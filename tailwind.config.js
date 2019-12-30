@@ -62,7 +62,8 @@ module.exports = {
         blue: false,
         indigo: false,
         purple: false,
-        pink: false
+        pink: false,
+        backgroundSemiTransparent: 'rgba(255, 255, 255, 0.7)'
       }
     },
   },
