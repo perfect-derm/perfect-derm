@@ -1,7 +1,7 @@
 <template>
     <div class="relative mb-8">
       <div 
-        class="h-600px bg-fixed bg-bottom"
+        class="h-600px bg-fixed bg-top"
         :class="{'max-h-310': isSmallHeader}"
         :style="{ backgroundImage: `url(${imageBanner})` }"
       >
