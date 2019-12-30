@@ -1,26 +1,30 @@
 <template>
-  <div class="container text-left">
-      <div class="flex flex-row flex-wrap mb-4 mt-2" v-if="type !== 'issue'">
-        <a :href="('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/'))" class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
-        <span class="block mr-2">|</span>
-        <a :href="link" class="mr-2">{{ title }}</a>
-      </div>
+  <div class="relative">
+    <hr class="mb-2">
+    
+    <div class="container text-left">
+        <div class="flex flex-row flex-wrap mb-4 mt-2" v-if="type !== 'issue'">
+          <a :href="('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/'))" class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
+          <span class="block mr-2">|</span>
+          <a :href="link" class="mr-2">{{ title }}</a>
+        </div>
 
-      <h1 v-if="title !== ''" class="font-light text-5xl uppercase mt-20 mb-4">
-        {{ title }}
-      </h1>
+        <h1 v-if="title !== ''" class="font-light text-5xl uppercase mt-20 mb-4">
+          {{ title }}
+        </h1>
 
-      <div v-if="description !== ''" class="mb-10 font-light text-xl" v-html="$md.render(description)"></div>
-      
-      <ul>
-        <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary hover:svg-arrow" v-for="(entry, idx) in dataInCategory" :key="idx">
-          
-          <nuxt-link class="flex justify-between mb-1 p-2" :to="entry.link">
-            <span>{{ entry.title }}</span>
-            <div class="flex flex-col items-center justify-center  svg-arrow" v-html="require('~/assets/arrow.svg?include')"></div>
-          </nuxt-link>
-        </li>
-      </ul>
+        <div v-if="description !== ''" class="mb-10 font-light text-xl" v-html="$md.render(description)"></div>
+        
+        <ul>
+          <li class="bg-secondary text-primary hover:bg-primary hover:text-secondary hover:svg-arrow" v-for="(entry, idx) in dataInCategory" :key="idx">
+            
+            <nuxt-link class="flex justify-between mb-1 p-2" :to="entry.link">
+              <span>{{ entry.title }}</span>
+              <div class="flex flex-col items-center justify-center  svg-arrow" v-html="require('~/assets/arrow.svg?include')"></div>
+            </nuxt-link>
+          </li>
+        </ul>
+    </div>
   </div>
 </template>
 

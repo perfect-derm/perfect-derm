@@ -1,6 +1,9 @@
 <template>
-  <div class="container">
-      <ul class="flex flex-row flex-wrap mb-4 mt-2">
+  <div>
+    <hr class="mb-2" />
+
+    <div class="container">
+      <ul class="flex flex-row flex-wrap mb-4">
         <li class="flex flex-row flex-wrap">
           <a :href="startPath" class="mr-2">
             {{ $t('homepage__breadcrumb__title') }}
@@ -42,6 +45,7 @@
         class="mb-4 font-light text-xl z-10 column-desc text-left" 
         v-html="$md.render(this.$t(prefix + 'description_bottom'))"
       ></div>   
+    </div>
   </div>
 </template>
 
