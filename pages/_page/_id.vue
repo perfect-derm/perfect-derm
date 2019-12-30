@@ -14,7 +14,7 @@
           <span v-if="$te(`${pathPart}__breadcrumb__title`) && path[path.length-2] !== 'undefined'" class="block mr-2">|</span>
         </li>
         <li v-if="path[path.length-2] !== 'undefined'">
-          <a class="mr-2" :href="startPath.concat(path[path.length-2]).concat('/').concat($t(`_${path[path.length-2]}__${path[path.length-1]}__slug`))">
+          <a class="mr-2">
             {{ $t(`_${path[path.length-2]}__${path[path.length-1]}__title`) }}
           </a>
         </li>

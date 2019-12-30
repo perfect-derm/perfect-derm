@@ -1,5 +1,11 @@
 <template>
   <div class="container text-left">
+      <div class="flex flex-row flex-wrap mb-4 mt-2">
+        <a :href="('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/'))" class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
+        <span class="block mr-2">|</span>
+        <a :href="link" class="mr-2">{{ title }}</a>
+      </div>
+
       <h1 v-if="title !== ''" class="font-light text-5xl uppercase mt-20 mb-4">
         {{ title }}
       </h1>

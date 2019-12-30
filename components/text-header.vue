@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <div class="container flex flex-row flex-wrap mb-4 mt-2">
-      <a class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
+      <a :href="('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/'))" class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
       <span class="block mr-2">></span>
       <a class="mr-2">{{ breadcrumb }}</a>
     </div>
