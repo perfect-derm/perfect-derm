@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col min-vh-100 w-full">
+    <resize-observer @notify="handleResize" />
     <nav class="container flex flex-col" aria-label="Menu">
       <div class="flex justify-between mb-4 lg:mb-0 flex-wrap">
         <a :href="localePath('index')" class="flex-1 flex items-center flex-shrink-0 text-white mx-auto lg:mr-6">
@@ -9,45 +10,50 @@
         </a>
         <div 
           class="relative w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto text-right text-sm md:text-base flex-grow justify-end order-last"
-          :class="{ 'hidden' : menuSwitchPosition }"
+          :class="{ 'hidden' : !menuVisible }"
         >
           <nuxt-link 
+            @click.native="menuClickHandler"
             :to="localePath('about')"
             class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >    
             {{ $t('about__menu__title') }}
           </nuxt-link>
-          <nuxt-link 
+          <nuxt-link
+            @click.native="menuClickHandler" 
             :to="localePath('offer')"
             class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('offer__menu__title') }}
           </nuxt-link>
           <nuxt-link 
+            @click.native="menuClickHandler"
             :to="localePath('issue')"
             class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('issue__menu__title') }}
           </nuxt-link>
           <nuxt-link 
+            @click.native="menuClickHandler"
             :to="localePath('media')"
             class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('media__menu__title') }}
           </nuxt-link>
           <nuxt-link 
+            @click.native="menuClickHandler"
             :to="localePath('tariff')"
             class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('tariff__menu__title') }}
           </nuxt-link>
           <nuxt-link 
+            @click.native="menuClickHandler"
             :to="localePath('contact')"
             class="menu-link flex lg:px-4 py-4 hover:text-gray-800 lg:ml-4 h-auto items-center no-underline hover:underline"
           >
             {{ $t('contact__menu__title') }}
           </nuxt-link>
-          <resize-observer @notify="handleResize" />
         </div>
         <div class="flex items-center ml-4 lg:hidden">
           <button @click="menuSwitch" class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-500 hover:border-gray-500">
@@ -362,37 +368,28 @@
     },
     data () {
         return { 
-          menuSwitchPositionByUser: false,
           timeoutMenu: 0,
-          menuSwitchPosition: true
+          menuVisible: true
         }
     },
+    watch: {
+      '$route.path': function() {
+        this.menuVisible = false;
+      }
+    },
     methods: {
+      menuClickHandler: function(){
+        this.menuVisible = false;
+      },
       handleResize: function () {
-        if(!this.menuSwitchPositionByUser){
-          this.menuVisible(true);
-        }
+        this.menuVisible = false;
       },
       menuSwitch: function (e) {
-        this.menuSwitchPositionByUser = true;
-        
-        this.menuVisible(!this.menuSwitchPosition);
-
-        clearTimeout(this.timeoutMenu);
-        this.timeoutMenu = setTimeout(function(){
-          this.menuSwitchPositionByUser = false
-        }.bind(this), 100);
-      },
-      menuVisible: function(visible){
-          if(visible){
-            this.menuSwitchPosition = true;
-          } else {
-            this.menuSwitchPosition = false;
-          }
+        this.menuVisible = !this.menuVisible;
       },
     },
     mounted(){
-      this.menuVisible(true);
+      this.menuVisible = true;
     }
   }
 </script>
