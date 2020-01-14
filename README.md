@@ -20,8 +20,6 @@ $ npm start
 $ npm run generate
 ```
 
-See [starter template documentation in the README on GitHub](https://github.com/renestalder/nuxt-netlify-cms-starter-template) for additional usage and configuration.
-
-## Edit content
-
-Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
+# License
+Our done code is on MIT license
+Data (Images, Text etx) are prioprietary or have they own license ( but you don't even need them :) )
