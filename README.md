@@ -21,5 +21,6 @@ $ npm run generate
 ```
 
 # License
-Our done code is on MIT license
+Our done code is on MIT license.
+
 Data (Images, Text etx) are prioprietary or have they own license ( but you don't even need them :) )
