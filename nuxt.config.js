@@ -3466,6 +3466,7 @@ module.exports = {
     }
   },
   generate: {
+    dir: "public",
     routes (callback) {
       const requireContext = require('require-context');
       const path = require('path');

@@ -6,7 +6,7 @@ ID = "main"
 # Settings in the [build] context are global and are applied to all contexts
 # unless otherwise overridden by more specific contexts.
 [build]
-  publish = "dist/"
+  publish = "public/"
   command = "npm run deploy"
 
 [context.production]

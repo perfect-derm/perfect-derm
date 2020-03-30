@@ -1,0 +1,59 @@
+name: Public workflow
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [externall-deploy]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependency
+        run: npm install
+
+      - name: Generate website
+        run: npm run deploy --if-present
+        env:
+          API_URL: ${{ secrets.API_URL }}
+
+      - name: Deploy to netlify
+        id: netlify
+        uses: Triloworld/actions/cli@3eff4d5cd9bf9f7ba528c1f1bbb94a37c3a3201d
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=public --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+
+      - name: Discord notification - failure
+        uses: Ilshidur/action-discord@0.0.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        if: failure()
+        with:
+          args: 'Error on deploy:\n 
+                 Draft URL: ${{ steps.netlify.outputs.OUTPUT }}'
+
+      - name: Discord notification - success
+        uses: Ilshidur/action-discord@0.0.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        if: success()
+        with:
+          args: 'Preview deploy:\n 
+                 Draft URL: ${{ steps.netlify.outputs.NETLIFY_URL }} \n 
+                 Logs URL: ${{ steps.netlify.outputs.NETLIFY_LOGS_URL }} \n
+                 Live URL: ${{ steps.netlify.outputs.NETLIFY_LIVE_URL }}'
