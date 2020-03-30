@@ -1,12 +1,12 @@
 <template>
     <div class="relative mb-8">
-      <div 
+      <!-- <div 
         class="h-600px bg-fixed bg-top"
         :class="{'max-h-310': isSmallHeader}"
         :style="{ backgroundImage: `url(${imageBanner})` }"
       >
         <img :src="imageBanner" alt="" class="h-full w-full object-cover object-top invisible"/>
-      </div>
+      </div> -->
 
       <div class="container flex flex-row flex-wrap mb-4 mt-2">
         <a :href="('/').concat(this.$i18n.defaultLocale == this.$i18n.locale ? '' : this.$i18n.locale.concat('/'))" class="mr-2">{{ $t('homepage__breadcrumb__title') }}</a>
@@ -51,7 +51,7 @@
     },
     computed: {
       imageBanner: function(){
-        return require(`~/static${this.image}?resize&size=1920`);
+        // return require(`~/static${this.image}?resize&size=1920`);
       }
     }
   }

@@ -16,15 +16,15 @@
          <picture
           class="flex flex-1 overflow-hidden"
          >
-          <source :srcSet="require(`~/static${image}?webp&resize&size=448`)" type="image/webp" />
-          <source :srcSet="require(`~/static${image}?resize&size=448`)" type="image/jpeg" />
-          <img 
+          <!-- <source :srcSet="require(`~/static${image}?webp&resize&size=448`)" type="image/webp" /> -->
+          <!-- <source :srcSet="require(`~/static${image}?resize&size=448`)" type="image/jpeg" /> -->
+          <!-- <img 
             class="object-cover w-full h-auto max-h-310 center tc h-full img-animation"
             :alt="title"
             :src="require(`~/static${image}?resize&size=448`)"
             height="298"
             width="448"
-          />
+          /> -->
         </picture>
         <figcaption
             :class="{ 

@@ -3,7 +3,7 @@
   <div class="banner h-450px sm:h-600px w-full flex items-end justify-center overflow-hidden" v-swiper:banner="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
-        <img :src="require('~/static' + $t('homepage__banner_1__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
+        <img :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto mx-2 container">
           <div class="container text-white text-left">
             <h1 class="h1 md:max-w-1/2 text-5xl md:text-6xl uppercase mb-5" v-html="$options.filters.break($t('homepage__banner_1__title'))"></h1>            
@@ -16,7 +16,7 @@
         </div>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
-        <img :src="require('~/static' + $t('homepage__banner_2__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
+        <img :src="require(`~/static${$t('homepage__banner_2__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto mx-2 container">
           <div class="container text-white text-left">
             <h2 class="h1 lg:max-w-1/2 text-5xl md:text-6xl uppercase mb-5 ml-auto" v-html="$options.filters.break($t('homepage__banner_2__title'))"></h2>            
@@ -29,7 +29,7 @@
         </div>    
       </li>  
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
-        <img :src="require('~/static' + $t('homepage__banner_3__image') + '?resize&size=1920')" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
+        <img :src="require(`~/static${$t('homepage__banner_3__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto mx-2 container">
           <div class="container text-white text-left">
             <h2 class="h1 md:max-w-1/2 text-5xl md:text-6xl uppercase mb-5" v-html="$options.filters.break($t('homepage__banner_3__title'))"></h2>            
@@ -48,7 +48,7 @@
 
 <script>
   export default {
-    name: 'cBanner',
+    name: 'Banner',
     data () {
       return {
         swiperOption: {

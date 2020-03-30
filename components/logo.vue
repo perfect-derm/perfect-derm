@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'cLogo',
+    name: 'Logo',
     props: {
       'logoClass': {
         type: String,

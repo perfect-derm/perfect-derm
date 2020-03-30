@@ -1,28 +1,35 @@
+[Settings]
+# Added automatically by the Netlify CLI. It has no effect during normal
+# Git-backed deploys.
+ID = "main"
+
+# Settings in the [build] context are global and are applied to all contexts
+# unless otherwise overridden by more specific contexts.
 [build]
   publish = "dist/"
-  command = "npm run generate"
+  command = "npm run deploy"
 
 [context.production]
-  command = "BASE_URL=$URL npm run generate"
+  command = "BASE_URL=$URL npm run deploy"
 
 [context.deploy-preview]
-  command = "BASE_URL=$DEPLOY_PRIME_URL npm run generate"
+  command = "BASE_URL=$DEPLOY_PRIME_URL npm run deploy"
 
 [context.branch-deploy]
-  command = "BASE_URL=$DEPLOY_URL npm run generate"
+  command = "BASE_URL=$DEPLOY_URL npm run deploy"
 
 [[headers]]
-  for = "*.js" # js files should be set this way
+  for = "*.js"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
 [[headers]]
-  for = "*.css" # css files too
+  for = "*.css"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
 [[headers]]
-  for = "*.jpg" # css files too
+  for = "*.jpg"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
@@ -31,3 +38,9 @@
   to = "/admin/"
   status = 301
   force = false
+  
+[[redirects]]
+  from = "https://perfect-derm.com/*"
+  to = "https://www.perfect-derm.com/:splat"
+  status = 301
+  force = true

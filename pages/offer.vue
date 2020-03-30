@@ -83,12 +83,12 @@
         data-aos-duration="600"
       >
         <div class="absolute md:relative opacity-25 md:opacity-100 w-full md:w-1/2 h-full md:h-auto overflow-hidden">
-          <img 
+          <!-- <img 
             :src="require(`~/static${$t('offer__promotion_line_1__background')}?resize&size=785`)" 
             :alt="$t('offer__promotion_line_1__title')"
             width="785"
             height="523"
-            class="h-full w-full object-cover"/>
+            class="h-full w-full object-cover"/> -->
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-12 md:px-8 lg:px-20">
           <h3 class="mb-4 z-10 uppercase">
@@ -111,12 +111,12 @@
         data-aos-duration="600"
       >
         <div class="absolute md:relative opacity-25 md:opacity-100 w-full md:w-1/2 h-full md:h-auto overflow-hidden order-last">
-          <img 
+          <!-- <img 
             :src="require(`~/static${$t('offer__promotion_line_2__background')}?resize&size=785`)" 
             :alt="$t('offer__promotion_line_2__title')" 
             width="785"
             height="523"
-            class="h-full w-full object-cover"/>
+            class="h-full w-full object-cover"/> -->
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-12 md:px-8 lg:px-20">
           <h3 class="mb-4 z-10 uppercase">

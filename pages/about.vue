@@ -20,13 +20,13 @@
     >
       <div class="flex flex-col md:flex-row flex-wrap text-left bg-secondary text-primary">
         <div class="w-1/5 flex flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col pl-2 md:pl-0 lg:pl-8 pr-2 md:pr-0 lg:pr-8 mt-2 md:mt-0 lg:mt-8 mb-2 md:mb-0 flex-none">
-          <img 
+          <!-- <img 
             v-if="$t('about__person_1__photo') !== ''"
             :src="require(`~/static${$t('about__person_1__photo')}?resize&size=200`)" 
             alt="" 
             class="object-cover"
             width="350px"
-          />
+          /> -->
         </div>
         <div class="w-4/5 pl-2 md:pl-4 my-2 md:my-4 lg:my-8">
           <div class="person-desc" v-html="$md.render(this.$t('about__person_1__description'))"></div>
@@ -45,13 +45,13 @@
     >
       <div class="flex flex-col md:flex-row flex-wrap text-left bg-secondary text-primary">
         <div class="w-1/5 flex flex-shrink sm:flex-shrink-0 max-w-full md:w-none flex flex-col pl-2 md:pl-0 lg:pl-8 pr-2 md:pr-0 lg:pr-8 mt-2 md:mt-0 lg:mt-8 mb-2 md:mb-0 flex-none">
-          <img 
+          <!-- <img 
             v-if="$t('about__person_2__photo') !== ''"
             :src="require(`~/static${$t('about__person_2__photo')}?resize&size=200`)" 
             alt="" 
             class="object-cover"
             width="350px"
-          />
+          /> -->
         </div>
         <div class="w-4/5 pl-2 md:pl-4 my-2 md:my-4 lg:my-8">
           <div class="person-desc" v-html="$md.render(this.$t('about__person_2__description'))"></div>

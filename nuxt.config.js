@@ -5,18 +5,18 @@ module.exports = {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   modules: [
-    [
-      'nuxt-netlify-http2-server-push',
-      {
+    {
+      src: 'nuxt-netlify-http2-server-push', 
+      options: { 
         resources: [
           { path: '**/*.css', as: 'style' },
           { path: '/_nuxt/content/pages/*.json', as: 'application/json' },
         ]
       }
-    ],
-    [
-      '@nuxtjs/pwa',
-      {
+    },
+    {
+      src: '@nuxtjs/pwa', 
+      options: { 
         icon: true,
         manifest: {
           start_url: '/',
@@ -24,60 +24,24 @@ module.exports = {
           orientation: "portrait-primary"
         }
       }
-    ],
-    [
-      '@nuxtjs/google-tag-manager',
-      {
+    },
+    {
+      src: '@nuxtjs/google-tag-manager', 
+      options: { 
         id: 'GTM-N59H54M'
       }
-    ],
-    [
-      '@nuxtjs/robots',
-      {
+    },
+    {
+      src: '@nuxtjs/robots', 
+      options: { 
         UserAgent: '*',
         Disallow: '/admin',
         Sitemap: (process.env.BASE_URL || 'http://localhost:3000') + '/sitemap.xml'
       }
-    ],
-    [
-      '@reallifedigital/nuxt-image-loader-module', 
-      {
-        imagesBaseDir: 'dist',
-        imageStyles: {
-          small: {
-            macros: ['scaleAndCrop|160|90'],
-            actions: ['quality|80']
-          },
-          medium: {
-            macros: ['scaleAndCrop|320|180'],
-            actions: ['quality|80']
-          },
-          large: {
-            macros: ['scaleAndCrop|640|360'],
-            actions: ['quality|80']
-          },
-          banner: {
-            macros: ['scaleAndCrop|1920|1080'],
-            actions: ['quality|90']
-          },
-        },
-        // Optional responsive style profiles:
-        responsiveStyles: 
-        {
-          large: {
-            srcset: 'small 160w, medium 320w, large 640w, banner 1200w',
-            sizes: '(min-width: 1280px) 100vw, 50vw',
-          },
-          thumb: {
-            srcset: 'small 160w, medium 320w, large 640w',
-            sizes: '(min-width: 1280px) 100vw, 50vw',
-          },
-        },
-      }
-    ],
-    [
-      'nuxt-i18n',
-       {
+    },
+    {
+      src: 'nuxt-i18n', 
+      options: { 
         locales: [
           {
             code: 'de',
@@ -122,10 +86,10 @@ module.exports = {
           seo: true
         }, 
       }
-    ],
-    [
-      "nuxt-netlify-cms", 
-      { 
+    },
+    {
+      src: "nuxt-netlify-cms", 
+      options: { 
         adminPath: "admin",
         adminTitle: "CMS Netlify",
         cmsConfig: { 
@@ -3331,27 +3295,48 @@ module.exports = {
           ] 
         }
       }
-    ],
-    [
-      "@nuxtjs/sitemap", 
-      { 
+    },
+    {
+      src: "@nuxtjs/sitemap",
+      options: {
         hostname: process.env.BASE_URL || 'http://localhost:3000'
       }
-    ],
-    [
-      '@nuxtjs/markdownit',
-      {
+    },  
+    {
+      src: '@nuxtjs/markdownit',
+      options: {
         preset: 'default',
         linkify: true,
         breaks: true,
         injected: true 
       }
-    ],
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/axios',
-    'nuxt-webfontloader',
-    '@bazzite/nuxt-optimized-images',
-    'nuxt-polyfill'
+    },    
+    {
+      src: '@nuxtjs/tailwindcss',
+      options: {}
+    },
+    {
+      src: '@nuxtjs/axios',
+      options: {}
+    },
+    {
+      src: 'nuxt-webfontloader',
+      options: {}
+    },
+    {
+      src: '@bazzite/nuxt-optimized-images',
+      options: {
+        optimizeImages: false
+      }
+    },
+    {
+      src: 'optimize-spaces',
+      options: {}
+    },
+    {
+      src: 'nuxt-polyfill',
+      options: {}
+    },
   ],
   webfontloader: {
     google: {
@@ -3408,7 +3393,6 @@ module.exports = {
   */
   loading: { color: "#FFBB43" },
   css: [
-    'swiper/dist/css/swiper.css',
     '~/assets/css/styles.css',
     '~/assets/css/custom.css'
   ],
@@ -3416,9 +3400,6 @@ module.exports = {
     baseURL: 'http://localhost:3000',
     host: "localhost",
     debug: true
-  },
-  optimizedImages: {
-    optimizeImages: false
   },
   /*
   ** Build configuration
@@ -3438,6 +3419,36 @@ module.exports = {
         removeRedundantAttributes: true,
         trimCustomFragments: true,
         useShortDoctype: true
+      }
+    },
+    terser: {
+      parallel: true,
+      cache: true,
+      sourceMap: false,
+      extractComments: {
+        filename: 'LICENSES',
+        banner: () => {
+          return false;
+        },
+      },
+      terserOptions: {
+        mangle: true,
+        compress: true,
+        output: {
+          comments: /^\**!|@preserve|@license|@cc_on/,
+        }
+      }
+    },
+    render: {
+      compressor: true,
+      http2: {
+        push: true,
+        gzip: 9
+      },
+      bundleRenderer: {
+        directives: {
+          t: require("vue-i18n-extensions").directive
+        }
       }
     },
     /*
