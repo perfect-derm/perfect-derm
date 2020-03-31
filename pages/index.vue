@@ -164,7 +164,7 @@
       </figcaption>
     </figure>
   
-    <section class="container mb-4 flex flex-row flex-wrap">
+    <section class="container flex flex-row flex-wrap mb-40">
       <div class="w-full md:w-3/5 flex flex-col flex-wrap">
         <h2 class="w-full mb-4 md:mb-16 sm:px-8 font-light text-5xl text-left">
          {{ $t('homepage__header_issue__title') }}
@@ -212,7 +212,6 @@
         </a>
       </div>
     </section>
-
   </div>
 </template>
 
