@@ -1,6 +1,6 @@
 html,
 body{
-    @apply text-secondary;
+    @apply text-primary;
     @apply text-xl;
     @apply font-light;
 }

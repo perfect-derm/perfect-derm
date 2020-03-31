@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full mb-8 flex flex-col items-center justify-center bg-gray-100 max-h-600 h-full">
+    <div class="w-full mb-16 flex flex-col items-center justify-center bg-gray-100 max-h-600 h-full">
       <client-only>
         <c-banner />
         <div class="flex flex-col items-center justify-center h-600px" slot="placeholder">
@@ -10,9 +10,15 @@
     </div>
 
     <div class="container text-center mb-20 font-light">
-      <h1 class="text-bold mb-12" v-html="$md.renderInline(this.$t('homepage__content__title'))" />
+      <h1 
+        class="h1 text-5xl md:text-3.2xl text-primary leading-none font-special font-semibold mb-10" 
+        v-html="$md.renderInline(this.$t('homepage__content__title'))"
+      />
 
-      <p class="mb-12" v-html="$md.renderInline(this.$t('homepage__content__description'))" />
+      <p 
+        class="text-primary mb-12 w-1/2 mx-auto" 
+        v-html="$md.renderInline(this.$t('homepage__content__description'))" 
+      />
 
       <div class="flex flex-row flex-wrap">
         <figure class="w-full md:w-1/3 flex flex-col px-2 mb-8">

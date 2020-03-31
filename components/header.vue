@@ -18,49 +18,49 @@
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('index')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >    
             {{ $t('homepage__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('about')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >    
             {{ $t('about__menu__title') }}
           </nuxt-link>
           <nuxt-link
             @click.native="menuClickHandler" 
             :to="localePath('offer')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('offer__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('issue')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('issue__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('media')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('media__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('tariff')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('tariff__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('contact')"
-            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-primary lg:text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase text-secondary hover:text-primary lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('contact__menu__title') }}
           </nuxt-link>
