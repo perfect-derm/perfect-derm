@@ -23,7 +23,7 @@
   "de__section_1_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   "de__section_2_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   "de__section_3_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "xx__section_1_icon": "/images/uploads/dr-aneta-szulska-schoepp.png",
-  "xx__section_2_icon": "/images/uploads/dr-aneta-szulska-schoepp.png",
-  "xx__section_3_icon": "/images/uploads/dr-aneta-szulska-schoepp.png"
+  "xx__section_1_icon": "/images/uploads/heart.png",
+  "xx__section_2_icon": "/images/uploads/like.png",
+  "xx__section_3_icon": "/images/uploads/team.png"
 }

@@ -9,7 +9,7 @@
             <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
               <h1 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-special font-semibold uppercase mb-5" 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-header font-semibold uppercase mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_1__title'))" 
               />    
               <div 
@@ -37,7 +37,7 @@
             <div class="relative flex flex-col items-end justify-center ml-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
               <h2 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-special font-semibold uppercase mb-5" 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-header font-semibold uppercase mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_2__title'))"
               />
               <div 
@@ -65,7 +65,7 @@
             <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
               <h2 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-special font-semibold uppercase mb-5" 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-header font-semibold uppercase mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_3__title'))"
               />
               <div 

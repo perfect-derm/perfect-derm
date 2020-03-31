@@ -11,45 +11,70 @@
 
     <div class="container text-center mb-20 font-light">
       <h1 
-        class="h1 text-5xl md:text-3.2xl text-primary leading-none font-special font-semibold mb-10" 
+        class="h1 text-5xl md:text-3.2xl text-primary leading-none font-header font-semibold mb-10" 
         v-html="$md.renderInline(this.$t('homepage__content__title'))"
       />
 
       <p 
-        class="text-primary mb-12 w-1/2 mx-auto" 
+        class="text-primary mb-16 w-1/2 mx-auto" 
         v-html="$md.renderInline(this.$t('homepage__content__description'))" 
       />
 
       <div class="flex flex-row flex-wrap">
-        <figure class="w-full md:w-1/3 flex flex-col px-2 mb-8">
+        <figure class="w-full md:w-1/3 flex flex-col items-center px-2 mb-8">
+          <img 
+            :src="$t('homepage__content__section_1_icon')"
+            width="100px"
+            :alt="$md.renderInline(this.$t('homepage__content__section_1_title'))"
+            class="opacity-50 mb-2"
+          />
           <h2
-            class="font-bold" 
-            v-html="$md.render(this.$t('homepage__content__section_1_title'))" 
+            class="font-header font-semibold md:text-2xl mb-2"
+            v-html="$md.renderInline(this.$t('homepage__content__section_1_title'))" 
           />
-          <figcaption>
-            <span v-html="$md.render(this.$t('homepage__content__section_1_description'))" />
-          </figcaption>
+          <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
+          <figcaption
+            class="w-2/3"
+            v-html="$md.render(this.$t('homepage__content__section_1_description'))"
+          />
         </figure>
 
-        <figure class="w-full md:w-1/3 flex flex-col px-2 mb-8">
-          <h2 
-           class="font-bold" 
-           v-html="$md.render(this.$t('homepage__content__section_2_title'))" 
+        <figure class="w-full md:w-1/3 flex flex-col items-center px-2 mb-8">
+          <img 
+            :src="$t('homepage__content__section_2_icon')"
+            width="100px"
+            :alt="$md.renderInline(this.$t('homepage__content__section_2_title'))"
+            class="opacity-50 mb-2"
           />
-          <figcaption>
-            <span v-html="$md.render(this.$t('homepage__content__section_2_description'))" />
-          </figcaption>
+          <h2
+            class="font-header font-semibold md:text-2xl mb-2"
+            v-html="$md.renderInline(this.$t('homepage__content__section_2_title'))" 
+          />
+          <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
+          <figcaption
+            class="w-2/3"
+            v-html="$md.render(this.$t('homepage__content__section_2_description'))"
+          />
         </figure>
 
-        <figure class="w-full md:w-1/3 flex flex-col px-2 mb-8">
-          <h2 
-           class="font-bold" 
-           v-html="$md.render(this.$t('homepage__content__section_3_title'))" 
+        <figure class="w-full md:w-1/3 flex flex-col items-center px-2 mb-8">
+          <img 
+            :src="$t('homepage__content__section_3_icon')"
+            width="100px"
+            :alt="$md.renderInline(this.$t('homepage__content__section_3_title'))"
+            class="opacity-50 mb-2"
           />
-          <figcaption>
-            <span v-html="$md.render(this.$t('homepage__content__section_3_description'))" />
-          </figcaption>
+          <h2
+            class="font-header font-semibold md:text-2xl mb-2"
+            v-html="$md.renderInline(this.$t('homepage__content__section_3_title'))" 
+          />
+          <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
+          <figcaption
+            class="w-2/3"
+            v-html="$md.render(this.$t('homepage__content__section_3_description'))"
+          />
         </figure>
+
       </div>
     </div>
 

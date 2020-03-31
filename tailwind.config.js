@@ -13,7 +13,7 @@ module.exports = {
       'sans': 'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
       'display': ['Source Sans Pro', 'sans-serif'],
       'body': ['Source Sans Pro', 'sans-serif'],
-      'special': ['Montserrat', 'sans-serif'],
+      'header': ['Montserrat', 'sans-serif'],
     },
     extend: {
       inset: {
