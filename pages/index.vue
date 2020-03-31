@@ -213,15 +213,6 @@
       </div>
     </section>
 
-
-    <div class="container relative h-200px mb-4">
-      <div class="px-20">
-        <client-only placeholder="Ładowanie...">
-          <c-partners />
-        </client-only>
-      </div>
-    </div>
-
   </div>
 </template>
 
@@ -229,14 +220,12 @@
   import Banner from "~/components/banner.vue";
   import SingleSquare from "~/components/single-square.vue";
   import SingleFullRectangle from "~/components/single-full-rectangle.vue";
-  import Partners from "~/components/partners.vue";
 
   export default {
     components: {
       'c-banner' : Banner,
       'c-single-square' : SingleSquare,
-      'c-single-full-rectangle' : SingleFullRectangle,
-      'c-partners' : Partners
+      'c-single-full-rectangle' : SingleFullRectangle
     },
   };
 </script>

@@ -78,6 +78,7 @@
 
 <script>
   export default {
+    layout: 'simple-footer',
     computed: {
       desc: function(){
         return this.$md.render(this.$t('contact__description__description'));

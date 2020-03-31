@@ -16,9 +16,7 @@
         </client-only>
       </div>
     </div>
-
-    BOX
-
+    
     <c-footer 
       tag="footer"
       class="flex-initial"
