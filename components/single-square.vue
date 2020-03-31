@@ -1,7 +1,6 @@
 <template>
   <div 
     :class="{
-      'h-500px': vertical,
       [mainClass]: mainClass
     }" 
     class="block"
