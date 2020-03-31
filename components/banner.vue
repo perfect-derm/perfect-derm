@@ -8,17 +8,20 @@
           <div class="flex flex-row text-left md:max-w-1/2">
             <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
-              <h1 class="h1 text-5xl md:text-6xl uppercase mb-5 leading-none" v-html="$options.filters.break($t('homepage__banner_1__title'))"></h1>            
+              <h1 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-special font-semibold uppercase mb-5" 
+                v-html="$options.filters.break($t('homepage__banner_1__title'))" 
+              />    
               <div 
-                class="text-base md:text-4xl font-normal italic text-gray-700 mb-8"
+                class="text-base md:text-2.7xl font-light italic text-gray-700 mb-8"
                 v-if="$te('homepage__banner_1__description')"
                 v-html="$md.render(this.$t('homepage__banner_1__description'))"
-              ></div>
+              />
               <div class="flex-initial w-full">
                 <a 
                   v-if="$te('homepage__banner_1__button')"
                   :href="$t('homepage__banner_1__link')"
-                  class="no-underline border-b-2 border-gray-700 pb-1 uppercase text-sm"
+                  class="no-underline border-b-2 border-secondary text-primary pb-1 uppercase text-sm"
                 >
                   {{ $t('homepage__banner_1__button') }}
                 </a>
@@ -33,17 +36,20 @@
           <div class="flex flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
             <div class="relative flex flex-col items-end justify-center ml-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
-              <h2 class="h1 text-5xl md:text-6xl uppercase mb-5 leading-none" v-html="$options.filters.break($t('homepage__banner_2__title'))"></h2>            
+              <h2 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-special font-semibold uppercase mb-5" 
+                v-html="$options.filters.break($t('homepage__banner_2__title'))"
+              />
               <div 
-                class="text-base md:text-4xl font-normal italic text-gray-700 mb-8"
+                class="text-base md:text-2.7xl font-light italic text-gray-700 mb-8"
                 v-if="$te('homepage__banner_2__description')" 
                 v-html="$md.render(this.$t('homepage__banner_2__description'))"
-              ></div>
+              />
               <div class="flex-initial w-full">
                 <a 
                   v-if="$te('homepage__banner_2__button')"
                   :href="$t('homepage__banner_2__link')"
-                  class="no-underline border-b-2 border-gray-700 pb-1 uppercase text-sm"
+                  class="no-underline border-b-2 border-secondary text-primary pb-1 uppercase text-sm"
                 >
                   {{ $t('homepage__banner_2__button') }}
                 </a>
@@ -58,17 +64,20 @@
           <div class="flex flex-row text-left md:max-w-1/2">
             <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
-              <h2 class="h1 text-5xl md:text-6xl uppercase mb-5 leading-none" v-html="$options.filters.break($t('homepage__banner_3__title'))"></h2>            
+              <h2 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-special font-semibold uppercase mb-5" 
+                v-html="$options.filters.break($t('homepage__banner_3__title'))"
+              />
               <div 
-                class="text-base md:text-4xl font-normal italic text-gray-700 mb-8"
+                class="text-base md:text-2.7xl font-light italic text-gray-700 mb-8"
                 v-if="$te('homepage__banner_3__description')"
                 v-html="$md.render(this.$t('homepage__banner_3__description'))"
-              ></div>
+              />
               <div class="flex-initial w-full">
                 <a 
                   v-if="$te('homepage__banner_3__button')"
                   :href="$t('homepage__banner_3__link')"
-                  class="no-underline border-b-2 border-gray-700 pb-1 uppercase text-sm"
+                  class="no-underline border-b-2 border-secondary text-primary pb-1 uppercase text-sm"
                 >
                   {{ $t('homepage__banner_3__button') }}
                 </a>
@@ -91,9 +100,9 @@
           slidesPerView: 'auto',
           centeredSlides: true,
           spaceBetween: 30,
-          // autoplay: {
-          //   delay: 4000,
-          // },
+          autoplay: {
+            delay: 4000,
+          },
           pagination: {
             el: '.swiper-pagination',
             clickable: true
@@ -110,18 +119,14 @@
     text-align: center;
     font-size: 38px;
     font-weight: 700;
-    background-color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    @apply bg-white;
   }
 
   .swiper-pagination.relative{
     position: relative;
-  }
-  
-  .swiper-pagination > .swiper-pagination-bullet {
-    background-color: red;
   }
 
   .swiper-slide.h-auto{
@@ -129,7 +134,7 @@
   }
 
   .swiper-pagination >>> .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background: #000;
+    @apply bg-primary;
     width: 50px;
   }
 

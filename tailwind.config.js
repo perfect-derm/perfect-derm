@@ -13,6 +13,7 @@ module.exports = {
       'sans': 'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
       'display': ['Source Sans Pro', 'sans-serif'],
       'body': ['Source Sans Pro', 'sans-serif'],
+      'special': ['Montserrat', 'sans-serif'],
     },
     extend: {
       inset: {
@@ -49,6 +50,10 @@ module.exports = {
           '1/2': '50%',
           'screen-2xl': theme('screens.2xl'),
         }
+      },
+      fontSize: {
+        '2.7xl': '1.75rem',
+        '5.5xl': '3.5rem',
       },
       colors: {
         primary: '#363636',
