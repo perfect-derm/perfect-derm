@@ -13,6 +13,20 @@ html.wf-sourcesanspro-n3-active body{
     @apply px-2;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+    @apply font-header;
+    @apply font-semibold;
+}
+
+p{
+    @apply mb-2; 
+}
+
 .text-overflow{
     white-space: nowrap;
     overflow: hidden;
@@ -29,4 +43,14 @@ html.wf-sourcesanspro-n3-active body{
 
 .img-animation:hover {
     transform: scale(1.1);
+}
+
+.link-styled{
+    @apply no-underline; 
+    @apply border-b-2;
+    @apply border-secondary;
+    @apply text-primary;
+    @apply pb-1;
+    @apply uppercase;
+    @apply text-sm;
 }

@@ -9,7 +9,7 @@
             <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
               <h1 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-header font-semibold uppercase mb-5" 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none uppercase mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_1__title'))" 
               />    
               <div 
@@ -21,7 +21,7 @@
                 <a 
                   v-if="$te('homepage__banner_1__button')"
                   :href="$t('homepage__banner_1__link')"
-                  class="no-underline border-b-2 border-secondary text-primary pb-1 uppercase text-sm"
+                  class="link-styled"
                 >
                   {{ $t('homepage__banner_1__button') }}
                 </a>
@@ -37,7 +37,7 @@
             <div class="relative flex flex-col items-end justify-center ml-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
               <h2 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-header font-semibold uppercase mb-5" 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none uppercase mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_2__title'))"
               />
               <div 
@@ -49,7 +49,7 @@
                 <a 
                   v-if="$te('homepage__banner_2__button')"
                   :href="$t('homepage__banner_2__link')"
-                  class="no-underline border-b-2 border-secondary text-primary pb-1 uppercase text-sm"
+                  class="link-styled"
                 >
                   {{ $t('homepage__banner_2__button') }}
                 </a>
@@ -65,7 +65,7 @@
             <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
             <div class="flex flex-col">
               <h2 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none font-header font-semibold uppercase mb-5" 
+                class="h1 text-5xl md:text-5.5xl text-primary leading-none uppercase mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_3__title'))"
               />
               <div 
@@ -77,7 +77,7 @@
                 <a 
                   v-if="$te('homepage__banner_3__button')"
                   :href="$t('homepage__banner_3__link')"
-                  class="no-underline border-b-2 border-secondary text-primary pb-1 uppercase text-sm"
+                  class="link-styled"
                 >
                   {{ $t('homepage__banner_3__button') }}
                 </a>

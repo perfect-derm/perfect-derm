@@ -9,12 +9,12 @@
       </client-only>
     </div>
 
-    <div class="container text-center mb-20 font-light">
-      <h1 
-        class="h1 text-5xl md:text-3.2xl text-primary leading-none font-header font-semibold mb-10" 
-        v-html="$md.renderInline(this.$t('homepage__content__title'))"
-      />
-
+    <h1 
+      class="h1 text-5xl md:text-3.2xl text-primary leading-none mb-10" 
+      v-html="$md.renderInline(this.$t('homepage__content__title'))"
+    />
+    
+    <section class="container text-center mb-20 font-light">
       <p 
         class="text-primary mb-16 w-1/2 mx-auto" 
         v-html="$md.renderInline(this.$t('homepage__content__description'))" 
@@ -29,7 +29,7 @@
             class="opacity-50 mb-2"
           />
           <h2
-            class="font-header font-semibold md:text-2xl mb-2"
+            class="md:text-2xl mb-2"
             v-html="$md.renderInline(this.$t('homepage__content__section_1_title'))" 
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
@@ -47,7 +47,7 @@
             class="opacity-50 mb-2"
           />
           <h2
-            class="font-header font-semibold md:text-2xl mb-2"
+            class="md:text-2xl mb-2"
             v-html="$md.renderInline(this.$t('homepage__content__section_2_title'))" 
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
@@ -65,7 +65,7 @@
             class="opacity-50 mb-2"
           />
           <h2
-            class="font-header font-semibold md:text-2xl mb-2"
+            class="md:text-2xl mb-2"
             v-html="$md.renderInline(this.$t('homepage__content__section_3_title'))" 
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
@@ -74,78 +74,103 @@
             v-html="$md.render(this.$t('homepage__content__section_3_description'))"
           />
         </figure>
-
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <h1 class="font-light text-5xl uppercase mb-4">
+    <section class="container relative text-left mb-20">
+      <h2 class="text-5xl mb-20">
          {{ $t('homepage__header_offer__title') }}
-      </h1>
-      <div
-        class="text-center mb-8 font-light" 
-        v-html="$md.render(this.$t('homepage__header_offer__description'))"
-      ></div>
-    </div>
+      </h2>
 
-    <div class="relative container">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4 mb-4">
-        <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 sm:px-4 flex flex-col">
           <c-single-square
-            main-class="w-full sm:mb-4 flex-1"
-            :title="$t('homepage__left_top_offer__title')"
-            :link="$t('homepage__left_top_offer__link')"
-            :image="$t('homepage__left_top_offer__background')"
-            :theme="2"
+            main-class="w-full sm:mb-16 flex-1"
+            :title="$t('homepage__first_offer__title')"
+            :image="$t('homepage__first_offer__background')"
+            :link="$t('homepage__first_offer__link')"
+            :link-title="$t('homepage__first_offer__link_title')"
+            vertical
           />
         </div>
-        <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 sm:px-4 flex flex-col">
           <c-single-square
-            main-class="w-full sm:mb-4 flex-1"
-            :title="$t('homepage__middle_top_offer__title')"
-            :link="$t('homepage__middle_top_offer__link')"
-            :image="$t('homepage__middle_top_offer__background')"
-            :theme="2"
+            main-class="w-full sm:mb-4 sm:mt-8 flex-1 "
+            :title="$t('homepage__second_offer__title')"
+            :image="$t('homepage__second_offer__background')"
+            :link="$t('homepage__second_offer__link')"
+            :link-title="$t('homepage__second_offer__link_title')"
+            vertical
           />
         </div>
-        <div class="w-full md:w-1/3 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
           <c-single-square
-            main-class="w-full sm:mb-4 flex-1"
-            :title="$t('homepage__right_top_offer__title')"
-            :link="$t('homepage__right_top_offer__link')"
-            :image="$t('homepage__right_top_offer__background')"
-            :theme="2"
+            main-class="w-full sm:mb-16 flex-1"
+            :title="$t('homepage__third_offer__title')"
+            :image="$t('homepage__third_offer__background')"
+            :link="$t('homepage__third_offer__link')"
+            :link-title="$t('homepage__third_offer__link_title')"
+            vertical
+          />
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
+          <c-single-square
+            main-class="w-full sm:mb-4 sm:mt-8 flex-1"
+            :title="$t('homepage__fourth_offer__title')"
+            :image="$t('homepage__fourth_offer__background')"
+            :link="$t('homepage__fourth_offer__link')"
+            :link-title="$t('homepage__fourth_offer__link_title')"
+            vertical
           />
         </div>
       </div>
-    </div>
 
-    <div class="text-center mb-20 mx-4">
-      <a :href="$t('homepage__button_offer__link')" class="button mx-auto">
+      <a 
+        :href="$t('homepage__button_offer__link')" 
+        class="link-styled mt-20"
+      >
         {{ $t('homepage__button_offer__title') }}
       </a>
-    </div>
+    </section>
 
-    <div class="relative container mb-20">
-      <div class="flex flex-col flex-wrap md:flex-row text-center">
-        <!-- <c-single-full-rectangle
-          main-class="block w-full bg-secondary text-primary opacity-0"
-          :title="$t('homepage__about_description__title')"
-          :description="$t('homepage__about_description__description')"
-          :link="$t('homepage__about_description__link')"
-          :photo="$t('homepage__about_description__photo')"
-          :link-title="$t('homepage__about_description__link_title')"
-        /> -->
-      </div>
-    </div>
+    <figure class="relative overflow-hidden w-full text-center mb-20">
+      <img 
+        class="object-cover h-full w-full lg:pb-20 lg:w-1/2 lg:mr-8 md:min-h-900"
+        :alt="$t('homepage__call_to_action__title')"
+        :src="require(`~/static${$t('homepage__call_to_action__photo')}?resize&size=1920`)"
+        width="1920"
+      />
 
+      <figcaption
+        class="md:absolute top-auto bottom-0 bg-beige py-8 lg:p-20 lg:mt-20 right-0 left-auto md:px-8 lg:w-3/5 text-left"
+      >
+        <div class="container">
+          <h2 class="text-5xl mb-8 leading-none">
+            {{ $md.renderInline(this.$t('homepage__call_to_action__title')) }}
+          </h2>
+          
+          <div
+            class="text-sm lg:text-xl"
+            v-html="$md.render(this.$t('homepage__call_to_action__description'))"
+          />
+
+          <nuxt-link 
+            :to="$t('homepage__call_to_action__link')"
+            class="link-styled"
+          >
+            {{ $t('homepage__call_to_action__link_title') }}
+          </nuxt-link>
+        </div>
+      </figcaption>
+    </figure>
+  
     <div class="container mb-8">
-      <h1 class="font-light text-5xl uppercase mb-2">
+      <h2 class="font-light text-5xl uppercase mb-2">
          {{ $t('homepage__header_issue__title') }}
-      </h1>
+      </h2>
       <div class="text-center mb-4 font-light" v-html="$md.render(this.$t('homepage__header_issue__description'))"></div>
     </div>
-
+<!-- 
     <section class="mb-4 relative container">
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4">
         <div class="w-full md:w-1/3 mb-4 md:mb-0 sm:px-4 flex flex-col ">
@@ -176,10 +201,13 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <div class="container text-center mb-20">
-      <a :href="$t('homepage__button_issue__link')" class="button mx-auto">
+      <a 
+        :href="$t('homepage__button_issue__link')" 
+        class="link-styled ml-0 mr-auto"
+      >
         {{ $t('homepage__button_issue__title') }}
       </a>
     </div>

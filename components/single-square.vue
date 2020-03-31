@@ -1,6 +1,9 @@
 <template>
   <div 
-    :class="mainClass" 
+    :class="{
+      'h-500px': vertical,
+      [mainClass]: mainClass
+    }" 
     class="block"
     data-aos="fade-up"
     data-aos-offset="150"
@@ -8,7 +11,7 @@
   >
     <nuxt-link
         :to="link"
-        class="btn raise center tc"
+        class="block border-b-8 border-solid border-transparent hover:border-primary h-full shadow-box"
       >
       <figure 
         class="relative h-full min-h-full flex flex-col"
@@ -16,25 +19,29 @@
          <picture
           class="flex flex-1 overflow-hidden"
          >
-          <!-- <source :srcSet="require(`~/static${image}?webp&resize&size=448`)" type="image/webp" /> -->
-          <!-- <source :srcSet="require(`~/static${image}?resize&size=448`)" type="image/jpeg" /> -->
-          <!-- <img 
-            class="object-cover w-full h-auto max-h-310 center tc h-full img-animation"
+          <source :srcSet="require(`~/static${image}?webp&resize&size=600`)" type="image/webp" />
+          <source :srcSet="require(`~/static${image}?resize&size=600`)" type="image/jpeg" />
+          <img 
+            class="object-cover w-full h-auto center tc h-full img-animation"
             :alt="title"
             :src="require(`~/static${image}?resize&size=448`)"
             height="298"
             width="448"
-          /> -->
+          />
         </picture>
         <figcaption
-            :class="{ 
-              'absolute font-light top-0 uppercase' : textPlacementUpAbsolute,
-              'absolute font-light bottom-0 uppercase' : textPlacementDownAbsolute,
-              'relative font-normal text-gray-600 order-first' : textUpRelative,
-            }"
-            class="text-2xl bg-backgroundSemiTransparent left-0 right-0 z-10"
+          class="absolute font-light bottom-0 gradient-shadow left-0 right-0 z-10 text-left p-4"
+        >
+          <h2 
+            class="text-2xl word-spacing-all leading-none mb-4"
           >
-          {{ title }}
+            {{ title }}
+          </h2>
+          <span 
+            class="uppercase"
+          >
+            {{ linkTitle }}
+          </span>
         </figcaption>
       </figure>
     </nuxt-link>
@@ -60,28 +67,22 @@
         default: '',
         required: false
       },
+      'link-title': {
+        type: String,
+        default: '',
+        required: false
+      },
       'image': {
         type: String,
         default: '/images/uploads/logo.png',
         required: false
       },
-      'theme': {
-        type: Number,
-        default: 2,
+      'vertical': {
+        type: Boolean,
+        default: false,
         required: false
       },
     },
-    computed: {
-      textPlacementUpAbsolute : function (){
-        return (parseInt(this.theme) === 1) ? true : false;
-      },
-      textPlacementDownAbsolute : function (){
-        return (parseInt(this.theme) === 2) ? true : false;
-      },
-      textUpRelative : function (){
-        return (parseInt(this.theme) === 3) ? true : false;
-      }
-    }
   }
 </script>
 
@@ -103,5 +104,17 @@
   .background-bottom-bar:after {
     top: auto;
     bottom: 0;
+  }
+
+  .word-spacing-all{
+    word-spacing: 100vw;
+  }
+
+  .gradient-shadow{
+    background: linear-gradient(to bottom, transparent 0%,#ffffff 38%, #ffffff 100%);
+  }
+
+  .shadow-box{
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.12);
   }
 </style>

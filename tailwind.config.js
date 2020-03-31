@@ -24,9 +24,13 @@ module.exports = {
         '1/3': '33%',
       },
       height: {
-        '200px':  '200px',
-        '450px':  '450px',
+        '200px': '200px',
+        '450px': '450px',
+        '500px': '500px',
         '600px': '600px',
+      },
+      minHeight: {
+        '900': '900px',
       },
       maxHeight: {
         '0': '0',
