@@ -15,6 +15,12 @@
       <figure 
         class="relative h-full min-h-full flex flex-col"
       >
+          <h2 
+            v-if="!theme"
+            class="absolute top-0 bottom-0 z-20 p-4 text-2xl word-spacing-all leading-none mb-4"
+          >
+            {{ title }}
+          </h2>
          <picture
           class="flex flex-1 overflow-hidden"
          >
@@ -29,9 +35,14 @@
           />
         </picture>
         <figcaption
-          class="absolute font-light bottom-0 gradient-shadow left-0 right-0 z-10 text-left p-4"
+          class="absolute font-light bottom-0 z-10 left-0 right-0 z-10 text-left p-4"
+          :class="{
+            'gradient-shadow': theme,
+            'bg-white': !theme
+          }"
         >
           <h2 
+            v-if="theme"
             class="text-2xl word-spacing-all leading-none mb-4"
           >
             {{ title }}
@@ -76,7 +87,7 @@
         default: '/images/uploads/logo.png',
         required: false
       },
-      'vertical': {
+      'theme': {
         type: Boolean,
         default: false,
         required: false

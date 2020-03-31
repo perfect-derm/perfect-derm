@@ -90,7 +90,7 @@
             :image="$t('homepage__first_offer__background')"
             :link="$t('homepage__first_offer__link')"
             :link-title="$t('homepage__first_offer__link_title')"
-            vertical
+            theme
           />
         </div>
         <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 sm:px-4 flex flex-col">
@@ -100,7 +100,7 @@
             :image="$t('homepage__second_offer__background')"
             :link="$t('homepage__second_offer__link')"
             :link-title="$t('homepage__second_offer__link_title')"
-            vertical
+            theme
           />
         </div>
         <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
@@ -110,7 +110,7 @@
             :image="$t('homepage__third_offer__background')"
             :link="$t('homepage__third_offer__link')"
             :link-title="$t('homepage__third_offer__link_title')"
-            vertical
+            theme
           />
         </div>
         <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 sm:px-4 flex flex-col">
@@ -120,7 +120,7 @@
             :image="$t('homepage__fourth_offer__background')"
             :link="$t('homepage__fourth_offer__link')"
             :link-title="$t('homepage__fourth_offer__link_title')"
-            vertical
+            theme
           />
         </div>
       </div>
@@ -171,7 +171,7 @@
         </h2>
 
         <c-single-square
-          main-class="relative h-300px w-full px-8 mb-8 flex-1"
+          main-class="relative h-450px w-full px-8 mb-8 flex-1"
           :title="$t('homepage__first_issue__title')"
           :image="$t('homepage__first_issue__background')"
           :link="$t('homepage__first_issue__link')"
@@ -179,7 +179,7 @@
         />
 
         <c-single-square
-          main-class="relative h-300px w-full px-8 flex-1"
+          main-class="relative h-450px w-full px-8 flex-1"
           :title="$t('homepage__second_issue__title')"
           :image="$t('homepage__second_issue__background')"
           :link="$t('homepage__second_issue__link')"
