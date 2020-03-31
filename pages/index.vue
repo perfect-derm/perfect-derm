@@ -214,10 +214,12 @@
     </section>
 
 
-    <div class="relative h-200px flex flex-col items-center justify-center container py-4 mb-4">
-      <client-only placeholder="Ładowanie...">
-        <c-partners />
-      </client-only>
+    <div class="container relative h-200px mb-4">
+      <div class="px-20">
+        <client-only placeholder="Ładowanie...">
+          <c-partners />
+        </client-only>
+      </div>
     </div>
 
   </div>

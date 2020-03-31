@@ -2,31 +2,31 @@
   <!-- You can find this swiper instance object in current component by the "mySwiper"  -->
   <div class="w-full overflow-hidden" v-swiper:partners="swiperOption">
     <ul class="swiper-wrapper">
-      <!-- <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_1') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_1') + '?resize&size=220')" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
+      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-auto" v-if="$t('footer__partners__logo_1') !== ''">
+        <img :src="require(`~/static${$t('footer__partners__logo_1')}?resize&size=220`)" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
       </li>
-      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_2') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_2') + '?resize&size=220')" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
+      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-auto" v-if="$t('footer__partners__logo_2') !== ''">
+        <img :src="require(`~/static${$t('footer__partners__logo_2')}?resize&size=220`)" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
       </li>  
-      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_3') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_3') + '?resize&size=220')" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
+      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-auto" v-if="$t('footer__partners__logo_3') !== ''">
+        <img :src="require(`~/static${$t('footer__partners__logo_3')}?resize&size=220`)" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
       </li>
-      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_4') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_4') + '?resize&size=220')" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
+      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-auto" v-if="$t('footer__partners__logo_4') !== ''">
+        <img :src="require(`~/static${$t('footer__partners__logo_4')}?resize&size=220`)" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
       </li>
-      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_5') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_5') + '?resize&size=220')" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
+      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-auto" v-if="$t('footer__partners__logo_5') !== ''">
+        <img :src="require(`~/static${$t('footer__partners__logo_5')}?resize&size=220`)" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
       </li>
-      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/6 h-auto" v-if="$t('footer__partners__logo_6') !== ''">
-        <img :src="require('~/static' + $t('footer__partners__logo_6') + '?resize&size=220')" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
-      </li> -->
+      <li class="swiper-c-slide w-full md:w-1/3 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-auto" v-if="$t('footer__partners__logo_6') !== ''">
+        <img :src="require(`~/static${$t('footer__partners__logo_6')}?resize&size=220`)" width="220" alt="" class="object-scale-down px-4 h-full flex-1"/>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'cPartners',
+    name: 'Partners',
     data () {
       return {
         swiperOption: {
