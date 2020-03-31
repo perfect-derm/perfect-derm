@@ -52,7 +52,7 @@ module.exports = {
       },
       colors: {
         // gray: false,
-        primary: '#718096',
+        primary: '#000000',
         secondary: '#E2E8F0',
         red: false,
         orange: false,

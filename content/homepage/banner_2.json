@@ -1,11 +1,17 @@
 {
+  "pl__title": "Przywracamy naturalne piękno",
+  "pl__image": "/images/uploads/natural-lift.jpeg",
   "pl__description": "",
+  "pl__button": "Poznaj naszą ofertę",
+  "pl__link": "/offer",
   "en__title": "Przywracamy naturalne piękno",
   "en__image": "/images/uploads/natural-lift.jpeg",
   "en__description": "",
+  "en__button": "",
+  "en__link": "/offer",
   "de__title": "Przywracamy naturalne piękno",
   "de__image": "/images/uploads/natural-lift.jpeg",
   "de__description": "",
-  "pl__title": "Przywracamy naturalne piękno",
-  "pl__image": "/images/uploads/natural-lift.jpeg"
+  "de__button": "",
+  "de__link": "/offer"
 }

@@ -1,11 +1,16 @@
 {
+  "pl__title": "Kompleksowe leczenie żylaków i pajączków",
+  "pl__image": "/images/uploads/leczenie-zylakow-i-pajaczkow.png",
   "pl__description": "",
+  "pl__link": "/offer",
   "en__title": "Kompleksowe leczenie żylaków i pajączków",
   "en__image": "/images/uploads/leczenie-zylakow-i-pajaczkow.png",
   "en__description": "",
+  "en__button": "",
+  "en__link": "/offer",
   "de__title": "Kompleksowe leczenie żylaków i pajączków",
   "de__image": "/images/uploads/leczenie-zylakow-i-pajaczkow.png",
   "de__description": "",
-  "pl__title": "Kompleksowe leczenie żylaków i pajączków",
-  "pl__image": "/images/uploads/leczenie-zylakow-i-pajaczkow.png"
+  "de__button": "",
+  "de__link": "/offer"
 }

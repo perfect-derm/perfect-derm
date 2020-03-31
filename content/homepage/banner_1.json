@@ -1,11 +1,17 @@
 {
-  "pl__description": "Pełne | Jędrne | Naturalne",
+  "pl__title": "3D Natural Lift",
+  "pl__image": "/images/uploads/3d-natural-lift.png",
+  "pl__description": "Lifting i nawilżanie",
+  "pl__button": "Poznaj naszą ofertę",
+  "pl__link": "/offer",
   "en__title": "Przywracanie objętości i nawilżenia ust:",
-  "en__image": "/images/uploads/przywracanie-objetosci-nawilzenia-ust.png",
+  "en__image": "/images/uploads/3d-natural-lift.png",
+  "en__button": "",
+  "en__link": "/offer",
   "en__description": "Pełne | Jędrne | Naturalne",
   "de__title": "Przywracanie objętości i nawilżenia ust:",
-  "de__image": "/images/uploads/przywracanie-objetosci-nawilzenia-ust.png",
-  "de__description": "Pełne | Jędrne | Naturalne",
-  "pl__title": "Przywracanie objętości i nawilżenia ust:",
-  "pl__image": "/images/uploads/przywracanie-objetosci-nawilzenia-ust.png"
+  "de__button": "",
+  "de__link": "/offer",
+  "de__image": "/images/uploads/3d-natural-lift.png",
+  "de__description": "Pełne | Jędrne | Naturalne"
 }
