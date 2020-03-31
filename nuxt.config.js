@@ -17,7 +17,7 @@ module.exports = {
     {
       src: '@nuxtjs/pwa', 
       options: { 
-        icon: true,
+        icon: false,
         manifest: {
           start_url: '/',
           display: 'minimal-ui',
@@ -3340,7 +3340,10 @@ module.exports = {
   ],
   webfontloader: {
     google: {
-      families: ['Roboto:300,400,500,700']
+      families: [
+        'Montserrat:400,600:latin,latin-ext&display=swap', 
+        'Source Sans Pro:300,i300:latin,latin-ext&display=swap'
+      ]
     }
   },
   manifest: {
@@ -3396,11 +3399,6 @@ module.exports = {
     '~/assets/css/styles.css',
     '~/assets/css/custom.css'
   ],
-  axios: {
-    baseURL: 'http://localhost:3000',
-    host: "localhost",
-    debug: true
-  },
   /*
   ** Build configuration
   */

@@ -1,12 +1,18 @@
 <template>
   <div class="flex flex-col min-vh-100 w-full">
-    <c-header />
+    <c-header 
+      tag="header"
+      class="flex-initial"
+    />
 
     <main class="flex flex-col flex-auto">
       <nuxt class="text-center my-auto mt-0 mb-auto"/>
     </main>
 
-    <c-footer />
+    <c-footer 
+      tag="footer"
+      class="flex-initial"
+    />
   </div>
 </template>
 
