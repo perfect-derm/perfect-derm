@@ -110,7 +110,7 @@
     text-align: center;
     font-size: 38px;
     font-weight: 700;
-    background-color: #000;
+    background-color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
