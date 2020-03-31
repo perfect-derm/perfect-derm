@@ -51,19 +51,22 @@ module.exports = {
         }
       },
       colors: {
-        // gray: false,
-        primary: '#000000',
-        secondary: '#E2E8F0',
+        primary: '#363636',
+        secondary: '#A1A1A1',
+        lightGray: '#FAFAFA',
+        lightGraphite: '#363636',
+        darkGraphite: '#262626',
+        beige: '#fbf2ed',
+        gray: false,
         red: false,
         orange: false,
         yellow: false,
         green: false,
-        // teal: false,
+        teal: false,
         blue: false,
         indigo: false,
         purple: false,
-        pink: false,
-        backgroundSemiTransparent: 'rgba(255, 255, 255, 0.7)'
+        pink: false
       }
     },
   },

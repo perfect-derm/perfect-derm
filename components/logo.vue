@@ -35,7 +35,7 @@
 
   @media(min-width: 1024px){
     .logo{
-      margin-top: -20px;
+      margin-top: -15px;
     }
   }
 </style>

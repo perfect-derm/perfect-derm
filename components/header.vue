@@ -18,49 +18,49 @@
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('index')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >    
             {{ $t('homepage__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('about')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >    
             {{ $t('about__menu__title') }}
           </nuxt-link>
           <nuxt-link
             @click.native="menuClickHandler" 
             :to="localePath('offer')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('offer__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('issue')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('issue__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('media')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('media__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('tariff')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('tariff__menu__title') }}
           </nuxt-link>
           <nuxt-link 
             @click.native="menuClickHandler"
             :to="localePath('contact')"
-            class="menu-link flex lg:px-2 py-2 uppercase text-black lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
+            class="menu-link flex lg:px-2 pt-1 pb-4 lg:ml-4 uppercase lg:text-gray-500 hover:text-black lg:ml-4 h-auto items-center no-underline lg:border-b-4 border-transparent hover:border-black"
           >
             {{ $t('contact__menu__title') }}
           </nuxt-link>
@@ -92,8 +92,8 @@
               <a 
                 @click="$nuxt.$i18n.setLocale(lang)"
                 :class="{ 
-                  'lang-active text-black mr-2': $i18n.locale === lang,
-                  'text-gray-300 mr-2': $i18n.locale !== lang 
+                  'lang-active text-black font-bold mr-2': $i18n.locale === lang,
+                  'mr-2': $i18n.locale !== lang 
                 }"
                 class="block cursor-pointer"
               >
