@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: '0.5rem'
     },
     fontFamily: {
       'sans': 'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
@@ -84,5 +85,33 @@ module.exports = {
   variants: {
     opacity: ['responsive', 'hover', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          'width': '100%',
+          'max-width': '100%',
+          'margin-left': 'auto',
+          'margin-right': 'auto',
+          'padding-left': '0.5rem',
+          'padding-right': '0.5rem',
+          '@screen sm': {
+            maxWidth: '640px',
+          },
+          '@screen md': {
+            maxWidth: '768px',
+          },
+          '@screen lg': {
+            maxWidth: '1024px',
+          },
+          '@screen xl': {
+            maxWidth: '1280px',
+          },
+          '@screen 2xl': {
+            maxWidth: '1368px',
+          },
+        }
+      })
+    }
+  ]
 }
