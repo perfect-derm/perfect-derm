@@ -43,16 +43,16 @@ module.exports = {
       src: 'nuxt-i18n', 
       options: { 
         locales: [
-          {
-            code: 'de',
-            iso: 'de-DE',
-            file: 'de.js'
-          },
-          {
-            code: 'en',
-            iso: 'en-GB',
-            file: 'en.js'
-          },
+          // {
+          //   code: 'de',
+          //   iso: 'de-DE',
+          //   file: 'de.js'
+          // },
+          // {
+          //   code: 'en',
+          //   iso: 'en-GB',
+          //   file: 'en.js'
+          // },
           {
             code: 'pl',
             iso: 'pl-PL',
@@ -3471,18 +3471,18 @@ module.exports = {
       const filesWithData = requireContext('../../content', true, /^(.*\.(json$))[^.]*$/im);
 
       const langArray = [
-        {
-          code: 'de',
-          default: false,
-          iso: 'de-DE',
-          file: 'de.js'
-        },
-        {
-          code: 'en',
-          default: false,
-          iso: 'en-GB',
-          file: 'en.js'
-        },
+        // {
+        //   code: 'de',
+        //   default: false,
+        //   iso: 'de-DE',
+        //   file: 'de.js'
+        // },
+        // {
+        //   code: 'en',
+        //   default: false,
+        //   iso: 'en-GB',
+        //   file: 'en.js'
+        // },
         {
           code: 'pl',
           default: true,
