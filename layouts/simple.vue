@@ -9,7 +9,7 @@
       <nuxt class="text-center my-auto mt-0 mb-auto"/>
     </main>
 
-    <div class="container relative h-200px mb-4">
+    <div class="container relative mb-4">
       <div class="px-20">
         <client-only placeholder="Ładowanie...">
           <c-partners />

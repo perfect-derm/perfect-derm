@@ -4,24 +4,9 @@
     class="relative"
     v-bind="$attrs"
   >
-    <hr class="mt-4">
-
-    <div class="container mt-4 flex flex-row flex-wrap">
-      <a class="button mx-auto mb-4">
-        {{ $t('footer__links__link_1') }}
-      </a>
-
-      <nuxt-link 
-        :to="localePath('contact')"
-        class="button mx-auto mb-4"
-      >
-        {{ $t('footer__links__link_2') }}
-      </nuxt-link>
-    </div>
-
-    <div class="bg-primary text-white py-4 px-4">
-      <div class="container flex flex-col md:flex-row flex-wrap">
-        <div class="w-full md:w-1/2 lg:w-1/4 lg:px-4 lg:pr-8">
+    <div class="text-white bg-light-graphite">
+      <div class="container flex flex-col md:flex-row flex-wrap ">
+        <div class="w-full md:w-1/2 lg:w-1/4 lg:px-4 lg:pr-8 h-300px">
           <h3 class="font-bold text-2xl">
             {{ $t('footer__company__title') }}
           </h3>
@@ -30,7 +15,7 @@
           {{ $md.render(this.$t('footer__company__description')) }}
         </div>
 
-        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
+        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4 h-300px">
           <h5 class="uppercase tracking-wider font-semibold">
             {{ $t('footer__opening__title') }}
           </h5>
@@ -41,7 +26,7 @@
           </ul>
         </div>
 
-        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4 lg:pr-8 md:order-2 lg:order-none">
+        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4 lg:pr-8 md:order-2 lg:order-none h-300px">
           <h5 class="uppercase tracking-wider font-semibold">
               {{ $t('footer__contact__title') }}
           </h5>
@@ -73,7 +58,7 @@
           </ul>
         </div>
 
-        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4">
+        <div class="w-full md:w-1/2 lg:w-1/4 mt-8 lg:mt-0 lg:px-4 h-300px">
           <h5 class="uppercase tracking-wider font-semibold">
               {{ $t('footer__payment__title') }}
           </h5>
@@ -256,13 +241,13 @@
             </li>
           </ul>
         </div>
-
-        <div class="w-full lg:mx-4">
-          <p class="text-sm text-gray-400 mt-8">
-            PerfectDerm © {{ new Date().getFullYear() }} All Rights Reserved.
-            </p>
-        </div>
       </div>
+    </div>
+
+    <div class="w-full bg-graphite">
+      <p class="container text-sm text-gray-400 mb-0">
+        PerfectDerm © {{ new Date().getFullYear() }} All Rights Reserved.
+      </p>
     </div>
   </component>
 </template>

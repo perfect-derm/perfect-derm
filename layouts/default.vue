@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    BOX
+    <c-contact-section />
 
     <c-footer 
       tag="footer"
@@ -29,12 +29,14 @@
 <script>
   import Header from '~/components/header.vue';
   import Partners from "~/components/partners.vue";
+  import ContactSection from '~/components/contact-section.vue';
   import Footer from '~/components/footer.vue';
 
   export default {
     components: {
       'c-header': Header,
       'c-partners' : Partners,
+      'c-contact-section': ContactSection,
       'c-footer': Footer  
     }
   }
