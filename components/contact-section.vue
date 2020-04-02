@@ -11,12 +11,16 @@
         Jak nas znaleźć?
       </h2>
 
-      <ul class="w-full flex flex-row flex-wrap lg:flex-no-wrap -mx-4 mb-8">
-        <li class="w-full md:w-1/2 lg:w-1/4 mx-4 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+      <ul class="w-full flex flex-row flex-wrap xl:flex-no-wrap xl:-mx-4 justify-center">
+        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <a 
             :href="`tel:${$t('footer__contact__email')}`"
             class="flex flex-col justify-start items-center"
           >
+            <img 
+              :src="require(`~/static/images/uploads/envelope.png?webp&resize&size=80`)" 
+              alt="Email logo"
+            />
             <h3 class="text-primary mb-2">
               Napisz do nas
             </h3>
@@ -26,11 +30,15 @@
             </span>
           </a>
         </li>
-        <li class="w-full md:w-1/2 lg:w-1/4 mx-4 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <a 
             :href="`tel:${$t('footer__contact__telephone')}`"
             class="flex flex-col justify-start items-center"
           >
+            <img 
+              :src="require(`~/static/images/uploads/telephone.png?webp&resize&size=80`)" 
+              alt="Email logo"
+            />
             <h3 class="text-primary mb-2">
               Zadzwoń
             </h3>
@@ -40,26 +48,34 @@
             </span>
           </a>
         </li>
-        <li class="w-full md:w-1/2 lg:w-1/4 mx-4 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <div
             class="flex flex-col justify-start items-center"
           >
+            <img 
+              :src="require(`~/static/images/uploads/mark.png?webp&resize&size=80`)" 
+              alt="Email logo"
+            />
             <h3 class="text-primary mb-2">
               Odwiedź nas
             </h3>
             <hr class="w-1/3 mb-2 border-secondary border-t-2"/>
-            <address class="block text-base text-primary not-italic" v-html="$options.filters.break($t('footer__company__adress'))"></address>
+            <address class="block text-base text-primary not-italic inline-format text-center" v-html="$options.filters.break($t('footer__company__adress'))"></address>
           </div>
         </li>
-        <li class="w-full md:w-1/2 lg:w-1/4 mx-4 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <div
             class="flex flex-col justify-start items-center"
           >
+            <img 
+              :src="require(`~/static/images/uploads/clock.png?webp&resize&size=80`)" 
+              alt="Email logo"
+            />
             <h3 class="text-primary mb-2">
               Godziny otwarcia
             </h3>
             <hr class="w-1/3 mb-2 border-secondary border-t-2"/>
-            <div class="block flex items-center text-base text-primary" v-html="$md.render(this.$t('footer__opening__hours'))"></div>
+            <div class="flex flex-wrap items-center text-base text-primary px-10 inline-format" v-html="$md.renderInline(this.$t('footer__opening__hours'))"></div>
           </div>
         </li>
       </ul>
@@ -90,3 +106,10 @@
     },
   }
 </script>
+
+<style scoped>
+  .inline-format >>> b{
+    font-weight: bold;
+    flex: 1 1 auto;
+  }
+</style>
