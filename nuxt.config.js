@@ -3314,7 +3314,9 @@ module.exports = {
     },    
     {
       src: '@nuxtjs/tailwindcss',
-      options: {}
+      options: {
+        cssPath: '~/assets/css/styles.css',
+      }
     },
     {
       src: '@nuxtjs/axios',
