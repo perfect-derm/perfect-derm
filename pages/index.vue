@@ -83,7 +83,7 @@
       </h2>
 
       <div class="flex flex-col flex-wrap md:flex-row text-center md:-mx-4 md:mb-4">
-        <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 md:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 md:px-2 flex flex-col">
           <c-single-square
             main-class="h-500px w-full md:mb-16 flex-1"
             :title="$t('homepage__first_offer__title')"
@@ -93,7 +93,7 @@
             theme
           />
         </div>
-        <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 md:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 mb-4 md:mb-0 md:px-2 flex flex-col">
           <c-single-square
             main-class="h-500px w-full md:mb-4 md:mt-8 flex-1 "
             :title="$t('homepage__second_offer__title')"
@@ -103,7 +103,7 @@
             theme
           />
         </div>
-        <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 md:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 md:px-2 flex flex-col">
           <c-single-square
             main-class="h-500px w-full md:mb-16 flex-1"
             :title="$t('homepage__third_offer__title')"
@@ -113,7 +113,7 @@
             theme
           />
         </div>
-        <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 md:px-4 flex flex-col">
+        <div class="w-full md:w-1/2 xl:w-1/4 sm:mb-4 md:mb-0 md:px-2 flex flex-col">
           <c-single-square
             main-class="h-500px w-full sm:mb-4 md:mt-8 flex-1"
             :title="$t('homepage__fourth_offer__title')"
