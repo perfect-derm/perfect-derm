@@ -5,7 +5,7 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="xs:ml-20 flex flex-row text-left md:max-w-1/2">
+          <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h1 
                 class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase mb-1 md:mb-5" 
@@ -35,7 +35,7 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_2__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="xs:ml-20 flex flex-row xs:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
+          <div class="md:ml-20 flex flex-row md:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
             <div class="flex flex-col">
               <h2 
                 class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase mb-1 md:mb-5"
@@ -65,7 +65,7 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_3__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="xs:ml-20 flex flex-row text-left md:max-w-1/2">
+          <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h2 
                 class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase mb-1 md:mb-5"
@@ -93,7 +93,7 @@
         </div>     
       </li>
     </ul>
-    <div class="hidden xs:block absolute h-full w-full">
+    <div class="hidden md:block absolute h-full w-full">
       <div class="container h-full w-full flex flex-row items-center">
         <div class="w-20 flex flex-col justify-center mr-16 banner-pagination"></div>
       </div>

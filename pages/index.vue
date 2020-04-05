@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full mb-16 flex flex-col items-center justify-center bg-gray-100 max-h-600 h-full">
+    <div class="w-full mb-24 flex flex-col items-center justify-center bg-gray-100 h-full">
       <client-only>
         <c-banner />
         <div class="flex flex-col items-center justify-center h-600px" slot="placeholder">
@@ -10,13 +10,13 @@
     </div>
 
     <h1 
-      class="h1 text-2xl sm:text-5xl md:text-3.2xl text-primary leading-none mb-10" 
+      class="h1 text-2xl sm:text-5xl md:text-3.2xl text-primary leading-none mb-10 md:mt-10" 
       v-html="$md.renderInline(this.$t('homepage__content__title'))"
     />
     
     <section class="container text-center mb-16 sm:mb-20 font-light">
       <p 
-        class="text-primary mb-8 sm:mb-16 sm:w-1/2 mx-auto" 
+        class="text-primary mb-8 sm:mb-16 sm:w-3/4 mx-auto" 
         v-html="$md.renderInline(this.$t('homepage__content__description'))" 
       />
 
@@ -34,7 +34,7 @@
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
           <figcaption
-            class="w-2/3"
+            class="w-4/5"
             v-html="$md.render(this.$t('homepage__content__section_1_description'))"
           />
         </figure>
@@ -52,7 +52,7 @@
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
           <figcaption
-            class="w-2/3"
+            class="w-4/5"
             v-html="$md.render(this.$t('homepage__content__section_2_description'))"
           />
         </figure>
@@ -70,7 +70,7 @@
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
           <figcaption
-            class="w-2/3"
+            class="w-4/5"
             v-html="$md.render(this.$t('homepage__content__section_3_description'))"
           />
         </figure>
