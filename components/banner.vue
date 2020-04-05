@@ -5,16 +5,18 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="flex flex-row text-left md:max-w-1/2">
-            <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
+          <div class="xs:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h1 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none uppercase mb-5" 
+                class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase mb-1 md:mb-5" 
                 v-html="$options.filters.break($t('homepage__banner_1__title'))" 
               />    
               <div 
-                class="text-base md:text-2.7xl font-light italic text-gray-700 mb-8"
+                class="text-xs md:text-2.7xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_1__description')"
+                :class="{
+                  'mb-2 md:mb-8': $te('homepage__banner_1__description')
+                }"
                 v-html="$md.render(this.$t('homepage__banner_1__description'))"
               />
               <div class="flex-initial w-full">
@@ -33,16 +35,18 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_2__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="flex flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
-            <div class="relative flex flex-col items-end justify-center ml-16 swiper-pagination swiper-pagination-bullets"></div>
+          <div class="xs:ml-20 flex flex-row xs:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none uppercase mb-5" 
+                class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase mb-1 md:mb-5"
                 v-html="$options.filters.break($t('homepage__banner_2__title'))"
               />
               <div 
-                class="text-base md:text-2.7xl font-light italic text-gray-700 mb-8"
-                v-if="$te('homepage__banner_2__description')" 
+                class="text-base md:text-2.7xl font-light italic text-gray-700"
+                v-if="$te('homepage__banner_2__description')"
+                :class="{
+                  'mb-2 md:mb-8': $te('homepage__banner_1__description')
+                }" 
                 v-html="$md.render(this.$t('homepage__banner_2__description'))"
               />
               <div class="flex-initial w-full">
@@ -61,16 +65,18 @@
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_3__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="flex flex-row text-left md:max-w-1/2">
-            <div class="relative flex flex-col justify-center mr-16 swiper-pagination swiper-pagination-bullets"></div>
+          <div class="xs:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-5xl md:text-5.5xl text-primary leading-none uppercase mb-5" 
+                class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase mb-1 md:mb-5"
                 v-html="$options.filters.break($t('homepage__banner_3__title'))"
               />
               <div 
-                class="text-base md:text-2.7xl font-light italic text-gray-700 mb-8"
+                class="text-base md:text-2.7xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_3__description')"
+                :class="{
+                  'mb-2 md:mb-8': $te('homepage__banner_1__description')
+                }"
                 v-html="$md.render(this.$t('homepage__banner_3__description'))"
               />
               <div class="flex-initial w-full">
@@ -87,6 +93,11 @@
         </div>     
       </li>
     </ul>
+    <div class="hidden xs:block absolute h-full w-full">
+      <div class="container h-full w-full flex flex-row items-center">
+        <div class="w-20 flex flex-col justify-center mr-16 banner-pagination"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -100,11 +111,11 @@
           slidesPerView: 'auto',
           centeredSlides: true,
           spaceBetween: 30,
-          autoplay: {
-            delay: 4000,
-          },
+          // autoplay: {
+          //   delay: 4000,
+          // },
           pagination: {
-            el: '.swiper-pagination',
+            el: '.banner-pagination',
             clickable: true
           }
         }
@@ -125,20 +136,30 @@
     @apply bg-white;
   }
 
-  .swiper-pagination.relative{
-    position: relative;
-  }
-
   .swiper-slide.h-auto{
     height: auto;
   }
 
-  .swiper-pagination >>> .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  .banner-pagination{
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+
+  .banner-pagination >>> .swiper-pagination-bullet{
+    border-radius: 0;
+    height: 6px;
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .banner-pagination >>> .swiper-pagination-bullet.swiper-pagination-bullet-active{
     @apply bg-primary;
     width: 50px;
   }
 
-  .swiper-pagination >>> .swiper-pagination-bullet{
+  .banner-pagination >>> .swiper-pagination-bullet{
     border-radius: 0;
     height: 6px;
     width: 40px;
