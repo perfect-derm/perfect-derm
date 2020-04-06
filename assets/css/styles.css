@@ -49,7 +49,8 @@ p{
     @apply text-primary;
     @apply pb-1;
     @apply uppercase;
-    @apply text-sm;
+    @apply font-normal;
+    @apply text-base;
 }
 
 .link-unstyled{
@@ -59,7 +60,8 @@ p{
     @apply text-primary;
     @apply pb-1;
     @apply uppercase;
-    @apply text-sm;
+    @apply font-normal;
+    @apply text-base;
 }
 
 .link-unstyled:hover{

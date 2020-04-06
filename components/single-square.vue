@@ -48,9 +48,14 @@
             {{ title }}
           </h2>
           <span 
-            class="uppercase"
+            class="link-unstyled uppercase flex flex-row"
           >
             {{ linkTitle }}
+            
+            <div 
+              class="ml-2 w-4 arrow-icon"
+              v-html="require('~/assets/arrow-custom.svg?include')"
+            />
           </span>
         </figcaption>
       </figure>
@@ -126,5 +131,9 @@
 
   .shadow-box{
     box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.12);
+  }
+
+  .arrow-icon >>> svg{
+    
   }
 </style>

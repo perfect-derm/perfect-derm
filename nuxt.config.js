@@ -3356,7 +3356,7 @@ module.exports = {
     google: {
       families: [
         'Montserrat:400,600:latin,latin-ext&display=swap', 
-        'Source Sans Pro:300,i300:latin,latin-ext&display=swap'
+        'Source Sans Pro:300,i300,400:latin,latin-ext&display=swap'
       ]
     }
   },
