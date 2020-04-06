@@ -3317,6 +3317,7 @@ module.exports = {
       options: {
         cssPath: '~/assets/css/styles.css',
         purgeCSSInDev: false,
+        exposeConfig: true
       }
     },
     {
@@ -3331,6 +3332,15 @@ module.exports = {
       src: '@bazzite/nuxt-optimized-images',
       options: {
         optimizeImages: false
+      }
+    },
+    {
+      src: '@teamnovu/nuxt-breaky',
+      options: {
+        enabled: true,
+        enableInProd: true,
+        colorScheme: 'auto',
+        position: 'bottomRight'
       }
     },
     {
