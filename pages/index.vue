@@ -10,7 +10,7 @@
     </div>
 
     <h1 
-      class="h1 text-2xl sm:text-5xl md:text-32xl text-primary leading-none mb-10 md:mt-10" 
+      class="h1 text-2xl sm:text-32xl text-primary leading-none mb-10 md:mt-10" 
       v-html="$md.renderInline(this.$t('homepage__content__title'))"
     />
     
@@ -78,7 +78,7 @@
     </section>
 
     <section class="container relative text-left mb-10 md:mb-20">
-      <h2 class="text-5xl mb-4 md:mb-20">
+      <h2 class="text-32xl mb-4 md:mb-20">
          {{ $t('homepage__header_offer__title') }}
       </h2>
 
@@ -145,7 +145,7 @@
         class="md:absolute top-auto bottom-0 bg-beige py-8 lg:p-20 lg:mt-20 right-0 left-auto md:px-8 lg:w-3/5 text-left"
       >
         <div class="container">
-          <h2 class="text-5xl mb-8 leading-none">
+          <h2 class="text-32xl mb-8 leading-none">
             {{ $md.renderInline(this.$t('homepage__call_to_action__title')) }}
           </h2>
           
@@ -166,7 +166,7 @@
   
     <section class="container flex flex-row flex-wrap mb-8 md:mb-40">
       <div class="w-full md:w-3/5 flex flex-col flex-wrap">
-        <h2 class="w-full mb-4 md:mb-16 md:px-8 font-bold text-5xl text-left">
+        <h2 class="w-full mb-4 md:mb-16 md:px-8 font-bold text-32xl text-left">
          {{ $t('homepage__header_issue__title') }}
         </h2>
 

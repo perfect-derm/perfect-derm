@@ -57,7 +57,7 @@
 <style scoped>
   .contact-desc >>> h1{
     @apply font-light;
-    @apply text-5xl;
+    @apply text-32xl;
     @apply uppercase;
     @apply mb-4;
   }

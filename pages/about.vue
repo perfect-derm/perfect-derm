@@ -9,7 +9,7 @@
     />
 
     <div class="container mb-4">
-      <h2 class="font-light text-5xl uppercase mb-10">
+      <h2 class="font-light text-32xl uppercase mb-10">
         {{ $t('about__section_title__title') }}
       </h2>
     </div>
@@ -96,7 +96,7 @@
     </div>
 
     <div class="relative h-200px flex flex-col flex-col items-center justify-center container py-4 mb-4">
-      <h2 class="font-light text-5xl uppercase mb-10">
+      <h2 class="font-light text-32xl uppercase mb-10">
         {{ $t('footer__partners__title') }}
       </h2>
       <client-only placeholder="Ładowanie...">
