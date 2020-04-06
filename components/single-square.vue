@@ -48,7 +48,7 @@
             {{ title }}
           </h2>
           <span 
-            class="link-unstyled no-underline uppercase flex flex-row items-center"
+            class="link-unstyled hover:border-transparent uppercase flex flex-row items-center"
           >
             {{ linkTitle }}
             
