@@ -5,9 +5,6 @@ body{
     @apply text-primary;
     @apply text-xl;
     @apply font-light;
-}
-
-html.wf-sourcesanspro-n3-active body{
     @apply font-body;
 }
 
