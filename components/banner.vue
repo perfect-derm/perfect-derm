@@ -6,7 +6,7 @@
         <img 
           :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" 
           alt="" 
-          class="w-full h-full object-cover opacity-50 md:opacity-100 min-h-400"
+          class="w-full h-full object-cover object-right opacity-50 md:opacity-100 min-h-400"
         />
         <div class="absolute top-auto left-auto right-auto container">
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
@@ -43,7 +43,7 @@
         <img 
           :src="require(`~/static${$t('homepage__banner_2__image')}?resize&size=1920`)" 
           alt="" 
-          class="w-full h-full object-cover opacity-50 md:opacity-100 min-h-400"
+          class="w-full h-full object-cover object-left opacity-50 md:opacity-100 min-h-400"
         />
         <div class="absolute top-auto left-auto right-auto container">
           <div class="md:ml-20 flex flex-row md:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
@@ -80,7 +80,7 @@
         <img 
           :src="require(`~/static${$t('homepage__banner_3__image')}?resize&size=1920`)" 
           alt="" 
-          class="w-full h-full object-cover opacity-50 md:opacity-100 min-h-400"
+          class="w-full h-full object-cover object-right opacity-50 md:opacity-100 min-h-400"
         />
         <div class="absolute top-auto left-auto right-auto container">
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
