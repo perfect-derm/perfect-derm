@@ -12,12 +12,12 @@
                 v-html="$options.filters.break($t('homepage__banner_1__title'))" 
               />    
               <div 
-                class="text-xs md:text-2.7xl lg:text-2xl font-light italic text-gray-700"
+                class="text-xs md:text-2.7xl lg:text-2.7xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_1__description')"
                 :class="{
                   'mb-2 md:mb-8': $te('homepage__banner_1__description')
                 }"
-                v-html="$md.render(this.$t('homepage__banner_1__description'))"
+                v-html="$md.renderInline(this.$t('homepage__banner_1__description'))"
               />
               <div class="flex-initial w-full">
                 <a 
@@ -42,12 +42,12 @@
                 v-html="$options.filters.break($t('homepage__banner_2__title'))"
               />
               <div 
-                class="text-base md:text-2.7xl lg:text-2xl font-light italic text-gray-700"
+                class="text-base md:text-2.7xl lg:text-2.7xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_2__description')"
                 :class="{
                   'mb-2 md:mb-8': $te('homepage__banner_1__description')
                 }" 
-                v-html="$md.render(this.$t('homepage__banner_2__description'))"
+                v-html="$md.renderInline(this.$t('homepage__banner_2__description'))"
               />
               <div class="flex-initial w-full">
                 <a 
@@ -68,7 +68,7 @@
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-base sm:text-5xl md:text-5.5xl lg:text-2xl text-primary leading-none uppercase mb-1 md:mb-5"
+                class="h1 text-base sm:text-5xl md:text-5.5xl lg:text-2.7xl text-primary leading-none uppercase mb-1 md:mb-5"
                 v-html="$options.filters.break($t('homepage__banner_3__title'))"
               />
               <div 
@@ -77,7 +77,7 @@
                 :class="{
                   'mb-2 md:mb-8': $te('homepage__banner_1__description')
                 }"
-                v-html="$md.render(this.$t('homepage__banner_3__description'))"
+                v-html="$md.renderInline(this.$t('homepage__banner_3__description'))"
               />
               <div class="flex-initial w-full">
                 <a 
