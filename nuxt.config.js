@@ -3407,6 +3407,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: false,
     html: {
       minify: {
         collapseWhitespace: true,
