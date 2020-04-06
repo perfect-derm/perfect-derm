@@ -74,8 +74,8 @@
       <div class="order-first my-1">
           <ul class="flex flex-wrap text-xs justify-end">
             <li class="flex items-center mr-2">
-              <a 
-                href="tel:+48737162771" 
+              <nuxt-link 
+                to="/search" 
                 class="flex items-center cursor-pointer"
                 >
                 <img 
@@ -84,7 +84,7 @@
                   class="opacity-50"
                   alt="Wyszukiwarka"
                 />
-              </a>
+              </nuxt-link>
             </li>
             <li class="mr-2">
               |
