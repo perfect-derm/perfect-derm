@@ -3403,6 +3403,9 @@ module.exports = {
     '~/assets/css/styles.css',
     '~/assets/css/custom.css'
   ],
+  purgeCSS: {
+    whitelist: ['css-selector-to-whitelist'],
+  },
   /*
   ** Build configuration
   */

@@ -10,7 +10,7 @@
     </div>
 
     <h1 
-      class="h1 text-2xl sm:text-5xl md:text-3.2xl text-primary leading-none mb-10 md:mt-10" 
+      class="h1 text-2xl sm:text-5xl md:text-32xl text-primary leading-none mb-10 md:mt-10" 
       v-html="$md.renderInline(this.$t('homepage__content__title'))"
     />
     

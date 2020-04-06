@@ -12,14 +12,14 @@
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h1 
-                class="h1 text-2xl sm:text-5xl md:text-5.5xl text-primary leading-none uppercase" 
+                class="h1 text-2xl sm:text-5xl md:text-55xl text-primary leading-none uppercase" 
                 :class="{
                   'mb-1 md:mb-5': $te('homepage__banner_1__description')
                 }"
                 v-html="$options.filters.break($t('homepage__banner_1__title'))" 
               />    
               <div 
-                class="text-xs md:text-2.7xl lg:text-2.7xl font-light italic text-gray-700"
+                class="text-xs md:text-27xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_1__description')"
                 :class="{
                   'mb-2 md:mb-8': $te('homepage__banner_1__description')
@@ -49,14 +49,14 @@
           <div class="md:ml-20 flex flex-row md:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-2xl sm:text-5xl md:text-5.5xl text-primary leading-none uppercase"
+                class="h1 text-2xl sm:text-5xl md:text-55xl text-primary leading-none uppercase"
                 :class="{
                   'mb-1 md:mb-5': $te('homepage__banner_2__description')
                 }" 
                 v-html="$options.filters.break($t('homepage__banner_2__title'))"
               />
               <div 
-                class="text-base md:text-2.7xl lg:text-2.7xl font-light italic text-gray-700"
+                class="text-base md:text-27xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_2__description')"
                 :class="{
                   'mb-2 md:mb-8': $te('homepage__banner_2__description')
@@ -86,14 +86,14 @@
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-2xl sm:text-5xl md:text-5.5xl text-primary leading-none uppercase"
+                class="h1 text-2xl sm:text-5xl md:text-55xl text-primary leading-none uppercase"
                 :class="{
                   'mb-1 md:mb-5': $te('homepage__banner_3__description')
                 }"
                 v-html="$options.filters.break($t('homepage__banner_3__title'))"
               />
               <div 
-                class="text-base md:text-2.7xl font-light italic text-gray-700"
+                class="text-base md:text-27xl font-light italic text-gray-700"
                 v-if="$te('homepage__banner_3__description')"
                 :class="{
                   'mb-2 md:mb-8': $te('homepage__banner_3__description') != ''
