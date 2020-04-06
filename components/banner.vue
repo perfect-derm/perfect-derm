@@ -1,6 +1,6 @@
 <template>
   <!-- You can find this swiper instance object in current component by the "mySwiper"  -->
-  <div class="banner relative h-450px sm:h-600px lg:h-800px w-full flex items-end justify-center overflow-hidden" v-swiper:banner="swiperOption">
+  <div class="banner relative h-auto xl:h-800px w-full flex items-end justify-center overflow-hidden" v-swiper:banner="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
         <img :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
