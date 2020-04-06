@@ -33,6 +33,7 @@ module.exports = {
         '800px': '800px',
       },
       minHeight: {
+        '400': '400px',
         '900': '900px',
       },
       maxHeight: {

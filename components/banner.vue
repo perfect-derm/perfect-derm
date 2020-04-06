@@ -3,12 +3,16 @@
   <div class="banner relative h-auto xl:h-800px w-full flex items-end justify-center overflow-hidden" v-swiper:banner="swiperOption">
     <ul class="swiper-wrapper">
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_1__image') !== ''">
-        <img :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
+        <img 
+          :src="require(`~/static${$t('homepage__banner_1__image')}?resize&size=1920`)" 
+          alt="" 
+          class="w-full h-full object-cover opacity-50 md:opacity-100 min-h-400"
+        />
         <div class="absolute top-auto left-auto right-auto container">
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h1 
-                class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase" 
+                class="h1 text-2xl sm:text-5xl md:text-5.5xl text-primary leading-none uppercase" 
                 :class="{
                   'mb-1 md:mb-5': $te('homepage__banner_1__description')
                 }"
@@ -36,12 +40,16 @@
         </div>
       </li>
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_2__image') !== ''">
-        <img :src="require(`~/static${$t('homepage__banner_2__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
+        <img 
+          :src="require(`~/static${$t('homepage__banner_2__image')}?resize&size=1920`)" 
+          alt="" 
+          class="w-full h-full object-cover opacity-50 md:opacity-100 min-h-400"
+        />
         <div class="absolute top-auto left-auto right-auto container">
           <div class="md:ml-20 flex flex-row md:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase"
+                class="h1 text-2xl sm:text-5xl md:text-5.5xl text-primary leading-none uppercase"
                 :class="{
                   'mb-1 md:mb-5': $te('homepage__banner_2__description')
                 }" 
@@ -69,12 +77,16 @@
         </div>
       </li>  
       <li class="swiper-slide h-auto" v-if="$t('homepage__banner_3__image') !== ''">
-        <img :src="require(`~/static${$t('homepage__banner_3__image')}?resize&size=1920`)" alt="" class="w-full h-full object-cover opacity-50 md:opacity-100"/>
+        <img 
+          :src="require(`~/static${$t('homepage__banner_3__image')}?resize&size=1920`)" 
+          alt="" 
+          class="w-full h-full object-cover opacity-50 md:opacity-100 min-h-400"
+        />
         <div class="absolute top-auto left-auto right-auto container">
           <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
             <div class="flex flex-col">
               <h2 
-                class="h1 text-base sm:text-5xl md:text-5.5xl text-primary leading-none uppercase"
+                class="h1 text-2xl sm:text-5xl md:text-5.5xl text-primary leading-none uppercase"
                 :class="{
                   'mb-1 md:mb-5': $te('homepage__banner_3__description')
                 }"
