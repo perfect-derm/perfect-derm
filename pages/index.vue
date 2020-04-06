@@ -145,21 +145,23 @@
         class="md:absolute top-auto bottom-0 bg-beige py-8 lg:p-20 lg:mt-20 right-0 left-auto md:px-8 lg:w-3/5 text-left"
       >
         <div class="container">
-          <h2 class="text-32xl mb-8 leading-none">
-            {{ $md.renderInline(this.$t('homepage__call_to_action__title')) }}
-          </h2>
-          
-          <div
-            class="text-sm lg:text-xl"
-            v-html="$md.render(this.$t('homepage__call_to_action__description'))"
-          />
+          <div class="w-full md:w-1/2">
+            <h2 class="text-32xl mb-8 leading-none">
+              {{ $md.renderInline(this.$t('homepage__call_to_action__title')) }}
+            </h2>
+            
+            <div
+              class="text-sm lg:text-xl"
+              v-html="$md.render(this.$t('homepage__call_to_action__description'))"
+            />
 
-          <nuxt-link 
-            :to="$t('homepage__call_to_action__link')"
-            class="link-styled"
-          >
-            {{ $t('homepage__call_to_action__link_title') }}
-          </nuxt-link>
+            <nuxt-link 
+              :to="$t('homepage__call_to_action__link')"
+              class="link-styled"
+            >
+              {{ $t('homepage__call_to_action__link_title') }}
+            </nuxt-link>
+          </div>
         </div>
       </figcaption>
     </figure>
