@@ -10,7 +10,7 @@
   >
     <nuxt-link
         :to="link"
-        class="block border-b-8 border-solid border-transparent hover:border-primary h-full shadow-box"
+        class="square-link block border-b-8 border-solid border-transparent hover:border-primary h-full shadow-box"
       >
       <figure 
         class="relative h-full min-h-full flex flex-col"
@@ -48,12 +48,12 @@
             {{ title }}
           </h2>
           <span 
-            class="link-unstyled uppercase flex flex-row"
+            class="link-unstyled no-underline uppercase flex flex-row items-center"
           >
             {{ linkTitle }}
             
             <div 
-              class="ml-2 w-4 arrow-icon"
+              class="ml-1 w-6 h-3 arrow-icon"
               v-html="require('~/assets/arrow-custom.svg?include')"
             />
           </span>
@@ -133,7 +133,21 @@
     box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.12);
   }
 
-  .arrow-icon >>> svg{
-    
+
+  .square-link .arrow-icon >>> svg rect{
+    @apply duration-300;
+  }
+
+  .square-link .arrow-icon{
+    @apply duration-300;
+  }
+
+  .square-link:hover .arrow-icon{
+    @apply ml-2;
+  }
+
+  .square-link:hover .arrow-icon >>> svg rect{
+    width: 47px;
+    x: 0;
   }
 </style>
