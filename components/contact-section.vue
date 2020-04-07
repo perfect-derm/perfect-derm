@@ -12,7 +12,7 @@
       </h2>
 
       <ul class="w-full flex flex-row flex-wrap xl:flex-no-wrap xl:-mx-4 justify-center">
-        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-2/5 lg:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <a 
             :href="`tel:${$t('footer__contact__email')}`"
             class="flex flex-col justify-start items-center"
@@ -30,7 +30,7 @@
             </span>
           </a>
         </li>
-        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-2/5 lg:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <a 
             :href="`tel:${$t('footer__contact__telephone')}`"
             class="flex flex-col justify-start items-center"
@@ -48,7 +48,7 @@
             </span>
           </a>
         </li>
-        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-2/5 lg:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <div
             class="flex flex-col justify-start items-center"
           >
@@ -63,7 +63,7 @@
             <address class="block text-base text-primary not-italic inline-format text-center" v-html="$options.filters.break($t('footer__company__adress'))"></address>
           </div>
         </li>
-        <li class="w-full md:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
+        <li class="w-full md:w-2/5 lg:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <div
             class="flex flex-col justify-start items-center"
           >

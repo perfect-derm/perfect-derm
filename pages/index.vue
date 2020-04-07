@@ -24,12 +24,12 @@
         <figure class="w-full md:w-1/3 flex flex-col items-center px-2 mb-8">
           <img 
             :src="$t('homepage__content__section_1_icon')"
-            width="100px"
+            width="70px"
             :alt="$md.renderInline(this.$t('homepage__content__section_1_title'))"
             class="opacity-50 mb-2"
           />
-          <h2
-            class="text-xl lg:text-2xl mb-2"
+          <h3
+            class="mb-2"
             v-html="$md.renderInline(this.$t('homepage__content__section_1_title'))" 
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
@@ -42,12 +42,12 @@
         <figure class="w-full md:w-1/3 flex flex-col items-center px-2 mb-8">
           <img 
             :src="$t('homepage__content__section_2_icon')"
-            width="100px"
+            width="70px"
             :alt="$md.renderInline(this.$t('homepage__content__section_2_title'))"
             class="opacity-50 mb-2"
           />
-          <h2
-            class="text-xl lg:text-2xl mb-2"
+          <h3
+            class="mb-2"
             v-html="$md.renderInline(this.$t('homepage__content__section_2_title'))" 
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
@@ -60,12 +60,12 @@
         <figure class="w-full md:w-1/3 flex flex-col items-center px-2 mb-8">
           <img 
             :src="$t('homepage__content__section_3_icon')"
-            width="100px"
+            width="70px"
             :alt="$md.renderInline(this.$t('homepage__content__section_3_title'))"
             class="opacity-50 mb-2"
           />
-          <h2
-            class="text-xl lg:text-2xl mb-2"
+          <h3
+            class="mb-2"
             v-html="$md.renderInline(this.$t('homepage__content__section_3_title'))" 
           />
           <hr class="w-1/4 border-b-4 border-solid border-secondary mb-2" />
