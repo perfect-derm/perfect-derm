@@ -12,10 +12,10 @@
           </h3>
           
           <ul class="flex flex-wrap">
-            <li class="flex w-1/2"><a href="" class="link-unstyled font-light text-white">Regulamin strony</a></li>
-            <li class="flex w-1/2"><a href="" class="link-unstyled font-light text-white">Polityka prywatności</a></li>
-            <li class="flex w-1/2"><a href="" class="link-unstyled font-light text-white">Prawa pacjenta</a></li>
-            <li class="flex w-1/2"><a href="" class="link-unstyled font-light text-white">Cookies</a></li>
+            <li class="flex w-1/2 mb-2"><a href="" class="link-unstyled font-light text-white">Regulamin strony</a></li>
+            <li class="flex w-1/2 mb-2"><a href="" class="link-unstyled font-light text-white">Polityka prywatności</a></li>
+            <li class="flex w-1/2 mb-2"><a href="" class="link-unstyled font-light text-white">Prawa pacjenta</a></li>
+            <li class="flex w-1/2 mb-2"><a href="" class="link-unstyled font-light text-white">Cookies</a></li>
           </ul>
         </div>
 
