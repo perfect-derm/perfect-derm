@@ -30,7 +30,7 @@
                 <a 
                   v-if="$te('homepage__banner_1__button')"
                   :href="$t('homepage__banner_1__link')"
-                  class="link-styled text-sm"
+                  class="link-styled text-base"
                 >
                   {{ $t('homepage__banner_1__button') }}
                 </a>
@@ -67,7 +67,7 @@
                 <a 
                   v-if="$te('homepage__banner_2__button')"
                   :href="$t('homepage__banner_2__link')"
-                  class="link-styled text-sm"
+                  class="link-styled text-base"
                 >
                   {{ $t('homepage__banner_2__button') }}
                 </a>
@@ -104,7 +104,7 @@
                 <a 
                   v-if="$te('homepage__banner_3__button')"
                   :href="$t('homepage__banner_3__link')"
-                  class="link-styled text-sm"
+                  class="link-styled text-base"
                 >
                   {{ $t('homepage__banner_3__button') }}
                 </a>
