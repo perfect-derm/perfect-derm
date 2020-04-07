@@ -3338,7 +3338,7 @@ module.exports = {
       src: '@teamnovu/nuxt-breaky',
       options: {
         enabled: true,
-        enableInProd: true,
+        enableInProd: false,
         colorScheme: 'auto',
         position: 'bottomRight'
       }
