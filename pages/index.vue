@@ -145,7 +145,7 @@
         class="md:absolute top-auto bottom-0 bg-beige py-8 lg:p-20 lg:mt-20 right-0 left-auto md:px-8 lg:w-3/5 text-left"
       >
         <div class="container">
-          <div class="w-full md:w-3/5">
+          <div class="w-full md:w-9/12">
             <h2 class="text-32xl mb-8 leading-none">
               {{ $md.renderInline(this.$t('homepage__call_to_action__title')) }}
             </h2>

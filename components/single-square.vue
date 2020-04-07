@@ -17,7 +17,7 @@
       >
           <h2 
             v-if="!theme"
-            class="absolute top-0 bottom-0 z-20 p-4 text-2xl word-spacing-all leading-none mb-4"
+            class="absolute top-0 bottom-0 z-20 p-4 text-2xl word-spacing-all leading-none mb-6"
           >
             {{ title }}
           </h2>
