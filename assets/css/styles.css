@@ -49,7 +49,7 @@ p{
     @apply text-primary;
     @apply pb-1;
     @apply uppercase;
-    @apply font-normal;
+    @apply font-semibold;
     @apply text-base;
 }
 
@@ -60,7 +60,7 @@ p{
     @apply text-primary;
     @apply pb-1;
     @apply uppercase;
-    @apply font-normal;
+    @apply font-semibold;
     @apply text-base;
 }
 

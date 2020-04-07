@@ -50,10 +50,11 @@
           <span 
             class="link-unstyled hover:border-transparent uppercase flex flex-row items-center"
           >
-            {{ linkTitle }}
-            
+            <span class="block mr-1">
+              {{ linkTitle }}
+            </span>
             <div 
-              class="ml-1 w-6 h-3 arrow-icon"
+              class="w-6 h-3 arrow-icon"
               v-html="require('~/assets/arrow-custom.svg?include')"
             />
           </span>
@@ -134,7 +135,7 @@
   }
 
 
-  .square-link .arrow-icon >>> svg path:last-child{
+  .square-link .arrow-icon >>> svg path{
     @apply duration-300;
     @apply transition-transform;
   }
@@ -142,18 +143,18 @@
   .square-link .arrow-icon{
     @apply duration-300;
   }
-
-  .square-link:hover .arrow-icon{
-    @apply ml-2;
-  }
-
+  
   .arrow-icon >>> svg{
     width: 100%;
     height: 100%;
-    fill-rule:evenodd;
-    clip-rule:evenodd;
-    stroke-linejoin:round;
-    stroke-miterlimit:2;
+  }
+
+  .square-link .arrow-icon >>> svg path{
+    transform: translateX(-50px);
+  }
+
+  .square-link:hover .arrow-icon >>> svg path:first-child{
+    transform: translateX(0px);
   }
 
   .square-link:hover .arrow-icon >>> svg path:last-child{
