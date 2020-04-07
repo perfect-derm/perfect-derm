@@ -54,7 +54,7 @@
           </ul>
         </div>
 
-        <div class="w-full md:w-1/3 lg:w-1/3 mt-8">
+        <div class="w-full md:w-1/3 lg:w-1/3 mt-8 lg:mt-0">
           <h5 class="font-bold text-32xl mb-8">
               Dojazd
           </h5>
