@@ -9,7 +9,7 @@
           class="w-full h-full object-cover object-right opacity-50 md:opacity-100 min-h-400"
         />
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
+          <div class="md:ml-20 flex flex-row text-left lg:max-w-1/2">
             <div class="flex flex-col">
               <h1 
                 class="h1 text-2xl sm:text-5xl md:text-55xl text-primary leading-none uppercase" 
@@ -46,7 +46,7 @@
           class="w-full h-full object-cover object-left opacity-50 md:opacity-100 min-h-400"
         />
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="md:ml-20 flex flex-row md:flex-row-reverse text-left md:max-w-1/2 md:ml-auto">
+          <div class="md:ml-20 flex flex-row md:flex-row-reverse text-left lg:max-w-1/2 md:ml-auto">
             <div class="flex flex-col">
               <h2 
                 class="h1 text-2xl sm:text-5xl md:text-55xl text-primary leading-none uppercase"
@@ -83,7 +83,7 @@
           class="w-full h-full object-cover object-right opacity-50 md:opacity-100 min-h-400"
         />
         <div class="absolute top-auto left-auto right-auto container">
-          <div class="md:ml-20 flex flex-row text-left md:max-w-1/2">
+          <div class="md:ml-20 flex flex-row text-left lg:max-w-1/2">
             <div class="flex flex-col">
               <h2 
                 class="h1 text-2xl sm:text-5xl md:text-55xl text-primary leading-none uppercase"
