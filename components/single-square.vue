@@ -35,10 +35,10 @@
           />
         </picture>
         <figcaption
-          class="absolute font-light bottom-0 z-10 left-0 right-0 z-10 text-left p-4"
+          class="absolute font-light bottom-0 z-10 left-0 right-0 z-10 text-left"
           :class="{
-            'gradient-shadow': theme,
-            'bg-white': !theme
+            'gradient-shadow p-4': theme,
+            'bg-white p-2 px-4 pb-0': !theme
           }"
         >
           <h2 
