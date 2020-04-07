@@ -19,7 +19,9 @@
           >
             <img 
               :src="require(`~/static/images/uploads/envelope.png?webp&resize&size=80`)" 
-              alt="Email logo"
+              alt="Email"
+              width="70px"
+              class="opacity-50 mb-2"
             />
             <h3 class="text-primary mb-2">
               Napisz do nas
@@ -37,7 +39,9 @@
           >
             <img 
               :src="require(`~/static/images/uploads/telephone.png?webp&resize&size=80`)" 
-              alt="Email logo"
+              alt="Telephone"
+              width="70px"
+              class="opacity-50 mb-2"
             />
             <h3 class="text-primary mb-2">
               Zadzwoń
@@ -54,7 +58,9 @@
           >
             <img 
               :src="require(`~/static/images/uploads/mark.png?webp&resize&size=80`)" 
-              alt="Email logo"
+              alt="Mark"
+              width="70px"
+              class="opacity-50 mb-2"
             />
             <h3 class="text-primary mb-2">
               Odwiedź nas
@@ -69,7 +75,9 @@
           >
             <img 
               :src="require(`~/static/images/uploads/clock.png?webp&resize&size=80`)" 
-              alt="Email logo"
+              alt="Clock"
+              width="70px"
+              class="opacity-50 mb-2"
             />
             <h3 class="text-primary mb-2">
               Godziny otwarcia

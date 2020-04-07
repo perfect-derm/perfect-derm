@@ -7,7 +7,7 @@
     <div class="bg-light-graphite text-white">
       <div class="container flex flex-col md:flex-row flex-wrap py-8 lg:py-20">
         <div class="w-full md:w-full lg:w-1/3">
-          <h3 class="font-bold text-32xl mb-8">
+          <h3 class="font-bold mb-8">
             {{ $t('footer__company__title') }}
           </h3>
           
@@ -20,7 +20,7 @@
         </div>
 
         <div class="w-full md:w-full lg:w-1/3 mt-8 lg:mt-0 lg:px-4">
-          <h5 class="font-bold text-32xl mb-8">
+          <h5 class="font-bold mb-8">
             {{ $t('footer__payment__title') }}
           </h5>
           <p class="text-base uppercase mb-2">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="w-full md:w-full lg:w-1/3 mt-8 lg:mt-0">
-          <h5 class="font-bold text-32xl mb-8">
+          <h5 class="font-bold mb-8">
               Dojazd
           </h5>
           <div class="text-base">

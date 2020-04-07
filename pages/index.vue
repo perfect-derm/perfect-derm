@@ -166,7 +166,7 @@
       </figcaption>
     </figure>
   
-    <section class="container flex flex-row flex-wrap mb-8 md:mb-40">
+    <section class="container flex flex-row flex-wrap mb-8 md:mb-20">
       <div class="w-full md:w-3/5 flex flex-col flex-wrap">
         <h2 class="w-full mb-4 md:mb-16 md:px-8 font-bold text-32xl text-left">
          {{ $t('homepage__header_issue__title') }}
