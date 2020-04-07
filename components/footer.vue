@@ -5,7 +5,7 @@
     v-bind="$attrs"
   >
     <div class="bg-light-graphite text-white">
-      <div class="container flex flex-col md:flex-row flex-wrap py-20">
+      <div class="container flex flex-col md:flex-row flex-wrap py-8 lg:py-20">
         <div class="w-full md:w-full lg:w-1/3">
           <h3 class="font-bold text-32xl mb-8">
             {{ $t('footer__company__title') }}
