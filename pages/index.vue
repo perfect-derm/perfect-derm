@@ -151,7 +151,7 @@
             </h2>
             
             <div
-              class="text-sm lg:text-xl"
+              class="text-sm lg:text-xl mb-8"
               v-html="$md.render(this.$t('homepage__call_to_action__description'))"
             />
 
@@ -191,7 +191,7 @@
 
       <div class="w-full md:w-2/5 flex flex-col flex-wrap">
         <c-single-square
-          main-class="relative h-300px w-full md:px-8 mb-8 flex-1"
+          main-class="flex-initial h-350px relative w-full md:px-8 mb-8 flex-1"
           :title="$t('homepage__third_issue__title')"
           :image="$t('homepage__third_issue__background')"
           :link="$t('homepage__third_issue__link')"
@@ -199,7 +199,7 @@
         />
       
         <c-single-square
-          main-class="relative h-300px w-full md:px-8 mb-8 flex-1"
+          main-class="flex-initial h-350px relative w-full md:px-8 mb-8 flex-1"
           :title="$t('homepage__fourth_issue__title')"
           :image="$t('homepage__fourth_issue__background')"
           :link="$t('homepage__fourth_issue__link')"
@@ -208,7 +208,7 @@
         
         <a 
           :href="$t('homepage__button_issue__link')" 
-          class="link-styled ml-0 md:ml-8 mr-auto"
+          class="link-styled ml-0 md:ml-8 mr-auto mt-auto"
         >
           {{ $t('homepage__button_issue__title') }}
         </a>
