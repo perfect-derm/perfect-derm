@@ -134,8 +134,9 @@
   }
 
 
-  .square-link .arrow-icon >>> svg rect{
+  .square-link .arrow-icon >>> svg path:last-child{
     @apply duration-300;
+    @apply transition-transform;
   }
 
   .square-link .arrow-icon{
@@ -146,8 +147,16 @@
     @apply ml-2;
   }
 
-  .square-link:hover .arrow-icon >>> svg rect{
-    width: 47px;
-    x: 0;
+  .arrow-icon >>> svg{
+    width: 100%;
+    height: 100%;
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    stroke-linejoin:round;
+    stroke-miterlimit:2;
+  }
+
+  .square-link:hover .arrow-icon >>> svg path:last-child{
+    transform: translateX(-40px) scaleX(1.2);
   }
 </style>
