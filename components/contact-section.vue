@@ -6,7 +6,7 @@
   >
     <div class="container flex flex-row flex-wrap mt-8">
       <h2
-        class="mb-12 w-full"
+        class="mb-12 w-full font-bold text-32xl"
       >
         Jak nas znaleźć?
       </h2>
