@@ -11,7 +11,7 @@
         Jak nas znaleźć?
       </h2>
 
-      <ul class="w-full flex flex-row flex-wrap xl:flex-no-wrap xl:-mx-4 justify-center">
+      <ul class="w-full flex flex-row flex-wrap xl:flex-no-wrap xl:-mx-4 justify-center lg:mb-8">
         <li class="w-full md:w-2/5 lg:w-1/3 xl:w-1/4 mx-4 mb-8 border-4 border-solid border-secondary h-300px flex flex-col justify-center items-center">
           <a 
             :href="`tel:${$t('footer__contact__email')}`"
@@ -88,13 +88,13 @@
         </li>
       </ul>
 
-      <h3 class="mb-2 lg:mb-8 flex-initial mr-8">
+      <h3 class="mb-2 lg:mb-12 flex-initial mr-8">
         Chcesz umówić wizytę?
       </h3>
 
       <nuxt-link
         to="contact"
-        class="link-styled mb-8 flex-initial lg:mt-1"
+        class="link-styled mb-8 lg:mb-12 flex-initial lg:mt-1"
       >
         Umów wizytę teraz
       </nuxt-link>
