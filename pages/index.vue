@@ -77,7 +77,8 @@
       </div>
     </section>
 
-    <section class="container relative text-left mb-10 md:mb-20">
+    <section class="container relative text-left mb-10 md:mb-20 bg-fixed">
+      <span class="absolute bg-decoration-blue"/> 
       <h2 class="text-32xl mb-4 md:mb-20">
          {{ $t('homepage__header_offer__title') }}
       </h2>
@@ -166,7 +167,7 @@
       </figcaption>
     </figure>
   
-    <section class="container flex flex-row flex-wrap mb-8 md:mb-20">
+    <section class="container flex flex-row flex-wrap mb-8 md:mb-20 bg-fixed bg-decoration-pink">
       <div class="w-full md:w-3/5 flex flex-col flex-wrap">
         <h2 class="w-full mb-4 md:mb-16 md:px-8 font-bold text-32xl text-left">
          {{ $t('homepage__header_issue__title') }}
@@ -230,3 +231,19 @@
     },
   };
 </script>
+
+<style scoped>
+  .bg-decoration-blue{
+    background-image: url('~assets/border-blue.svg');
+    background-position: right top;
+    background-size: 700px 550px;
+    background-repeat: no-repeat;
+  }
+
+  .bg-decoration-pink{
+    background-image: url('~assets/border-pink.svg');
+    background-position: right top;
+    background-size: 700px 550px;
+    background-repeat: no-repeat;
+  }
+</style>

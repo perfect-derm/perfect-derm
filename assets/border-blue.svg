@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,1.13687e-13,-5745.78)">
+        <g id="Ramka" transform="matrix(0.801471,0,0,0.450827,650.669,4776.3)">
+            <rect x="-811.844" y="2150.45" width="998.165" height="998.165" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="-811.844" y="2150.45" width="998.165" height="998.165"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1.30614,0,0,2.40994,-858.587,-11782.8)">
+                    <path d="M800,6195.78L35.788,6195.78L35.788,5781.59L800,5781.59L800,6195.78ZM776.118,5804.6L59.669,5804.6L59.669,6172.77L776.118,6172.77L776.118,5804.6Z" style="fill:rgb(244, 247, 253);"/>
+                </g>
+            </g>
+        </g>
+        <g id="Mapa-strony" serif:id="Mapa strony">
+        </g>
+    </g>
+</svg>
