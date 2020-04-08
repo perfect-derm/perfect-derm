@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <div class="gcse-searchbox"></div>
+  <div class="container">
+    <div class="h-auto mt-12 mb-20">
+      <div class="gcse-searchbox"></div>
+
+      <div class="gcse-searchresults"></div>
+    </div>
   </div>
 </template>
 
@@ -25,3 +29,24 @@
     }
   };
 </script>
+
+<style>
+  .gcse-searchresults {
+    text-align: left;
+  }
+
+  .gcse-searchresults .gsc-control-cse{
+    padding: 0;
+  }
+
+  .gsc-webResult.gsc-result{
+    border-left: 1px solid;
+    border-color: transparent;
+    border-bottom: 0px solid;
+  }
+
+  .gcsc-branding-text,
+  .gcsc-find-more-on-google{
+    display: none;
+  }
+</style>
