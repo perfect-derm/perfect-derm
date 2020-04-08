@@ -31,22 +31,33 @@
 </script>
 
 <style>
-  .gcse-searchresults {
+  .gsc-control-cse{
+    padding: 0;
     text-align: left;
   }
 
-  .gcse-searchresults .gsc-control-cse{
-    padding: 0;
-  }
-
-  .gsc-webResult.gsc-result{
+  .gsc-control-cse .gsc-webResult.gsc-result{
     border-left: 1px solid;
     border-color: transparent;
-    border-bottom: 0px solid;
+    border-bottom: 1px solid;
   }
 
-  .gcsc-branding-text,
-  .gcsc-find-more-on-google{
+  .gsc-control-cse .gsc-webResult.gsc-result:first-child{
+    border-top: 1px solid;
+  }
+
+  .gsc-control-cse .cse .gsc-webResult.gsc-result:hover, 
+  .gsc-control-cse .gsc-webResult.gsc-result:hover, 
+  .gsc-control-cse .gsc-webResult.gsc-result.gsc-promotion:hover, 
+  .gsc-control-cse .gsc-results .gsc-imageResult-classic:hover, 
+  .gsc-control-cse .gsc-results .gsc-imageResult-column:hover {
+      border-left: 1px solid;
+      border-color: #000000;
+      border-bottom: 1px solid;
+  }
+
+  .gsc-control-cse .gcsc-branding-text,
+  .gsc-control-cse .gcsc-find-more-on-google{
     display: none;
   }
 </style>
