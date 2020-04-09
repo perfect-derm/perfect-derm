@@ -3470,6 +3470,13 @@ module.exports = {
     ** Run ESLint on save
     */
     extend(config, { isDev }) {
+
+      config.module.rules.push({
+        test: /\.(ico)$/,
+        loader: 'file-loader',
+        exclude: /(node_modules)/
+      });
+
       if (isDev && process.client) {
         config.module.rules.push({
           enforce: "pre",
