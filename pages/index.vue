@@ -212,7 +212,7 @@
         
         <a 
           :href="$t('homepage__button_issue__link')" 
-          class="link-styled ml-0 md:ml-8 mr-auto mt-auto"
+          class="link-styled ml-0 mr-auto mt-auto md:pl-24"
         >
           {{ $t('homepage__button_issue__title') }}
         </a>
