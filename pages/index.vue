@@ -171,13 +171,13 @@
   
     <section class="container relative flex flex-row flex-wrap mb-8 md:mb-20 bg-fixed">
       <span class="absolute bg-decoration-pink"/> 
-      <div class="w-full md:w-3/5 flex flex-col flex-wrap">
-        <h2 class="w-full mb-4 md:mb-16 md:px-8 font-bold text-32xl text-left">
+      <div class="w-full md:w-1/2 flex flex-col flex-wrap">
+        <h2 class="w-full mb-4 md:mb-16 font-bold text-32xl text-left">
          {{ $t('homepage__header_issue__title') }}
         </h2>
 
         <c-single-square
-          main-class="relative h-450px w-full md:px-8 mb-8 flex-1"
+          main-class="relative h-450px w-full mb-8 flex-1"
           :title="$t('homepage__first_issue__title')"
           :image="$t('homepage__first_issue__background')"
           :link="$t('homepage__first_issue__link')"
@@ -185,7 +185,7 @@
         />
 
         <c-single-square
-          main-class="relative h-450px w-full md:px-8 mb-8 md:mb-0 flex-1"
+          main-class="relative h-450px w-full mb-8 md:mb-0 flex-1"
           :title="$t('homepage__second_issue__title')"
           :image="$t('homepage__second_issue__background')"
           :link="$t('homepage__second_issue__link')"
@@ -193,9 +193,9 @@
         />
       </div>
 
-      <div class="w-full md:w-2/5 flex flex-col flex-wrap">
+      <div class="w-full md:w-1/2 flex flex-col flex-wrap">
         <c-single-square
-          main-class="flex-initial h-350px relative w-full md:px-8 mb-8 flex-1"
+          main-class="flex-initial h-350px relative w-full md:pl-24 mb-8 flex-1"
           :title="$t('homepage__third_issue__title')"
           :image="$t('homepage__third_issue__background')"
           :link="$t('homepage__third_issue__link')"
@@ -203,7 +203,7 @@
         />
       
         <c-single-square
-          main-class="flex-initial h-350px relative w-full md:px-8 mb-8 flex-1"
+          main-class="flex-initial h-350px relative w-full md:pl-24 mb-8 flex-1"
           :title="$t('homepage__fourth_issue__title')"
           :image="$t('homepage__fourth_issue__background')"
           :link="$t('homepage__fourth_issue__link')"
