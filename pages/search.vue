@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="h-auto mt-12 mb-20">
+    <div class="h-auto mt-12 mb-20 gcse">
       <div class="gcse-searchbox"></div>
 
       <div class="gcse-searchresults"></div>
@@ -31,7 +31,7 @@
 </script>
 
 <style>
-  .gsc-control-cse{
+  .gcse .gsc-control-cse{
     padding: 0;
     text-align: left;
   }
