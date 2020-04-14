@@ -95,7 +95,7 @@ module.exports = {
         cmsConfig: { 
           backend: { 
             name: 'git-gateway', 
-            branch: 'master' 
+            branch: 'main' 
           },
           media_folder: 'static/images/uploads',
           public_folder: '/images/uploads',
